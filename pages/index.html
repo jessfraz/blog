@@ -1,0 +1,15 @@
+title: Jess Frazelle's Blog
+description: The blog of Jess Frazelle
+
+{% extends "base.html" %}
+{% block content %}
+<div class="container home"> 
+	{% for post in posts %}
+		<article>
+			<h2><a href="{{ ROOT_URL }}/{{ post.path }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+			<div class="time">{{ post.date|date:"F j, Y" }}</div>
+			{{ post.body |truncatewords_html:80|striptags }}
+		</article>
+	 {% endfor %}
+</div>
+{% endblock %}
