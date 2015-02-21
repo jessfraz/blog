@@ -11,7 +11,7 @@ date: 21-02-2015
 
 Hello!
 
-So some of you may know me and the fact I love and run Debian Jessie on my computers/server. Not only that, I run almost all my applications in Docker containers. "What?!?!" you say. Let me show you.
+So some of you may know me and the fact I love and run Debian Jessie on my computers/server. Not only that, I run almost all my applications in Docker containers. **"What?!?!"**, you say. Let me show you.
 
 The following covers a few of my favorite applications I run in containers.
 
@@ -25,14 +25,14 @@ Let's start with some easy text-based applications:
 
 Best IRC client.
 
-```console
+<pre class="prettyprint">
 $ docker run -it \
     -v /etc/localtime:/etc/localtime \
-    -v $HOME/.irssi:/home/user/.irssi \ # mounts your irssi config in the container
+    -v $HOME/.irssi:/home/user/.irssi \ # mounts irssi config in container
     --read-only \ # cool new feature in 1.5
     --name irssi \
     irssi
-```
+</pre>
 
 ![irssi]({{ STATIC_URL }}/img/irssi.png)
 
@@ -42,7 +42,7 @@ $ docker run -it \
 
 The text based email client that rules!
 
-```console
+<pre class="prettyprint">
 $ docker run -it \
     -v /etc/localtime:/etc/localtime \
     -e GMAIL -e GMAIL_NAME \ # pass env variables to config
@@ -50,7 +50,7 @@ $ docker run -it \
     -v $HOME/.gnupg:/home/user/.gnupg \ # so you can encrypt ;)
     --name mutt \
     jess/mutt
-```
+</pre>
 
 ![mutt]({{ STATIC_URL }}/img/mutt.png)
 
@@ -60,14 +60,14 @@ $ docker run -it \
 
 Awesome text based twitter client.
 
-```console
+<pre class="prettyprint">
 $ docker run -it \
     -v /etc/localtime:/etc/localtime \
     -v $HOME/.rainbow_oauth:/root/.rainbow_oauth \ # mount config files
     -v $HOME/.rainbow_config.json:/root/.rainbow_config.json \
     --name rainbowstream \
     jess/rainbowstream
-```
+</pre>
 
 ![rainbowstream]({{ STATIC_URL }}/img/rainbowstream.png)
 
@@ -77,11 +77,11 @@ $ docker run -it \
 
 The browser everyone loves (to hate). *but secretly I love*
 
-```console
+<pre class="prettyprint">
 $ docker run -it \
     --name lynx \
     jess/lynx
-```
+</pre>
 
 ![lynx]({{ STATIC_URL }}/img/lynx2.png)
 
@@ -92,11 +92,11 @@ Okay, those text based apps are fun and all but how about we spice things up a b
 
 ### GUIs
 
-**None** of the images below use `X11-Forwarding` with ssh. Because why should you ever have to install `ssh` into a container? EWWW UNNECESSARY BLOAT!
+None of the images below use `X11-Forwarding` with ssh. Because why should you ever have to install `ssh` into a container? EWWW UNNECESSARY BLOAT!
 
 The images work by mounting the `X11` socket into the container! Yippeeeee!
 
-The commands listed below are run on a linux machine. But Mac users, I have a special surprise for you. You can also do fun hacks with X11. Details are described here: https://github.com/docker/docker/issues/8710.
+The commands listed below are run on a linux machine. But Mac users, I have a special surprise for you. You can also do fun hacks with X11. Details are described [here](https://github.com/docker/docker/issues/8710).
 
 Note for each of these, if I need sound I add `-v /dev/snd:/dev/snd --privileged`, BUT if my patch gets merged to fix the bug with `--device /dev/snd` for 1.6, you will be able to replace that line with the more preferred `--device /dev/snd` which automatically adds the correct permissions to the container.
 
@@ -106,7 +106,7 @@ Note for each of these, if I need sound I add `-v /dev/snd:/dev/snd --privileged
 
 Pretty sure everyone knows what chrome is, but my image comes with flash and the google talk plugin so you can do hangouts.
 
-```console
+<pre class="prettyprint">
 $ docker run -it \
     --net host \ # may as well YOLO
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
@@ -116,7 +116,7 @@ $ docker run -it \
     -v /dev/snd:/dev/snd --privileged \ # so we have sound
     --name chrome \
     jess/chrome
-```
+</pre>
 
 ![chrome]({{ STATIC_URL }}/img/chrome.png)
 
@@ -126,14 +126,14 @@ $ docker run -it \
 
 All the 90s hits you ever wanted and more.
 
-```console
+<pre class="prettyprint">
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
     -v /dev/snd:/dev/snd --privileged \ # sound
     --name spotify \
     jess/spotify
-```
+</pre>
 
 ![spotify]({{ STATIC_URL }}/img/spotify.png)
 
@@ -145,14 +145,14 @@ Partition your device in a container.
 
 MIND BLOWN.
 
-```console
+<pre class="prettyprint">
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
     --device /dev/sda:/dev/sda \ # mount the device to partition
     --name gparted \
     jess/gparted
-```
+</pre>
 
 ![gparted]({{ STATIC_URL }}/img/gparted.png)
 
@@ -162,14 +162,14 @@ $ docker run -it \
 
 The other video conferencer.
 
-```console
+<pre class="prettyprint">
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
     -v /dev/snd:/dev/snd --privileged \ # sound
     --name skype \
     jess/skype
-```
+</pre>
 
 ![skype]({{ STATIC_URL }}/img/skype1.png)
 
@@ -181,14 +181,14 @@ $ docker run -it \
 
 Because Tor, duh!
 
-```console
+<pre class="prettyprint">
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
     -v /dev/snd:/dev/snd --privileged \ # sound
     --name tor-browser \
     jess/tor-browser
-```
+</pre>
 
 ![tor-browser]({{ STATIC_URL }}/img/tor-browser.png)
 
@@ -198,17 +198,17 @@ $ docker run -it \
 
 That super old school terminal.
 
-```console
+<pre class="prettyprint">
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
     --name cathode \
     jess/1995
-```
+</pre>
 
 ![cathode]({{ STATIC_URL }}/img/cathode.png)
 
-So that's enough examples for now. But of course I have more. All my Dockerfiles live here: https://github.com/jfrazelle/dockerfiles and all my docker images are on the hub: https://hub.docker.com/u/jess/.
+So that's enough examples for now. But of course I have more. All my Dockerfiles live here: [github.com/jfrazelle/dockerfiles](https://github.com/jfrazelle/dockerfiles) and all my docker images are on the hub: [hub.docker.com/u/jess](https://hub.docker.com/u/jess/).
 
 Happy Dockerizing!!!
 
