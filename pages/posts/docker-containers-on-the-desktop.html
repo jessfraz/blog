@@ -34,6 +34,8 @@ $ docker run -it \
     irssi
 ```
 
+![irssi]({{ STATIC_URL }}/img/irssi.png)
+
 #### 2. Mutt
 
 [Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/mutt/Dockerfile)
@@ -50,6 +52,8 @@ $ docker run -it \
     jess/mutt
 ```
 
+![mutt]({{ STATIC_URL }}/img/mutt.png)
+
 #### 3. Rainbowstream
 
 [Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/rainbowstream/Dockerfile)
@@ -65,6 +69,8 @@ $ docker run -it \
     jess/rainbowstream
 ```
 
+![rainbowstream]({{ STATIC_URL }}/img/rainbowstream.png)
+
 #### 4. Lynx
 
 [Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/lynx/Dockerfile)
@@ -76,6 +82,11 @@ $ docker run -it \
     --name lynx \
     jess/lynx
 ```
+
+![lynx]({{ STATIC_URL }}/img/lynx2.png)
+
+
+*Yes I know my blog looks GREAT in lynx*
 
 Okay, those text based apps are fun and all but how about we spice things up a bit.
 
@@ -107,6 +118,8 @@ $ docker run -it \
     jess/chrome
 ```
 
+![chrome]({{ STATIC_URL }}/img/chrome.png)
+
 #### 6. Spotify
 
 [Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/spotify/Dockerfile)
@@ -121,6 +134,8 @@ $ docker run -it \
     --name spotify \
     jess/spotify
 ```
+
+![spotify]({{ STATIC_URL }}/img/spotify.png)
 
 #### 7. Gparted
 
@@ -139,6 +154,8 @@ $ docker run -it \
     jess/gparted
 ```
 
+![gparted]({{ STATIC_URL }}/img/gparted.png)
+
 #### 8. Skype
 
 [Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/skype/Dockerfile)
@@ -153,6 +170,10 @@ $ docker run -it \
     --name skype \
     jess/skype
 ```
+
+![skype]({{ STATIC_URL }}/img/skype1.png)
+
+![skype2]({{ STATIC_URL }}/img/skype2.png)
 
 #### 9. Tor Browser
 
@@ -169,6 +190,8 @@ $ docker run -it \
     jess/tor-browser
 ```
 
+![tor-browser]({{ STATIC_URL }}/img/tor-browser.png)
+
 #### 10. Cathode
 
 [Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/cathode/Dockerfile)
@@ -180,8 +203,10 @@ $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
     --name cathode \
-    jess/cathode
+    jess/1995
 ```
+
+![cathode]({{ STATIC_URL }}/img/cathode.png)
 
 So that's enough examples for now. But of course I have more. All my Dockerfiles live here: https://github.com/jfrazelle/dockerfiles and all my docker images are on the hub: https://hub.docker.com/u/jess/.
 
