@@ -11,9 +11,29 @@ date: 21-02-2015
 
 Hello!
 
-So some of you may know me and the fact I love and run Debian Jessie on my computers/server. Not only that, I run almost all my applications in Docker containers. **"What?!?!"**, you say. Let me show you.
+If you are not familiar with [Docker](https://github.com/docker/docker), it is the popular open source container engine.
 
-The following covers a few of my favorite applications I run in containers.
+Most people use Docker for containing applications to deploy into production or for building their applications in a contained enviornment. This is all fine &amp; dandy, and saves developers &amp; ops engineers huge headaches, but I like to use Docker in a not-so-typical way.
+
+I use Docker to run all the desktop apps on my computers. 
+
+But why would I even want to run all these apps in containers? Well let me explain. I used to be an OS X user, and the great thing about OS X is the OS X App Sandbox. 
+
+> App Sandbox is an access control technology provided in OS X, enforced at the kernel level. Its strategy is twofold:
+
+> App Sandbox enables you to describe how your app interacts with the system. The system then grants your app the access it needs to get its job done, and no more.
+
+> App Sandbox provides a last line of defense against the theft, corruption, or deletion of user data if an attacker successfully exploits security holes in your app or the frameworks it is linked against.
+
+> <small>[Apple About App Sandbox](https://developer.apple.com/library/mac/documentation/Security/Conceptual/AppSandboxDesignGuide/AboutAppSandbox/AboutAppSandbox.html)</small>
+
+I am using the Apple App Sandbox as an example so people can grasp the concept easily. I am **not** saying this is exactly like that and has all the features. This is not a sandbox. It is more like a cool hack. 
+
+I hate installing things on my host and the files getting everywhere. I wanted the ability to delete an app and know it is gone fully without some random file hanging around. This gave me that. Not only that, I can control how much CPU and Memory the app uses. Yes, the cpu/memory hungry chrome is now perfectly contained!
+
+**"What?!?!"**, you say. Let me show you.
+
+The following covers a few of my favorite applications I run in containers. Each of the commands written below is actually pulled directly from my bash aliases. So you can have the same user experience as running one command today.
 
 ### TUIs (Text User Interface, pronounced *too-eee*)
 
@@ -109,6 +129,8 @@ Pretty sure everyone knows what chrome is, but my image comes with flash and the
 <pre class="prettyprint">
 $ docker run -it \
     --net host \ # may as well YOLO
+    --cpuset 0 \ # control the cpu
+    --memory 512mb \ # max memory it can use
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
     -v $HOME/Downloads:/root/Downloads \ # optional, but nice
