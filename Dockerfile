@@ -1,9 +1,26 @@
-FROM python:2.7
+FROM debian:jessie
+MAINTAINER Jessie Frazelle <jess@docker.com>
 
-RUN pip install cactus
+RUN apt-get update && apt-get install -y \
+	ca-certificates \
+	curl \
+	s3cmd \
+	--no-install-recommends
 
-COPY . /src
+ENV HUGO_VERSION 0.13
+RUN curl -sSL https://github.com/spf13/hugo/releases/download/v0.13/hugo_${HUGO_VERSION}_linux_amd64.tar.gz | tar -v -C /usr/local/bin -xz --strip-components 1 && \
+	mv /usr/local/bin/hugo_${HUGO_VERSION}_linux_amd64 /usr/local/bin/hugo
 
-WORKDIR /src
+# Setup s3cmd config
+RUN { \
+    echo '[default]'; \
+    echo 'access_key=$AWS_ACCESS_KEY'; \
+    echo 'secret_key=$AWS_SECRET_KEY'; \
+    } > ~/.s3cfg
 
-ENTRYPOINT [ "cactus" ]
+WORKDIR /usr/src/blog/
+
+# add files
+COPY . /usr/src/blog/
+
+ENTRYPOINT [ "./release.sh" ]

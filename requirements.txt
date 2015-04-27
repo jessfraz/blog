@@ -1,5 +1,0 @@
-Cactus==2.3.1
-Django==1.5.5
-Markdown==2.3.1
-boto==2.25.0
-wsgiref==0.1.2

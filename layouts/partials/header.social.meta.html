@@ -1,0 +1,20 @@
+<!-- twitter card meta tags -->
+<meta property="twitter:account_id" content="285428413" />
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@frazelledazzell">
+<meta name="twitter:creator" content="@frazelledazzell">
+<meta name="twitter:title" content="{{ .Site.Title }}: {{ if eq .Section "post" }}{{ .Title }}{{ else }}Home{{ end }}">
+<meta name="twitter:description" content="{{ if eq .Section "post" }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+<meta name="twitter:image:src" content="/img/share.png">
+<meta name="twitter:image:width" content="500">
+<meta name="twitter:image:height" content="500">
+<meta name="twitter:domain" content="blog.jessfraz.com">
+
+<!-- facebook open graph tags -->
+<meta property="og:title" content="{{ .Title }}"/>
+<meta property="og:Section" content="website"/>
+<meta property="og:url" content="{{ .Permalink }}"/>
+<meta property="og:image" content="/img/share.png"/>
+<meta property="og:site_name" content="{{ .Site.Title }}"/>
+<meta property="fb:admins" content="1018260045"/>
+<meta property="og:description" content="{{ if eq .Section "post" }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}"/>

@@ -1,10 +1,4 @@
 *.swo
 *.swp
 .DS_Store
-node_modules/
-.build/
-tmp
-config.json
-
-*.pyc
-venv/
+public/

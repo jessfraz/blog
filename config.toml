@@ -1,0 +1,7 @@
+baseurl = "https://blog.jessfraz.com/"
+canonifyurls = true
+languageCode = "en-us"
+title = "Jessie Frazelle's Blog"
+
+[params]
+	description = "The blog of Jessie Frazelle, hacker of all things Linux & Containers"
