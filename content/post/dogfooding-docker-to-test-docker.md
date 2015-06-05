@@ -57,14 +57,14 @@ multiple revision cycles you can only imagine the number of builds we process
 in a day.
 
 The manager for the PR builds is a small service called 
-[leeroy](https://github.com/jfrazaelle/leeroy) which also makes
+[leeroy](https://github.com/jfrazelle/leeroy) which also makes
 sure every PR has been signed with the Docker DCO before it even triggers
 a build. This of course also runs in a container.
 
 Now of course not every build is perfect, sometimes you have to rebuild. To
 make this easy for all maintainers of the project we have an IRC bot, named
 lovingly after Docker's turtle Gordon. The
-[gordonbot](github.com/jfrazelle/gordon-bot) runs in a container _duh_, and can
+[gordonbot](https://github.com/jfrazelle/gordon-bot) runs in a container _duh_, and can
 kick off a rebuild on any of our bajillion servers.
 
 Now I know what you are thinking, thats a lot of servers, how do you manage to
