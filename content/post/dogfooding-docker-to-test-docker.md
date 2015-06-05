@@ -9,7 +9,7 @@ This is a tale about how we use Docker to test Docker. Yes, I am familiar with
 the meme. Puhlease.
 
 Many of you are familiar with the fact I work on the Docker core team. Which
-consists of fixinng bugs, doing releases, reviewing PRs, hanging out on IRC,
+consists of fixing bugs, doing releases, reviewing PRs, hanging out on IRC,
 mailing lists etc etc etc. But what you may not know is that in addition to all
 these things I also manage our testing infrastructure. Now really this in
 itself could be a fulltime job. However it is not _my_ fulltime job, nor would
@@ -23,7 +23,7 @@ breaks and I could punch a whole in a wall... but who doesn't?
 
 First let me take a chance to familiarize you with how we test Docker. Docker's
 tests run in a Docker container. We use Jenkins as our CI mostly because we
-needed a lot of flexability and control. 
+needed a lot of flexibility and control. 
 
 Obviously everything in our infrastructure runs in Docker, so that even goes
 for Jenkins. We use the [official
@@ -130,4 +130,5 @@ of being a Docker core maintainer, occasionally fix some servers, spin up new
 servers if we add storage drivers, upgrade servers' kernels, and write this blog
 post.
 
-Hope you enjoyed, also help us test RC's and Docker master!
+Hope you enjoyed, also help us test RC's and Docker master! Also thanks to
+DigitalOcean and Azure for hosting our infrastructure.
