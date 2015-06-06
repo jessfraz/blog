@@ -52,8 +52,6 @@ $ sudo ./install.sh --alldrivers
 </pre>
 
 Okay now you need to edit `/EFI/refind/refind.conf`. 
-You can download mine [here](http://jesss.s3.amazonaws.com/backups/mac/refind.conf) 
-if you trust me, or want an example. 
 The key differences you should make to the default config are as follows:
 
 <pre class="prettyprint">
@@ -206,7 +204,7 @@ because it has hotpugging for thunderbolt. WHAAAAA? YES!!!
 So if you are going to ride with me on the awesome thunderbolt train 
 we need to build ourselves a kernel from source. Or if you reallllllyyy 
 trust me you can download my `.deb` for kernel `3.17.3`
-[here](https://s3-us-west-1.amazonaws.com/jesss/kernels/3.17.3/linux-image-3.17.3_3.17.3_amd64.deb), 
+[here](https://jesss.s3.amazonaws.com/kernels/3.17.3/linux-image-3.17.3_3.17.3_amd64.deb), 
 but honestly I build my own everytime so take that as you will.
 
 Usually, I do these builds in a container. 
@@ -226,7 +224,7 @@ $ cd linux-3.17.4/
 # Options: 
 # you can either use my kernel .config
 # which has thunderbolt and all modules enabled
-$ curl -O https://s3-us-west-1.amazonaws.com/jesss/backups/bin/debian/.config
+$ curl -O https://jesss.s3.amazonaws.com/kernels/3.17.3/.config
 
 # OR
 # you can use the menu to configure yourself
@@ -372,7 +370,7 @@ $ apt-get install dunst feh i3 i3lock i3status scrot suckless-tools
 
 **Screen Backlight**
 
-I have a bash script [https://s3-us-west-1.amazonaws.com/jesss/backups/bin/debian/screen-backlight](https://s3-us-west-1.amazonaws.com/jesss/backups/bin/debian/screen-backlight) made for the sole purpose of adjusting the screen-backlight.
+I have a bash script [https://jesss.s3.amazonaws.com/binaries/screen-backlight](https://jesss.s3.amazonaws.com/binaries/screen-backlight) made for the sole purpose of adjusting the screen-backlight.
 
 You will want to add to your sudoers file the following line, so password is not required for the script to run:
 
@@ -391,7 +389,7 @@ bindsym XF86MonBrightnessDown exec sudo screen-backlight down
 
 **Keyboard Backlight**
 
-The same goes for the keyboard backlight. I have a bash script [https://s3-us-west-1.amazonaws.com/jesss/backups/bin/debian/keyboard-backlight](https://s3-us-west-1.amazonaws.com/jesss/backups/bin/debian/keyboard-backlight) made for the sole purpose of adjusting the keyboard-backlight.
+The same goes for the keyboard backlight. I have a bash script [https://jesss.s3.amazonaws.com/binaries/keyboard-backlight](https://jesss.s3.amazonaws.com/binaries/keyboard-backlight) made for the sole purpose of adjusting the keyboard-backlight.
 
 You will want to add to your sudoers file the following line, so password is not required for the script to run:
 
