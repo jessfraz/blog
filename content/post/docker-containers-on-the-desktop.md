@@ -122,7 +122,7 @@ Note for each of these, if I need sound I add `-v /dev/snd:/dev/snd --privileged
 
 #### 5. Chrome
 
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/chrome/Dockerfile)
+[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/chrome/stable/Dockerfile)
 
 Pretty sure everyone knows what chrome is, but my image comes with flash and the google talk plugin so you can do hangouts.
 
