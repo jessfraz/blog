@@ -118,7 +118,7 @@ The images work by mounting the `X11` socket into the container! Yippeeeee!
 
 The commands listed below are run on a linux machine. But Mac users, I have a special surprise for you. You can also do fun hacks with X11. Details are described [here](https://github.com/docker/docker/issues/8710).
 
-Note for each of these, if I need sound I add `-v /dev/snd:/dev/snd --privileged`, BUT if my patch gets merged to fix the bug with `--device /dev/snd` for 1.6, you will be able to replace that line with the more preferred `--device /dev/snd` which automatically adds the correct permissions to the container.
+Note my patch was added for `--device /dev/snd` in Docker 1.8, before that you needed `-v /dev/snd:/dev/snd --privileged`.
 
 #### 5. Chrome
 
@@ -135,7 +135,7 @@ $ docker run -it \
     -e DISPLAY=unix$DISPLAY \ # pass the display
     -v $HOME/Downloads:/root/Downloads \ # optional, but nice
     -v $HOME/.config/google-chrome/:/data \ # if you want to save state
-    -v /dev/snd:/dev/snd --privileged \ # so we have sound
+    --device /dev/snd \ # so we have sound
     --name chrome \
     jess/chrome
 </pre>
@@ -152,7 +152,7 @@ All the 90s hits you ever wanted and more.
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
-    -v /dev/snd:/dev/snd --privileged \ # sound
+    --device /dev/snd \ # sound
     --name spotify \
     jess/spotify
 </pre>
@@ -188,7 +188,7 @@ The other video conferencer.
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
-    -v /dev/snd:/dev/snd --privileged \ # sound
+    --device /dev/snd \ # sound
     --name skype \
     jess/skype
 </pre>
@@ -207,7 +207,7 @@ Because Tor, duh!
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
-    -v /dev/snd:/dev/snd --privileged \ # sound
+    --device /dev/snd \ # sound
     --name tor-browser \
     jess/tor-browser
 </pre>
