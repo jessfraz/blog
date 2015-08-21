@@ -129,7 +129,7 @@ Pretty sure everyone knows what chrome is, but my image comes with flash and the
 <pre class="prettyprint lang-sh">
 $ docker run -it \
     --net host \ # may as well YOLO
-    --cpuset 0 \ # control the cpu
+    --cpuset-cpus 0 \ # control the cpu
     --memory 512mb \ # max memory it can use
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
