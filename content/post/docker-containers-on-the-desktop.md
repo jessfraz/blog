@@ -182,13 +182,30 @@ $ docker run -it \
 
 [Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/skype/Dockerfile)
 
-The other video conferencer.
+The other video conferencer. This relies on running pulseaudio also in
+a container.
 
 <pre class="prettyprint lang-sh">
+# start pulseaudio
+$ docker run -d \
+    -v /etc/localtime:/etc/localtime \
+    -p 4713:4713 \ # expose the port
+    --device /dev/snd \ # sound
+    --name pulseaudio \
+    jess/pulseaudio
+</pre>
+
+
+<pre class="prettyprint lang-sh">
+# start skype
 $ docker run -it \
+    -v /etc/localtime:/etc/localtime \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
     --device /dev/snd \ # sound
+    --link pulseaudio:pulseaudio \ # link pulseaudio
+    -e PULSE_SERVER=pulseaudio \
+    --device /dev/video0 \ # video
     --name skype \
     jess/skype
 </pre>
