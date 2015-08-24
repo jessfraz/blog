@@ -23,7 +23,7 @@ easily build locally from my repo
 
 So let's run the image:
 
-```bash
+```bsh
 $ docker run -d \
     --net host \ 
     --restart always \
@@ -42,8 +42,8 @@ You do? Ok make a PR to [this blog post](https://github.com/jfrazelle/blog).
 
 Contain yourselves, I am about to throw down some sick iptables rules.
 
-```sh
-#!/bin/sh
+```bsh
+#!/bin/bash
 # Most of this is credited to 
 # https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxy
 # With a few minor edits

@@ -199,9 +199,6 @@ ol.linenums li {
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
 }
-* {
-	-webkit-font-smoothing: antialiased;
-}
 p {
 	margin: 0 0 15px 0;
 }
@@ -563,17 +560,15 @@ article:after {
 code,
 pre {
 	padding: 0 3px 2px;
-	font-family: "Source Code Pro", Consolas, Inconsolas, "Courier New", monospace;
+	font-family: Consolas, Inconsolas, "Courier New", monospace;
 	font-size: 14px;
 	color: #333333;
-	-webkit-font-smoothing: none;
 }
 code {
 	padding: 2px 4px;
 	color: #d14;
 	background-color: #f7f7f9;
 	border: 1px solid #e1e1e8;
-	-webkit-font-smoothing: none;
 }
 pre {
 	display: block;
@@ -582,7 +577,6 @@ pre {
 	line-height: 150%;
 	white-space: pre;
 	white-space: pre-wrap;
-	-webkit-font-smoothing: none;
 	/* css-3 */
 
 	white-space: -moz-pre-wrap;
