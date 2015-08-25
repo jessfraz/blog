@@ -145,22 +145,19 @@ ExitPolicy accept *:220       # IMAP3
 ExitPolicy accept *:389       # LDAP
 ExitPolicy accept *:443       # HTTPS
 ExitPolicy accept *:464       # kpasswd
-ExitPolicy accept *:465       # URD for SSM (more often: an alternative
-SUBMISSION port, see 587)
+ExitPolicy accept *:465       # URD for SSM (more often: an alternative SUBMISSION port, see 587)
 ExitPolicy accept *:531       # IRC/AIM
 ExitPolicy accept *:543-544   # Kerberos
 ExitPolicy accept *:554       # RTSP
 ExitPolicy accept *:563       # NNTP over SSL
-ExitPolicy accept *:587       # SUBMISSION (authenticated clients [MUA's like
-Thunderbird] send mail over STARTTLS SMTP here)
+ExitPolicy accept *:587       # SUBMISSION (authenticated clients [MUA's like Thunderbird] send mail over STARTTLS SMTP here)
 ExitPolicy accept *:636       # LDAP over SSL
 ExitPolicy accept *:706       # SILC
 ExitPolicy accept *:749       # kerberos 
 ExitPolicy accept *:873       # rsync
 ExitPolicy accept *:902-904   # VMware
 ExitPolicy accept *:981       # Remote HTTPS management for firewall
-ExitPolicy accept *:989-995   # FTP over SSL, Netnews Administration System,
-telnets, IMAP over SSL, ircs, POP3 over SSL
+ExitPolicy accept *:989-995   # FTP over SSL, Netnews Administration System, telnets, IMAP over SSL, ircs, POP3 over SSL
 ExitPolicy accept *:1194      # OpenVPN
 ExitPolicy accept *:1220      # QT Server Admin
 ExitPolicy accept *:1293      # PKT-KRB-IPSec
