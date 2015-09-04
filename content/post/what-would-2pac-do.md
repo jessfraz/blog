@@ -4,7 +4,9 @@ title = "What would Tupac do?"
 author = "Jessica Frazelle"
 description = "I saw this sign outside a coffee shop. Most people would just walk by and laugh, but it got me thinking. What would 2PAC do? Seeing as 2PAC is one of my favorite artists and I was already walking with earbuds on, I started playing an oldie but goodie on my iPhone, 'Changes'."
 aliases = [
-    "/posts/what-would-2pac-do.html"
+    "/posts/what-would-2pac-do.html",
+    "/posts/what-would-tupac-do.html",
+    "/post/what-would-tupac-do/index.html"
 ]
 +++
 
@@ -13,7 +15,7 @@ aliases = [
 
 I saw this sign outside a coffee shop. Most people would just walk by and laugh, but it got me thinking. What would 2PAC do? Seeing as 2PAC is one of my favorite artists and I was already walking with earbuds on, I started playing an oldie but goodie on my iPhone, "Changes".<!--more-->
 
-Now if you have never heard of <a href="http://rapgenius.com" target="_blank">rapgenuis.com</a> before, you should definitely check it out. It has translations of basically every rap song thats popular, and the artists can login and say what the lyrics to the song actually meant. Seeing as 2PAC is deceased (saddness), and I don't think the holographic 2PAC is going to be logging into rap genius anytime soon&#8230; I pondered the meaning of the lyrics myself.
+Now if you have never heard of <a href="http://rapgenius.com" target="_blank">rapgenius.com</a> before, you should definitely check it out. It has translations of basically every rap song thats popular, and the artists can login and say what the lyrics to the song actually meant. Seeing as 2PAC is deceased (saddness), and I don't think the holographic 2PAC is going to be logging into rap genius anytime soon&#8230; I pondered the meaning of the lyrics myself.
 
 My conclusion was, if you are not happy with the way things are currently going, you should stand up and try to change it. "Some things will never change," but what you do have control of changing is yourself. Just like Gandhi said, "If we could change ourselves, the tendencies in the world would also change. As a man changes his own nature, so does the attitude of the world change towards him… We need not wait to see what others do."
 

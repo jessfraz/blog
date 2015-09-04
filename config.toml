@@ -1,5 +1,5 @@
-baseurl = "https://blog.jessfraz.com/"
-canonifyurls = true
+baseUrl = "https://blog.jessfraz.com/"
+CanonifyUrls = true
 languageCode = "en-us"
 title = "Jessie Frazelle's Blog"
 
