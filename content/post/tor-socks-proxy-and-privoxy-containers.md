@@ -81,8 +81,10 @@ $ curl -L http://ifconfig.me
 
 # get your ip through the tor socks proxy
 $ curl --socks http://localhost:9050  -L http://ifconfig.me
-
 # obviously they should be different ;)
+
+# you can even curl the check.torproject.org api
+$ curl --socks http://localhost:9050  -L https://check.torproject.org/api/ip
 ```
 
 If you are like me and use 
@@ -167,8 +169,10 @@ $ curl -L http://ifconfig.me
 
 # get your ip through the http proxy
 $ curl -x http://localhost:8118 -L http://ifconfig.me
+# obviously again, they should be different ;)
 
-# obviously they should be different ;)
+# curl the check.torproject.org api
+$ curl -x http://localhost:8118  -L https://check.torproject.org/api/ip
 ```
 
 That's all for now! Stay anonymous on the interwebs :p
