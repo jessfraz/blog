@@ -6,16 +6,16 @@ description = "How to run a Tor relay with Docker."
 +++
 
 This post is part two of what will be a three part series. If you missed it
-part one was [How to Route Traffic through a Tor Docker container](/post/routing-traffic-through-tor-docker-container/). 
+part one was [How to Route Traffic through a Tor Docker container](/post/routing-traffic-through-tor-docker-container/).
 I figured it was important, if you are going to be a tor user, to document how
 you can help the Tor community by hosting a Tor relay. And guess what? You can
 use Docker to do this!
 
 There are three types of relays you can host, a bridge relay, a middle relay,
-and an exit relay. Exit relays tend to be the ones recieving take down notices 
+and an exit relay. Exit relays tend to be the ones recieving take down notices
 because the IP is the one the public sees traffic from Tor as. A great reference
 for hosting an exit node can be found here
-[blog.torproject.org/blog/tips-running-exit-node-minimal-harassment](https://blog.torproject.org/blog/tips-running-exit-node-minimal-harassment). 
+[blog.torproject.org/blog/tips-running-exit-node-minimal-harassment](https://blog.torproject.org/blog/tips-running-exit-node-minimal-harassment).
 But I will go over how to host each from a Docker container.
 My example will have a reduced exit policy and limit which ports you are willing
 to route traffic through.
@@ -27,7 +27,7 @@ want your relay not publically listed in the network then host a bridge.
 
 I have created a Docker image
 [jess/tor-relay](https://hub.docker.com/r/jess/tor-relay/) from this
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/tor-relay/Dockerfile). 
+[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/tor-relay/Dockerfile).
 Feel free to create your own image with the following Dockerfile:
 
 ```bsh
@@ -153,7 +153,7 @@ ExitPolicy accept *:563       # NNTP over SSL
 ExitPolicy accept *:587       # SUBMISSION (authenticated clients [MUA's like Thunderbird] send mail over STARTTLS SMTP here)
 ExitPolicy accept *:636       # LDAP over SSL
 ExitPolicy accept *:706       # SILC
-ExitPolicy accept *:749       # kerberos 
+ExitPolicy accept *:749       # kerberos
 ExitPolicy accept *:873       # rsync
 ExitPolicy accept *:902-904   # VMware
 ExitPolicy accept *:981       # Remote HTTPS management for firewall
@@ -183,8 +183,8 @@ ExitPolicy accept *:5222-5223 # XMPP, XMPP over SSL
 ExitPolicy accept *:5228      # Android Market
 ExitPolicy accept *:5900      # VNC
 ExitPolicy accept *:6660-6669 # IRC
-ExitPolicy accept *:6679      # IRC SSL  
-ExitPolicy accept *:6697      # IRC SSL  
+ExitPolicy accept *:6679      # IRC SSL
+ExitPolicy accept *:6697      # IRC SSL
 ExitPolicy accept *:8000      # iRDMI
 ExitPolicy accept *:8008      # HTTP alternate
 ExitPolicy accept *:8074      # Gadu-Gadu
@@ -227,5 +227,5 @@ Stay tuned for part three of the series where I go over how to run Docker
 containers with a Tor networking plugin I am working with Docker's new
 networking plugins. But of course if you are going to use
 the plugin or route all your traffic through a Tor Docker container (from my first
-post), you should really consider hosting a relay. The more people who run 
+post), you should really consider hosting a relay. The more people who run
 relays, the faster the Tor network will be.

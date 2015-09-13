@@ -11,13 +11,13 @@ aliases = [
 
 Hello!
 
-This blog post is going to go over how to create a Linux partition on your mac and have everything working successfully. 
+This blog post is going to go over how to create a Linux partition on your mac and have everything working successfully.
 
-Okay so lets begin with: `sudo rm -rf / && sudo kill -9 1`. 
+Okay so lets begin with: `sudo rm -rf / && sudo kill -9 1`.
 
 Hold the phone.
 
-That was a test. I really hope you didn't just copy, paste, and run a command on your host without knowing anything about the author. A bit about me... I have run this install about a dozen times on my mac, with various different changes along the way. I can finally say I found the perfect way to install Linux, specifically Debian Jessie, on a mac. 
+That was a test. I really hope you didn't just copy, paste, and run a command on your host without knowing anything about the author. A bit about me... I have run this install about a dozen times on my mac, with various different changes along the way. I can finally say I found the perfect way to install Linux, specifically Debian Jessie, on a mac.
 
 So now let's actually get started.<!--more-->
 
@@ -35,9 +35,9 @@ Instructions for installing `rEFInd` can be found [here](http://www.rodsbooks.co
 
 If you don't know how to open terminal just stop now, sorry this isn't going to be one of those blog posts.
 
-The following works for OSX Mountain Lion. 
-If you are running Yosemite you are SOL 
-(not really but read [this](http://www.rodsbooks.com/refind/yosemite.html) 
+The following works for OSX Mountain Lion.
+If you are running Yosemite you are SOL
+(not really but read [this](http://www.rodsbooks.com/refind/yosemite.html)
 and I wish you luck on your journey):
 
 <pre class="prettyprint">
@@ -46,12 +46,12 @@ $ unzip refind-bin-0.8.3.zip
 $ cd refind-bin-0.8.3/
 
 # we are going to install with all drivers
-# because you honestly never know what you 
+# because you honestly never know what you
 # will need, better be safe vs. sorry
 $ sudo ./install.sh --alldrivers
 </pre>
 
-Okay now you need to edit `/EFI/refind/refind.conf`. 
+Okay now you need to edit `/EFI/refind/refind.conf`.
 The key differences you should make to the default config are as follows:
 
 <pre class="prettyprint">
@@ -71,7 +71,7 @@ fs0: load ext4_x64.efi
 fs0: map -r
 </pre>
 
-Let's check it's working. Restart your computer and you should see a super 90's looking screen like: 
+Let's check it's working. Restart your computer and you should see a super 90's looking screen like:
 ![refind-boot-menu](/img/refind.png)
 
 If not, there are various debugging tips per version of Mac OSX [here](http://www.rodsbooks.com/refind/installing.html#sluggish).
@@ -80,12 +80,12 @@ High five! Hard part's done. Really. That is the hardest part.
 
 ### Choose your Linux Distro
 
-Obviously my favorite is Debian Jessie, so I will 
-go into detail how to make a USB boot drive for that, 
+Obviously my favorite is Debian Jessie, so I will
+go into detail how to make a USB boot drive for that,
 but you can substitute out whatever sub-par distro you choose.
 
-As of the writing of this article, Debian Jessie is on it's Beta 2 release. 
-You can download the netist image from [here](https://www.debian.org/devel/debian-installer/). 
+As of the writing of this article, Debian Jessie is on it's Beta 2 release.
+You can download the netist image from [here](https://www.debian.org/devel/debian-installer/).
 But detailed instructions follow:
 
 <pre class="prettyprint">
@@ -123,7 +123,7 @@ $ diskutil eject /dev/disk1
 
 ### Partition Your HD
 
-Next you need to partition your hard drive so 
+Next you need to partition your hard drive so
 there is enough space for your linux distro. Here are the steps:
 
 1. Open Disk Utility
@@ -145,16 +145,16 @@ If your linux distro has Advanced Options like Debian for installing a certain D
 
 Continue through your install.
 
-**NOTE**: If you get a CD-ROM error, you need to mount the USB device to `/cdrom`, super annoying. 
-The process will fail and you will be given some options, 
-choose the shell and run `mount /dev/sdc1 /cdrom`. It might also be `/dev/sda1` or `/dev/sdb1`. 
-You will know it when you hit it because you _won't_ get a mount error, 
+**NOTE**: If you get a CD-ROM error, you need to mount the USB device to `/cdrom`, super annoying.
+The process will fail and you will be given some options,
+choose the shell and run `mount /dev/sdc1 /cdrom`. It might also be `/dev/sda1` or `/dev/sdb1`.
+You will know it when you hit it because you _won't_ get a mount error,
 then return to the menu and continue where you left off on the "CD-ROM install".
 
-When the installer arrives at the partitioning step, 
-you can use the auto partioning, 
-that's what I did with all free space, then in the review 
-screen I used `ext4`. 
+When the installer arrives at the partitioning step,
+you can use the auto partioning,
+that's what I did with all free space, then in the review
+screen I used `ext4`.
 If you are going to be running Docker on your system I highly recommend `ext4` with the `overlay` storage driver and you should trust me.
 
 Complete the install and reboot.
@@ -163,12 +163,12 @@ Complete the install and reboot.
 
 Do not fret. I repeat do not fret.
 
-Login as root, yes I know you just created an actual user in the 
+Login as root, yes I know you just created an actual user in the
 installation steps but ROOT ACCESS OR DEATH. Really though we need to install `sudo` and build a new kernel.
 After all that is done, you can continue on your way as your user.
 
-Ok so at this point I know you are not copy and pasting this 
-shit into your terminal so I'll try to keep it concise. 
+Ok so at this point I know you are not copy and pasting this
+shit into your terminal so I'll try to keep it concise.
 Remember, I've been here. We will get through this.
 
 View your `/etc/apt/sources.list` and it is probably messed up and pointing to a CD-ROM.
@@ -197,17 +197,17 @@ $ adduser your_username sudo
 
 ### Let's build a kernel from source wooooo
 
-Now here's the thing. Debian Jessie comes with a `3.16.x` kernel. 
-`3.17.x` is really where the awesome is at for Mac OS X, 
+Now here's the thing. Debian Jessie comes with a `3.16.x` kernel.
+`3.17.x` is really where the awesome is at for Mac OS X,
 because it has hotpugging for thunderbolt. WHAAAAA? YES!!!
 
-So if you are going to ride with me on the awesome thunderbolt train 
-we need to build ourselves a kernel from source. Or if you reallllllyyy 
+So if you are going to ride with me on the awesome thunderbolt train
+we need to build ourselves a kernel from source. Or if you reallllllyyy
 trust me you can download my `.deb` for kernel `3.17.3`
-[here](https://jesss.s3.amazonaws.com/kernels/3.17.3/linux-image-3.17.3_3.17.3_amd64.deb), 
+[here](https://jesss.s3.amazonaws.com/kernels/3.17.3/linux-image-3.17.3_3.17.3_amd64.deb),
 but honestly I build my own everytime so take that as you will.
 
-Usually, I do these builds in a container. 
+Usually, I do these builds in a container.
 But for the sake of this we can just do it on our host _cringe_.
 
 <pre class="prettyprint">
@@ -221,7 +221,7 @@ $ curl -O https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.17.4.tar.xz
 $ tar -xvf linux-3.17.4.tar.xz
 $ cd linux-3.17.4/
 
-# Options: 
+# Options:
 # you can either use my kernel .config
 # which has thunderbolt and all modules enabled
 $ curl -O https://jesss.s3.amazonaws.com/kernels/3.17.3/.config
@@ -246,17 +246,17 @@ $ dpkg -i ../linux-image-3.17.4_3.17.4_amd64.deb
 $ reboot
 </pre>
 
-After restarting, depending on your `refind.conf` 
-file you may see a new option in your `rEFInd` menu for the new kernel. 
+After restarting, depending on your `refind.conf`
+file you may see a new option in your `rEFInd` menu for the new kernel.
 DO NOT select that, select the option that corresponds to the linux GRUB (or whichever)
-bootloader you use. If you do not see one for GRUB or your flavor 
-bootloader you may need to bless the bootloader file on the Mac OSX side. 
-See [these instructions on blessing](http://www.rodsbooks.com/refind/installing.html#osx). 
-Do you understand now why `rEFInd` is the hardest part? It's like iptables, 
+bootloader you use. If you do not see one for GRUB or your flavor
+bootloader you may need to bless the bootloader file on the Mac OSX side.
+See [these instructions on blessing](http://www.rodsbooks.com/refind/installing.html#osx).
+Do you understand now why `rEFInd` is the hardest part? It's like iptables,
 change one thing and everything comes crashing down.
 
-So I am going to assume you figured your shit out and 
-were able to enter your linux distro through `rEFInd` 
+So I am going to assume you figured your shit out and
+were able to enter your linux distro through `rEFInd`
 then through the distro bootloader (ex. GRUB).
 
 Let's clean things up.
@@ -274,8 +274,8 @@ $ apt-get purge --auto-remove linux-image-3.16.*
 </pre>
 
 To avoid random controller freeze you need to set a particular kernel boot option.
-Edit `/etc/default/grub` and add the option `libata.force=noncq` 
-(es. `GRUB_CMDLINE_LINUX_DEFAULT="quiet libata.force=noncq"`) 
+Edit `/etc/default/grub` and add the option `libata.force=noncq`
+(es. `GRUB_CMDLINE_LINUX_DEFAULT="quiet libata.force=noncq"`)
 then run `update-grub` and reboot your system.
 If you are going to be installing Docker you may as well add
 `GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"` while
@@ -408,9 +408,9 @@ bindsym XF86KbdBrightnessDown exec sudo keyboard-backlight down
 
 **Things that won't work in Debian**
 
-I have not gotten the iSight camera or Screen Brightness to work. 
-Other than that, everything is perfect, and thunderbolt hotplugging is a dream. 
-The retina resolution is absolutely stunning, it's seriously hard for me to switch to my Thinkpad 
+I have not gotten the iSight camera or Screen Brightness to work.
+Other than that, everything is perfect, and thunderbolt hotplugging is a dream.
+The retina resolution is absolutely stunning, it's seriously hard for me to switch to my Thinkpad
 which has 32GB of memory (so I should want to switch).
 
 Feel free to reach out to me via twitter [@frazelledazzell](https://twitter.com/frazelledazzell) with any updates or how much you love your linux partition.

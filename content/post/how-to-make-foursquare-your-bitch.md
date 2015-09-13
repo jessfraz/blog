@@ -39,13 +39,13 @@ session_start();
 
 if (!isset($_SESSION['access_token'])) {
    $app_token_url = "https://foursquare.com/oauth2/access_token?client_id=" . $client_id . "&amp;client_secret=" . $client_secret . "&amp;grant_type=authorization_code&amp;redirect_uri=" . $redirect_uri . "&amp;code=" . $code;
-    
+
    $ch = curl_init();
    curl_setopt($ch, CURLOPT_URL, $app_token_url);
    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
    $foursquare_token = curl_exec($ch);
    curl_close($ch);
-    
+
    $array_token              = json_decode($foursquare_token, true);
    $token                    = $array_token['access_token'];
    $_SESSION['access_token'] = $token;
@@ -63,14 +63,14 @@ So to make checking into various different venues easier I decided the only thin
 <pre class="prettyprint">
 function getLatLong($venue_id, $v, $oauth_token) {
    $venue_url = 'https://api.foursquare.com/v2/venues/' . $venue_id . '?oauth_token=' . $oauth_token . '&v=' . $v;
-    
+
    $response       = file_get_contents($venue_url);
    $venue          = json_decode($response, true);
    $venue_response = $venue['response'];
    $location       = $venue_response['venue']['location'];
    $lat            = $location['lat'];
    $long           = $location['lng'];
-    
+
    return $lat . ', ' . $long;
 }
 </pre>
@@ -83,7 +83,7 @@ Now we can send this value into the checkin function.
 <pre class="prettyprint">
 function checkin($venue_id, $v, $oauth_token, $latlong) {
    $checkin_url = "https://api.foursquare.com/v2/checkins/add";
-    
+
    parameters = array(
        'venueId' => $venue_id,
        'broadcast' => 'private', //now i set this private, but can be public
@@ -92,13 +92,13 @@ function checkin($venue_id, $v, $oauth_token, $latlong) {
        'oauth_token' => $oauth_token,
        'v' => $v
    );
-    
+
    $curl = curl_init($checkin_url);
    curl_setopt($curl, CURLOPT_POST, true);
    curl_setopt($curl, CURLOPT_POSTFIELDS, $parameters);
    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
    $response = curl_exec($curl);
-    
+
    return $response;
 }
 </pre>
@@ -134,9 +134,9 @@ The response from this will be in the following format.
                 photo: {
                     prefix: "https://irs0.4sqi.net/img/user/",
                     suffix: "/32_1239135232.jpg",
-                    
+
                 },
-                
+
             },
             venue: {
                 id: "408c5100f964a520c6f21ee3",
@@ -144,7 +144,7 @@ The response from this will be in the following format.
                 contact: {
                     phone: "2123877685",
                     formattedPhone: "(212) 387-7685",
-                    
+
                 },
                 location: {
                     address: "E 7th St. to E 10th St.",
@@ -156,7 +156,7 @@ The response from this will be in the following format.
                     state: "NY",
                     country: "United States",
                     cc: "US",
-                    
+
                 },
                 categories: [
                     {
@@ -167,33 +167,33 @@ The response from this will be in the following format.
                         icon: {
                             prefix: "https://foursquare.com/img/categories_v2/parks_outdoors/park_",
                             suffix: ".png",
-                            
+
                         },
                         primary: true,
-                        
+
                     },
-                    
+
                 ],
                 verified: true,
                 stats: {
                     checkinsCount: 25523,
                     usersCount: 8932,
                     tipCount: 85,
-                    
+
                 },
                 url: "http://www.nycgovparks.org/parks/tompkinssquarepark",
                 likes: {
                     count: 0,
                     groups: [
-                        
+
                     ],
-                    
+
                 },
                 specials: {
                     count: 0,
-                    
+
                 },
-                
+
             },
             source: {
                 name: "foursquare for Web",
@@ -215,21 +215,21 @@ The response from this will be in the following format.
                             photo: {
                                 prefix: "https://irs0.4sqi.net/img/user/",
                                 suffix: "/32_1239135232.jpg",
-                                
+
                             },
-                            
+
                         },
                         visibility: "priviate"
                     }
                 ],
-                
+
             },
             likes: {
                 count: 0,
                 groups: [
-                    
+
                 ],
-                
+
             },
             like: false,
             score: {
@@ -239,17 +239,17 @@ The response from this will be in the following format.
                         points: 1,
                         icon: "https://foursquare.com/img/points/defaultpointsicon2.png",
                         message: "Have fun out there!",
-                        
+
                     },
-                    
+
                 ],
-                
+
             },
-            
+
         },
-        
+
     },
-    
+
 }
 </pre>
 

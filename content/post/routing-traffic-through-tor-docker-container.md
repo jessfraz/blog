@@ -18,14 +18,14 @@ some unsavory things such as iptables.
 I have a fork of the tor source code and a branch with a Dockerfile. I have
 submitted upstream... we will see if they take it. The final result is the
 image [jess/tor](https://registry.hub.docker.com/u/jess/tor), but you can
-easily build locally from my repo 
+easily build locally from my repo
 [jfrazelle/tor](https://github.com/jfrazelle/tor/tree/add-dockerfile).
 
 So let's run the image:
 
 ```bsh
 $ docker run -d \
-    --net host \ 
+    --net host \
     --restart always \
     --name tor \
     jess/tor
@@ -44,7 +44,7 @@ Contain yourselves, I am about to throw down some sick iptables rules.
 
 ```bsh
 #!/bin/bash
-# Most of this is credited to 
+# Most of this is credited to
 # https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxy
 # With a few minor edits
 
@@ -87,7 +87,7 @@ done
 
 # allow only Tor output
 iptables -A OUTPUT -m owner --uid-owner $_tor_uid -j ACCEPT
-iptables -A OUTPUT -j REJECT 
+iptables -A OUTPUT -j REJECT
 ```
 Check that we are routing via [check.torproject.org](https://check.torproject.org).
 

@@ -17,7 +17,7 @@ Most people use Docker for containing applications to deploy into production or 
 
 I use Docker to run all the desktop apps on my computers.<!--more-->
 
-But why would I even want to run all these apps in containers? Well let me explain. I used to be an OS X user, and the great thing about OS X is the OS X App Sandbox. 
+But why would I even want to run all these apps in containers? Well let me explain. I used to be an OS X user, and the great thing about OS X is the OS X App Sandbox.
 
 > App Sandbox is an access control technology provided in OS X, enforced at the kernel level. Its strategy is twofold:
 
@@ -27,7 +27,7 @@ But why would I even want to run all these apps in containers? Well let me expla
 
 > <small>[Apple About App Sandbox](https://developer.apple.com/library/mac/documentation/Security/Conceptual/AppSandboxDesignGuide/AboutAppSandbox/AboutAppSandbox.html)</small>
 
-I am using the Apple App Sandbox as an example so people can grasp the concept easily. I am **not** saying this is exactly like that and has all the features. This is not a sandbox. It is more like a cool hack. 
+I am using the Apple App Sandbox as an example so people can grasp the concept easily. I am **not** saying this is exactly like that and has all the features. This is not a sandbox. It is more like a cool hack.
 
 I hate installing things on my host and the files getting everywhere. I wanted the ability to delete an app and know it is gone fully without some random file hanging around. This gave me that. Not only that, I can control how much CPU and Memory the app uses. Yes, the cpu/memory hungry chrome is now perfectly contained!
 

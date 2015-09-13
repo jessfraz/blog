@@ -23,7 +23,7 @@ breaks and I could punch a whole in a wall... but who doesn't?
 
 First let me take a chance to familiarize you with how we test Docker. Docker's
 tests run in a Docker container. We use Jenkins as our CI mostly because we
-needed a lot of flexibility and control. 
+needed a lot of flexibility and control.
 
 Obviously everything in our infrastructure runs in Docker, so that even goes
 for Jenkins. We use the [official
@@ -34,8 +34,8 @@ Docker itself has 6 different storage driver options. These are `aufs`,
 each of these hooked up to our Jenkins instance for testing.
 
 Along with all the storage driver options, Docker also runs on any linux
-distro and a world of different linux kernel versions. In order to be able 
-to try and test all this differentiation, each server runs a different kernel 
+distro and a world of different linux kernel versions. In order to be able
+to try and test all this differentiation, each server runs a different kernel
 and all major linux distros are accounted for.
 
 With every push to master on the docker/docker repo, we run tests on the entire
@@ -56,7 +56,7 @@ Considering the Docker project gets over 100 pull requests a week, with
 multiple revision cycles you can only imagine the number of builds we process
 in a day.
 
-The manager for the PR builds is a small service called 
+The manager for the PR builds is a small service called
 [leeroy](https://github.com/jfrazelle/leeroy) which also makes
 sure every PR has been signed with the Docker DCO before it even triggers
 a build. This of course also runs in a container.
@@ -74,7 +74,7 @@ know when _heaven forbid_ one of them goes down.
 
 We have consul running **in a container** on all 50 servers in our
 infrastructure. This is AMAZING. We use a sweet project, [consul
-alerts](https://github.com/AcalephStorage/consul-alerts), also running in a 
+alerts](https://github.com/AcalephStorage/consul-alerts), also running in a
 container, to let us know when a node or service on a node goes down.
 
 I would honestly be lost without consul. It keeps track via tags of the kernel
@@ -108,7 +108,7 @@ a container ;). Hopefully you are catching on to a theme here...
 What good would being able to try new features be, if you didn't have docs for
 how to use them?
 
-With every push to master, we deploy new docs to 
+With every push to master, we deploy new docs to
 [docs.master.dockerproject.org](http://docs.master.dockerproject.org).
 
 This is done with a [nsqexec service](https://github.com/jfrazelle/nsqexec),
