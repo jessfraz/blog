@@ -7,8 +7,8 @@ description = "How to run a Tor socks5 proxy and privoxy http proxy in Docker co
 
 Okay so this is part 2.5 in my series of posts combining my two
 favorite things, Docker & Tor. If you are just starting here, to catch you up,
-the first post was 
-["How to Route all Traffic through a Tor Docker container"](/post/routing-traffic-through-tor-docker-container/). 
+the first post was
+["How to Route all Traffic through a Tor Docker container"](/post/routing-traffic-through-tor-docker-container/).
 The second was on ["Running a Tor relay with Docker"](/post/running-a-tor-relay-with-docker/).
 I thought it only made sense to show how to set up a Tor socks5 proxy in
 a container, for routing _some_ traffic through Tor; in contrast to the first
@@ -17,8 +17,8 @@ post, where I explained how to route _all_ your traffic.
 
 ### Tor Socks5 Proxy
 
-I have made a Docker image for this which lives at 
-[jess/tor-proxy](https://hub.docker.com/r/jess/tor-proxy/) 
+I have made a Docker image for this which lives at
+[jess/tor-proxy](https://hub.docker.com/r/jess/tor-proxy/)
 on the Docker hub. But I will go over the details so you can build one
 yourself.
 
@@ -87,8 +87,8 @@ $ curl --socks http://localhost:9050  -L http://ifconfig.me
 $ curl --socks http://localhost:9050  -L https://check.torproject.org/api/ip
 ```
 
-If you are like me and use 
-[@ioerror's gpg.conf](https://github.com/ioerror/duraconf/blob/master/configs/gnupg/gpg.conf) 
+If you are like me and use
+[@ioerror's gpg.conf](https://github.com/ioerror/duraconf/blob/master/configs/gnupg/gpg.conf)
 you can uncomment the line:
 
 ```
@@ -99,6 +99,8 @@ Now you can import and search for keys on a key server with
 improved anonymity. Obviously there are a bunch of other things you can use the
 socks proxy for, but I wanted to give this as an example.
 
+_[You could even run chrome in a container through the proxy...](https://github.com/jfrazelle/dotfiles/blob/master/.dockerfunc#L140)_
+
 Can we take this even further? Yes.
 
 ### Privoxy HTTP Proxy
@@ -106,7 +108,7 @@ Can we take this even further? Yes.
 The socks proxy is awesome, but if you want to additionally have an http proxy
 it is super easy!
 
-What we can do is link a Privoxy container to our Tor proxy container. 
+What we can do is link a Privoxy container to our Tor proxy container.
 
 **NOTE:** I have seen people have a Tor socks proxy _and_ Privoxy in the same container.
 But I prefer my approach of 2 different containers, because it is cleaner,
