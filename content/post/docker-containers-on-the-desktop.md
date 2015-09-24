@@ -51,7 +51,7 @@ $ docker run -it \
     -v $HOME/.irssi:/home/user/.irssi \ # mounts irssi config in container
     --read-only \ # cool new feature in 1.5
     --name irssi \
-    irssi
+    jess/irssi
 </pre>
 
 ![irssi](/img/irssi.png)
