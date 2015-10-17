@@ -25,7 +25,7 @@ So now let's actually get started.<!--more-->
 
 The below installation was done on my MacBook Pro Retina (15-inch, Late 2013).
 
-You will also need one of these [nifty ethernet to thunderbolt adapters](http://store.apple.com/us/product/MD463ZM/A/thunderbolt-to-gigabit-ethernet-adapter).
+You will also need one of these [nifty ethernet to thunderbolt adapters](http://www.apple.com/shop/product/MD463LL/A/thunderbolt-to-gigabit-ethernet-adapter).
 
 ### rEFInd Boot Manager
 
