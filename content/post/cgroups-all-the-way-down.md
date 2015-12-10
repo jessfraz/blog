@@ -3,6 +3,7 @@ date = "2015-10-02T11:47:47-07:00"
 title = "Cgroups all the way down"
 author = "Jessica Frazelle"
 description = "How to prevent decompression bomb attacks with control groups and containers."
+draft = true
 +++
 
 I went to a meetup recently where a talk was given by Cara Marie of the NCC
