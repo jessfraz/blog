@@ -5,7 +5,7 @@ author = "Jessica Frazelle"
 description = "How to route your traffic through a Tor Docker container."
 +++
 
-This blog is post is going to explain how to route traffic on your host through
+This blog post is going to explain how to route traffic on your host through
 a Tor Docker container.
 
 It's actually a lot simplier than you would think. But it involves dealing with
