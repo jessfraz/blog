@@ -3,6 +3,7 @@ date = "2016-01-04T23:21:07Z"
 title = "How to use the new Docker Seccomp profiles"
 author = "Jessica Frazelle"
 description = "Debugging and creating custom seccomp profiles for Docker containers."
+draft = true
 +++
 
 In case you missed it, we recently merged a default seccomp profile for Docker
