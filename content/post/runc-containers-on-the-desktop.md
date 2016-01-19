@@ -84,7 +84,7 @@ was the new `pids` cgroup stats, that [Aleksa Sarai](https://github.com/cyphar) 
 to the kernel and runc (and soon docker ;).
 
 `runc` has a command `runc events` which outputs json stats in an interval. All you have
-to do is pipe that to magneto to get the awesome ux.
+to do is pipe that to [magneto](https://github.com/jfrazelle/magneto) to get the awesome ux.
 
 The following is for my chrome container:
 
