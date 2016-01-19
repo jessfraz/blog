@@ -6,7 +6,7 @@ description = "How to run all my previous docker containers with runc, also how 
 +++
 
 Almost exactly a year ago, I wrote a post about running
-[Docker containers on the desktop](/post/docker-containers-on-the-desktop/).
+[Docker Containers on the Desktop](/post/docker-containers-on-the-desktop/).
 Well it is a new year, and I have ended up converting all my docker containers to
 [runc](https://github.com/opencontainers/runc) configs, so it's the perfect time
 for a new blog post.
@@ -16,16 +16,16 @@ out [opencontainers.org](https://www.opencontainers.org/).
 
 *Why the switch?* you ask... well let me explain.
 
-So our fellow Docker maintainer and pal [Phil Estes](https://twitter.com/estesp)
+Our fellow Docker maintainer and pal [Phil Estes](https://twitter.com/estesp)
 made an awesome patch to add user namespaces to Docker.
 
 Now me, being the completely insane containerizer that I am, desperately wanted to
-run all my crazy sound/video device mounting containers in a user namespace.
+run all my crazy sound/video device mounting containers in user namespaces.
 
-Well the way this could work is by having custom `gid_map`s for the `audio` and
-`video` groups to map to the host groups so we would have permission to access
+Well the way this could work is by having a custom `gid_map` for the `audio` and
+`video` groups to map to the host groups so we can have permission to access
 these devices in the container. In layman's terms, I basically wanted to poke a
-teeny tiny hole in the user namespace to be able to have permission to use my sound
+teeny tiny map in the user namespace to be able to have permission to use my sound
 and video devices.
 
 Obviously this was not the design of the feature, but since `runc` exposes the
@@ -49,7 +49,8 @@ converted _all_ my containers. Obviously I found a way to generate them.
 
 Introducing [github.com/jfrazelle/riddler](https://github.com/jfrazelle/riddler)!
 `riddler` will take a running/stopped docker container and convert the inspect information
-into the oci spec (which can be run by `runc`, or any other oci compatible tool).
+into the [oci spec](https://github.com/opencontainers/specs)
+(which can be run by `runc`, or any other oci compatible tool).
 
 It has some opinionated features in that it will always try to set up a `gid_map`
 that works with your devices. You can also pass custom hooks to automatically add
@@ -60,7 +61,7 @@ me to the next tool I built.
 
 Say hello to [github.com/jfrazelle/netns](https://github.com/jfrazelle/netns)!
 So you want your runc containers to have networking, eh? How about something super
-simple like a bridge? `netns` does just that. It sets up a simple bridge network
+simple like a bridge? `netns` does just that. It sets up a bridge network
 for all your runc containers when added via the `prestart` hook.
 
 It's actually super simple code as well thanks to the awesome
@@ -78,7 +79,7 @@ You can find all my hook scripts in
 
 ### Magneto
 
-The last tool I made was really a copy of `docker stats`. But what I really wanted
+The last tool I made was a copy of `docker stats` for `runc`. But what I really wanted
 was the new `pids` cgroup stats, that [Aleksa Sarai](https://github.com/cyphar) added
 to the kernel and runc (and soon docker ;).
 
@@ -87,7 +88,7 @@ to do is pipe that to magneto to get the awesome ux.
 
 The following is for my chrome container:
 
-```console
+```bash
 $ sudo runc events | magneto
 ```
 
@@ -101,7 +102,7 @@ If you are interested in all the configs for my containers, checkout
 I even included a [`systemd` service file](https://github.com/jfrazelle/containers/blob/master/runc%40.service)
 that can easily run any container (without a tty) in this directory via:
 
-```console
+```bash
 $ sudo systemctl start runc@foldername
 
 # for example:
