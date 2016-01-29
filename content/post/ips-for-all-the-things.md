@@ -7,7 +7,7 @@ description = "How to run Docker containers with custom ips."
 
 This is so cool I can hardly stand it.
 
-In Docker 1.10, the awesome libnetwork team added the ability to specifiy
+In Docker 1.10, the awesome libnetwork team added the ability to specify
 a specific IP for a container. If you want to see the pull request it's here:
 [docker/docker#19001](https://github.com/docker/docker/pull/19001).
 
