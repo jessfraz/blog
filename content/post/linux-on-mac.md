@@ -413,4 +413,4 @@ Other than that, everything is perfect, and thunderbolt hotplugging is a dream.
 The retina resolution is absolutely stunning, it's seriously hard for me to switch to my Thinkpad
 which has 32GB of memory (so I should want to switch).
 
-Feel free to reach out to me via twitter [@frazelledazzell](https://twitter.com/frazelledazzell) with any updates or how much you love your linux partition.
+Feel free to reach out to me via twitter [@jessfraz](https://twitter.com/jessfraz) with any updates or how much you love your linux partition.
