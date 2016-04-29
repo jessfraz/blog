@@ -1,12 +1,13 @@
-FROM debian:jessie
+FROM alpine
 MAINTAINER Jessie Frazelle <jess@docker.com>
 
-RUN apt-get update && apt-get install -y \
+RUN apk --update add \
 	ca-certificates \
 	curl \
-	s3cmd \
-	--no-install-recommends \
-	&& rm -rf /var/lib/apt/lists/*
+	tar \
+	py-pip \
+	&& rm -rf /var/cache/apk/* \
+	&& pip install s3cmd
 
 ENV HUGO_VERSION 0.14
 RUN curl -sSL https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux_amd64.tar.gz | tar -v -C /usr/local/bin -xz --strip-components 1 && \
@@ -24,4 +25,4 @@ WORKDIR /usr/src/blog/
 # add files
 COPY . /usr/src/blog/
 
-ENTRYPOINT [ "./release.sh" ]
+CMD [ "./release.sh" ]

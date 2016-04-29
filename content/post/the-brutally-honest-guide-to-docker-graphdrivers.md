@@ -17,8 +17,8 @@ out. Let's begin.
 
 ### Overlay
 
-Overlayfs was added in the 3.17 kernel. This is important to note because if
-you are running overlay on an older kernel than 3.17 you are either:
+Overlayfs was added in the 3.18 kernel. This is important to note because if
+you are running overlay on an older kernel than 3.18 you are either:
 
 1. Not running the same overlay.
 2. Running a kernel with overlayfs backported onto it, which is what we call
@@ -48,7 +48,7 @@ think a lot of people are willing to do.
 
 Zfs is another good one, of course, like btrfs it takes some setup and installing
 the `zfs.ko` on your system. But this driver might become a whole lot more
-popular if Ubuntu 16.10 ships with zfs support.
+popular if Ubuntu 16.04 ships with zfs support.
 
 ### Devicemapper
 
@@ -67,7 +67,7 @@ off about it.
 
 This is how I think of devicemapper.
 
-It works great on RedHat.
+It works on RedHat.
 
 ### Vfs
 
