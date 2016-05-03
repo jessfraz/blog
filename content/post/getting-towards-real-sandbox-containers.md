@@ -28,7 +28,7 @@ sandbox and containers is cgroups. Cgroups control what a process can use. Where
 control what a process can see. Containers have cgroup resource management built in. Creating cgroups from an unprivileged
 user is a bit difficult, especially device control groups.
 
-If we ignore, for the time being, this huge fire tire that is creating cgroups as an unprivileged user, then
+If we ignore, for the time being, this huge tire fire that is creating cgroups as an unprivileged user, then
 unprivileged containers are easy. User namespaces allow us to create all the namespaces without any further privileges.
 The one key caveat being that the `{uid,gid}_map` must have the current host user mapped to the container uid that the process
 will be run as. The size of the `{uid,gid}_map` can also only be 1. For example if you are running as uid 1000 to spawn the container, your
