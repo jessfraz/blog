@@ -10,7 +10,7 @@ Containers are all the rage right now.
 At the very core of containers are the same Linux primitives that are also used to create application sandboxes.
 The most common sandbox you may be familiar with is the Chrome sandbox. You can read in detail about the Chrome sandbox
 here: [chromium.googlesource.com/chromium/src/+/master/docs/linux_sandboxing.md](https://chromium.googlesource.com/chromium/src/+/master/docs/linux_sandboxing.md).
-The relevant aspect for this article is the fact it uses user namespaces and seccomp. Other depreciated features include AppArmor
+The relevant aspect for this article is the fact it uses user namespaces and seccomp. Other deprecated features include AppArmor
 and SELinux. Sound familiar? That's because containers, as you've come to know them today, share the same features.
 
 #### Why are containers not currently being considered a "sandbox"?
@@ -54,6 +54,7 @@ spawned a
 #### Where does this put us in the "sandbox" landscape?
 
 With this implementation we get:
+
 - namespaces
 - apparmor
 - selinux
@@ -62,8 +63,8 @@ With this implementation we get:
 
 **all created by an unprivileged user!**
 
-Sandboxes should be very application specific, using custom
-AppArmor profiles, Seccomp profiles and the likes. A generic container will
+Sandboxes should be very application-specific, using custom
+AppArmor profiles, Seccomp profiles and the like. A generic container will
 never be equivalent to a sandbox because it's too universal to really lock down
 the application.
 
@@ -73,13 +74,13 @@ an attacker might see from inside a very strict container with custom
 AppArmor/Seccomp profiles greatly differs than that without the use of
 containers. With namespaces we limit the application from seeing various things
 such as network, mounts, processes, etc. And with cgroups we can further limit
-what the attacker can use be it a large amout of memory, cpu, or even a fork
+what the attacker can use, be it a large amount of memory, cpu, or even a fork
 bomb.
 
 #### But what about cgroups?
 
 We _can_ set up cgroups for memory, blkio, cpu, and
-pids with an unpriviledged user as long as the cgroup subsystem has been chowned to the
+pids with an unprivileged user as long as the cgroup subsystem has been chowned to the
 correct user. Devices are a different story though. Considering the fact you
 cannot mknod in a user namespace it is not the worst thing in the world.
 
@@ -89,7 +90,7 @@ for unprivileged containers at all. But in the future maybe it _could_ be (if we
 
 #### What is the awesome sauce we all gain from this?
 
-Well judging by the original github issue about unpriviledged runc containers, the largest group of commenters is from
+Well judging by the original GitHub issue about unprivileged runc containers, the largest group of commenters is from
 the scientific community who are restricted to not run certain programs as root.
 
 
