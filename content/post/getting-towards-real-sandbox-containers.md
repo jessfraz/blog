@@ -73,7 +73,7 @@ an attacker might see from inside a very strict container with custom
 AppArmor/Seccomp profiles greatly differs than that without the use of
 containers. With namespaces we limit the application from seeing various things
 such as network, mounts, processes, etc. And with cgroups we can further limit
-what the attacker can use be it a large about of memory, cpu, or even a fork
+what the attacker can use be it a large amout of memory, cpu, or even a fork
 bomb.
 
 #### But what about cgroups?
