@@ -28,7 +28,7 @@ sandbox and containers is cgroups. Cgroups control what a process can use. Where
 control what a process can see. Containers have cgroup resource management built in. Creating cgroups from an unprivileged
 user is a bit difficult, especially device control groups.
 
-If we ignore, for the time being, the issues with creating cgroups as an unprivileged user, then
+If we ignore, for the time being, this huge fire tire that is creating cgroups as an unprivileged user, then
 unprivileged containers are easy. User namespaces allow us to create all the namespaces without any further privileges.
 The one key caveat being that the `{uid,gid}_map` must have the current host user mapped to the container uid that the process
 will be run as. The size of the `{uid,gid}_map` can also only be 1. For example if you are running as uid 1000 to spawn the container, your
@@ -78,12 +78,12 @@ bomb.
 
 #### But what about cgroups?
 
-As a reminder, cgroups control what a process can use. We _can_ set up cgroups for memory, blkio, cpu, and
+We _can_ set up cgroups for memory, blkio, cpu, and
 pids with an unpriviledged user as long as the cgroup subsystem has been chowned to the
 correct user. Devices are a different story though. Considering the fact you
 cannot mknod in a user namespace it is not the worst thing in the world.
 
-Let's not completely rule out the devices cgroup entirely. In the future this might be possible. In kernels 4.6+, there is a new
+Let's not completely rule out the devices cgroup. In the future this might be entirely possible. In kernels 4.6+, there is a new
 cgroup namespace. For now all this does is mask the cgroups path inside the container so it is not entirely useful
 for unprivileged containers at all. But in the future maybe it _could_ be (if we ask nice enough?).
 
@@ -94,7 +94,7 @@ the scientific community who are restricted to not run certain programs as root.
 
 
 But there is so much more that this can be used for. One of my most anticipated use cases is the work being done by
-[Alex Larsson](https://blogs.gnome.org/alexl/) on xdg-app to run applications in sandboxes.
+[Alex Larsson](https://blogs.gnome.org/alexl/) on [xdg-app](https://wiki.gnome.org/Projects/SandboxedApps) to run applications in sandboxes.
 Definitely checkout [bubblewrap](https://github.com/projectatomic/bubblewrap) if you are interested in this.
 
 Also [subgraph](https://subgraph.com/), the container based OS which specializes in security and privacy, have this same idea in mind.
