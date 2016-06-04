@@ -26,13 +26,14 @@ To quote some very smart people I've worked with in the past:
 To make this rather unpleasant experience of closing someone's patch request
 easier I have a few ways of going about it. Now of course I am no expert in this
 area, but on the Docker project we have
-[stats for just about everything](https://github.com/icecrime/vossibility-stack).
+(stats for just about everything)[https://github.com/icecrime/vossibility-stack].
 I _might_ have used this data to make a "Ultimate
 Dream Killers" chart with the maintainers who closed (without merging) the most
 pull requests, AND I _might_ have been #1 on this chart for some time.
 
 None of the suggestions below are going to save you from that person hate
 mailing you since you didn't merge their patch. But hey anything helps.
+
 
 1. The ego stroke and close.
 
