@@ -95,7 +95,7 @@ mailing you since you didn't merge their patch. But hey anything helps.
     It's important to note if you are going to carry a patch, DO NOT close the
     original patch request until you have opened your carry patch. You
     obviously need to let the contributor know before hand you will be carrying
-    it so they know they don't waste their time. Also be sure to keep their
+    it so they don't waste their time. Also be sure to keep their
     original commit's and add yours on top so the right people get
     credit :)
 
