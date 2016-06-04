@@ -37,7 +37,7 @@ To quote some very smart people I've worked with in the past:
 To make this rather unpleasant experience of closing someone's patch request
 easier I have a few ways of going about it. Now of course I am no expert in this
 area, but on the Docker project we have
-stats for just about everything.
+[stats for just about everything](https://github.com/icecrime/vossibility-stack).
 I _might_ have used this data to make a "Ultimate
 Dream Killers" chart with the maintainers who closed (without merging) the most
 pull requests, AND I _might_ have been #1 on this chart for some time.
@@ -54,9 +54,9 @@ mailing you since you didn't merge their patch. But hey anything helps.
 
     >"Thanks so much for spending time on this amazing patch. We really
     appreciate it. However I do not think this is something we want to add
-    right now, but in the future this can change. Thanks so much!"
+    right now, because of yadda yadda but in the future this can change. Thanks so much!"
 
-    `AAAANNNDD close.`
+    AAAANNNDD close.
 
 2. Close early.
 
@@ -75,7 +75,7 @@ mailing you since you didn't merge their patch. But hey anything helps.
     >Hi X,
     We really appreciate you taking the time to make this patch. However the
     design was not discussed prior to writing it. We do see potential in what
-    you are trying to build here. But we think it would be more effective as
+    you are trying to build, but we think it would be more effective as
     blah, blah, and blah.
     We are going to close this but would love to see you open a patch that
     takes the above direction. Thanks, this could really be an awesome feature!
@@ -96,7 +96,7 @@ mailing you since you didn't merge their patch. But hey anything helps.
     original patch request until you have opened your carry patch. You
     obviously need to let the contributor know before hand you will be carrying
     it so they know they don't waste their time. Also be sure to keep their
-    original commit's and add yours on time so the right people get
+    original commit's and add yours on top so the right people get
     credit :)
 
     Here's an example:
@@ -113,4 +113,6 @@ These are just a few of the techniques we've used in the past. I hope if you
 are a maintainer of a project they are helpful for you, but I would love to
 know your tips as well.
 
-Happy Maintaining!
+Happy Maintaining and always be closing!
+
+![always-be-closing](/img/always-be-closing.gif)
