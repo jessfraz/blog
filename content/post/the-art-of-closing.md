@@ -1,6 +1,6 @@
 +++
 date = "2016-06-04T08:09:26-07:00"
-title = "The art of closing"
+title = "The Art of Closing"
 author = "Jessica Frazelle"
 description = "How to close patches for your open source project you don't want."
 +++
@@ -12,7 +12,7 @@ idea or discourage you. Tons of patch requests get merged per day, but this is
 going to focus on the ones that don't.
 
 I've talked to maintainers from several different open source projects, mesos,
-kubernetes, chromium, and they all agree this is one of the hardest parts of
+kubernetes, chromium, and they all agree one of the hardest parts of
 being a maintainer is saying "No" to patches you don't want.
 
 To quote some very smart people I've worked with in the past:
