@@ -25,6 +25,7 @@ release: build
 run: clean build
 	docker run -d \
 		-v $(CURDIR):/usr/src/blog \
+		-p $(PORT):$(PORT)\
 		--name blog \
 		$(DOCKER_IMAGE) hugo server --port=$(PORT) --bind=0.0.0.0
 
