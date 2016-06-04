@@ -46,21 +46,17 @@ None of the suggestions below are going to save you from that person hate
 mailing you since you didn't merge their patch. But hey anything helps.
 
 
-</br>
-
-1. The ego stroke and close. </br>
+1. The ego stroke and close.
 
     People love hearing how awesome they are. They also love hearing how
     awesome their code is. In this option you use this to your advantage.
     Here's an example:
 
-    <blockquote>
-    "Thanks so much for spending time on this amazing patch. We really
+    >"Thanks so much for spending time on this amazing patch. We really
     appreciate it. However I do not think this is something we want to add
     right now, but in the future this can change. Thanks so much!"
-    </blockquote>
 
-    AAAANNNDD close.
+    `AAAANNNDD close.`
 
 2. Close early.
 
@@ -76,15 +72,13 @@ mailing you since you didn't merge their patch. But hey anything helps.
     flaws etc.) I believe it's best to close with opportunity for the person
     open another patch with the desired design. Here's an example:
 
-    <blockquote>
-    Hi X,
+    >Hi X,
     We really appreciate you taking the time to make this patch. However the
     design was not discussed prior to writing it. We do see potential in what
     you are trying to build here. But we think it would be more effective as
     blah, blah, and blah.
     We are going to close this but would love to see you open a patch that
     takes the above direction. Thanks, this could really be an awesome feature!
-    </blockquote>
 
     See how the ego stroke comes in handy here too :). AAAAAAND close.
 
@@ -107,11 +101,9 @@ mailing you since you didn't merge their patch. But hey anything helps.
 
     Here's an example:
 
-    <blockquote>
-    Hi X, we really like your patch, but since there hasn't been a response in
+    >Hi X, we really like your patch, but since there hasn't been a response in
     Y days we are going to carry this patch and make the edits ourselves. We
     will link to the new pull request here when it's ready.
-    </blockquote>
 
     Maintainer works on patch... opens new patch... then you can close the
     original patch request. See if you close it before opening the new one, the
