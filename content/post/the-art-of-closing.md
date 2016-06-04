@@ -17,16 +17,27 @@ being a maintainer is saying "No" to patches you don't want.
 
 To quote some very smart people I've worked with in the past:
 
+
+
+
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">One of the numerous examples of information asymmetry in open source: contributors put effort in a pet PR, but maintainers manage cattle. 🕒</p>&mdash; Arnaud Porterie (@icecrime) <a href="https://twitter.com/icecrime/status/733682351943733249">May 20, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Rule #1 of open-source: no is temporary, yes is forever.</p>&mdash; Solomon Hykes (@solomonstre) <a href="https://twitter.com/solomonstre/status/715277134978113536">March 30, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+
+
+
+
 To make this rather unpleasant experience of closing someone's patch request
 easier I have a few ways of going about it. Now of course I am no expert in this
 area, but on the Docker project we have
-(stats for just about everything)[https://github.com/icecrime/vossibility-stack].
+stats for just about everything.
 I _might_ have used this data to make a "Ultimate
 Dream Killers" chart with the maintainers who closed (without merging) the most
 pull requests, AND I _might_ have been #1 on this chart for some time.
@@ -35,7 +46,9 @@ None of the suggestions below are going to save you from that person hate
 mailing you since you didn't merge their patch. But hey anything helps.
 
 
-1. The ego stroke and close.
+</br>
+
+1. The ego stroke and close. </br>
 
     People love hearing how awesome they are. They also love hearing how
     awesome their code is. In this option you use this to your advantage.
