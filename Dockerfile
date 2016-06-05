@@ -1,12 +1,11 @@
 FROM alpine
 MAINTAINER Jessie Frazelle <jess@docker.com>
 
-RUN apk --update add \
+RUN apk --no-cache add \
 	ca-certificates \
 	curl \
 	tar \
 	py-pip \
-	&& rm -rf /var/cache/apk/* \
 	&& pip install s3cmd
 
 ENV HUGO_VERSION 0.14
