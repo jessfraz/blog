@@ -33,7 +33,7 @@ Obviously this was not the design of the feature, but since `runc` exposes the
 This is the awesome thing about `runc`. You, the user, have all the control.
 
 So for chrome, this is what you get for mappings:
-[github.com/jfrazelle/containers:chrome/runtime.json#L144](https://github.com/jfrazelle/containers/blob/master/chrome/runtime.json#L144).
+[github.com/jfrazelle/containers:chrome/config.json#L223](https://github.com/jfrazelle/containers/blob/master/chrome/config.json#L223).
 If you look closely, or know what you are looking at, you can see group `29` and `44`
 are mapped to the same group ids as the host.
 
