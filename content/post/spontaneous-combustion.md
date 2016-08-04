@@ -51,7 +51,7 @@ Growing up my parents always made us clean out our closets over summer. My
 sister and I had just done that. In this massive purge of items that had fallen
 into closet abyss throughout the year we also threw away our Sunday school books.
 
-In one of these books was a page with the Ten Commandments. Now I'm not a
+Now I'm not a
 religious person, on my Facebook page my religion is literally "hugs" so take
 this as you want. Those books were in the trash cans that spontaneously
 combusted. The pages were left burned all over the house. But one page made its
