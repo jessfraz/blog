@@ -1,8 +1,8 @@
 +++
 date = "2016-08-07T08:09:26-07:00"
-title = "Analyzing GitHub Pull Request Data with Big Query"
+title = "Analyzing GitHub Pull Request Data with BigQuery"
 author = "Jessica Frazelle"
-description = "Analyzing GitHub Pull Request Data with Google Big Query."
+description = "Analyzing GitHub Pull Request Data with Google BigQuery."
 +++
 
 I really enjoyed [Felipe Hoffa’s post on Analyzing GitHub issues and comments with BigQuery

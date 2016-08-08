@@ -650,7 +650,10 @@ th {
 table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: block;
+  overflow-x:auto;
 }
 table > thead > tr > th,
 table > tbody > tr > th,
