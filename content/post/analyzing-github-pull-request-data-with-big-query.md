@@ -97,8 +97,7 @@ SELECT
   COUNT(*) c,
   COUNT(DISTINCT actor.id) authors,
   SUM(CASE WHEN JSON_EXTRACT(payload, '$.pull_request.merged') IN ('true') THEN 1 ELSE 0 END) AS merged,
-    SUM(CASE WHEN JSON_EXTRACT(payload, '$.pull_request.merged') IN ('false') THEN 1 ELSE 0 END) AS closed,
-
+  SUM(CASE WHEN JSON_EXTRACT(payload, '$.pull_request.merged') IN ('false') THEN 1 ELSE 0 END) AS closed,
 FROM
   [githubarchive:year.2015]
 WHERE
@@ -149,17 +148,10 @@ FROM
 WHERE
   type IN ( 'PullRequestEvent')
   AND JSON_EXTRACT(payload, '$.action') IN ('"closed"')
-  AND repo.name IN (
-  SELECT
-    repo.name
-  FROM
-    [githubarchive:year.2015]
-  WHERE
-    JSON_EXTRACT(payload, '$.pull_request.merged') IN ('true')
-  GROUP BY
-    repo.name )
 GROUP BY
   repo.name
+HAVING
+  merged > 10
 ORDER BY
   authors DESC
 LIMIT
@@ -204,17 +196,10 @@ FROM
 WHERE
   type IN ( 'PullRequestEvent')
   AND JSON_EXTRACT(payload, '$.action') IN ('"closed"')
-  AND repo.name IN (
-  SELECT
-    repo.name
-  FROM
-    [githubarchive:year.2015]
-  WHERE
-    JSON_EXTRACT(payload, '$.pull_request.merged') IN ('true')
-  GROUP BY
-    repo.name )
 GROUP BY
   repo.name
+HAVING
+  merged > 10
 ORDER BY
   authors DESC
 LIMIT
@@ -264,17 +249,10 @@ FROM
 WHERE
   type IN ( 'PullRequestEvent')
   AND JSON_EXTRACT(payload, '$.action') IN ('"closed"')
-  AND repo.name IN (
-  SELECT
-    repo.name
-  FROM
-    [githubarchive:year.2015]
-  WHERE
-    JSON_EXTRACT(payload, '$.pull_request.merged') IN ('true')
-  GROUP BY
-    repo.name )
 GROUP BY
   repo.name
+HAVING
+  merge_ratio > 5
 ORDER BY
   authors DESC
 LIMIT
