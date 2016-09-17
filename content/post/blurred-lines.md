@@ -112,7 +112,7 @@ the most.
 
 When you LGTM a pull request it is there forever, publicly. You can of course
 change your mind and revert. But the second that feature gets into
-a release, it will take a _very_ long time to depreciate it out if you feel like
+a release, it will take a _very_ long time to deprecate it out if you feel like
 you made the wrong decision. Someone will wind up relying on it and removing it
 will become a bikeshed only leading to community disagreement.
 
