@@ -2,7 +2,7 @@
 date = "2016-09-17T08:09:26-07:00"
 title = "Blurred Lines"
 author = "Jessica Frazelle"
-description = "The intricacies of "choosing your battle" and how personal passion for a project might conflict with corporate motives."
+description = "The intricacies of 'choosing your battle' and how personal passion for a project might conflict with corporate motives."
 +++
 
 Last week, I gave a talk at [Github Universe](http://githubuniverse.com/program/sessions/#blurry-lines)
