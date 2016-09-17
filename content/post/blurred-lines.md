@@ -28,7 +28,7 @@ If you have contributed to an open source project before, you know that feeling
 when your first pull request to a project is merged. It is magical. In that
 moment you have become a part of something so much bigger than yourself.
 
-> What happens to this fiery passion when it is fueled by a paycheck from a company?
+### What happens to this fiery passion when it is fueled by a paycheck from a company?
 
 This is where things get complicated. When should you fight? When should you
 compromise?
