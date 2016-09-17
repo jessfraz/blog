@@ -44,12 +44,12 @@ In my talk (which I will link to the video when it comes out), I told a brief
 history of how we evolved the Docker core team during my time there. We even
 had three different names: core, meta, engine (yet kept the same team members
 the entire time). I'm not going to go over all those stories so I suggest you
-checkout the video, but these are the lessons we learned.
+check out the video, but these are the lessons we learned.
 
 ### Hire from the community.
 
 Previous to joining Docker I had used Docker, given talks on Docker, and
-contributed to the project. The startup I worked at previously built it's
+contributed to the project. The startup I worked at previously built its
 infrastructure around Docker. All members of the Docker core team were a part
 of the community before joining. This is important.
 
@@ -75,7 +75,7 @@ Whether you are contributing code, contributing documentation, commenting on
 issues, or doing code reviews you are eligible to become a maintainer after
 regular activity.
 
-This is key because this eliminates the "it's all about who you know scenario."
+This is key because this eliminates the "it's all about who you know" scenario.
 Without hard data of contributions there is no way to be sure you are not
 overlooking some amazing gem in your project that should be rewarded for their
 hard work.
@@ -118,7 +118,7 @@ will become a bikeshed only leading to community disagreement.
 
 ### LGTM is tied to the individual who said it.
 
-You cannot get a LGTM from a corporation, you get it from an individual. I have
+You cannot get a LGTM from a corporation; you get it from an individual. I have
 never seen a company with a GitHub account going around doing code reviews.
 People do code reviews.
 
@@ -131,7 +131,7 @@ They will make sure they really mean it before they say it.
 Do not isolate your "core" team from the rest of the company. Isolation will only
 create a non-inviting atmosphere to work in.
 
-You are all on the same team, you can find a way to work together and compromise
+You are all on the same team; you can find a way to work together and compromise
 to benefit both the company AND the community.
 
 ## Go and succeed!
