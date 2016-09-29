@@ -11,7 +11,7 @@ a Tor Docker container.
 It's actually a lot simplier than you would think. But it involves dealing with
 some unsavory things such as iptables.
 
-![iptables](https://hugthief.s3.amazonaws.com/gifs/iptables.gif)
+![iptables](https://misc.j3ss.co/gifs/iptables.gif)
 
 ### Run the Image
 
