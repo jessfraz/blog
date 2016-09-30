@@ -2,8 +2,7 @@
 date = "2016-09-30T08:09:26-07:00"
 title = "Scripting Your Way Outta Hell"
 author = "Jessica Frazelle"
-description = "You changed your GitHub username and now all your builds are
-broken. Script your way out of hell."
+description = "You changed your GitHub username and now all your builds are broken. Script your way out of hell."
 +++
 
 It all started innocently enough. I _had_ "jfrazelle" as my GitHub handle for
