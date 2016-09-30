@@ -12,7 +12,7 @@ a specific IP for a container. If you want to see the pull request it's here:
 [docker/docker#19001](https://github.com/docker/docker/pull/19001).
 
 I have a IP Block on OVH for my server with 16 extra public IPs. I totally use
-these for good and not for [evil](https://github.com/jfrazelle/tupperwarewithspears).
+these for good and not for [evil](https://github.com/jessfraz/tupperwarewithspears).
 
 But to use these previously with Docker containers meant hackery with the
 awesome [pipework](https://github.com/jpetazzo/pipework). Or even worse some
@@ -34,5 +34,5 @@ $ curl 203.0.113.2
 ```
 
 It's so amazing I can rewrite
-[tupperwarewithspears](https://github.com/jfrazelle/tupperwarewithspears) to
+[tupperwarewithspears](https://github.com/jessfraz/tupperwarewithspears) to
 use this :D

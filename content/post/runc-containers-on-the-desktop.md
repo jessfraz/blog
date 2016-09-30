@@ -33,7 +33,7 @@ Obviously this was not the design of the feature, but since `runc` exposes the
 This is the awesome thing about `runc`. You, the user, have all the control.
 
 So for chrome, this is what you get for mappings:
-[github.com/jfrazelle/containers:chrome/config.json#L223](https://github.com/jfrazelle/containers/blob/master/chrome/config.json#L223).
+[github.com/jessfraz/containers:chrome/config.json#L223](https://github.com/jessfraz/containers/blob/master/chrome/config.json#L223).
 If you look closely, or know what you are looking at, you can see group `29` and `44`
 are mapped to the same group ids as the host.
 
@@ -47,7 +47,7 @@ converted _all_ my containers. Obviously I found a way to generate them.
 
 ### Riddler
 
-Introducing [github.com/jfrazelle/riddler](https://github.com/jfrazelle/riddler)!
+Introducing [github.com/jessfraz/riddler](https://github.com/jessfraz/riddler)!
 `riddler` will take a running/stopped docker container and convert the inspect information
 into the [oci spec](https://github.com/opencontainers/specs)
 (which can be run by `runc`, or any other oci compatible tool).
@@ -59,7 +59,7 @@ me to the next tool I built.
 
 ### Netns
 
-Say hello to [github.com/jfrazelle/netns](https://github.com/jfrazelle/netns)!
+Say hello to [github.com/jessfraz/netns](https://github.com/jessfraz/netns)!
 So you want your runc containers to have networking, eh? How about something super
 simple like a bridge? `netns` does just that. It sets up a bridge network
 for all your runc containers when added via the `prestart` hook.
@@ -75,7 +75,7 @@ my host's `/etc/hosts` file, so I don't have to remember the ip for the containe
 when I want to reach it.
 
 You can find all my hook scripts in
-[github.com/jfrazelle/containers:hack/scripts](https://github.com/jfrazelle/containers/tree/master/hack/scripts).
+[github.com/jessfraz/containers:hack/scripts](https://github.com/jessfraz/containers/tree/master/hack/scripts).
 
 ### Magneto
 
@@ -84,7 +84,7 @@ was the new `pids` cgroup stats, that [Aleksa Sarai](https://github.com/cyphar) 
 to the kernel and runc (and soon docker ;).
 
 `runc` has a command `runc events` which outputs json stats in an interval. All you have
-to do is pipe that to [magneto](https://github.com/jfrazelle/magneto) to get the awesome ux.
+to do is pipe that to [magneto](https://github.com/jessfraz/magneto) to get the awesome ux.
 
 The following is for my chrome container:
 
@@ -97,9 +97,9 @@ $ sudo runc events | magneto
 ### All the configs
 
 If you are interested in all the configs for my containers, checkout
-[github.com/jfrazelle/containers](https://github.com/jfrazelle/containers).
+[github.com/jessfraz/containers](https://github.com/jessfraz/containers).
 
-I even included a [`systemd` service file](https://github.com/jfrazelle/containers/blob/master/runc%40.service)
+I even included a [`systemd` service file](https://github.com/jessfraz/containers/blob/master/runc%40.service)
 that can easily run any container (without a tty) in this directory via:
 
 ```bash

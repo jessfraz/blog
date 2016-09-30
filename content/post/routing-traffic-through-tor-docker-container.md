@@ -19,7 +19,7 @@ I have a fork of the tor source code and a branch with a Dockerfile. I have
 submitted upstream... we will see if they take it. The final result is the
 image [jess/tor](https://registry.hub.docker.com/u/jess/tor), but you can
 easily build locally from my repo
-[jfrazelle/tor](https://github.com/jfrazelle/tor/tree/add-dockerfile).
+[jessfraz/tor](https://github.com/jessfraz/tor/tree/add-dockerfile).
 
 So let's run the image:
 
@@ -36,7 +36,7 @@ out, the point is to route all our traffic duhhhh so we may as well, otherwise
 would need to change / overwrite some of Docker's iptables rules, and really
 who has time for that shit...
 
-You do? Ok make a PR to [this blog post](https://github.com/jfrazelle/blog).
+You do? Ok make a PR to [this blog post](https://github.com/jessfraz/blog).
 
 ### Routing Traffic
 

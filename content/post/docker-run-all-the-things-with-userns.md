@@ -26,9 +26,9 @@ we obviously want to be a member of those groups to watch Taylor Swift music
 videos.
 
 The full command is below. I even made a custom seccomp whitelist for chrome,
-you can view it in my dotfiles repo: [github.com/jfrazelle/dotfiles](https://github.com/jfrazelle/dotfiles/blob/master/etc/docker/seccomp/chrome.json). Seccomp will be shipped in 1.10 as well, along with a default whitelist! (But I degress that is not the point of this blog post.)
+you can view it in my dotfiles repo: [github.com/jessfraz/dotfiles](https://github.com/jessfraz/dotfiles/blob/master/etc/docker/seccomp/chrome.json). Seccomp will be shipped in 1.10 as well, along with a default whitelist! (But I degress that is not the point of this blog post.)
 
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/chrome/stable/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/chrome/stable/Dockerfile)
 
 ```console
 $ docker run -d \
@@ -56,7 +56,7 @@ stuff is nasty to install, so many dependencies, ewwww. This one was a bit more
 tricky beacuase it involves dbus but it is a way cleaner solution than the way
 I was originally running it.
 
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/notify-osd/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/notify-osd/Dockerfile)
 
 ```console
 $ docker run -d \
@@ -77,7 +77,7 @@ Not to bad right? I am creating those volumes on run so that we can then share
 them with our irssi container. This way when someone pings me I get
 a notification, duh!
 
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/irssi/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/irssi/Dockerfile)
 
 ```console
 $ docker run --rm -it \

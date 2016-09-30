@@ -99,7 +99,7 @@ Now you can import and search for keys on a key server with
 improved anonymity. Obviously there are a bunch of other things you can use the
 socks proxy for, but I wanted to give this as an example.
 
-_[You could even run chrome in a container through the proxy...](https://github.com/jfrazelle/dotfiles/blob/master/.dockerfunc#L140)_
+_[You could even run chrome in a container through the proxy...](https://github.com/jessfraz/dotfiles/blob/master/.dockerfunc#L140)_
 
 Can we take this even further? Yes.
 

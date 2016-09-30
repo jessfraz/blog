@@ -41,7 +41,7 @@ Let's start with some easy text-based applications:
 
 #### 1. Irssi
 
-[Dockerfile](https://github.com/jfrazelle/irssi/blob/master/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/irssi/blob/master/Dockerfile)
 
 Best IRC client.
 
@@ -58,7 +58,7 @@ $ docker run -it \
 
 #### 2. Mutt
 
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/mutt/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/mutt/Dockerfile)
 
 The text based email client that rules!
 
@@ -76,7 +76,7 @@ $ docker run -it \
 
 #### 3. Rainbowstream
 
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/rainbowstream/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/rainbowstream/Dockerfile)
 
 Awesome text based twitter client.
 
@@ -93,7 +93,7 @@ $ docker run -it \
 
 #### 4. Lynx
 
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/lynx/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/lynx/Dockerfile)
 
 The browser everyone loves (to hate). *but secretly I love*
 
@@ -122,7 +122,7 @@ Note my patch was added for `--device /dev/snd` in Docker 1.8, before that you n
 
 #### 5. Chrome
 
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/chrome/stable/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/chrome/stable/Dockerfile)
 
 Pretty sure everyone knows what chrome is, but my image comes with flash and the google talk plugin so you can do hangouts.
 
@@ -144,7 +144,7 @@ $ docker run -it \
 
 #### 6. Spotify
 
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/spotify/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/spotify/Dockerfile)
 
 All the 90s hits you ever wanted and more.
 
@@ -180,7 +180,7 @@ $ docker run -it \
 
 #### 8. Skype
 
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/skype/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/skype/Dockerfile)
 
 The other video conferencer. This relies on running pulseaudio also in
 a container.
@@ -216,7 +216,7 @@ $ docker run -it \
 
 #### 9. Tor Browser
 
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/tor-browser/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/tor-browser/Dockerfile)
 
 Because Tor, duh!
 
@@ -233,7 +233,7 @@ $ docker run -it \
 
 #### 10. Cathode
 
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/cathode/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/cathode/Dockerfile)
 
 That super old school terminal.
 
@@ -247,6 +247,6 @@ $ docker run -it \
 
 ![cathode](/img/cathode.png)
 
-So that's enough examples for now. But of course I have more. All my Dockerfiles live here: [github.com/jfrazelle/dockerfiles](https://github.com/jfrazelle/dockerfiles) and all my docker images are on the hub: [hub.docker.com/u/jess](https://hub.docker.com/u/jess/).
+So that's enough examples for now. But of course I have more. All my Dockerfiles live here: [github.com/jessfraz/dockerfiles](https://github.com/jessfraz/dockerfiles) and all my docker images are on the hub: [hub.docker.com/u/jess](https://hub.docker.com/u/jess/).
 
 Happy Dockerizing!!!

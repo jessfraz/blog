@@ -24,7 +24,7 @@ So here they are:
 2. `--export-dynamic`
 
     This flag tells the linker to add all the symbols to the dynamic symbol
-    table. This is especially important if you want to do ["The Macgyver of Dlopening"](https://github.com/jfrazelle/macgyver) and `dlopen` yourself.
+    table. This is especially important if you want to do ["The Macgyver of Dlopening"](https://github.com/jessfraz/macgyver) and `dlopen` yourself.
 
 3. `--whole-archive`
 

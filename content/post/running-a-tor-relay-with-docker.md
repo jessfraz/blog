@@ -27,7 +27,7 @@ want your relay not publically listed in the network then host a bridge.
 
 I have created a Docker image
 [jess/tor-relay](https://hub.docker.com/r/jess/tor-relay/) from this
-[Dockerfile](https://github.com/jfrazelle/dockerfiles/blob/master/tor-relay/Dockerfile).
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/tor-relay/Dockerfile).
 Feel free to create your own image with the following Dockerfile:
 
 ```bsh

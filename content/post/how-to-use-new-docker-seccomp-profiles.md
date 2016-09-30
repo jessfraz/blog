@@ -28,7 +28,7 @@ going to take you step by step through what I did.
 
 I wanted to make a custom profile for my `chrome` container.
 I decided to get the syscalls it used by changing the entrypoint for my
-[`chrome/Dockerfile`](https://github.com/jfrazelle/dockerfiles/blob/master/chrome/stable/Dockerfile)
+[`chrome/Dockerfile`](https://github.com/jessfraz/dockerfiles/blob/master/chrome/stable/Dockerfile)
 to `ENTRYPOINT [ "strace", "-ff", "google-chrome" ]`. So the only things that
 changed was wrapping the command in `strace` and of course installing `strace`
 in the container. The `-ff` option makes sure `strace` follows forks. Which is
@@ -141,7 +141,7 @@ After further thought I realized it was also missing `setgid` and
 `exit`/`exit_group`.
 
 This all took a super long time of guessing and checking but I ended up with
-this [profile](https://github.com/jfrazelle/dotfiles/blob/master/etc/docker/seccomp/chrome.json).
+this [profile](https://github.com/jessfraz/dotfiles/blob/master/etc/docker/seccomp/chrome.json).
 
 Obviously noone else is going to do this, debug for hours the syscalls that are
 missing. This is why the default profile is so important, we wanted to create

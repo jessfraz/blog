@@ -370,7 +370,7 @@ $ apt-get install dunst feh i3 i3lock i3status scrot suckless-tools
 
 **Screen Backlight**
 
-I have a bash script [https://misc.j3ss.co/binaries/screen-backlight](https://raw.githubusercontent.com/jfrazelle/dotfiles/master/bin/screen-backlight) made for the sole purpose of adjusting the screen-backlight.
+I have a bash script [https://misc.j3ss.co/binaries/screen-backlight](https://raw.githubusercontent.com/jessfraz/dotfiles/master/bin/screen-backlight) made for the sole purpose of adjusting the screen-backlight.
 
 You will want to add to your sudoers file the following line, so password is not required for the script to run:
 
@@ -389,7 +389,7 @@ bindsym XF86MonBrightnessDown exec sudo screen-backlight down
 
 **Keyboard Backlight**
 
-The same goes for the keyboard backlight. I have a bash script [https://misc.j3ss.co/binaries/keyboard-backlight](https://raw.githubusercontent.com/jfrazelle/dotfiles/master/bin/keyboard-backlight) made for the sole purpose of adjusting the keyboard-backlight.
+The same goes for the keyboard backlight. I have a bash script [https://misc.j3ss.co/binaries/keyboard-backlight](https://raw.githubusercontent.com/jessfraz/dotfiles/master/bin/keyboard-backlight) made for the sole purpose of adjusting the keyboard-backlight.
 
 You will want to add to your sudoers file the following line, so password is not required for the script to run:
 

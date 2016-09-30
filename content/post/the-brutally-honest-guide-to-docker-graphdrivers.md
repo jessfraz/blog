@@ -29,7 +29,7 @@ Overlay is great but you need a recent kernel. There are also some super
 obscure kernel bugs with regard to sockets or certain python packages
 [docker/docker#12080](https://github.com/docker/docker/issues/12080). But
 I will say personally I use overlay, I have not hit these bugs recently and
-I have all my [100+ dockerfiles](https://github.com/jfrazelle/dockerfiles)
+I have all my [100+ dockerfiles](https://github.com/jessfraz/dockerfiles)
 running as continuous builds on my server with overlay and they all work.
 
 ### Aufs
