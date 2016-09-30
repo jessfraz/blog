@@ -6,13 +6,13 @@ description = "You changed your GitHub username and now all your builds are brok
 +++
 
 It all started innocently enough. I _had_ "jfrazelle" as my GitHub handle for
-years, but my twitter, irc and other handles are all "jessfraz". No one on
+years, but my Twitter, IRC and other handles are all "jessfraz". No one on
 GitHub was actually using "jessfraz" so I sat on it waiting to make my move.
 
 I'm currently on vacation this week so of course I was looking to break all the
 things. One thing you must know about me is that at no point was I thinking
-I hate this. I actually love stuff like this, I live for pain lol. Why else
-would I run Linux on the desktop?
+I hate this. I actually love stuff like this, I live for pain. Why else
+would I run Linux on the desktop? But back to the story.
 
 I polled the twitterverse...
 
@@ -24,8 +24,8 @@ And then I made my move...
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It is done. Let&#39;s watch the world burn together. <a href="https://t.co/YpLqpP1X38">https://t.co/YpLqpP1X38</a> <a href="https://t.co/4MX1tTthHO">pic.twitter.com/4MX1tTthHO</a></p>&mdash; Jess Frazelle (@jessfraz) <a href="https://twitter.com/jessfraz/status/781705751626670081">September 30, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Everything was fine for a few minutes. One thing you must know about me is:
-I have a private Jenkins instance for continuous builds and testing. Yes I am
+Everything was fine for a few minutes. Another thing you must know about me is:
+I have a private Jenkins instance for continuous builds and testing. Yes, I am
 this much of a nerd, but it is essential for building all the Dockerfiles for
 my publicly readable private docker registry at `r.j3ss.co`. I will save all
 that for another blog post, but the jobs started triggering. Immediately
@@ -56,11 +56,9 @@ all the go files and run this:
 argdo %s/jfrazelle/jessfraz/g | update
 ```
 
-The `| update` makes sure it saves the buffer after.
+The `| update` makes sure it saves the buffer when it's done editing.
 
-Ok after ~50 repos of this I am tired but it's fine.
-
-It's all fine. Things are working again.
+After ~50 repos of this I am tired but it's fine. It's all fine. Things are working again.
 
 Now I'm wondering who else I have broken... I search GitHub to see...
 
@@ -74,7 +72,7 @@ to various repos. A few of those in the query above
 are actually forks of my repos that don't show up in GitHub as forks because
 of the way the person forked it so they can be ignored.
 
-Overall I _think_ I really f*cked this entire situation by having an account for
+Overall, I _think_ I really f*cked this entire situation by having an account for
 "jfrazelle" and an account for "jessfraz" and swapping them.  I think this is
 why the `git clone/fetch/etc` redirects that should happen when you change your
 username are broken. So let me just make this clear, none of this is GitHub's
