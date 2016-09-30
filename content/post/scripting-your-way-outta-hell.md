@@ -40,7 +40,7 @@ I can just do a sed on those files and it will work again.
 
 I do this.
 
-The "apply-dsl" job is still read, *oh duh* because it cannot clone the repo
+The "apply-dsl" job is still red, *oh duh* because it cannot clone the repo
 where the DSLs live to even fix the problem. So I change it manually.
 
 This is fine.
