@@ -84,6 +84,12 @@ taking my old username and making fake repos to try and trick imports in Go so
 I figured I will squat on it forever to avoid this. Maybe someone from GitHub
 can alleviate my probably irrational fear.
 
-I _actually_ think everything _is_ fine now. :)
+Amazingly all the Travis CI builds transferred seamlessly. People have been all
+up in my mentions on Twitter saying they did this and all their autobuilds for
+Docker Hub broke. This honestly doesn't affect me because I host my own
+registry that continuously builds AND I allow the general public to pull images
+from it.
+
+In conclusion, I _actually_ think everything _is_ fine now. :)
 
 
