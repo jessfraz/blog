@@ -5,7 +5,7 @@ author = "Jessica Frazelle"
 description = "The intricacies of 'choosing your battle' and how personal passion for a project might conflict with corporate motives."
 +++
 
-Last week, I gave a talk at [Github Universe](http://githubuniverse.com/program/sessions/#blurry-lines)
+Last week, I gave a talk at [Github Universe](http://githubuniverse.com/2016/program/sessions/#blurry-lines)
 and afterwards several people suggested I write a blog post on it. Here it
 is. This post will cover intricacies of "choosing your battle" and how personal
 passion for a project might conflict with corporate motives.
