@@ -35,7 +35,7 @@ exact changes you would make installing Gentoo on your host: setting
 
 Then I cut out the things I don't need that only pertain to if you are using
 Container Linux on your server, cluster management tools, support request
-tools (lolz) etc. These were all pretty simple changes that made to a new
+tools (lolz) etc. These were all pretty simple changes that I made to a new
 `ebuild` that I cloned from the `coreos-base/coreos ebuild`.
 
 I need to clean up the mess I've made of my forks of
@@ -90,7 +90,8 @@ I'm talking about the container spawner itself.
 I outlined the future of
 [Sandbox Containers](https://blog.jessfraz.com/post/getting-towards-real-sandbox-containers/)
 and there are patches to Runc to enable
-[rootless containers](https://github.com/opencontainers/runc/pull/774).
+[rootless containers](https://github.com/opencontainers/runc/pull/774). If you want to know more
+you should also watch [Aleksa Sarai's talk](https://www.youtube.com/watch?v=r6EcUyamu94&feature=youtu.be).
 On this laptop I am _only_ using rootless containers.
 
 So overall everything runs in containers, I can automatically update my
