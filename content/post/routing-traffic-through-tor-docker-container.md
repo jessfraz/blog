@@ -17,7 +17,7 @@ some unsavory things such as iptables.
 
 I have a fork of the tor source code and a branch with a Dockerfile. I have
 submitted upstream... we will see if they take it. The final result is the
-image [jess/tor](https://registry.hub.docker.com/u/jess/tor), but you can
+image [jess/tor](https://hub.docker.com/r/jess/tor), but you can
 easily build locally from my repo
 [jessfraz/tor](https://github.com/jessfraz/tor/tree/add-dockerfile).
 
