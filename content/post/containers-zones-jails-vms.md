@@ -61,7 +61,7 @@ entirely different container.
 
 **Sharing X socket**
 
-I assume if you are on my blog you are familiar with my posts on [Running
+I assume if you are on my blog you are familiar with my posts on [running
 containers on your desktop](https://blog.jessfraz.com/post/docker-containers-on-the-desktop/).
 
 This kind of flexibility allows for super awesome things but of course comes at
