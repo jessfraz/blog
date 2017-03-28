@@ -110,10 +110,15 @@ We can make them better by reducing some of the complexity and building
 hardening features around them which is a goal I have been trying and will
 continue trying to do.
 
+You can get a sandbox level of isolation with containers, which I [wrote in
+more detail about here](https://blog.jessfraz.com/post/getting-towards-real-sandbox-containers/).
+But this requires doing the work of building the Death Star from your pieces of
+Seccomp, AppArmor, and SELinux profiles.
+
 I personally love Zones, Jails, and VMs and I think they all have a particular
 use case. The confusion with containers primarily lies in assuming they fulfill
 the same use case as the others; which they do not. Containers allow for a flexibility
-and control that is not capable with Jails, Zones, or VMs. And THAT IS A FEATURE.
+and control that is not possible with Jails, Zones, or VMs. And THAT IS A FEATURE.
 
 `</rant>`
 
