@@ -64,6 +64,19 @@ entirely different container.
 I assume if you are on my blog you are familiar with my posts on [running
 containers on your desktop](https://blog.jessfraz.com/post/docker-containers-on-the-desktop/).
 
+### Legos
+
+To really drive home a point I'm going to make an analogy describing each of
+these things in terms of legos.
+
+VMs, Jails, and Zones are if you bought the legos already put together AND
+glued. So it's basically the Death Star and you
+don't have to do any work you get it pre-assembled out of the box. You can't even take it apart.
+
+Containers come with just the pieces so while the box says to build the Death
+Star, you are not tied to that. You can build two boats connected by a flipping
+ocean and no one is going to stop you.
+
 This kind of flexibility allows for super awesome things but of course comes at
 a price.
 
