@@ -38,7 +38,7 @@ add any new namespace to Linux what would it be?" Obviously this is an awesome
 question, totally up my alley, and not even a statement from someone trying to
 prove to me "they know things." But I digress, I always answer with "Time."
 There is no production use case for this, other than making more NTP
-hell for yourself. I do believe there is a development use case. Say you want to
+hell for yourself. I do believe there is a development use case: if you want to
 change the time for a test running in one container but not mess with the other
 tests running in other containers. What a fun way to make a chaos monkey for NTP!
 :P
