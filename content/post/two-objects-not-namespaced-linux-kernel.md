@@ -28,16 +28,16 @@ etc syscalls are also blocked by the default seccomp profile in Docker as well.
 
 What happens if you do change the time in a container?
 
-Well, it's not namespaced so obviously the time on the host would change as well.
+Well, it's not namespaced so the time on the host would change as well.
 "But whaaaaa? I thought containers were just like a VM", you ask. Again, you
 should read my post
 [Setting the Record Straight: containers vs. Zones vs. Jails vs. VMs](https://blog.jessfraz.com/post/containers-zones-jails-vms/).
 
 One of my favorite questions I have been asked at a conference is "If you could
-add any new namespace to Linux what would it be?" Obviously this is an awesome
+add any new namespace to Linux what would it be?" Obviously his is an awesome
 question, totally up my alley, and not even a statement from someone trying to
 prove to me "they know things." But I digress, I always answer with "Time."
-Obviously there is no production use case for this, other than making more NTP
+There is no production use case for this, other than making more NTP
 hell for yourself. I do believe there is a development use case. Say you want to
 change the time for a test running in one container but not mess with the other
 tests running in other containers. What a fun way to make a chaos monkey for NTP!
