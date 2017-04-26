@@ -5,7 +5,7 @@ author = "Jessica Frazelle"
 description = "Covers two Linux primitives that are not namespaced by the current set of Linux kernel namespaces."
 +++
 
-If you are new to my blog than you might be new to the concept of Linux kernel
+If you are new to my blog then you might be new to the concept of Linux kernel
 namespaces. I suggest first reading
 [Getting Towards Real Sandbox Containers](https://blog.jessfraz.com/post/getting-towards-real-sandbox-containers/)
 and
