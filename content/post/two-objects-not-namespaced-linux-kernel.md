@@ -61,4 +61,6 @@ exact keyring.
 All in all, I hope this proves once again that you need more than just
 namespaces and cgroups to get any sort of "real" isolation with containers.
 Please, please don't disable seccomp or add extra capabilities you don't need.
-Happy containering! :D
+Happy containering! I must leave you with this gif... :D
+
+![turn-back-time](/img/turn-back-time.gif)
