@@ -15,7 +15,7 @@ Linux namespaces are one of the primitives that make up what is known as a
 "container." They control what a process can see. Cgroups, the other main
 ingredient of "containers", control what a process can use. But let's focus for
 this post on namespaces. The current set of namespaces in the kernel are:
-mount, pid, uts, ipc, net, and cgroup. These all cover basically exactly what
+mount, pid, uts, ipc, net, user, and cgroup. These all cover basically exactly what
 they are named after. But what is not covered? Well, let's go over two
 of the things not namespaced by the Linux kernel.
 
