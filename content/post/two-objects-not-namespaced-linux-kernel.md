@@ -34,7 +34,7 @@ should read my post
 [Setting the Record Straight: containers vs. Zones vs. Jails vs. VMs](https://blog.jessfraz.com/post/containers-zones-jails-vms/).
 
 One of my favorite questions I have been asked at a conference is "If you could
-add any new namespace to Linux what would it be?" Obviously his is an awesome
+add any new namespace to Linux what would it be?" Obviously this is an awesome
 question, totally up my alley, and not even a statement from someone trying to
 prove to me "they know things." But I digress, I always answer with "Time."
 There is no production use case for this, other than making more NTP
