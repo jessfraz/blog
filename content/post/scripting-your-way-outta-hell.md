@@ -45,6 +45,8 @@ where the DSLs live to even fix the problem. So I change it manually.
 
 This is fine.
 
+![](https://media.giphy.com/media/3o6UBpHgaXFDNAuttm/giphy.gif)
+
 The builds all start again. Except now all the Go builds are failing because
 importing "jfrazelle/..." is not working. Vendor your crap kids!!!
 
