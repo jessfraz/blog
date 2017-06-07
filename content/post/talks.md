@@ -66,6 +66,18 @@ project and its motives are usually very personal. This talk
 covers intricacies of "choosing your battles" and how personal passion for
 a project might conflict with corporate motives.
 
+#### [Container Camp - Application Sandboxes vs. Containers](https://www.youtube.com/watch?v=mfnhSX6SJVA)
+
+This talk covers the differences between application sandboxes and containers.
+The most well known sandbox is Chrome, for providing "hard guarantees about what
+ultimately a piece of code can or cannot do no matter what its inputs are".
+
+At its core, the Linux Chrome sandbox uses namespaces along with seccomp and
+other native features to provide these guarantees. Containers are composed of
+the same primitives. What is needed for containers to provide this promise?
+Can it be done by default? What steps are already being made to get towards
+containers that actually "contain"? What challenges will be faced?
+
 ## 2015
 
 #### [Dockercon EU - The Latest in Docker Engine](https://www.youtube.com/watch?v=I7i4SY-iRkA)
@@ -86,6 +98,10 @@ Everything from Spotify to Skype. Explore some of the more interesting things
 you can containerize on Linux. View first hand different workflows for how to
 run/build different apps in containers. This talk covers desktop apps as well
 as some other apps you would have never thought could run in a container.
+
+#### [Container Camp - Willy Wonka of Containers](https://www.youtube.com/watch?v=GsLZz8cZCzc)
+
+This talk has live demos of desktop applications in containers including Steam.
 
 #### [HashiConf - Dockerizing all the Things](https://www.youtube.com/watch?v=PeE8hcQtFq4)
 
