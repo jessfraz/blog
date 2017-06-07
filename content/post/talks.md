@@ -87,6 +87,19 @@ you can containerize on Linux. View first hand different workflows for how to
 run/build different apps in containers. This talk covers desktop apps as well
 as some other apps you would have never thought could run in a container.
 
+#### [HashiConf - Dockerizing all the Things](https://www.youtube.com/watch?v=PeE8hcQtFq4)
+
+This talk goes over the way the Docker project uses containers for their
+testing infrastructure as well as internal infrastructure. Find out about real
+pain points solved by running things in containers as well as some different
+hurdles uncovered along the way.
+
+#### [DotGo - The Docker Trail](https://www.youtube.com/watch?v=j55aWjgzfV8)
+
+This talk recounts stories from the trenches of developing Docker, explaining 3
+odd things her team stumbled upon in their Go code and how they fixed them. One
+of which is very odd and gets into the depths of `dlopen`-ing yourself.
+
 #### [Google Cloud Platform Podcast - Containers](https://www.youtube.com/watch?v=zu8NSrNFZ4M)
 
 [Francesc Campoy](https://twitter.com/francesc) and I talk all about
