@@ -100,3 +100,8 @@ is the dream and reality.
 
 If you want to know all the stuff about what laptop I use you should checkout
 my [uses this interview](https://usesthis.com/interviews/jessie.frazelle/).
+
+I gave a talk on this at
+[CoreOS Fest 2017](https://www.youtube.com/watch?v=gES4-X6y278),
+check out [the video](https://www.youtube.com/watch?v=gES4-X6y278) and
+[slides](https://docs.google.com/presentation/d/17Hml1iFqdXElxOcrh9caQSC5px5mDgaS015Vhaz42ZY/edit?usp=sharing).

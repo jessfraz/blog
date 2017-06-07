@@ -46,13 +46,11 @@ tests running in other containers. What a fun way to make a chaos monkey for NTP
 ### Kernel Keyring
 
 The kernel keyring is another item not namespaced. There have been recent efforts
-to [fix this for _user namespaces_](https://patchwork.kernel.org/patch/9394983/),
-but the problem still stands if you are creating containers without user namespaces.
+to [fix this for _user namespaces_](https://patchwork.kernel.org/patch/9394983/).
 Again, the default Docker seccomp profile blocks these syscalls so you don't
 shoot yourself in the foot.
 
-What happens if you use the kernel keyring from within in a container
-_without_ a user namespace?
+What happens if you use the kernel keyring from within in a container?
 
 Well if root in one container stores keys in the keyring, any other containers
 on that same host can see it in their keyring, which is really just the same

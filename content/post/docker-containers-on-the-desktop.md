@@ -249,4 +249,7 @@ $ docker run -it \
 
 So that's enough examples for now. But of course I have more. All my Dockerfiles live here: [github.com/jessfraz/dockerfiles](https://github.com/jessfraz/dockerfiles) and all my docker images are on the hub: [hub.docker.com/u/jess](https://hub.docker.com/u/jess/).
 
+I gave a talk on this at [Dockercon 2015](https://www.youtube.com/watch?v=1qlLUf7KtAw),
+check out the [video](https://www.youtube.com/watch?v=1qlLUf7KtAw).
+
 Happy Dockerizing!!!
