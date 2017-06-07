@@ -47,7 +47,7 @@ internally in your company.
 
 ## 2016
 
-#### [Container Summit - Building Containers in Pure Bash and C](http://containersummit.io/events/nyc-2016/videos/building-containers-in-pure-bash-and-c)
+#### [Container Summit - Building Containers in Pure Bash and C](https://containersummit.io/events/nyc-2016/videos/building-containers-in-pure-bash-and-c)
 
 This talk demonstrates how to build containers from the Primitives in Linux
 without using a container runtime. Learn about the objects that make up
