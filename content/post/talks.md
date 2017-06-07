@@ -13,7 +13,7 @@ it is...
 
 #### [Google Cloud Next - Build user trust: running containers securely](https://www.youtube.com/watch?v=Cd4JU7qzYbE)
 
-Co-Speaker: Alex Mohr
+**Co-Speaker: Alex Mohr**
 
 This talk covers all the ways you can secure your Kubernetes cluster using a
 Certificate Authority, Authentication, Secrets and more. We  also describe and
@@ -29,7 +29,7 @@ Container Linux as a base OS and how to go about running it on the desktop.
 
 #### [Kubecon - Dance Madly on the Lip of a Volcano](https://www.youtube.com/watch?v=sNjylW8FV9A)
 
-Co-Speaker: [Brandon Philips](https://twitter.com/BrandonPhilips)
+**Co-Speaker: [Brandon Philips](https://twitter.com/BrandonPhilips)**
 
 This talk covers how we designed an awesome security release process for
 Kubernetes and all it’s sub-projects.
@@ -68,9 +68,9 @@ a project might conflict with corporate motives.
 
 ## 2015
 
-#### [Dockercon EU - The Latest in Docker Engine with ](https://www.youtube.com/watch?v=I7i4SY-iRkA)
+#### [Dockercon EU - The Latest in Docker Engine](https://www.youtube.com/watch?v=I7i4SY-iRkA)
 
-Co-Speaker: [Arnaud Porterie](https://twitter.com/icecrime)
+**Co-Speaker: [Arnaud Porterie](https://twitter.com/icecrime)**
 
 Learn about the latest capabilities in Docker Engine and how to use them in
 your application. This session also covers best practices for using Engine,
