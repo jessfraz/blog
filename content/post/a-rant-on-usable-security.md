@@ -74,7 +74,7 @@ initially wrote. Some of the key things it blocks are:
 keyring, which is not namespaced. I wrote a blog post on
 [Two Objects not Namespaced by the Linux Kernel](https://blog.jessfraz.com/post/two-objects-not-namespaced-linux-kernel/)
 and the keyring was one I mentioned.
-- `clone`, `unshar`e: Deny cloning new namespaces. Also gated by `CAP_SYS_ADMIN`
+- `clone`, `unshare`: Deny cloning new namespaces. Also gated by `CAP_SYS_ADMIN`
 for `CLONE_*` flags, except `CLONE_USERNS`. I specifically wanted to block
 cloning new user namespaces inside containers because they are notorious
 for being points of entry for kernel bugs.
