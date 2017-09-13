@@ -77,6 +77,9 @@ Windows Subsystem for Linux to load executable ELF binaries into a Pico
 process’ address space and execute them on top of a Linux-compatible layer of
 system calls.
 
+You can read even more in depth on this from the [MSDN Pico Processes
+post](https://blogs.msdn.microsoft.com/wsl/2016/05/23/pico-process-overview/).
+
 ### System Calls
 
 One of the first things I did in WSL was run a syscall fuzzer. I knew it would
@@ -98,6 +101,9 @@ call. For example, `open` to `NtOpenFile` and `kill` to
 driver will handle the request directly. This was the case for `fork`, which
 has `lxcore.sys` prepare the process to be copied and then call the appropriate
 Windows NT kernel APIs to create and copy the process.
+
+You can learn more from the [MSDN System Calls
+post](https://blogs.msdn.microsoft.com/wsl/2016/06/08/wsl-system-calls/).
 
 ### Launching Windows Executables
 
