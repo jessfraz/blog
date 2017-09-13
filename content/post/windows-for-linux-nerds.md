@@ -63,14 +63,14 @@ modes.
 
 ![wsl](/img/wsl.png)
 
-The blue boxes represent the Windows kernel components and the yellow represent
-WSL kernel components. The LX Session Manager Service handles the life cycle
-of Linux instances. LXCore and lxsys, `lxcore.sys` and `lxss.sys` respectively,
+The blue boxes represent kernel components and the green boxes are Pico Processes.
+The LX Session Manager Service handles the life cycle of Linux instances.
+LXCore and lxsys, `lxcore.sys` and `lxss.sys` respectively,
 translate the Linux syscalls into NT APIs.
 
 ### Pico Processes
 
-As you can see in the diagram above, `init` and `/bin/bash` are labeled as
+As you can see in the diagram above, `init` and `/bin/bash` are
 Pico processes. Pico processes work by having system calls and user mode
 exceptions dispatched to a paired driver. Pico processes and drivers allow
 Windows Subsystem for Linux to load executable ELF binaries into a Pico
