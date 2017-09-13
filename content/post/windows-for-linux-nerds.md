@@ -5,9 +5,9 @@ author = "Jessica Frazelle"
 description = "A guide describing what I learned about Windows and the Windows kernel in my first week at Microsoft."
 +++
 
-I recently started a job at Microsoft, and in my first week I have already
-learned so much about Windows and I figured I would try to put it all into
-writing.
+I recently started a job at Microsoft. In my first week I have already
+learned so much about Windows, I figured I would try to put it all into
+writing. This post is coming to you from a Windows Subsystem for Linux console!
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;m
 headed to Seattle because I&#39;M JOINING MICROSOFT, at the airport wearing
