@@ -19,12 +19,13 @@ href="https://twitter.com/jessfraz/status/904710675779514368">September 4,
 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I got a Windows computer and a Linux computer. If you are new to my blog, let
-me tell you: I love setting up a perfect desktop experience. I've written a few
-posts on it (for Linux), you should check them out. Setting up a Windows
-computer is something I have not done in quite some time so I will
+New job and I got a Windows computer and a Linux computer! If you are new to my
+blog, let me tell you: I love setting up a perfect desktop experience.
+I've written a few posts on it (for Linux), you should check them out.
+Setting up a Windows
+computer is something I have not done in quite some time. I will
 describe a bit how to [set up a windows machine in a reproducible
-way](setting-up-a-windows-machine-in-a-reproducible-way) at the end of this
+way](#setting-up-a-windows-machine-in-a-reproducible-way) at the end of this
 post.
 
 I would like to thank [Rich Turner](https://twitter.com/richturn_ms), [John
@@ -35,19 +36,18 @@ a lot of the following to me. :)
 
 ## Windows Subsystem for Linux (WSL)
 
-Let's start with Windows Subsystem for Linux, or what I will also refer to as
+Let's start with Windows Subsystem for Linux, aka
 WSL. Even [@monkchips](https://twitter.com/monkchips) wrote that since I joined
 Microsoft ["Linux
 Subsystem for Windows will definitely be getting
-a workout."](https://redmonk.com/jgovernor/2017/09/06/on-hiring-jessie-frazelle-microsofts-developer-advocacy-hot-streak-continues/).
+a workout."](https://redmonk.com/jgovernor/2017/09/06/on-hiring-jessie-frazelle-microsofts-developer-advocacy-hot-streak-continues/)
 I am super excited about Windows Subsystem for Linux. It is one of the coolest
 pieces of tech I've seen since I started using Docker.
 
 First, a little background on how WSL works...
 
 You can learn a lot more about this from the
-[Windows Subsystem for Linux Overview blog
-post](https://blogs.msdn.microsoft.com/wsl/2016/04/22/windows-subsystem-for-linux-overview/). I will go over some of the parts I found to be the most interesting.
+[Windows Subsystem for Linux Overview](https://blogs.msdn.microsoft.com/wsl/2016/04/22/windows-subsystem-for-linux-overview/). I will go over some of the parts I found to be the most interesting.
 
 The Windows NT kernel was designed from the beginning to support running POSIX,
 OS/2, and other subsystems. In the early days, these were just user-mode
@@ -84,7 +84,7 @@ break but it was interesting for the purposes of figuring out which syscalls
 had been implemented without looking at the source. This was how I realized
 PID and mount namespaces were already implemented into `clone` and `unshare`!
 
-![wsl-namespaces](/img/wsl-namespaces.gif)
+![wsl-namespaces](/img/wsl-unshare.gif)
 
 The WSL kernel drivers, `lxss.sys` and `lxcore.sys`, handle the Linux system call
 requests and translate them to the Windows NT kernel. None of this code came
@@ -116,15 +116,15 @@ where you can launch PowerPoint without a VM.... well this is it!!
 ### Launching X Applications
 
 You can also run X Applications in WSL. You just need an X server. I used
-[`vcxsrv`](https://sourceforge.net/projects/vcxsrv/) to try it out. I also ran
-`i3` like my awesome coworker [Brian Ketelsen](https://twitter.com/bketelsen)
+[`vcxsrv`](https://sourceforge.net/projects/vcxsrv/) to try it out. I run
+`i3` on all my Linux machines and tried it out in WSL like my awesome coworker [Brian Ketelsen](https://twitter.com/bketelsen)
 did in his [blog post](https://brianketelsen.com/blog/i3-windows/).
 
 ![wsl-i3](/img/wsl-i3.jpg)
 
 The hidpi is a little gross but if you play with the settings for the X server
 you can get it to a tolerable place. While I think this is neat for running
-whatever X applications you love, I think personally I am going to stick to
+whatever X applications you love, personally I am going to stick to
 using `tmux` as my entrypoint for WSL and using the Windows GUI apps I need vs.
 Linux X applications. This just feels less heavy (remember, I love minimal)
 and I haven't come across an X application I can not live without for the
@@ -134,37 +134,36 @@ though. :)
 ### Pain Points
 
 There are still quite a few pain points with using Windows Subsystem for Linux,
-but from what I could gather from the team they are actively being worked
-on. They also mentioned a bunch of these to me without me even having to bring
-them up. So that you all have an idea of what to expect I will list
-them here and we can watch how they improve in future builds. Each links to
+but it's important to remember it is still in it's beginnings.
+So that you all have an idea of what to expect I will list
+them here and we can watch how they improve in future builds. Each item links to
 it's respective GitHub issue.
 
 Keep in mind, I am using the default Windows console for everything. It has
 improved significantly since I played with it 2 years ago while we were
 working on porting the Docker client and daemon to Windows. :)
 
-- [*****Copy/Paste](https://github.com/Microsoft/BashOnWindows/issues/235)**:
+- [**Copy/Paste**](https://github.com/Microsoft/BashOnWindows/issues/235):
   I am used to using `ctrl-shift-v` and `ctrl-shift-c` for copy
   paste in a terminal and of course those don't work. From what I can tell
   `enter` is copy... supa weird... and `ctrl-v` says it's paste. Of course it
   doesn't work for me. I can get paste to work by two-finger clicking in the
   term, but that does not work in `vim` and it's a pretty weird interaction.
-- [**Scroll](https://github.com/Microsoft/BashOnWindows/issues/279)**:
+- [**Scroll**](https://github.com/Microsoft/BashOnWindows/issues/279):
   This might just be a _huge_ pet peeve of mine but the scroll
   should not be able to scroll down to nothing. This happens all the time by
   accident for me with the mouse and I have no idea why the terminal is
   rendering more space down there.
   Also typing after I have scrolled should return me back to the
   console place where I am typing. It unfortunately does not.
-- [**Files Slow](https://github.com/Microsoft/BashOnWindows/issues/873)**:
+- [**Files Slow**](https://github.com/Microsoft/BashOnWindows/issues/873):
   Saving a lot of files to disk is super slow. This applies for
   example to git clones, unpacking tarballs and more. Windows is not used to
   applications that save a lot of files so this is being worked on to be more
   performant. Obviously the unix way of "everything is a file" does not scale
   well when saving a lot of small files is super slow.
 - [**Sharing Files between Windows and
-  WSL](https://github.com/Microsoft/BashOnWindows/issues/1051)**:
+  WSL**](https://github.com/Microsoft/BashOnWindows/issues/1051):
   Right now, like I pointed out,
   your Windows filesystem is mounted as `/mnt/c` in WSL. But you can't quite
   yet have a git repo cloned in WSL and then also edit from Windows. The VolFS
