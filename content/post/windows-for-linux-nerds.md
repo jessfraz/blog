@@ -177,7 +177,8 @@ working on porting the Docker client and daemon to Windows. :)
   much closer to Linux standards. If you need to access files in VolFS,
   you can use `bash.exe` to copy them somewhere under `/mnt/c`,
   use Windows to do whatever on it, then use `bash.exe` to copy them back
-  when you are done.
+  when you are done. You can also all Visual Studio code on the file from WSL
+  and that will work. :)
 
 ## Setting Up a Windows Machine in a Reproducible Way
 
