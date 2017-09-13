@@ -1,5 +1,5 @@
 +++
-date = "2017-09-15T11:25:24-04:00"
+date = "2017-09-09T11:25:24-04:00"
 title = "Windows for Linux Nerds"
 author = "Jessica Frazelle"
 description = "A guide describing what I learned about Windows and the Windows kernel in my first week at Microsoft."
