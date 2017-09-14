@@ -211,4 +211,4 @@ pinning applications to the taskbar in powershell and a bunch of other
 settings. Stay tuned.
 
 Overall, I hope you now understand some basics around Windows Subsystem for
-Linux now and are as excited as I am to see it grow and evolve in the future!
+Linux and are as excited as I am to see it grow and evolve in the future!
