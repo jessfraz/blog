@@ -140,10 +140,10 @@ though. :)
 ### Pain Points
 
 There are still quite a few pain points with using Windows Subsystem for Linux,
-but it's important to remember it is still in it's beginnings.
+but it's important to remember it is still in the beginnings.
 So that you all have an idea of what to expect I will list
 them here and we can watch how they improve in future builds. Each item links to
-it's respective GitHub issue.
+the respective GitHub issue.
 
 Keep in mind, I am using the default Windows console for everything. It has
 improved significantly since I played with it 2 years ago while we were
