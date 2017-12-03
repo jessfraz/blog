@@ -74,7 +74,7 @@ Also be careful not to subnet yourself into a hole ;)
 
 I have a bunch of Intel NUCs thanks to [Carolyn Van Slyck](https://twitter.com/carolynvs) and [Joe
 Beda](https://twitter.com/jbeda) for their thought leadership... my wallet is
-not happy with you two.
+not happy with you two. Also check out [Carolyn's post on her NUC setup](http://carolynvanslyck.com/blog/2017/10/my-little-cluster/).
 
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">They have LEDs on the front that change color. There is a kernel driver for them.</p>&mdash; Joe Beda (@jbeda) <a href="https://twitter.com/jbeda/status/920672603177607168?ref_src=twsrc%5Etfw">October 18, 2017</a></blockquote>
