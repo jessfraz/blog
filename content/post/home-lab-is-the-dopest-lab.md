@@ -40,6 +40,7 @@ You can run it with:
 
 ```bash
 docker run -d --restart always \
+    -v /etc/localtime:/etc/localtime:ro \
     --name unifi \
     --volume path/to/where/you/want/your/data:/config \
     -p 3478:3478/udp \
@@ -105,6 +106,37 @@ getting into my NUCs.
 I have ssh keys on Yubikeys that I set up. There is a [really great guide to
 doing this on GitHub](https://github.com/drduh/YubiKey-Guide) so I am not going
 to repeat it.
+
+I have dockerfiles for all the Yubikey tools you need to set it up in my
+[dockerfiles repo](https://github.com/jessfraz/dockerfiles).
+
+For example you can jump into a container with `ykman` with:
+
+```bash
+docker run --rm -it \
+    -v /etc/localtime:/etc/localtime:ro \
+    --device /dev/usb \
+    --device /dev/bus/usb \
+    --name ykman \
+    r.j3ss.co/ykman bash
+```
+
+This works for all the other docker images like `ykpersonalize` etc. If you get
+stuck all the commands are in my dotfile aliases at
+[github.com/jessfraz/dotfiles](https://github.com/jessfraz/dotfiles/blob/master/.dockerfunc).
+
+I like to require "touch to authenticate". You can do this with:
+
+```bash
+# for every ssh connection
+ykman openpgp touch aut on
+
+# for signing
+ykman openpgp touch sig on
+
+# for encrypting
+ykman openpgp touch enc on
+```
 
 For the Chromebook Pixelbook ssh client authentication you just need the Smart Card
 reader extension and you are good to go! You can find the guide on that from
