@@ -74,8 +74,9 @@ The best thing about these APs are they are Power over Ethernet! One cord, one
 cord!!!
 
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This is the best tweet ever.<br><br>I&#39;m down with the PoE<a href="https://t.co/3gOk8ima5w">https://t.co/3gOk8ima5w</a></p>&mdash; jessie frazelle (@jessfraz) <a href="https://twitter.com/jessfraz/status/931348289760452608?ref_src=twsrc%5Etfw">November 17, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">&lt;naughty-by-nature&gt;You down wit&#39; PoE?&lt;/naughty-by-nature&gt;</p>&mdash; Dan McDonald (@kebesays) <a href="https://twitter.com/kebesays/status/931306201014513665?ref_src=twsrc%5Etfw">November 16, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 
 ### NUCs
