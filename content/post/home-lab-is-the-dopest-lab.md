@@ -70,6 +70,14 @@ Also be careful not to subnet yourself into a hole ;)
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
+The best thing about these APs are they are Power over Ethernet! One cord, one
+cord!!!
+
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This is the best tweet ever.<br><br>I&#39;m down with the PoE<a href="https://t.co/3gOk8ima5w">https://t.co/3gOk8ima5w</a></p>&mdash; jessie frazelle (@jessfraz) <a href="https://twitter.com/jessfraz/status/931348289760452608?ref_src=twsrc%5Etfw">November 17, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 ### NUCs
 
 I have a bunch of Intel NUCs thanks to [Carolyn Van Slyck](https://twitter.com/carolynvs) and [Joe
