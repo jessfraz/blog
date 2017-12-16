@@ -78,6 +78,11 @@ you are curious.
 I also went over all of this on my talk on [Over Engineering my
 Laptop / Container Linux on the Desktop](https://docs.google.com/presentation/d/17Hml1iFqdXElxOcrh9caQSC5px5mDgaS015Vhaz42ZY/edit?usp=sharing). This includes all the reasons why I have continuous integration as well.
 
+I have a script to cleanup the registry of old images [clean-registry](https://github.com/jessfraz/dotfiles/blob/master/bin/clean-registry). This deletes old registry blobs that are not used
+in the latest version of the tag. I don't really care about old images and
+I don't want to have a huge registry filled with old shit. There is a [jenkins
+DSL](https://github.com/jessfraz/jenkins-dsl/blob/master/projects/maintenance/garbage_collect_registry.groovy) to run this.
+
 ### Git Server
 
 I host my own git server. You
