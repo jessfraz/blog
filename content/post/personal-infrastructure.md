@@ -9,14 +9,14 @@ This post is kind of like "part two" on my series on all the weird things I do
 for my personal infrastructure. If you missed "part one", you should check out
 [Home Lab is the Dopest Lab](https://blog.jessfraz.com/post/home-lab-is-the-dopest-lab/).
 
-I run a lot of little things to make my life easier, like a CI and bots. And
-a bunch of things just for the lolz. This post will go over all of those.
+I run a lot of little things to make my life easier, like a CI, some bots, and
+a bunch of services just for the lolz. This post will go over all of those.
 
 Let's start with the most useful.
 
 ### Continuous Integration
 
-I host my own continuous integration server. Yes, you guess it... it's Jenkins.
+I host my own continuous integration server. Yes, you guessed it... it's Jenkins.
 I use the Jenkins DSL plugin to keep everything in sync. You can find all my
 DSLs in my repo [github.com/jessfraz/jenkins-dsl](https://github.com/jessfraz/jenkins-dsl).
 This has all the configurations for views, keeps forks up to date, mirrors all my
@@ -33,7 +33,7 @@ There's a bunch of other fun things in there as well that you can discover by
 poking around yourself.
 
 I host my own postfix server alongside Jenkins. You
-can find the postfix docker image at r.j3ss.co/postfix or the [Dockerfile](https://github.com/jessfraz/dockerfiles/tree/master/postfix). It's super minimal and less gross than literally every
+can find the postfix docker image at `r.j3ss.co/postfix` or the [Dockerfile](https://github.com/jessfraz/dockerfiles/tree/master/postfix). It's super minimal and less gross than literally every
 other postfix image in existence.
 
 You can run it with:
@@ -156,7 +156,9 @@ at [github.com/jessfraz/upmail](https://github.com/jessfraz/upmail).
 Not really all that novel but I also run an iPython server for doing little
 script things in. I just use the `jupyter/minimal-notebook` Docker image for that.
 
+### Conclusion
+
 I run a lot of little shitty services for a personal pastebin and other things
-but those are all really less novel. My attention span for blog posts is about
+but those are all really less cool. My attention span for blog posts is about
 5 minutes and we have runneth over so I am going to call it a day with
 this... until next time. Peace out.
