@@ -159,7 +159,8 @@ script things in. I just use the `jupyter/minimal-notebook` Docker image for tha
 
 ### Conclusion
 
-I run a lot of little shitty services for a personal pastebin and other things
+I run a lot of little shitty services for a personal [pastebin](https://github.com/jessfraz/pastebinit)
+and other things
 but those are all really less cool. My attention span for blog posts is about
 5 minutes and we have runneth over so I am going to call it a day with
 this... until next time. Peace out.
