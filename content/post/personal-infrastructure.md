@@ -152,5 +152,6 @@ Not really all that novel but I also run an iPython server for doing little
 script things in. I just use the `jupyter/minimal-notebook` Docker image for that.
 
 I run a lot of little shitty services for a personal pastebin and other things
-but those are all really less novel. So I am going to call it a day with
+but those are all really less novel. My attention span for blog posts is about
+5 minutes and we have runneth over so I am going to call it a day with
 this... until next time. Peace out.
