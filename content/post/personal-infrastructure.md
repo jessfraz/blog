@@ -10,7 +10,8 @@ for my personal infrastructure. If you missed "part one", you should check out
 [Home Lab is the Dopest Lab](https://blog.jessfraz.com/post/home-lab-is-the-dopest-lab/).
 
 I run a lot of little things to make my life easier, like a CI, some bots, and
-a bunch of services just for the lolz. This post will go over all of those.
+a bunch of services just for the lolz. This post will go over all of those. These
+run scattered across my NUCs and the cloud. k8s || GTFO.
 
 Let's start with the most useful.
 
