@@ -91,7 +91,7 @@ troubleshooting tips, and cool lesser known features.
 This video has the first ever demo of Seccomp in Docker as well as a fun story
 about trying to save a docker image to a floppy disk.
 
-#### [DockerCon - Container Hacks and Fun Images](https://www.youtube.com/watch?v=1qlLUf7KtAw)
+#### [DockerCon - Container Hacks and Fun Images](https://www.youtube.com/watch?v=cYsVvV1aVss)
 
 This talk is a 100% live demo of running desktop applications in containers.
 Everything from Spotify to Skype. Explore some of the more interesting things
