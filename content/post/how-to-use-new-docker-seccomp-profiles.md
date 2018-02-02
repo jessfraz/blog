@@ -3,15 +3,16 @@ date = "2016-01-04T23:21:07Z"
 title = "How to use the new Docker Seccomp profiles"
 author = "Jessica Frazelle"
 description = "Debugging and creating custom seccomp profiles for Docker containers."
-draft = true
 +++
 
-In case you missed it, we recently merged a default seccomp profile for Docker
+In case you missed it, we recently merged a [default seccomp profile](https://github.com/moby/moby/pull/18979) for Docker
 containers. I urge you to try out the default seccomp profile, mostly so we can
 rest easy knowing the defaults are sane and your containers work as before.
 You can download the master version of Docker Engine from
 [master.dockerproject.org](https://master.dockerproject.org) or
 [experimental.docker.com](https://experimental.docker.com).
+
+We even have a doc describing the [syscalls we purposely block](https://github.com/jessfraz/docker/blob/52f32818df8bad647e4c331878fa44317e724939/docs/security/seccomp.md) and [security vulnerabilities the profile blocked]( https://github.com/jessfraz/docker/blob/6837cfc13cba842186a7261aa9bbd3a8755fd11e/docs/security/non-events.md).
 
 But that's not what this blog post is about. This post is about how you can
 create your own custom seccomp profiles for your containers. And how to debug when
