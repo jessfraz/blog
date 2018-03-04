@@ -1,9 +1,8 @@
 +++
 date = "2018-03-04T11:25:24-04:00"
-title = "Nerd Sniped by BINFMT\_MISC"
+title = "Nerd Sniped by BINFMT_MISC"
 author = "Jessica Frazelle"
-description = "How to script in any language thanks to rootless containers and
-BINFMT\_MISC."
+description = "How to script in any language thanks to rootless containers and BINFMT_MISC."
 +++
 
 This is a story about how I got nerd sniped by 
