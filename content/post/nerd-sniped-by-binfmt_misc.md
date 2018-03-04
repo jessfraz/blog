@@ -10,7 +10,8 @@ This is a story about how I got nerd sniped by
 The TLDR on their post is that you can script in Go if you use BINFMT\_MISC in
 the kernel.
 
-[BINFMT\_MISC](https://www.kernel.org/doc/html/v4.14/admin-guide/binfmt-misc.html) is really well documented and awesome. In the end all they had to do to script in Go was to mount the filesystem:
+[BINFMT\_MISC](https://www.kernel.org/doc/html/v4.14/admin-guide/binfmt-misc.html) is really well documented and awesome. In the end, all they had to do to 
+script in Go was to mount the filesystem:
 
 ```console
 $ mount binfmt_misc -t binfmt_misc /proc/sys/fs/binfmt_misc
@@ -23,7 +24,7 @@ $ echo ':golang:E::go::/usr/local/bin/gorun:OC' | sudo tee /proc/sys/fs/binfmt_m
 :golang:E::go::/usr/local/bin/gorun:OC
 ```
 
-Then you can `./` any go file on your host.
+Then you can `./` any go file on your host:
 
 ```console
 $ chmod u+x helloscript.go
@@ -44,10 +45,12 @@ seen my [cloud native dotfiles](https://github.com/jessfraz/dotfiles)? My bash
 scripts smell like roses.
 
 Right, so I want to do this with _all_ languages... but what I also hate is
-installing shit on my host. Ew, we have containers for those things. Luckily,
-I know a thing or two about containers...
+installing shit on my host. Ew, we have containers for those silly things. 
+Luckily, I know a thing or two about containers...
 
-A few years ago I made a project called [bincr](https://github.com/jessfraz/binctr). It creates fully static, unprivileged, self-contained, containers as 
+A few years ago I made a project called 
+[bincr](https://github.com/jessfraz/binctr). 
+It creates fully static, unprivileged, self-contained, containers as 
 executable binaries. (Wow that was a lot of words, let's break it down.) What
 `binctr` does is embed an entire container image (aka rootfs) _into_ a fully
 static binary and when you execute the binary it will unpack the image and run
@@ -62,14 +65,15 @@ Kinda seems like the perfect match for trying to use all languages with
 BINFMT\_MISC. So I tried it.
 
 (Preface: this post should not be tried at home, which is why I did not
-unarchive `binctr`, I am merely showing a different, very crazy, abstraction).
+unarchive `binctr`, I am merely showing a different, very crazy abstraction).
 
 I put common lisp in a container. Why common lisp? Well I could do this with
 _any language_ and I'm a bit insane haven't you noticed...
 
-Then I embedded the container into a binary with `binctr`. I made one slight
+Then I embedded the image into a binary with `binctr`. I made one slight
 modification to the spec in `binctr` that allowed me to use local files,
-basically so I could get the script into the container after I ran in.
+basically so I could get the script into the container after the executable is
+run pointing to the file.
 
 Then I registered my common lisp binary format with BINFMT\_MISC...
 
@@ -78,19 +82,21 @@ $ echo ':clisp:E::lisp::/usr/local/bin/clisp:OC' | sudo tee /proc/sys/fs/binfmt_
 :clisp:E::lisp::/usr/local/bin/clisp:OC
 ```
 
+`/usr/local/bin/clisp` is just my `binctr` generated binary with common lisp.
+
 And boom, now I can "dot slash" any `.lisp` file and it will run in my common
 lisp container.
 
-Obviously my container needed to be packaged with any dependencies and packages
+Obviously, my container needed to be packaged with any dependencies and packages
 I needed but I didn't need to install any of that shit on my host so I consider
 it a win.
 
 Imagine if an entire OS had all the languages packaged this way so that
-eveything could be "dot slashed" and executed but without actually installing
+everything could be "dot slashed" and executed but without actually installing
 the language to your host operating system.
 
 I think it would be dope.
 
-Thanks for tuning into this crazy blog post. Hacker news, you can shove your
-comments right up your
+Thanks for tuning in for this crazy blog post. Catch ya later. 
+Hacker news, you can shove your comments right up your
 
