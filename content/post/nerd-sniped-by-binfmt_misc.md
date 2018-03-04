@@ -49,7 +49,7 @@ installing shit on my host. Ew, we have containers for those silly things.
 Luckily, I know a thing or two about containers...
 
 A few years ago I made a project called 
-[bincr](https://github.com/jessfraz/binctr). 
+[binctr](https://github.com/jessfraz/binctr). 
 It creates fully static, unprivileged, self-contained, containers as 
 executable binaries. (Wow that was a lot of words, let's break it down.) What
 `binctr` does is embed an entire container image (aka rootfs) _into_ a fully
