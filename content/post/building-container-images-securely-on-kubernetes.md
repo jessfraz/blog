@@ -160,7 +160,8 @@ responsible for a lot of the rootless containers work upstream in runc.
 `img` works on my host which is all fine and dandy but I gotta help my k8s pals do
 their builds...
 
-Enter the next problem.
+Enter the next problem. For the record, all these problems apply to any
+builder that is using runc to launch containers.
 
 The next issue involved [not being able to mount proc inside a Docker container](https://github.com/opencontainers/runc/issues/1658).
 
