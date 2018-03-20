@@ -271,4 +271,4 @@ your little builders :) You just need to use
 
 And thus ends the most epic yak shave ever, minus the patches all being merged
 upstream. Thanks for playing. Feel free to try it out on Azure with my branch
-to acs-engine.
+to acs-engine. That was a lot of patching and I'm tired. Peace.
