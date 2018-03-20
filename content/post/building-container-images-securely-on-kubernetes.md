@@ -1,8 +1,8 @@
 +++
-date = "2017-12-03T11:25:24-04:00"
-title = "Building Container Images Securely in Kubernetes"
+date = "2018-03-20T11:25:24-04:00"
+title = "Building Container Images Securely on Kubernetes"
 author = "Jessica Frazelle"
-description = "A post covering how to build container images securely in Kubernetes and why this was even a hard problem in the first place."
+description = "A post covering how to build container images securely on Kubernetes and why this was even a hard problem in the first place."
 draft = true
 +++
 
@@ -227,6 +227,29 @@ spec:
   securityContext:
     rawProc: true
 ```
+
+## So is this secure?
+
+Well I am running that pod as user 1000. Granted it does have access to a raw
+proc without masks the nested containers do not. They have `/proc` set as
+read-only and masked paths. The nested containers also use a default seccomp
+profile denying privileged operations that should not be allowed.
+
+Your main concern here is _my code_ and the code in buildkit and runc.
+Personally I think that's fine because I obviously trust myself, but you are
+more than welcome to audit it and open bugs and/or patches.
+
+If you randomly generate different users for all your pod builds to run under
+then you are relying on the user isolation of linux itself.
+
+I will let you come to your own conclusions but hopefully I have laid out enough
+background for you to do so.
+
+You could also use my patches to acs-engine to run all your pods in Intel's
+Clear Containers which are VMs and you would then have hardware isolation for
+your little builders :)
+
+You just need to use [this config](https://github.com/Azure/acs-engine/blob/master/examples/kubernetes-clear-containers.json).
 
 And thus ends the most epic yak shave ever, minus the patches all being merged
 upstream. Thanks for playing. Feel free to try it out on Azure with my branch
