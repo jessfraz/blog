@@ -250,14 +250,23 @@ more than welcome to audit it and open bugs and/or patches.
 If you randomly generate different users for all your pod builds to run under
 then you are relying on the user isolation of linux itself.
 
-I will let you come to your own conclusions but hopefully I have laid out enough
-background for you to do so.
+If you are running a cluster inside your organization. Its unlikely someone is
+going waste a kernel 0day popping your cluster from within your org.
 
-You could also use my patches to acs-engine to run all your pods in Intel's
+This is much better than the current situation where people are mounting the
+docker socket into containers and everything is running as root.
+
+You can even use a [Pod Security Policy](https://kubernetes.io/docs/concepts/policy/pod-security-policy/#users-and-groups)
+and set `MustRunAs` to make sure all your pods are being run as users within
+a certain range of uids. 
+
+You are effectively as safe as any other non-root
+user running on a shared machine.
+
+If you are running random builds from users off the internet I would suggest
+using hardware isolation. You use my patches to acs-engine to run all your pods in Intel's
 Clear Containers which are VMs and you would then have hardware isolation for
-your little builders :)
-
-You just need to use [this config](https://github.com/Azure/acs-engine/blob/master/examples/kubernetes-clear-containers.json).
+your little builders :) You just need to use [this config](https://github.com/Azure/acs-engine/blob/master/examples/kubernetes-clear-containers.json).
 
 And thus ends the most epic yak shave ever, minus the patches all being merged
 upstream. Thanks for playing. Feel free to try it out on Azure with my branch
