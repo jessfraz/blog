@@ -222,18 +222,18 @@ spec:
     - git
     - clone
     - https://github.com/jessfraz/dockerfiles
-    - &&
+    - "&&"
     - cd
     - dockerfiles
-    - &&
+    - "&&"
     - img 
     - build
     - -t
     - irssi
     - irssi/
+    securityContext:
+      rawProc: true
   restartPolicy: Never
-  securityContext:
-    rawProc: true
 ```
 
 ## So is this secure?
