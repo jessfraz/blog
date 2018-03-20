@@ -238,7 +238,8 @@ spec:
 ## So is this secure?
 
 Well I am running that pod as user 1000. Granted it does have access to a raw
-proc without masks the nested containers do not. They have `/proc` set as
+proc without masks... the nested containers do not. The nested containers
+have `/proc` set as
 read-only and masked paths. The nested containers also use a default seccomp
 profile denying privileged operations that should not be allowed.
 
