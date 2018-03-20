@@ -250,7 +250,7 @@ more than welcome to audit it and open bugs and/or patches.
 If you randomly generate different users for all your pod builds to run under
 then you are relying on the user isolation of linux itself.
 
-If you are running a cluster inside your organization. Its unlikely someone is
+If you are running a cluster inside your organization, it's unlikely someone is
 going waste a kernel 0day popping your cluster from within your org.
 
 This is much better than the current situation where people are mounting the
@@ -264,9 +264,10 @@ You are effectively as safe as any other non-root
 user running on a shared machine.
 
 If you are running random builds from users off the internet I would suggest
-using hardware isolation. You use my patches to acs-engine to run all your pods in Intel's
+using VMs. You can use my patches to acs-engine to run all your pods in Intel's
 Clear Containers which are VMs and you would then have hardware isolation for
-your little builders :) You just need to use [this config](https://github.com/Azure/acs-engine/blob/master/examples/kubernetes-clear-containers.json).
+your little builders :) You just need to use 
+[this config](https://github.com/Azure/acs-engine/blob/master/examples/kubernetes-clear-containers.json).
 
 And thus ends the most epic yak shave ever, minus the patches all being merged
 upstream. Thanks for playing. Feel free to try it out on Azure with my branch
