@@ -161,7 +161,7 @@ responsible for a lot of the rootless containers work upstream in runc.
 their builds...
 
 Enter the next problem. For the record, all these problems apply to any
-builder that is using runc to launch containers.
+builder that is using runc to launch containers as an unprivileged user.
 
 The next issue involved [not being able to mount proc inside a Docker container](https://github.com/opencontainers/runc/issues/1658).
 
