@@ -152,7 +152,7 @@ Granted mounting is not a requirement of building docker images. You can always
 go the route of [orca-build](https://github.com/cyphar/orca-build) and
 [umoci](https://github.com/openSUSE/umoci) and not mount at all. [umoci](https://umo.ci/)
 is also an unprivileged image builder and was made long before I even made mine
-by the talended [Aleksa Sarai](https://github.com/cyphar) who is also
+by the talented [Aleksa Sarai](https://github.com/cyphar) who is also
 responsible for a lot of the rootless containers work upstream in runc.
 
 ## Getting this to work _in_ containers...
