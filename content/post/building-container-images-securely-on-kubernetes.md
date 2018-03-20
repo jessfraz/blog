@@ -143,8 +143,8 @@ For one, we need `subuid` and `subgid` maps. See [@AkihiroSuda's patch](https://
 We also need to `setgroups`. See [@AkihiroSuda's patch for that as well](https://github.com/opencontainers/runc/pull/1693).
 Those allow us to use `apt` in unprivileged user namespaces.
 
-Then if we want to use the contianerd snapshotter backends and actually mount
-the filesystems as we diff them, then we need `unprivileged mounting`. Which
+Then if we want to use the containerd snapshotter backends and actually mount
+the filesystems as we diff them, then we need unprivileged mounting. Which
 can only be done from _inside_ a user and mount namespace. So we need to do
 this at the start of our binary before we even do anything else.
 
@@ -165,9 +165,16 @@ Enter the next problem.
 The next issue involved [not being able to mount proc inside a Docker container](https://github.com/opencontainers/runc/issues/1658).
 
 My first thought was "well it must be something Docker is doing". So I isolated
-the problem, put in a container and ten minutes after I dove into the rabbit
+the problem, put it in a container and ten minutes after I dove into the rabbit
 hole I realized it was the fact that Docker sets paths inside `/proc` to be
-masked and readonly by default, preventing me from mounting.
+masked and readonly by default, preventing me from mounting. 
+
+Duh I thought to
+myself. Remember that thing we never thought we'd need... well we need it.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;We&#39;ll never need this&quot;<br><br>&quot;Fuck, we need that&quot;</p>&mdash; julia ferraioli (@juliaferraioli) <a href="https://twitter.com/juliaferraioli/status/970396059871666176?ref_src=twsrc%5Etfw">March 4, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 You can find all the fun details on [opencontainers/runc#1658](https://github.com/opencontainers/runc/issues/1658#issuecomment-373122073).
 
