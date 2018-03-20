@@ -265,7 +265,7 @@ user running on a shared machine.
 
 If you are running random builds from users off the internet I would suggest
 using VMs. You can use my patches to acs-engine to run all your pods in Intel's
-Clear Containers which are VMs and you would then have hardware isolation for
+Clear Containers and you would then have hardware isolation for
 your little builders :) You just need to use 
 [this config](https://github.com/Azure/acs-engine/blob/master/examples/kubernetes-clear-containers.json).
 
