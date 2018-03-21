@@ -270,6 +270,6 @@ Clear Containers and you would then have hardware isolation for
 your little builders :) You just need to use 
 [this config](https://github.com/Azure/acs-engine/blob/master/examples/kubernetes-clear-containers.json).
 
-And thus ends the most epic yak shave ever, minus the patches all being merged
+And that ends the most epic yak shave ever, minus the patches all being merged
 upstream. Thanks for playing. Feel free to try it out on Azure with my branch
 to acs-engine. That was a lot of patching and I'm tired. Peace.
