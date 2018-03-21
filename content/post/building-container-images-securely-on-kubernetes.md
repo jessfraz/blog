@@ -92,8 +92,8 @@ function RUN() {
 So in their demo, you would source the above bash script and then execute your
 Dockerfile like it was also a bash script. Pretty cool right.
 
-So that is what I sent to Gabe's inbox to prove it was possible but also like,
-"Look I will make you something nice."
+So that is what I sent to Gabe's inbox to prove it was possible but also:
+"Look, I will make you something nice."
 
 ## Designing Something Nice
 
