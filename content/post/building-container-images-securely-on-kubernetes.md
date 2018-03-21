@@ -3,7 +3,6 @@ date = "2018-03-20T11:25:24-04:00"
 title = "Building Container Images Securely on Kubernetes"
 author = "Jessica Frazelle"
 description = "A post covering how to build container images securely on Kubernetes and why this was even a hard problem in the first place."
-draft = true
 +++
 
 A lot of people seem to want to be able to build container images in Kubernetes
