@@ -11,7 +11,7 @@ security of their cluster.
 
 This all was brought to my attention when my awesome coworker at [Gabe
 Monroy](https://twitter.com/gabrtv)
-and I were chatting with [Michelle Noorali](michellenoorali) over pizza at
+and I were chatting with [Michelle Noorali](https://twitter.com/michellenoorali) over pizza at
 Kubecon in Austin last December.
 
 Here is pretty much how it went down:
