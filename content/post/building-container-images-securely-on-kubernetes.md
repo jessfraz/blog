@@ -212,26 +212,47 @@ metadata:
 spec:
   securityContext:
     runAsUser: 1000
+  initContainers:
+    # This container clones the desired git repo to the EmptyDir volume.
+    - name: git-clone
+      image: r.j3ss.co/jq
+      args:
+        - git
+        - clone
+        - --single-branch
+        - --
+        - https://github.com/jessfraz/dockerfiles
+        - /repo # Put it in the volume
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+      volumeMounts:
+        - name: git-repo
+          mountPath: /repo
   containers:
   - image: r.j3ss.co/img
-    imagePullPolicy: IfNotPresent
+    imagePullPolicy: Always
     name: img
     resources: {}
+    workingDir: /repo
     command:
-    - git
-    - clone
-    - https://github.com/jessfraz/dockerfiles
-    - "&&"
-    - cd
-    - dockerfiles
-    - "&&"
-    - img 
+    - img
     - build
     - -t
     - irssi
     - irssi/
     securityContext:
       rawProc: true
+    volumeMounts:
+    - name: cache-volume
+      mountPath: /tmp
+    - name: git-repo
+      mountPath: /repo
+  volumes:
+  - name: cache-volume
+    emptyDir: {}
+  - name: git-repo
+    emptyDir: {}
   restartPolicy: Never
 ```
 
