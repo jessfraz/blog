@@ -121,7 +121,7 @@ own system services that would be all they could see.
 
 Unlike the pseudo code above, the Kubernetes namespace will automatically get 
 new components of each system service. This is more in line with the design of 
-Solaris Zones or OpenBSD Jails. 
+Solaris Zones or FreeBSD Jails. 
 
 In my blog post 
 [Setting the Record Straight: containers vs. Zones vs. Jails vs. VMs](https://blog.jessfraz.com/post/containers-zones-jails-vms/), 
