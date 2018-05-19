@@ -16,6 +16,8 @@ The
 [models for multi-tenancy](https://docs.google.com/document/d/15w1_fesSUZHv-vwjiYa9vN_uyc--PySRoLKTuDhimjc/edit#heading=h.3dawx97e3hz6) 
 have been discussed at length in the 
 [community’s multi-tenancy working group](https://docs.google.com/document/d/1SkVdOPR4jozYDT8ro51hU3yrf1sHS8Gez73xM3PCsVo/edit). 
+**NOTE: to view most of these Google docs you need to be a member of the
+[kubernetes-wg-multitenancy Google group](https://groups.google.com/forum/#!forum/kubernetes-wg-multitenancy).**
 There have also been [some proposals](https://docs.google.com/document/d/1fj3yzmeU2eU8ZNBCUJG97dk_wC7228-e_MmdcmTNrZY/edit) 
 offered to solve each model. The current model of tenancy in Kubernetes assumes 
 the cluster is the security boundary. You can build a SaaS on top of Kubernetes 
