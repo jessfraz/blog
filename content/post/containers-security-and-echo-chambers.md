@@ -93,7 +93,7 @@ The last thing I ever wanted to do was cause a breaking change. That shit was
 terrifying. I lost sleep over weeks worrying about it. I tested every single
 Dockerfile on GitHub with the default profile. I ran `strace` on each for
 EPERMS and sent them all to elastic search. I made a project just for it:
-[stace2elastic](https://github.com/jessfraz/strace2elastic). It's super dumb
+[strace2elastic](https://github.com/jessfraz/strace2elastic). It's super dumb
 but was fun.
 
 By the time we released I knew I had done at least everything in my power to
