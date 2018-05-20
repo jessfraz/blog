@@ -66,7 +66,7 @@ prevents people from changing the time inside containers. And the default
 Seccomp profile prevents modifications or interacting with the kernel keyring.
 
 If you would like a list of all the syscalls prevented by the default Seccomp
-profile, I behoove you to read the list [here](https://github.com/jessfraz/community/blob/1eaf775381bbd6d3c6e32816144beba1bca807b4/contributors/design-proposals/Seccomp.md#various-syscalls-not-allowed). It also has descriptions of each.
+profile, I behoove you to read the list [here](https://github.com/jessfraz/community/blob/1eaf775381bbd6d3c6e32816144beba1bca807b4/contributors/design-proposals/seccomp.md#default-profile). It also has descriptions of each.
 
 Two years ago, there was [a great Whitepaper from NCC Group about hardening
 linux containers](https://www.nccgroup.trust/us/our-research/understanding-and-hardening-linux-containers/). Still to this day I get all the good feels when I see all the mentions of my work in it. But if you have any hesitations towards the defaults in Docker or otherwise I suggest you educate yourself first.
