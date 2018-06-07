@@ -76,7 +76,7 @@ various container runtimes as of two years ago.  Note the strong defaults in
 Docker. The paper also explains at length the defaults and would be a less
 biased version than me explaining myself.
 
-![defaults.png](/img/defaults.png)
+![defaults.png](/img/defaults.png) // TODO fix typo in that image
 
 ## Breaking Changes
 
