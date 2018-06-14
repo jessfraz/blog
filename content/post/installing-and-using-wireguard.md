@@ -12,6 +12,11 @@ I think the direction it is going is awesome. Read about it
 [on their website](https://www.wireguard.com/#about-the-project) if
 you have not already.
 
+Anyways, what is cool about wireguard is it integrates into the linux
+networking stack so you have a lot of power over interactions with it. In other
+words it is very easy to say, clone the interface into specific containers. Or
+just use it on your host.
+
 If you are new to my blog, I HATEEEE installing things on my host. I run
 everything in containers. Wireguard is a kernel module. BUT guess what,
 literally anything can be run in a container. This post is going
