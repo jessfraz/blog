@@ -14,8 +14,8 @@ you have not already.
 
 If you are new to my blog, I HATEEEE installing things on my host. I run
 everything in containers. Wireguard is a kernel module. BUT guess what,
-literally anything can be run in a container and can that. This post is going
-to go over how to install the wireguard module by using a container and how to
+literally anything can be run in a container. This post is going
+to go over how to install the Wireguard module by using a container and how to
 run the tools from a container as well.
 
 ## Installing
@@ -33,7 +33,7 @@ $ docker run --rm -it \
  	r.j3ss.co/wireguard:install
 ```
 
-This only works if you have your kernel headers installed and in `/usr/src` and 
+This only works if you have your kernel headers installed in `/usr/src` and 
 your kernel allows kernel modules (`CONFIG_MODULES=y`).
 
 If you are like me and set `CONFIG_MODULES=n` then you can use my 
@@ -77,7 +77,7 @@ wg ()
 ```
 
 Then you can run the following commands to try sending some packets through
-wireguard. These must be run as a root user.
+Wireguard.
 
 ```console
 $ export WG_PRIVATE_KEY="$(wg genkey)"
