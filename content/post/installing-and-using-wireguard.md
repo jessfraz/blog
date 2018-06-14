@@ -82,7 +82,10 @@ wg ()
 ```
 
 Then you can run the following commands to try sending some packets through
-Wireguard.
+Wireguard. The blow steps come from the 
+[following script](https://git.zx2c4.com/WireGuard/plain/contrib/examples/ncat-client-server/client.sh)
+which is `Copyright (C) 2015-2018 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved. GPL-2.0`.
+I merely added comments for the steps.
 
 ```console
 $ export WG_PRIVATE_KEY="$(wg genkey)"
