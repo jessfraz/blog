@@ -12,9 +12,9 @@ I think the direction it is going is awesome. Read about it
 [on their website](https://www.wireguard.com/#about-the-project) if
 you have not already.
 
-Anyways, what is cool about wireguard is it integrates into the linux
+What is cool about Wireguard is it integrates into the Linux
 networking stack so you have a lot of power over interactions with it. In other
-words it is very easy to say, clone the interface into specific containers. Or
+words, it is very easy to clone the interface into specific containers. Or
 just use it on your host.
 
 If you are new to my blog, I HATEEEE installing things on my host. I run
