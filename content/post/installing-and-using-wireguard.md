@@ -83,6 +83,8 @@ Wireguard.
 $ export WG_PRIVATE_KEY="$(wg genkey)"
 
 # open file descriptior 3 with some initial details
+# this is just wireguard's demo server, you can use the container to spin up
+# your own, don't actually use this as your server
 $ exec 3<>/dev/tcp/demo.wireguard.com/42912
 
 $ wg pubkey <<<"$WG_PRIVATE_KEY" >&3
