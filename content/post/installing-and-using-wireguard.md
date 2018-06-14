@@ -60,7 +60,7 @@ to build a specific kernel version.
 That saves the `vmlinuz` to `/boot` where you can then update your initramfs
 for the new image and add it to your bootloader if needed.
 
-## Using `wg`
+## Using the tools
 
 `wg` is the command for interacting with Wireguard. You can learn more about it
 in their [docs](https://www.wireguard.com/quickstart/#command-line-interface).
