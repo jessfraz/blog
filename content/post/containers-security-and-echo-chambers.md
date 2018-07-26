@@ -78,6 +78,8 @@ biased version than me explaining myself.
 
 ![defaults.png](/img/defaults.png)
 
+The [non-events](https://github.com/jessfraz/docker/blob/6837cfc13cba842186a7261aa9bbd3a8755fd11e/docs/security/non-events.md) are also an interesting read.
+
 ## Breaking Changes
 
 A lot of the push back I got from the default Seccomp profile was related to it
