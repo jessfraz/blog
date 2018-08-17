@@ -9,6 +9,15 @@ I figured it would be nice to have one canonical place for talks I have given
 on containers, container security, Docker, Kubernetes, and Open Source. So here
 it is...
 
+## 2018
+
+#### [LinuxConfAu - Containers aka crazy user space fun](https://www.youtube.com/watch?v=7mzbIOtcIaQ)
+
+Like the movie Plan 9 from outer space, this talk covers containers from 
+user space. What are they? Where did they come from?
+How much koolaid is involved in adopting them into your life... watch for the 
+jokes, learn from the interesting technical details.
+
 ## 2017
 
 #### [Google Cloud Next - Build user trust: running containers securely](https://www.youtube.com/watch?v=Cd4JU7qzYbE)
