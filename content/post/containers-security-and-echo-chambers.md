@@ -143,3 +143,5 @@ echo chamber but just don't abide by the echo chamber beliefs.
 
 Open your minds and hearts to the ideas of other people and you might just
 create something you never thought was possible in the first place.
+
+**Update:** See [James Bottomley's research on Horizontal Attack Profile](https://blog.hansenpartnership.com/measuring-the-horizontal-attack-profile-of-nabla-containers/) which shows gVisor uses more syscalls than a standard docker container.
