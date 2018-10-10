@@ -11,6 +11,10 @@ it is...
 
 ## 2018
 
+#### [ChaosConf - Breaking Containers](https://www.youtube.com/watch?v=1hhVS4pdrrk&list=PLLIx5ktghjqKtZdfDDyuJrlhC-ICfhVAN&index=11)
+
+Chaos engineering and stories of bugs about containers.
+
 #### [LinuxConfAu - Containers aka crazy user space fun](https://www.youtube.com/watch?v=7mzbIOtcIaQ)
 
 Like the movie Plan 9 from outer space, this talk covers containers from 
