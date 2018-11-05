@@ -11,7 +11,7 @@ some interesting problems to be solved in Kubernetes. _But_ I would like to
 emphasize that those problems are pretty exclusive to the way Kubernetes was
 designed and you could easily build your own orchestrator without them.
 
-## Containerd
+#### Containerd
 
 If you need an example of a custom, minimal orchestrator with containerd you
 should checkout [stellar](https://github.com/ehazlett/stellar/).
@@ -22,7 +22,7 @@ a blog post I wrote about [Building images securely on Kubernetes](https://blog.
 I feel like I should have more clearly stated how this problem is pretty
 exclusive to Kubernetes. It's also not really a hard problem. The hard problem
 I was solving in that post was _not_ how to build images on Kubernetes but how to
-build images as an unprivileged user in Linux. _That_ is a hard problem.And
+build images as an unprivileged user in Linux. _That_ is a hard problem. And
 a serious problem for companies who don't allow root on their machines.
 
 The easier choice if all you need to do is build an image _and_ you are already
