@@ -1,5 +1,5 @@
 +++
-date = "2018-11-17T08:09:26-07:00"
+date = "2018-11-05T08:09:26-07:00"
 title = "You might not need Kubernetes"
 author = "Jessica Frazelle"
 description = "Why use something bloated when you could use something minimal."
