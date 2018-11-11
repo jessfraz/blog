@@ -41,7 +41,7 @@ Let's start with some easy text-based applications:
 
 #### 1. Irssi
 
-[Dockerfile](https://github.com/jessfraz/irssi/blob/master/Dockerfile)
+[Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/irssi/Dockerfile)
 
 Best IRC client.
 
