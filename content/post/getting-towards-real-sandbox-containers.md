@@ -51,6 +51,8 @@ spawned a
 [mailing list thread for implementing this in runc/libcontainer](https://groups.google.com/a/opencontainers.org/forum/#!topic/dev/yutVaSLcqWI).
 [Aleksa Sarai](https://github.com/cyphar) has started on a few patches and this might actually be a reality pretty soon!
 
+Update: it took almost a year, but this was [added to runc](https://github.com/opencontainers/runc/pull/774) in Mar 2017.
+
 #### Where does this put us in the "sandbox" landscape?
 
 With this implementation we get:
