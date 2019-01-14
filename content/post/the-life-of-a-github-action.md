@@ -88,7 +88,7 @@ At this point GitHub is like 'yo you guys, I need to run the "branch cleanup" Ac
 
 This takes us back to the `uses` section of our file. We are pointing to a repository: `jessfraz/branch-cleanup-action@master`.
 
-In this repository is a Dockerfile. This Dockerfile defines the enviornment our action will run in.
+In this repository is a Dockerfile. This Dockerfile defines the environment our action will run in.
 
 ### Dockerfile
 
