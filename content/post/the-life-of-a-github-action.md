@@ -36,30 +36,36 @@ Here is what it ends up looking like and I will explain what everything means in
 ```
 ## Workflow defines what we want to call a set of actions.
 workflow "on pull request merge, delete the branch" {
-  ## On pull_request defines that whenever a pull request event is fired this workflow will be run.
+  ## On pull_request defines that whenever a pull request event is fired this 
+  ## workflow will be run.
   on = "pull_request"
   
-  ## What is the ending action (or set of actions) that we are running. Since we can set what actions "need"
-  ## in our definition of an action, we only care about the last actions run here.
+  ## What is the ending action (or set of actions) that we are running. 
+  ## Since we can set what actions "need" in our definition of an action,
+  ## we only care about the last actions run here.
   resolves = ["branch cleanup"]
 }
 
-## This is our action, you can have more than one but we just have this one for our example.
-## I named it branch cleanup, and since it is our last action run it matches the name in the resolves 
-## section above.
+## This is our action, you can have more than one but we just have this one for 
+## our example.
+## I named it branch cleanup, and since it is our last action run it matches 
+## the name in the resolves section above.
 action "branch cleanup" {
-  ## Uses defines what we are running, you can point to a repository like below OR you can define a docker image.
+  ## Uses defines what we are running, you can point to a repository like below 
+  ## OR you can define a docker image.
   uses = "jessfraz/branch-cleanup-action@master"
   
-  ## We need a github token so that when we call the github api from our scripts in the above repository we can
-  ## authenticate and have permission to delete a branch.
+  ## We need a github token so that when we call the github api from our
+  ## scripts in the above repository we can authenticate and have permission 
+  ## to delete a branch.
   secrets = ["GITHUB_TOKEN"]
 }
 ```
 
 ## The Event
 
-Okay so since this post is called "The Life of an Action" let's start on wtf actually happens. All actions get triggered on
+Okay so since this post is called "The Life of an Action" let's start on wtf 
+actually happens. All actions get triggered on
 a GitHub event. For the list of events supported [see here](https://developer.github.com/actions/creating-workflows/workflow-configuration-options/#events-supported-in-workflow-files).
 
 Above we chose the `pull_request` event. This is triggered when a pull request is assigned, unassigned, labeled, unlabeled, opened, edited, closed, reopened, synchronized, a pull request review is requested, or a review request is removed. 
@@ -89,11 +95,13 @@ In this repository is a Dockerfile. This Dockerfile defines the enviornment our 
 Let's take a look at that and I will add comments to try and explain.
 
 ```
-## FROM defines what Docker image we are starting at. A docker image is a bunch of files combined in a tarball.
-## This image is all the files we need for a Alpine OS environment.
+## FROM defines what Docker image we are starting at. A docker image is a bunch 
+## of files combined in a tarball.
+## This image is all the files we need for an Alpine OS environment.
 FROM alpine:latest
 
-## This label defines our action name, we could have named it butts but I decided to be an adult.
+## This label defines our action name, we could have named it butts but
+## I decided to be an adult.
 LABEL "com.github.actions.name"="Branch Cleanup"
 ## This label defines the description for our action.
 LABEL "com.github.actions.description"="Delete the branch after a pull request has been merged"
@@ -103,8 +111,9 @@ LABEL "com.github.actions.icon"="activity"
 ## This is the color for the action icon that shows up in the UI when it's run.
 LABEL "com.github.actions.color"="red"
 
-## These are the packages we are installing. Since I just wrote a shitty bash script for our Action we don't really
-## need all that much. We need bash for that. CA certificates and curl so we can send a request to the GitHub API
+## These are the packages we are installing. Since I just wrote a shitty bash 
+## script for our Action we don't really need all that much. We need bash, 
+## CA certificates and curl so we can send a request to the GitHub API
 ## and jq so I can easily muck with JSON from bash.
 RUN	apk add --no-cache \
 	bash \
@@ -115,7 +124,8 @@ RUN	apk add --no-cache \
 ## Now I am going to copy my shitty bash script into the image.
 COPY cleanup-pr-branch /usr/bin/cleanup-pr-branch
 
-## The cmd for the container defines what arguments should be executed when it is run.
+## The cmd for the container defines what arguments should be executed when 
+## it is run.
 ## We are just going to call back to my shitty script.
 CMD ["cleanup-pr-branch"]
 ```
@@ -147,18 +157,18 @@ API_HEADER="Accept: application/vnd.github.${API_VERSION}+json"
 AUTH_HEADER="Authorization: token ${GITHUB_TOKEN}"
 
 main(){
-  # In every runtime environment for an Action you have the GITHUB_EVENT_PATH populated.
-  # This file holds the JSON data for the event that was triggered.
-  # From that we can get the status of the pull request and if it was merged.
-  # In this case we only care if it was closed and it was merged.
+    # In every runtime environment for an Action you have the GITHUB_EVENT_PATH 
+    # populated. This file holds the JSON data for the event that was triggered.
+    # From that we can get the status of the pull request and if it was merged.
+    # In this case we only care if it was closed and it was merged.
 	action=$(jq --raw-output .action "$GITHUB_EVENT_PATH")
 	merged=$(jq --raw-output .pull_request.merged "$GITHUB_EVENT_PATH")
 
 	echo "DEBUG -> action: $action merged: $merged"
 
 	if [[ "$action" == "closed" ]] && [[ "$merged" == "true" ]]; then
-		# We only care about the closed event and if it was merged.
-    # If so, delete the branch.
+        # We only care about the closed event and if it was merged.
+        # If so, delete the branch.
 		ref=$(jq --raw-output .pull_request.head.ref "$GITHUB_EVENT_PATH")
 		owner=$(jq --raw-output .pull_request.head.repo.owner.login "$GITHUB_EVENT_PATH")
 		repo=$(jq --raw-output .pull_request.head.repo.name "$GITHUB_EVENT_PATH")
