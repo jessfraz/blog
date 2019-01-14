@@ -23,8 +23,7 @@ Here is a typical workflow:
 - The pull request is merged.
 - The branch lingers around until the end of time and eats away at the part of my soul that likes everything to be clean.
 
-Let's focus on my pain of the lingering branches. This is totally a problem right? So let's solve it by creating an Action to
-clean delete branches after the pull request has been merged.
+Let's focus on my pain of the lingering branches. This is totally a problem right? So let's solve it by creating an Action to delete branches after the pull request has been merged.
 
 All the code for this action lives [here](https://github.com/jessfraz/branch-cleanup-action) if you want to skip ahead.
 
