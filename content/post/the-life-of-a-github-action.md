@@ -28,11 +28,11 @@ clean delete branches after the pull request has been merged.
 
 All the code for this action lives [here](https://github.com/jessfraz/branch-cleanup-action) if you want to skip ahead.
 
-## The file
+## The Workflow File
 
 You can create actions from the UI or you can write the Workflow file yourself. In this post, I am just going to use a file.
 
-Here is what it ends up looking like and I will explain what everything means in comments on the file.
+Here is what it ends up looking like and I will explain what everything means in comments on the file. This lives in `.github/main.workflow` in your repository.
 
 ```
 ## Workflow defines what we want to call a set of actions.
@@ -45,7 +45,7 @@ workflow "on pull request merge, delete the branch" {
   resolves = ["branch cleanup"]
 }
 
-## This is our action, you can have more than one but we just have this one for this example.
+## This is our action, you can have more than one but we just have this one for our example.
 ## I named it branch cleanup, and since it is our last action run it matches the name in the resolves 
 ## section above.
 action "branch cleanup" {
@@ -63,23 +63,23 @@ action "branch cleanup" {
 Okay so since this post is called "The Life of an Action" let's start on wtf actually happens. All actions get triggered on
 a GitHub event. For the list of events supported [see here](https://developer.github.com/actions/creating-workflows/workflow-configuration-options/#events-supported-in-workflow-files).
 
-Above we chose the `pull_request` event. This is triggered Triggered when a pull request is assigned, unassigned, labeled, unlabeled, opened, edited, closed, reopened, synchronized, a pull request review is requested, or a review request is removed. 
+Above we chose the `pull_request` event. This is triggered when a pull request is assigned, unassigned, labeled, unlabeled, opened, edited, closed, reopened, synchronized, a pull request review is requested, or a review request is removed. 
 
-Okay so the case of moving forward let's assume we triggered this event. 
+Okay let's assume we triggered this event. 
 
 ### "Something" happened on a pull request....
 
-Okay so now, GitHub is like "oh holy shit, something happened on a pull request, let me fire all ze missiles of things that happen on
+Now, GitHub is like "oh holy shit, something happened on a pull request, let me fire all ze missiles of things that happen on
 a pull request."
 
 Going back to our Workflow file above, GitHub says "I am going to run the workflow 'on pull request merge, delete the branch'".
 
-What does this resolve? Oh it's "branch cleanup". Let me order all the steps branch cleanup requires (in this case none) and run them in order/parallel
+What does this resolve? Oh it's "branch cleanup". Let me order all the Actions branch cleanup requires (in this case none) and run them in order/parallel
 so we end on "branch cleanup."
 
 ## The Action
 
-So at this point GitHub is like 'yo you guys, I need to run the "branch cleanup" Action. let me get what it's using.'
+At this point GitHub is like 'yo you guys, I need to run the "branch cleanup" Action. let me get what it is using.'
 
 This takes us back to the `uses` section of our file. We are pointing to a repository: `jessfraz/branch-cleanup-action@master`.
 
@@ -130,15 +130,13 @@ Below is the contents of the bash script I am executing.
 set -e
 set -o pipefail
 
-if [[ ! -z "$TOKEN" ]]; then
-	GITHUB_TOKEN=$TOKEN
-fi
-
+# This is populated by our secret from the Workflow file.
 if [[ -z "$GITHUB_TOKEN" ]]; then
 	echo "Set the GITHUB_TOKEN env variable."
 	exit 1
 fi
 
+# This one is populated by GitHub for free :)
 if [[ -z "$GITHUB_REPOSITORY" ]]; then
 	echo "Set the GITHUB_REPOSITORY env variable."
 	exit 1
