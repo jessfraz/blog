@@ -104,8 +104,8 @@ LABEL "com.github.actions.icon"="activity"
 LABEL "com.github.actions.color"="red"
 
 ## These are the packages we are installing. Since I just wrote a shitty bash script for our Action we don't really
-## need all that much. We need bash for that. CA certificates and curl so we can send a request to the GitHub API and
-## And, jq so I can easily muck with JSON from bash.
+## need all that much. We need bash for that. CA certificates and curl so we can send a request to the GitHub API
+## and jq so I can easily muck with JSON from bash.
 RUN	apk add --no-cache \
 	bash \
 	ca-certificates \
