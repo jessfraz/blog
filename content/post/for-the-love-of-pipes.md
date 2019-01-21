@@ -63,9 +63,8 @@ switching.
                                                 October 11, 1964 
 ```
 
-The Unix philiosophy is also documented by Doug McIlroy as:
+The Unix philosophy is also documented by Doug McIlroy as:
 
-```
 1. Make each program do one thing well. To do a new job, build afresh rather 
 than complicate old programs by adding new "features".
 
@@ -79,9 +78,10 @@ ideally within weeks.
 Don't hesitate to throw away the clumsy parts and rebuild them.
 
 4. Use tools in preference to unskilled help to lighten a programming task, 
-even if  you have to detour to build the tools and expect to throw some of 
+even if you have to detour to build the tools and expect to throw some of 
 them out after you've finished using them.
-```
+
+> From the [Bell Systems Technical Journal](http://emulator.pdp-11.org.ru/misc/1978.07_-_Bell_System_Technical_Journal.pdf)
 
 What I love about Unix is the philosophy of "do one thing well" and "expect the output of every 
 program to become the input to another". This
