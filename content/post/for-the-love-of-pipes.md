@@ -86,11 +86,10 @@ well makes them easy to grok. The beautiful part, though, is the fact that in
 combination with a operator like
 `|` the program becomes one step in a much larger plan. The original author of
 `cat` does not even need to know about the larger plan. That is the beauty of
-the `|` it allows creativity and building by programs by combining small,
+the `|` it allows creativity and building by combining small,
 simple programs together.
 
-I love software design that enables creativity and doesn't put users in a box
-while putting a emphasis on simplicity.
+I love software design that enables creativity, values simplicity, and doesn't put users in a box.
 The pipe, is a key element for keeping programs simple while enabling
 extensibility. It allows for a simple program to become so much more than what the
 original author could have dreamed of.
