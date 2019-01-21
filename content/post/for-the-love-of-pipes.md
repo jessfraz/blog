@@ -86,7 +86,7 @@ well makes them easy to grok. The beautiful part, though, is the fact that in
 combination with a operator like
 `|` the program becomes one step in a much larger plan. The original author of
 `cat` does not even need to know about the larger plan. That is the beauty of
-the `|` it allows creativity and building by combining small,
+the `|` it allows for solving problems by combining small,
 simple programs together.
 
 I love software design that enables creativity, values simplicity, and doesn't put users in a box.
