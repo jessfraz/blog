@@ -91,7 +91,7 @@ simple programs together.
 
 I love software design that enables creativity, values simplicity, and doesn't put users in a box.
 The pipe, is a key element for keeping programs simple while enabling
-extensibility. It allows for a simple program to become so much more than what the
+extensibility. A simple program in combination with a `|` becomes so much more than what the
 original author could have dreamed of.
 
 I hope this post helped you learn something, if not, just pipe it to
