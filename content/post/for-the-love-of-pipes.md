@@ -1,5 +1,5 @@
 +++
-date = "2018-01-21T08:09:26-07:00"
+date = "2019-01-21T08:09:26-07:00"
 title = "For the Love of Pipes"
 author = "Jessica Frazelle"
 description = "Why unix pipes are awesome."
@@ -78,8 +78,8 @@ special case.
 > "Perhaps surprisingly, in practice it turns
 > out that the special case is the main use of the program."
 
-When a user redirects the output of `cat` via a `|` to some other program, this
-one simple program, that does one simple thing, becomes so much more than what
+When a user redirects the output of `cat` via a `|` to some other program,
+`cat` becomes so much more than what
 the original author intended. This is one of the most brilliant design
 patterns, in my opinion.  For one, programs being simple and doing one thing
 well makes them easy to grok. The beautiful part, though, is the fact that in 
@@ -89,7 +89,11 @@ combination with a operator like
 the `|` it allows creativity and building by programs by combining small,
 simple programs together.
 
-I love software design that enables creativity and doesn't put users in a box.
-I also love simple interfaces/tools and that is why I am such a huge fan of Unix.
+I love software design that enables creativity and doesn't put users in a box
+while putting a emphasis on simplicity.
+The pipe, is a key element for keeping programs simple while enabling
+extensibility. It allows for a simple program to become so much more than what the
+original author could have dreamed of.
+
 I hope this post helped you learn something, if not, just pipe it to
 `/dev/null`.
