@@ -63,7 +63,26 @@ switching.
                                                 October 11, 1964 
 ```
 
-What I love about Unix is the philosophy of "do one thing and do it well." This
+The Unix philiosophy is also documented by Doug McIlroy as:
+
+```
+1. Make each program do one thing well. To do a new job, build afresh rather 
+than complicate old programs by adding new "features".
+
+2. Expect the output of every program to become the input to another, 
+as yet unknown, program. Don't clutter output with extraneous information. 
+Avoid stringently columnar or binary input formats. Don't insist on interactive input.
+
+3. Design and build software, even operating systems, to be tried early, 
+ideally within weeks. Don't hesitate to throw away the clumsy parts and rebuild them.
+
+4. Use tools in preference to unskilled help to lighten a programming task, even if 
+you have to detour to build the tools and expect to throw some of them out after you've
+finished using them.
+```
+
+What I love about Unix is the philosophy of "do one thing well" and "expect the output of every 
+program to become the input to another". This
 philosophy is built on the use of tools. These tools can be used separately or
 combined to get a job done. This is in stark contrast to monolithic programs that do
 everything or one-off programs used to solve a specific problem.
