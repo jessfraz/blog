@@ -1,5 +1,4 @@
-	{{- $currentYear := now.Format "2006" -}}
-	<footer>&copy; Jessie Frazelle {{ $currentYear }}
+	<footer>&copy; Jessie Frazelle {{ .Now.Format "2006" }}
 		<a class="pull-right" href="https://twitter.com/jessfraz" target="_blank">@jessfraz</a>
 	</footer>
 
