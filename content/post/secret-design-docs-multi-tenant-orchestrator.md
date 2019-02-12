@@ -18,7 +18,7 @@ I thought it would be fun to start a blog post series containing design docs fro
 
 ### Other Features
 
-- Disallow and kill any and all bitcoin miners from using the infrastructure
+- Disallow and kill any and all bitcoin miners from using the infrastructure, bpf tracers
 - Firewall off any existing network endpoints
 - Firewall off the container running the process from everything around it on the local links and any reachable internal IP
 - If one layer of isolation is compromised, rely on another layer of isolation entirely. If two layers are compromised then we at least tried our best...
@@ -104,6 +104,12 @@ Manage resources and set limits with cgroups.
 - Network Bandwidth
 - Memory
 - CPU
+
+### Preventing Miners
+
+- CPU Tracers with eBPF: monitor cpu usage so if its not fluctuating it might be a miner, most other processes fluxuate
+- Binary tracers: look for binaries/ processes with a certain name, miners can rename but block the lazy ones
+- Network tracers: look for processes reaching out to known miner endpoints
 
 ## Other
 
