@@ -15,7 +15,7 @@ So I dug into the openbmc project a bit and tried to lick my wounds of dbus, see
 
 It turns out there are! [u-bmc](https://github.com/u-root/u-bmc) from the same folks that made [u-root](https://github.com/u-root/u-root) seemed like a more simple, opinionated solution. However, it only has the support of one board currently, although others seem planned. I thought it was an kinda neat and interesting detail that u-bmc used gRPC instead of IMPI, seems like a cool choice to modernize but I had some naive questions so I headed to the internet for answers.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Anyone know what the memory overhead for using gRPC for this is... I would think it’s not insignificant, or you’d want to use one of the “tiny grpc” replacements, or maybe something that didn’t reinvent its own HTTP server perhaps...? <a href="https://t.co/gIpW97r7Xw">https://t.co/gIpW97r7Xw</a></p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1092588927318249472?ref_src=twsrc%5Etfw">February 5, 2019<_a><_blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Anyone know what the memory overhead for using gRPC for this is... I would think it’s not insignificant, or you’d want to use one of the “tiny grpc” replacements, or maybe something that didn’t reinvent its own HTTP server perhaps...? <a href="https://t.co/gIpW97r7Xw">https://t.co/gIpW97r7Xw</a></p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1092588927318249472?ref_src=twsrc%5Etfw">February 5, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 That thread is awesome. Thanks to some super awesome and smart friends from the internet I learned a lot more about these two projects. I will let you read the thread and form opinions of your own but there’s a lot of experience and knowledge in there.
 
@@ -27,7 +27,7 @@ That was a bit of a rabbit hole so I decided to move on, mostly because of ADHD 
 
 I started looking into the Intel Management System... boy does that do a lot of stuff.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">[enters weird rabbit hole]<br>“wow there’s a lot of tunnels in here” <a href="https://t.co/oHslyJ0TuF">pic.twitter.com/oHslyJ0TuF<_a><_p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1092627483537551360?ref_src=twsrc%5Etfw">February 5, 2019<_a><_blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">[enters weird rabbit hole]<br>“wow there’s a lot of tunnels in here” <a href="https://t.co/oHslyJ0TuF">pic.twitter.com/oHslyJ0TuF</a></p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1092627483537551360?ref_src=twsrc%5Etfw">February 5, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 The craziest part that I found were all the security vulnerabilities and theories of [backdoors](https://news.softpedia.com/news/intel-x86-cpus-come-with-a-secret-backdoor-that-nobody-can-touch-or-disable-505347.shtml). I live for researching things like this so I was intrigued. Intel gave people a way to disable the ME, and vendors have, as well as [Dell even selling computers to government contracts with it disabled](https://www.heise.de/newsticker/meldung/Dell-schaltet-Intel-Management-Engine-in-Spezial-Notebooks-ab-3909860.html). I stumbled across this super dope laptop company, [Purism](https://puri.sm/), that sells laptops using [coreboot](https://www.coreboot.org/) with the ME memory erased. Their approach and blog is super neat and interesting. Also coreboot looks just lovely, I need to play around with it more.
 
@@ -35,7 +35,7 @@ The craziest part that I found were all the security vulnerabilities and theorie
 
 So in between bouncing back and forth reading about various forms of firmware and how shitty and sketchy closed source firmware is, I read the book Bad Blood. The book details the absolute cluster-fuck that was the startup Theranos, so everything from here on out is with “paranoid as fuck” goggles on because I was shook. 
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Reading Bad Blood <a href="https://t.co/C1SN7CF91B">pic.twitter.com/C1SN7CF91B<_a><_p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1090912858597150720?ref_src=twsrc%5Etfw">January 31, 2019<_a><_blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Reading Bad Blood <a href="https://t.co/C1SN7CF91B">pic.twitter.com/C1SN7CF91B</a></p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1090912858597150720?ref_src=twsrc%5Etfw">January 31, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 
 Keep that in mind as we head into the next section.
@@ -58,7 +58,7 @@ Anyways, that was my background knowledge going into this rabbit hole once again
 
 Thanks to the awesome internet I stumbled upon a 118 page run down of the technology.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Here for this shade, thanks <a href="https://twitter.com/_msw_?ref_src=twsrc%5Etfw">@_msw_<_a> for the link <a href="https://t.co/WJtgf9vZBc">https://t.co/WJtgf9vZBc<_a> <a href="https://t.co/DaoZQunloJ">pic.twitter.com/DaoZQunloJ<_a><_p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1093735827719434240?ref_src=twsrc%5Etfw">February 8, 2019<_a><_blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Here for this shade, thanks <a href="https://twitter.com/_msw_?ref_src=twsrc%5Etfw">@_msw_</a> for the link <a href="https://t.co/WJtgf9vZBc">https://t.co/WJtgf9vZBc</a> <a href="https://t.co/DaoZQunloJ">pic.twitter.com/DaoZQunloJ</a></p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1093735827719434240?ref_src=twsrc%5Etfw">February 8, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 This is a great paper, if you really want to learn about the internals of not only SGX but computer architecture as well, I strongly suggest reading it. It’s wonderfully written and very detail oriented.
 
