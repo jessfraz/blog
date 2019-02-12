@@ -8,28 +8,32 @@ description = "A design doc from my personal archive detailing a general case mu
 I thought it would be fun to start a blog post series containing design docs from my personal archive that never saw the light of day. This will be the first of the series. It contains what I thought about in detail for a general multi-tenant secured container orchestrator. The use case would be for running third party code securely isolated from each other. If you would like to see this in google doc form it also lives [here](https://docs.google.com/document/d/1qDcDuahakVWSQaJR5tixpNTUFbHIF0DNxFKfI_gwF0I).
 
 ## Requirements
+
 ### Base
-- [ ] API to run docker images in such a way that each process is isolated entirely from all the others.
-- [ ] Abusive actions can be terminated immediately.
-- [ ] The agent should be auto-updateable to handle security issues as they arise.
-- [ ] Ability to use the entire syscall interface for the processes being run.
+
+- API to run docker images in such a way that each process is isolated entirely from all the others.
+- Abusive actions can be terminated immediately.
+- The agent should be auto-updateable to handle security issues as they arise.
+- Ability to use the entire syscall interface for the processes being run.
 
 ### Other Features
-- [ ] Disallow and kill any and all bitcoin miners from using the infrastructure
-- [ ] Firewall off any existing network endpoints
-- [ ] Firewall off the container running the process from everything around it on the local links and any reachable internal IP
-- [ ] If one layer of isolation is compromised, rely on another layer of isolation entirely. If two layers are compromised then we at least tried our best...
+
+- Disallow and kill any and all bitcoin miners from using the infrastructure
+- Firewall off any existing network endpoints
+- Firewall off the container running the process from everything around it on the local links and any reachable internal IP
+- If one layer of isolation is compromised, rely on another layer of isolation entirely. If two layers are compromised then we at least tried our best...
 
 ## Design
 The host OS and up needs to be secure.
 
 ### Overview
 We require the following per container running:
-- [ ] Block/io cgroups so that disk does not have noisy neighbors
-- [ ] CPU limit
-- [ ] Memory limit
-- [ ] Network/bandwidth limiting
-- [ ] Isolated network from everything else on the network (bpf or iptables)
+
+- Block/io cgroups so that disk does not have noisy neighbors
+- CPU limit
+- Memory limit
+- Network/bandwidth limiting
+- Isolated network from everything else on the network (bpf or iptables)
 
 ### Host OS
 The host OS should be a reduced  operating system, minimal distribution (though possibly shared with the OS used inside containers). This is for reasons of security in locking down the available weaknesses in the host environment and lessening the control plane attack surface. 
@@ -37,20 +41,21 @@ The host OS should be a reduced  operating system, minimal distribution (though 
 #### Operating Systems
 Examples of these Operating Systems include:
 
-- [ ] CoreOS Container Linux
-- [ ] Container Optimized OS
-- [ ] Intel Clear Linux
-- [ ] LinuxKit
+- CoreOS Container Linux
+- Container Optimized OS
+- Intel Clear Linux
+- LinuxKit
 
 ##### Features
 CoreOS Container Linux and Container Optimized OS both the following have the features:
-- [ ] Verified boot
-- [ ] Read-only /usr
-		- [ ] Container Optimized OS has root filesystem ("/") mounted as read-only  with some portions of it re-mounted as writable, as follows: 
-				- [ ] _tmp, /run, /media, /mnt_disks and _var_lib/cloud are all mounted using tmpfs and, while they are writable, their contents are not preserved between reboots.
-				- [ ] Directories _mnt_stateful_partition, _var and /home are mounted from a stateful disk partition, which means these locations can be used to store data that persists across reboots. For example, Docker's working directory /var_lib/docker is stateful across reboots.
-				- [ ] Among the writable locations, only _var_lib_docker and /var_lib/cloud are mounted as "executable" (i.e. without the noexec mount flag)
-		- [ ] CoreOS Container Linux has root filesystem (“_”) mounted as read_write and “/usr” is read-only.
+
+- Verified boot
+- Read-only /usr
+  - Container Optimized OS has root filesystem ("/") mounted as read-only  with some portions of it re-mounted as writable, as follows: 
+    - _tmp, /run, /media, /mnt_disks and _var_lib/cloud are all mounted using tmpfs and, while they are writable, their contents are not preserved between reboots.
+    - Directories _mnt_stateful_partition, _var and /home are mounted from a stateful disk partition, which means these locations can be used to store data that persists across reboots. For example, Docker's working directory /var_lib/docker is stateful across reboots.
+    - Among the writable locations, only _var_lib_docker and /var_lib/cloud are mounted as "executable" (i.e. without the noexec mount flag)
+  - CoreOS Container Linux has root filesystem (“_”) mounted as read_write and “/usr” is read-only.
 
 All the operating systems allow seamless upgrades for security issues.
 
@@ -95,10 +100,10 @@ If we are running on bare metal we need to account for power management, BIOS up
 
 Manage resources and set limits with cgroups.
 
-- [ ] Disk IO
-- [ ] Network Bandwidth
-- [ ] Memory
-- [ ] CPU
+- Disk IO
+- Network Bandwidth
+- Memory
+- CPU
 
 ## Other
 
