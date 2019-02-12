@@ -9,7 +9,7 @@ I started dipping into some firmware and hardware things on my vacation and unem
 
 ## Baseboard management controller
 
-The first thing I dipped into was [openbmc](https://github.com/openbmc/openbmc). This is pretty cool. At face value it has support for a lot of different boards. It uses IPMI (Intelligent Platform Management Interface) to perform tasks for monitoring and operating the components of a computer. The IPMI interface has been around for a super long time. [RedFish](https://www.dmtf.org/standards/redfish) is kind of the successor. It’s an HTTP API and is more modern as a thoughtful approach to hardware deployment in a datacenter. The standard doesn’t include every sensor that IMPI has but it does allow for someone to add more sensors types to their implementation.
+The first thing I dipped into was [openbmc](https://github.com/openbmc/openbmc). This is pretty cool. At face value it has support for a lot of different boards. It uses IPMI (Intelligent Platform Management Interface) to perform tasks for monitoring and operating the components of a computer. The IPMI interface has been around for a super long time. [RedFish](https://www.dmtf.org/standards/redfish) is kind of the successor. It’s an HTTP API and is more modern as a thoughtful approach to hardware deployment in a datacenter. The standard doesn’t include every sensor that IPMI has but it does allow for someone to add more sensors types to their implementation.
 
 So I dug into the openbmc project a bit and tried to lick my wounds of dbus, seeing that was what it was using. I thought hmmm I wonder if there are more projects like this...
 
