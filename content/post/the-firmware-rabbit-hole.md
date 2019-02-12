@@ -42,7 +42,7 @@ Keep that in mind as we head into the next section.
 
 ## SGX
 
-Intel’s SGX (Software Guard Extension) is just utterly bananas. I went down this tunnel next. Oh it’s a doosey of a tunnel let me tell you.
+Intel’s SGX (Software Guard Extension) is just utterly bananas. I went down this tunnel next. Oh it’s a doozy of a tunnel let me tell you.
 
 In short, SGX provides what is known as a Secure Enclave. You can put keys in here for safe keeping because the memory is isolated and encrypted from everything else in the computer. (Or so they say, but we will get to that.) This creates a way to store data that you don’t want the host computer user to know about. Some cloud providers are using SGX as a way for customers to use the cloud without trusting the cloud provider, only trusting the hardware provider, in this case Intel.
 
