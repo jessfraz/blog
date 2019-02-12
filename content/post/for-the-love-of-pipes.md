@@ -90,7 +90,7 @@ combined to get a job done. This is in stark contrast to monolithic programs tha
 everything or one-off programs used to solve a specific problem.
 
 System programs and commands like `echo`, which we saw above, output information to your terminal by
-default. For example, `cat` will "concatenate" (it's namesake)
+default. For example, `cat` will "concatenate" (its namesake)
 files and print the result to your terminal.
 While reading [Program design in Unix](http://harmful.cat-v.org/cat-v/unix_prog_design.pdf),
 I realized that printing the output of the tool to the user's terminal was actually the
