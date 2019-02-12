@@ -72,7 +72,7 @@ Well Intel responded and made “[Flexible Launch Control](https://github.com/in
 
 It also begs the questions: where do you run the flexible launch control service? The customer can't run it in the cloud, the whole premise of enclaves is they don't trust the cloud. Do they run it in another enclave, how do they launch that enclave? Or do they run it on-prem? Well if they have on-prem infrastructure, why the fuck are they using the cloud if they don't trust it?
 
-Fuckin' nuts.
+Honestly, I dunno, I'm not an expert here.
 
 Okay so I was basically over launch control at this point and ready to go deeper. Thanks twitter for all the paper links :)
 
