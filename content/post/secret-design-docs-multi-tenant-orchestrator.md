@@ -51,7 +51,7 @@ CoreOS Container Linux and Container Optimized OS both the following have the fe
 
 - Verified boot
 - Read-only /usr
-  - Container Optimized OS has root filesystem ("/") mounted as read-only  with some portions of it re-mounted as writable, as follows: 
+  - Container Optimized OS has root filesystem (`/`) mounted as read-only  with some portions of it re-mounted as writable, as follows: 
     - `/tmp`, `/run`, `/media`, `/mnt/disks` and `/var/lib/cloud` are all mounted using tmpfs and, while they are writable, their contents are not preserved between reboots.
     - Directories `/mnt/stateful/partition`, `/var` and `/home` are mounted from a stateful disk partition, which means these locations can be used to store data that persists across reboots. For example, Docker's working directory `/var/lib/docker` is stateful across reboots.
     - Among the writable locations, only `/var/lib/docker` and `/var/lib/cloud` are mounted as "executable" (i.e. without the noexec mount flag)
