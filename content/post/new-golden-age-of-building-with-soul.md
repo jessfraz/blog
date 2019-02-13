@@ -38,7 +38,7 @@ I love the passion of building and to me that time was the golden age of passion
 
 ## New Golden Age
 
-In [their Turning lecture](https://m-cacm.acm.org/magazines/2019/2/234352-a-new-golden-age-for-computer-architecture/fulltext), Hennessey and Patterson call today’s age “A New Golden Age for Computer Architecture”.
+In [their Turing lecture](https://m-cacm.acm.org/magazines/2019/2/234352-a-new-golden-age-for-computer-architecture/fulltext), Hennessey and Patterson call today’s age “A New Golden Age for Computer Architecture”.
 
 > “The end of Dennard scaling and Moore's Law and the deceleration of performance gains for standard microprocessors are not problems that must be solved but facts that, recognized, offer breathtaking opportunities.”  
 
