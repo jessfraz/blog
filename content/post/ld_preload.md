@@ -90,7 +90,7 @@ but my science experiment that I did with `LD_PRELOAD`. My friend, [@grepory](ht
 and I came up with this absolutely insane idea for "kernelless". Yeah, it’s a joke making fun of all the other 
 “-less”s. But ours was special, m’kay. He even made a dope website for it, [kernelless.cloud](http://kernelless.cloud/). 
 
-So the way I was going to implement this in my mad science way would be as “Cloud Native Syscalls.” 
+So the way we were going to implement this in a mad science way would be as “Cloud Native Syscalls.” 
 Let me tell you about the “Cloud Native Syscalls”…
 
 
