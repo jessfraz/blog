@@ -498,7 +498,7 @@ header nav ul li a:focus {
 header nav ul.main li {
 	font-family: monospace;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 12px;
 }
 header nav ul.main li a {
 	border-bottom: none;
