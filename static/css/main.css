@@ -498,7 +498,7 @@ header nav ul li a:focus {
 header nav ul.main li {
 	font-family: monospace;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 16px;
 }
 header nav ul.main li a {
 	border-bottom: none;
@@ -513,7 +513,7 @@ header nav ul.social {
 }
 header nav ul.social li {
 	float: right;
-	font-size: 120%;
+	font-size: 100%;
 	margin: 0px 10px;
 }
 h2 a {
