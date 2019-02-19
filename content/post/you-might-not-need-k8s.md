@@ -16,6 +16,8 @@ designed and you could easily build your own orchestrator without them.
 If you need an example of a custom, minimal orchestrator with containerd you
 should checkout [stellar](https://github.com/ehazlett/stellar/).
 
+Or see my [design doc for a multi-tenant orchestrator](https://blog.jessfraz.com/post/secret-design-docs-multi-tenant-orchestrator/).
+
 I'll let you dive into that in your own time though. Let's take a new look at
 a blog post I wrote about [Building images securely on Kubernetes](https://blog.jessfraz.com/post/building-container-images-securely-on-kubernetes/).
 
