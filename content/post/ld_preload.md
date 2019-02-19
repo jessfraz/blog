@@ -86,9 +86,9 @@ more and find ones you love as well. But let's move on to some mad science...
 ## SCIENCE
 
 No, not the [Incubus album](https://en.wikipedia.org/wiki/S.C.I.E.N.C.E.)… 
-but my science experiment that I did with `LD_PRELOAD`. My friend, [@grepory](https://twitter.com/grepory), 
+but my science experiment that I did with `LD_PRELOAD`. My friends, Greg ([@grepory](https://twitter.com/grepory)), Aditya ([@chimeracoder](https://twitter.com/chimeracoder)), 
 and I came up with this absolutely insane idea for "kernelless". Yeah, it’s a joke making fun of all the other 
-“-less”s. But ours was special, m’kay. He even made a dope website for it, [kernelless.cloud](http://kernelless.cloud/). 
+“-less”s. But ours was special, m’kay. Greg even made a dope website for it, [kernelless.cloud](http://kernelless.cloud/). 
 
 So the way we were going to implement this in a mad science way would be as “Cloud Native Syscalls.” 
 Let me tell you about the “Cloud Native Syscalls”…
