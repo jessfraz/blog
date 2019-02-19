@@ -95,6 +95,8 @@ If enclave malware interests you, there’s another paper that just went out [de
 
 I am forgetting a bunch of other details and papers but this should paint a pretty good picture of the state of the SGX world.
 
+I wrote more about SGX in my [Reflections on SGX post](https://blog.jessfraz.com/post/reflections-on-sgx/).
+
 ## Thank You
 
 Thank you to everyone for linking me to awesome papers and engaging in my nerdery with these things. I’m not done at all with this rabbit hole but I thought I’d sum it up for now.
