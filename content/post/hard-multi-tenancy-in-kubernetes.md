@@ -5,6 +5,9 @@ author = "Jessica Frazelle"
 description = "A design proposal for how to do hard multi-tenancy in Kubernetes."
 +++
 
+**EDIT:** See my post on a [design doc for a multi-tenant orchestrator](https://blog.jessfraz.com/post/secret-design-docs-multi-tenant-orchestrator/) instead. 
+I wrote this when an internal requirement was to use Kubernetes but I do not personally think you should use Kubernetes for this use case.
+
 Kubernetes is the new kernel. We can refer to it as a “cluster kernel” versus 
 the typical operating system kernel. This means a lot of great things for users 
 trying to deploy applications. It also leads to a lot of the same challenges we 
