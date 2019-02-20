@@ -13,7 +13,7 @@ it is...
 
 #### [re:Invent - Container Power Hour](https://www.youtube.com/watch?v=HCCkVz25UU4)
 
-**Co-Speaker: Clare Liguori and Abby Fuller**
+**Co-Speakers: [Clare Liguori](https://twitter.com/clare_liguori) and [Abby Fuller](https://twitter.com/abbyfuller)**
 
 This talk goes over using containers on AWS.
 
