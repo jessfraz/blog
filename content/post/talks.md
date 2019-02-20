@@ -1,5 +1,5 @@
 +++
-date = "2017-06-07T08:09:26-07:00"
+date = "2019-06-07T08:09:26-07:00"
 title = "Talks"
 author = "Jessica Frazelle"
 description = "Various Talks I have given on containers, container security, Docker, Kubernetes, and Open Source."
@@ -10,6 +10,12 @@ on containers, container security, Docker, Kubernetes, and Open Source. So here
 it is...
 
 ## 2018
+
+#### [re:Invent - Container Power Hour](https://www.youtube.com/watch?v=HCCkVz25UU4)
+
+**Co-Speaker: Clare Liguori and Abby Fuller**
+
+This talk goes over using containers on AWS.
 
 #### [ChaosConf - Breaking Containers](https://www.youtube.com/watch?v=1hhVS4pdrrk&list=PLLIx5ktghjqKtZdfDDyuJrlhC-ICfhVAN&index=11)
 
