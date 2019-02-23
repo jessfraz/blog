@@ -18,7 +18,7 @@ I tried to find that paper and couldn’t, but instead I found my college entran
 
 I work in a pharmacy, which sounds like a pretty normal job where nothing of great importance happens. Don’t jump to conclusions, however. Here is a bundle of short stories-using no real names; I like to call them “Pharmy Tales.”
 
-~~~~~~~~~~~~
+......
 
 Every time Mrs. H calls the pharmacy she complains, either about her bill or her latest delivery of medications. Unfortunately, I usually answer the phone.
 
@@ -46,7 +46,7 @@ The phone rings about 10 minutes later and Ross answers. As it turns out, it’s
 
 Just my luck.
 
-~~~~~~~~~~~~
+......
 
 Ross hates Mr. W, an infamous customer known for his inappropriate language. One Saturday, he strolls in drunk with his dog, Bella. I love Bella. She looks like Beethoven. Ross immediately ducks down behind the counter.
 
@@ -59,7 +59,7 @@ By now Ross’s back is killing him so he is forced to stand up.
 
 “Is that the sexy boy from Germany?” exclaims Mr. W, pointing at Ross. He then spends the next thirty minutes interrogating Ross about the World Cup and whether or not he lost his virginity. By the end of their conversation, Bella was asleep on the pharmacy floor and drooling.
 
-~~~~~~~~~~~~
+......
 
 In the middle of one routine day at the pharmacy, a woman passed me a prescription, I passed it to the Pharmacist, and I continued into “La-La-Land” for the next twenty minutes. 
 
@@ -71,6 +71,6 @@ On her way back to pick up the prescription she identified Ross with the Police 
 
 One officer came into the pharmacy to talk to the rest of us. As the very attractive police officer glided down the allergy and laxative aisle, I snapped out of “La-La-Land” and questioned what was going on. I had no idea all of this action was taking place just yards away from our neighborhood pharmacy.
 
-~~~~~~~~~~~~
+......
 
 Don’t be fooled by the misconception that working in a pharmacy is dull. Everyday, I come home with a new story to tell.
