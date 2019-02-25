@@ -35,7 +35,7 @@ have even started in this field.
 - [Switch: How to Change Things When Change Is Hard](https://www.amazon.com/gp/product/0385528752): I got this book as a recommendation from [Lara Hogan](https://twitter.com/lara_hogan). It is a great read if you are trying to change something in a culture that does not embrace change. It really details a great approach for doing so that feels like it could almost be weaponized :).
 - [The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897): Every single book list should include [Camille's](https://twitter.com/skamille) book. It is a great read for managers and non-managers and has given me the tools for knowing what is normal and what is not.
 
-### Booksheveles
+### Bookshelves
 
 If you are interested in books and/or bookshelves I started a thread with pictures of bookshelves and there are some great find in here:
 
