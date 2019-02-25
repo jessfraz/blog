@@ -34,3 +34,11 @@ have even started in this field.
 - [A Programmer's Introduction to Mathematics](https://www.amazon.com/gp/product/1727125452): I was a math major so I have a huge fondness for mathematics. This is a great book about math from the point of view of programming.
 - [Switch: How to Change Things When Change Is Hard](https://www.amazon.com/gp/product/0385528752): I got this book as a recommendation from [Lara Hogan](https://twitter.com/lara_hogan). It is a great read if you are trying to change something in a culture that does not embrace change. It really details a great approach for doing so that feels like it could almost be weaponized :).
 - [The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897): Every single book list should include [Camille's](https://twitter.com/skamille) book. It is a great read for managers and non-managers and has given me the tools for knowing what is normal and what is not.
+
+### Booksheveles
+
+If you are interested in books and/or bookshelves I started a thread with pictures of bookshelves and there are some great find in here:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">These are my favorite two shelves of my bookshelf, and yes that’s a slug Jerry. Show me your bookshelves, doesn’t just have to be tech books :)<br><br>(most of these are from my grandpa :) <a href="https://t.co/0qiqytAYuL">pic.twitter.com/0qiqytAYuL</a></p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1099435856123826176?ref_src=twsrc%5Etfw">February 23, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
