@@ -49,7 +49,11 @@ they manage not fully being able to help solve the problem as well as not fully
 understanding the problem. It also doesn't build trust.
 
 Leaders should try to be cognisant of when something needs to be private and
-when they can be transparent about information.
+when they can be transparent about information. I also really enjoyed this
+insightful tweet as well:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Unlike respect, which can start from a positive value and go up or down depending on behavior, trust starts at 0. You have to earn the trust of your colleagues and reports before you can take loans out on it. <a href="https://t.co/aWRpdjAtBR">https://t.co/aWRpdjAtBR</a></p>&mdash; julia ferraioli (@juliaferraioli) <a href="https://twitter.com/juliaferraioli/status/1101572682863296514?ref_src=twsrc%5Etfw">March 1, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Just thought I would put my thoughts in writing since I said I would. This
 experience seeing how other industries work has been super fun for me. I might
