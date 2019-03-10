@@ -5,4 +5,4 @@ title = "Jessie Frazelle's Blog"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-	description = "The blog of Jessie Frazelle, hacker of all things Linux & Containers"
+	description = "The blog of Jessie Frazelle, hacker of all things kernels, operating systems, etc..."
