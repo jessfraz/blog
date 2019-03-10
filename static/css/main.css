@@ -502,6 +502,7 @@ header nav ul.main li {
 }
 header nav ul.main li a {
 	border-bottom: none;
+	font-weight: bold;
 }
 header nav ul.main li a:hover,
 header nav ul.main li a:focus {
@@ -760,3 +761,21 @@ table > tfoot > tr.success > th {
   background-color: #dff0d8;
 }
 
+/*
+ * Some font-size tweaks for smaller screens
+ */
+@media screen and (max-width: 480px) {
+  header nav {
+    font-size: 75%;
+  }
+
+  header nav ul.main li {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container h2 {
+    font-size: 1.5em;
+  }
+}
