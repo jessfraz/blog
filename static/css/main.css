@@ -502,6 +502,7 @@ header nav ul.main li {
 }
 header nav ul.main li a {
 	border-bottom: none;
+	font-weight: bold;
 }
 header nav ul.main li a:hover,
 header nav ul.main li a:focus {
