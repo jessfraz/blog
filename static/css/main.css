@@ -773,3 +773,9 @@ table > tfoot > tr.success > th {
     font-size: 90%;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .container h2 {
+    font-size: 1.5em;
+  }
+}
