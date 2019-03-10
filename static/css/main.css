@@ -760,3 +760,15 @@ table > tfoot > tr.success > th {
   background-color: #dff0d8;
 }
 
+/*
+ * Some font-size tweaks for smaller screens
+ */
+@media screen and (max-width: 480px) {
+  header nav {
+    font-size: 75%;
+  }
+
+  header nav ul.main li {
+    font-size: 90%;
+  }
+}
