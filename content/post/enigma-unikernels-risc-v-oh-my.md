@@ -51,6 +51,11 @@ If a person owns the hardware, they have a right to own the firmware as well. Bo
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">CVE-2018-12169 also potentially allows a developer to &quot;jailbreak&quot; their BootGuard protected laptop since the UEFI DXE volume can be replaced with a user provided LinuxBoot ROM image. <a href="https://t.co/yHwwMOTyx7">https://t.co/yHwwMOTyx7</a> <a href="https://t.co/MeWI0DGUBf">pic.twitter.com/MeWI0DGUBf</a></p>&mdash; Trammell Hudson ⚙ (@qrs) <a href="https://twitter.com/qrs/status/1044157473882591233?ref_src=twsrc%5Etfw">September 24, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+This "feature" from hardware vendors is preventing the innovation of this 
+community and preventing pushing technology to a safer place. The community 
+could maybe use more help from those in positions to push back on hardware 
+vendors to push to remove these features.
+
 
 
 ### Server rack encased in liquid
