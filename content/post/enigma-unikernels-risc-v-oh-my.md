@@ -26,7 +26,7 @@ It was awesome spending a day in Cambridge (thanks [Anil](https://twitter.com/av
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-They then can use this on boards to power light bulbs (which they are actually doing at the University!) super securely since removes the need for all the shitty firmware most other things ship and has a super minimal environment. I’m sure you can think of a number of different other use cases as well. Honestly, unikernels replacing all the crap firmware in the world would be a huge win.
+They use this on boards to power light bulbs (at the University!) super securely since it removes the need for all the shitty firmware most other things ship and has a super minimal environment. I’m sure you can think of a number of different other use cases as well. Honestly, unikernels replacing all the crap firmware in the world would be a huge win.
 
 ## Open Compute Summit
 
