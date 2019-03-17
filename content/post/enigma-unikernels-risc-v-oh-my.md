@@ -52,9 +52,9 @@ If a person owns the hardware, they have a right to own the firmware as well. Bo
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 This "feature" from hardware vendors is preventing the innovation of this 
-community and preventing pushing technology to a safer place. The community 
-could maybe use more help from those in positions to push back on hardware 
-vendors to push to remove these features.
+community and preventing pushing technology to a safer place. If you are
+in a position to push back on these hardware vendors, please do so. They need all
+the help they can get.
 
 
 
