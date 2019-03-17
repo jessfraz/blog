@@ -60,7 +60,7 @@ something I saw in the Expo Hall. One vendor has encased an entire server rack
 in liquid for liquid cooling. I'm not sure I could sleep at night using this.
 The funniest part about this though was the demo at their booth still had fans
 in the rack! I mean... why would you need fans if you had liquid cooling...
-they claimed was because it was just "left over" and you wouldn't need that.
+they claimed it was just "left over" and you wouldn't need that.
 But at a conference where everyone is showing off their custom hardware, you'd
 think they would have left the fans at home ;).
 
