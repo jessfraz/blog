@@ -66,7 +66,7 @@ The paper is on the second generation of the technology and outlines the side-ch
 
 ### Launch Control
 
-SGX has this feature called “launch control”. Launch control is the gatekeeper for launching enclaves it requires an Intel license and provides launch tokens for launching other enclaves. You use what’s called a “launch enclave” to create a “launch token”. Anyways, it wasn’t really documented at the v2 time, and the paper makes interesting insights about it. While SGX from the outside is a feature to secure computing, it also has this hidden feature of securing the market for Intel perhaps?
+SGX has this feature called “launch control”. Launch control is the gatekeeper for launching enclaves it requires an Intel license and provides launch tokens for launching other enclaves. You use what’s called a “launch enclave” to create a “launch token”. Anyways, it wasn’t really documented at this time, and the paper makes interesting insights about it. While SGX from the outside is a feature to secure computing, it also has this hidden feature of securing the market for Intel perhaps?
 
 Well Intel responded and made “[Flexible Launch Control](https://github.com/intel/linux-sgx/blob/master/psw/ae/ref_le/ref_le.md).” This allows a different party, other than Intel, to handle the launch control process. That’s nice, seems like a shit ton of work though and sadly, making the UX better around this got me thinking. Cloud providers couldn’t do launch control for people since that then defeats the purpose of only trusting the hardware vendor and not the cloud. So this is up to the customer and in my opinion it seems like a lot to land on them. Also it seems like the cloud provider would have to somehow even enable this feature...
 
