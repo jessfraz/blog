@@ -15,6 +15,7 @@ I thought it would be fun to start a blog post series containing design docs fro
 - Abusive actions can be terminated immediately.
 - The agent should be auto-updateable to handle security issues as they arise.
 - Ability to use the entire syscall interface for the processes being run.
+- This all assumes that you have some sort of software and hardware level root of trust you can use to ensure security as well.
 
 ### Other Features
 
