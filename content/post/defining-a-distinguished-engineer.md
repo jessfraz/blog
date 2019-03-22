@@ -74,7 +74,7 @@ is a cycle that they can then use when building the next system.
 
 Great technical leaders value quality, performance, and security in what they build. They
 stay up to date on advancements and research in technology so that they might be able to use
-new techniques for bettering their solutions. Technical leaders should also build with respect to for users and their privacy.
+new techniques for bettering their solutions. Technical leaders should also build with respect for users and their privacy.
 
 ### Value maintainability
 
