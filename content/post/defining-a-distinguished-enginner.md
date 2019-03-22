@@ -86,4 +86,9 @@ Technical leaders should always remain humble and modest. The best technical lea
 
 The best technical leaders know when they need to call on experts in specific areas for help or feedback on certain designs or architecture. By participating in the external community, leaders form strong networks and bonds with fellow engineers they can call on when they need them. Technical leaders should always be eager to use these relationships when they need them or introduce others to these folks if they could use their expertise.
 
+### Value research
+
+Along with being able to call upon other experts, technical leaders should
+value well researched solutions. They should strive to learn from prior art.
+
 These are just a few of the things I think define a strong technical leader and engineer. I am sure I will grow this list as I personally grow myself every day.
