@@ -29,7 +29,7 @@ a way that makes them approachable.
 
 ### Give constructive technical criticism 
 
-A distinguished engineer should never tear others down but they should be capable of giving constructive criticism on technical work. This does not mean finding something wrong just to prove their brilliance; no, that would make them the brilliant jerk. Constructive criticism means teaching others to make their work better when their are problems, while also encouraging them to iterate and empowering them to succeed.
+A distinguished engineer should never tear others down but they should be capable of giving constructive criticism on technical work. This does not mean finding something wrong just to prove their brilliance; no, that would make them the brilliant jerk. Constructive criticism means teaching others to make their work better when there are problems, while also encouraging them to iterate and empowering them to succeed.
 
 ### Have strong opinions loosely held
 
