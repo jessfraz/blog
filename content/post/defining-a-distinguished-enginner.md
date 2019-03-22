@@ -109,3 +109,7 @@ Along with being able to call upon other experts, technical leaders should
 value well researched solutions. They should strive to learn from prior art.
 
 These are just a few of the things I think define a strong technical leader and engineer. I am sure I will grow this list as I personally grow myself every day.
+
+Most importantly you must actually _do_ these things. Actions speak louder than
+words.
+
