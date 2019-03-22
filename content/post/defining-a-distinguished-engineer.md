@@ -3,6 +3,7 @@ date = "2019-03-21T08:09:26-07:00"
 title = "Defining a Distinguished Engineer"
 author = "Jessica Frazelle"
 description = "A summary of how I would define a distinguished engineer or technical fellow."
+aliases = ["post/defining-a-distinguished-enginner", "defining-a-distinguished-enginner"]
 +++
 
 I learned a lot about myself and the way big companies are organized over the past year or so. I had mentioned a bit in a [previous blog post](https://blog.jessfraz.com/post/government-medicine-capitalism/) and [podcast](https://weirdtrickmafia.fm/post/pilot/) about “the N + 1 shithead problem” (from [Bryan Cantrill’s talk on leadership](https://www.youtube.com/watch?v=1KeYzjILqDo)). To reiterate, the “N +1 shithead problem” occurs when you are demotivated by seeing people who are a level above you behave poorly, or more bluntly when they behave like a shithead. I know from experience what a huge demotivator this is and after talking to several other folks I realized this is quite common. 
