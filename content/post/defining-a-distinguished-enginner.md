@@ -70,8 +70,8 @@ is a cycle that they can then use when building the next system.
 ### Value quality, performance, and security
 
 Great technical leaders value quality, performance, and security in what they build. They
-stay up to date on advancements in technology so that they might be able to use
-new techniques for better performance in their solutions.
+stay up to date on advancements and research in technology so that they might be able to use
+new techniques for bettering their solutions.
 
 ### Value maintainability
 
