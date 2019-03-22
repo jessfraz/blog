@@ -67,6 +67,22 @@ will not create the same failures. Of course no system is perfect so they
 should be able to learn from the failures they cannot anticipate as well. This
 is a cycle that they can then use when building the next system.
 
+### Value quality
+
+Great technical leaders value quality and performance in what they build. They
+stay up to date on advancements in technology so that they might be able to use
+new techniques for better performance in their solutions.
+
+### Value maintainability
+
+Technical leaders should value writing code that is easy to maintain and easy
+to understand. They should value unit and integration tests as well as making
+sure if a bug is fixed it has a test to make sure there is not a regression.
+Technical leaders should use code comments, not as a garnish, but to denote
+things a reader would need to know. This could be details of a code section
+that fixes a specific bug or maybe reasoning behind why something is written
+a certain way. Documenting context is super valuable and helpful for maintainability.
+
 ## Community
 
 Good technical leaders are also leaders in the outside communities. This can include giving talks on various things they have built as well as mentoring others in the community or the workplace. 
