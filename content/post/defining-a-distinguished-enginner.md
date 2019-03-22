@@ -1,5 +1,5 @@
 +++
-date = "2019-03-21T01:09:26-07:00"
+date = "2019-03-21T08:09:26-07:00"
 title = "Defining a Distinguished Engineer"
 author = "Jessica Frazelle"
 description = "A summary of how I would define a distinguished engineer or technical fellow."
