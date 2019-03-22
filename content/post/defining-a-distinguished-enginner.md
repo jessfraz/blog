@@ -25,7 +25,8 @@ A technical leader should build up others and empower their colleagues to do thi
 
 A technical leader should also make time for growing and mentoring others.
 They should be approachable and communicate with their peers and colleagues in
-a way that makes them approachable.
+a way that makes them approachable. They should welcome newcomers to the team
+and treat them as peers from day one.
 
 ### Give constructive technical criticism 
 
