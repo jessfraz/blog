@@ -39,7 +39,9 @@ A technical leader should be able to have strong opinions loosely held on design
 
 ### Great communicator 
 
-A technical leader should have strong communication skills and be able to articulate the “why” of a problem as well as articulate the technical details of designs. They should never communicate in a derogatory manner. They should always communicate to others as peers and colleagues.
+A technical leader should have strong communication skills and be able to articulate the “why” of a problem as well as articulate the technical details of designs. They should never communicate in a derogatory manner. They should always communicate to others as peers and colleagues. 
+
+At times, technical leaders will need to act as a bridge between teams. It is really important to be able to clearly communicate then as well as always.
 
 ### Humility and empathy
 
