@@ -74,7 +74,7 @@ is a cycle that they can then use when building the next system.
 
 Great technical leaders value quality, performance, and security in what they build. They
 stay up to date on advancements and research in technology so that they might be able to use
-new techniques for bettering their solutions.
+new techniques for bettering their solutions. Technical leaders should also build with respect to for users and their privacy.
 
 ### Value maintainability
 
@@ -110,6 +110,10 @@ The best technical leaders know when they need to call on experts in specific ar
 
 Along with being able to call upon other experts, technical leaders should
 value well researched solutions. They should strive to learn from prior art.
+
+## Have fun
+
+Always make sure to have fun and not take yourself too seriously!
 
 These are just a few of the things I think define a strong technical leader and engineer. I am sure I will grow this list as I personally grow myself every day.
 
