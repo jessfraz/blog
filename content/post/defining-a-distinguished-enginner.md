@@ -67,9 +67,9 @@ will not create the same failures. Of course no system is perfect so they
 should be able to learn from the failures they cannot anticipate as well. This
 is a cycle that they can then use when building the next system.
 
-### Value quality
+### Value quality, performance, and security
 
-Great technical leaders value quality and performance in what they build. They
+Great technical leaders value quality, performance, and security in what they build. They
 stay up to date on advancements in technology so that they might be able to use
 new techniques for better performance in their solutions.
 
