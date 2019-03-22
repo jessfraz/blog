@@ -37,7 +37,7 @@ A distinguished engineer should never tear others down but they should be capabl
 
 A technical leader should be able to have strong opinions loosely held on designs and architecture. They do not need to have opinions on everything, that would be pedantic. Technical leaders should be able to use their experience to help others succeed, while also empowering others to own solutions. Technical leaders should not pass down solutions to problems but allow others to learn by letting others come up with solutions themselves. This is where good constructive criticism (from above) can come into play.
 
-### Great communicator 
+### Great communicator and bridge
 
 A technical leader should have strong communication skills and be able to articulate the “why” of a problem as well as articulate the technical details of designs. They should never communicate in a derogatory manner. They should always communicate to others as peers and colleagues. 
 
