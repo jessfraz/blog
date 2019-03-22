@@ -21,7 +21,7 @@ A technical leader should always realize that there is more to learn. One cannot
 
 ### Empower others
 
-A technical leader should build other up and empower their colleagues to do things that are more challenging than what they might think they are capable of. This is key for growing other members of an organization. I personally believe you don’t need a high title to take on a hard task, you just need the support and faith that you are capable of handling it. That support should come from the distinguished engineer and be reflected in their behavior towards others.
+A technical leader should build up others and empower their colleagues to do things that are more challenging than what they might think they are capable of. This is key for growing other members of an organization. I personally believe you don’t need a high title to take on a hard task, you just need the support and faith that you are capable of handling it. That support should come from the distinguished engineer and be reflected in their behavior towards others.
 
 A technical leader should also make time for growing and mentoring others.
 They should be approachable and communicate with their peers and colleagues in
