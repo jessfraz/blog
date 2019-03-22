@@ -56,6 +56,16 @@ be the internal customers of their infrastructure or external customers if they
 are on a product team. The best technical leaders are capable of empathizing
 with customers and iterating quickly on customer feedback.
 
+
+### Build resilient systems
+
+A part of being a technical leader is having the experience of building
+multiple systems in the past. Distinguished engineers should be able to
+anticipate various failures from their past experiences and build systems that
+will not create the same failures. Of course no system is perfect so they
+should be able to learn from the failures they cannot anticipate as well. This
+is a cycle that they can then use when building the next system.
+
 ## Community
 
 Good technical leaders are also leaders in the outside communities. This can include giving talks on various things they have built as well as mentoring others in the community or the workplace. 
