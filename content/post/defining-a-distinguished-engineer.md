@@ -115,6 +115,8 @@ value well researched solutions. They should strive to learn from prior art.
 
 Always make sure to have fun and not take yourself too seriously!
 
+[Take the long view, not just the broad view.](https://twitter.com/LeaKissner/status/1109259338265165824)
+
 These are just a few of the things I think define a strong technical leader and engineer. I am sure I will grow this list as I personally grow myself every day.
 
 Most importantly you must actually _do_ these things. Actions speak louder than
