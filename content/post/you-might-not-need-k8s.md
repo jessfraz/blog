@@ -11,7 +11,7 @@ some interesting problems to be solved in Kubernetes. _But_ I would like to
 emphasize that those problems are pretty exclusive to the way Kubernetes was
 designed and you could easily build your own orchestrator without them.
 
-#### Containerd
+## Use Containerd
 
 If you need an example of a custom, minimal orchestrator with containerd you
 should checkout [stellar](https://github.com/ehazlett/stellar/).
