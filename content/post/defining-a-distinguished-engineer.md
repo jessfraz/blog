@@ -92,7 +92,7 @@ Good technical leaders are also leaders in the outside communities. This can inc
 
 ### Learn from external community
 
-If you silo yourself to only learning within your company, you are missing out on a world of experiences and expertise different than yours from the external community. Technical leaders realize this and place importance on learning from the larger world of computing than just their solo.
+If you silo yourself to only learning within your company, you are missing out on a world of experiences and expertise different than yours from the external community. Technical leaders realize this and place importance on learning from the larger world of computing than just their silo.
 
 ### Value listening and be open to feedback
 
