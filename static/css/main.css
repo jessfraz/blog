@@ -253,19 +253,19 @@ text-shadow: 0 1px 0 #fff;
         font-size: 45px;
     }
     h2 {
-        font-size: 40px;
-    }
-    h3 {
         font-size: 35px;
     }
-    h4 {
+    h3 {
         font-size: 25px;
     }
+    h4 {
+        font-size: 20px;
+    }
     h5 {
-        font-size: 21px;
+        font-size: 15px;
     }
     h6 {
-        font-size: 17px;
+        font-size: 10px;
     }
     h1 small {
         font-size: 35px;
@@ -771,21 +771,21 @@ text-shadow: 0 1px 0 #fff;
 
 @media screen and (max-width: 640px) {
     h1 {
-        font-size: 1.7em;
+        font-size: 1.75em;
     }
     h2 {
         font-size: 1.5em;
     }
     h3 {
-        font-size: 1.4em;
+        font-size: 1.25em;
     }
     h4 {
-        font-size: 1.30em;
+        font-size: 1.0em;
     }
     h5 {
-        font-size: 1.15em;
+        font-size: .75em;
     }
     h6 {
-        font-size: 1.0em;
+        font-size: .5em;
     }
 }
