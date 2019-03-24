@@ -16,7 +16,7 @@ A project I am working on required me to checkin to places on foursquare that I 
 
 
 
-##### Authentication
+## Authentication
 
 Let's start with the auth. If a user has not authed your application or is not currently logged into foursquare (assuming you created an app in the <a href="https://developer.foursquare.com/" target="_blank">foursquare for developers dashboard</a>) redirect them as follows.
 
@@ -53,7 +53,7 @@ if (!isset($_SESSION['access_token'])) {
 </pre>
 
 
-##### Get Location Data
+## Get Location Data
 
 Ok now you have your token and we can get into the fun part, winning at foursquare! To check into a venue you need to post the following parameters to foursquare: `venueId`, `ll` (latitude, longitude), `llAcc` (accuracy of previous points), `oauth_token`, and `v` (version, which foursquare takes in as todays date in the form "Ymd").
 
@@ -76,7 +76,7 @@ function getLatLong($venue_id, $v, $oauth_token) {
 </pre>
 
 
-##### Checkin
+## Checkin
 
 Now we can send this value into the checkin function.
 
@@ -104,7 +104,7 @@ function checkin($venue_id, $v, $oauth_token, $latlong) {
 </pre>
 
 
-##### Response
+## Response
 
 The response from this will be in the following format.
 
@@ -254,7 +254,7 @@ The response from this will be in the following format.
 </pre>
 
 
-##### Summary
+## Summary
 
 So what I found was this:
 

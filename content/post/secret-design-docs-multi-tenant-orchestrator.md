@@ -47,7 +47,7 @@ Examples of these Operating Systems include:
 - Intel Clear Linux
 - LinuxKit
 
-##### Features
+#### Features
 CoreOS Container Linux and Container Optimized OS both have the following features:
 
 - Verified boot
