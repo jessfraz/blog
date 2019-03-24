@@ -15,7 +15,7 @@ a container, for routing _some_ traffic through Tor; in contrast to the first
 post, where I explained how to route _all_ your traffic.
 
 
-### Tor Socks5 Proxy
+## Tor Socks5 Proxy
 
 I have made a Docker image for this which lives at
 [jess/tor-proxy](https://hub.docker.com/r/jess/tor-proxy/)
@@ -103,7 +103,7 @@ _[You could even run chrome in a container through the proxy...](https://github.
 
 Can we take this even further? Yes.
 
-### Privoxy HTTP Proxy
+## Privoxy HTTP Proxy
 
 The socks proxy is awesome, but if you want to additionally have an http proxy
 it is super easy!

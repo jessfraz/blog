@@ -13,7 +13,7 @@ here: [chromium.googlesource.com/chromium/src/+/master/docs/linux_sandboxing.md]
 The relevant aspect for this article is the fact it uses user namespaces and seccomp. Other deprecated features include AppArmor
 and SELinux. Sound familiar? That's because containers, as you've come to know them today, share the same features.
 
-#### Why are containers not currently being considered a "sandbox"?
+## Why are containers not currently being considered a "sandbox"?
 
 One of the key differences between how you run Chrome
 and how you run a container are the privileges used. Chrome runs as your own unprivileged user. Most containers (be it docker, runc, or rkt) run as
@@ -21,7 +21,7 @@ root.
 
 Yes, we all know that containers run unprivileged processes; but creating and running the containers themselves requires root privileges at some point.
 
-#### How can we run containers as an unprivileged user?
+## How can we run containers as an unprivileged user?
 
 Easy! With user namespaces, you might say. But it's not exactly that simple. One of the main differences between the Chrome
 sandbox and containers is cgroups. Cgroups control what a process can use. Whereas namespaces
@@ -34,7 +34,7 @@ The one key caveat being that the `{uid,gid}_map` must have the current host use
 will be run as. The size of the `{uid,gid}_map` can also only be 1. For example if you are running as uid 1000 to spawn the container, your
 `{uid,gid}_map` for the process would be `0 1000 1` for uid 0 in the container. The 1 there refers to the size.
 
-#### How is this different than the user namespace support currently in Docker?
+## How is this different than the user namespace support currently in Docker?
 
 This is quite different, but for very good reason. In Docker, by default, when the remapped user is created,
 the `/etc/subuid` and `/etc/subgid` files are populated with a contiguous 65536 length range of subordinate user and group
@@ -44,7 +44,7 @@ If you want to read more about the user namespace implementation
 in Docker I would checkout [@estesp's blog](https://integratedcode.us/2015/10/13/user-namespaces-have-arrived-in-docker/) or the
 the [docker docs](https://docs.docker.com/engine/reference/commandline/daemon/#daemon-user-namespace-options).
 
-#### POC or GTFO
+## POC or GTFO
 
 As a proof of concept of unprivileged containers without cgroups I made [binctr](https://github.com/jessfraz/binctr). Which
 spawned a
@@ -53,7 +53,7 @@ spawned a
 
 Update: it took almost a year, but this was [added to runc](https://github.com/opencontainers/runc/pull/774) in Mar 2017.
 
-#### Where does this put us in the "sandbox" landscape?
+## Where does this put us in the "sandbox" landscape?
 
 With this implementation we get:
 
@@ -79,7 +79,7 @@ such as network, mounts, processes, etc. And with cgroups we can further limit
 what the attacker can use, be it a large amount of memory, cpu, or even a fork
 bomb.
 
-#### But what about cgroups?
+## But what about cgroups?
 
 We _can_ set up cgroups for memory, blkio, cpu, and
 pids with an unprivileged user as long as the cgroup subsystem has been chowned to the
@@ -90,7 +90,7 @@ Let's not completely rule out the devices cgroup. In the future this might be en
 cgroup namespace. For now all this does is mask the cgroups path inside the container so it is not entirely useful
 for unprivileged containers at all. But in the future maybe it _could_ be (if we ask nice enough?).
 
-#### What is the awesome sauce we all gain from this?
+## What is the awesome sauce we all gain from this?
 
 Well judging by the original GitHub issue about unprivileged runc containers, the largest group of commenters is from
 the scientific community who are restricted to not run certain programs as root.

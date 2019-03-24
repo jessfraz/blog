@@ -19,7 +19,7 @@ This blog post is going to be about how I manage ~50 servers but don't do
 anything at all. Of course, I have my angry sysadmin moments when everything
 breaks and I could punch a whole in a wall... but who doesn't?
 
-### Our CI
+## Our CI
 
 First let me take a chance to familiarize you with how we test Docker. Docker's
 tests run in a Docker container. We use Jenkins as our CI mostly because we
@@ -70,7 +70,7 @@ kick off a rebuild on any of our bajillion servers.
 Now I know what you are thinking, thats a lot of servers, how do you manage to
 know when _heaven forbid_ one of them goes down.
 
-### Consul
+## Consul
 
 We have consul running **in a container** on all 50 servers in our
 infrastructure. This is AMAZING. We use a sweet project, [consul
@@ -87,14 +87,14 @@ However, I noticed after the merge the servers with kernels 3.19.x and 3.18.x
 were acting funny. We were able to fix kernel bugs that were
 specific to those versions related to networking before an RC was even cut.
 
-### Github Hooks for the Github Hooks Throne
+## Github Hooks for the Github Hooks Throne
 
 We trigger a lot of cool things with every push to master. We use nsq to
 collect the hooks and then pass the messages to all the consumers. Oh and
 obviously nsq runs in a container, as well as the [hooks
 service](https://github.com/crosbymichael/hooks).
 
-#### Master Binaries
+### Master Binaries
 
 With every push to master we push new binaries to
 [master.dockerproject.org](https://master.dockerproject.org). This way people
@@ -103,7 +103,7 @@ can easily try out new features.
 The [docker-bb service](https://github.com/jessfraz/docker-bb) is run in
 a container ;). Hopefully you are catching on to a theme here...
 
-#### Master Docs
+### Master Docs
 
 What good would being able to try new features be, if you didn't have docs for
 how to use them?
@@ -114,7 +114,7 @@ With every push to master, we deploy new docs to
 This is done with a [nsqexec service](https://github.com/jessfraz/nsqexec),
 wait for it.... RUNNING IN A CONTAINER.
 
-### Always Testing
+## Always Testing
 
 The greatest thing about all these services, which I so subtly mentioned,
 running in containers is that we can always be dogfooding and testing Docker.

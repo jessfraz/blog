@@ -21,13 +21,13 @@ That was a test. I really hope you didn't just copy, paste, and run a command on
 
 So now let's actually get started.<!--more-->
 
-### Hardware
+## Hardware
 
 The below installation was done on my MacBook Pro Retina (15-inch, Late 2013).
 
 You will also need one of these [nifty ethernet to thunderbolt adapters](http://www.apple.com/shop/product/MD463LL/A/thunderbolt-to-gigabit-ethernet-adapter).
 
-### rEFInd Boot Manager
+## rEFInd Boot Manager
 
 The majority of times I installed Linux I ran `rEFInd` on my mac, so I could keep my mac partition and have a separate Linux partition. This last time, however, I was so fed up with OSX and the fact I never used it, I nuked it entirely.I boot purely into the Debian Bootloader now. But I will save that doosey for another blog post if I think people are really as crazy as I. `rEFInd` is the lesser of two evils between the other popular `rEFIt`, you will probably see some pain points and reasons for my _fuck it, nuke it_ attitude towards OSX.
 
@@ -78,7 +78,7 @@ If not, there are various debugging tips per version of Mac OSX [here](http://ww
 
 High five! Hard part's done. Really. That is the hardest part.
 
-### Choose your Linux Distro
+## Choose your Linux Distro
 
 Obviously my favorite is Debian Jessie, so I will
 go into detail how to make a USB boot drive for that,
@@ -121,7 +121,7 @@ $ sudo dd if=debian-jessie.img of=/dev/disk1
 $ diskutil eject /dev/disk1
 </pre>
 
-### Partition Your HD
+## Partition Your HD
 
 Next you need to partition your hard drive so
 there is enough space for your linux distro. Here are the steps:
@@ -132,7 +132,7 @@ there is enough space for your linux distro. Here are the steps:
 
 Honestly the smaller you make the "Macintosh HD" partition the better, but maybe I am biased.
 
-### Installing your Linux Distro
+## Installing your Linux Distro
 
 Make sure your computer is off. Connect your Ethernet adapter and your USB drive we made earlier.
 
@@ -159,7 +159,7 @@ If you are going to be running Docker on your system I highly recommend `ext4` w
 
 Complete the install and reboot.
 
-### You are in a term, it feels bleek
+## You are in a term, it feels bleek
 
 Do not fret. I repeat do not fret.
 
@@ -195,7 +195,7 @@ $ apt-get install sudo
 $ adduser your_username sudo
 </pre>
 
-### Let's build a kernel from source wooooo
+## Let's build a kernel from source wooooo
 
 Now here's the thing. Debian Jessie comes with a `3.16.x` kernel.
 `3.17.x` is really where the awesome is at for Mac OS X,
@@ -282,7 +282,7 @@ If you are going to be installing Docker you may as well add
 you are there as well.
 
 
-### Drivers
+## Drivers
 
 Okay now we are to the important part, let's get shit to work.
 

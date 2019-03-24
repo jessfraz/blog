@@ -11,17 +11,17 @@ it is...
 
 ## 2018
 
-#### [re:Invent - Container Power Hour](https://www.youtube.com/watch?v=HCCkVz25UU4)
+### [re:Invent - Container Power Hour](https://www.youtube.com/watch?v=HCCkVz25UU4)
 
 **Co-Speakers: [Clare Liguori](https://twitter.com/clare_liguori) and [Abby Fuller](https://twitter.com/abbyfuller)**
 
 This talk goes over using containers on AWS.
 
-#### [ChaosConf - Breaking Containers](https://www.youtube.com/watch?v=1hhVS4pdrrk&list=PLLIx5ktghjqKtZdfDDyuJrlhC-ICfhVAN&index=11)
+### [ChaosConf - Breaking Containers](https://www.youtube.com/watch?v=1hhVS4pdrrk&list=PLLIx5ktghjqKtZdfDDyuJrlhC-ICfhVAN&index=11)
 
 Chaos engineering and stories of bugs about containers.
 
-#### [LinuxConfAu - Containers aka crazy user space fun](https://www.youtube.com/watch?v=7mzbIOtcIaQ)
+### [LinuxConfAu - Containers aka crazy user space fun](https://www.youtube.com/watch?v=7mzbIOtcIaQ)
 
 Like the movie Plan 9 from outer space, this talk covers containers from 
 user space. What are they? Where did they come from?
@@ -30,7 +30,7 @@ jokes, learn from the interesting technical details.
 
 ## 2017
 
-#### [Google Cloud Next - Build user trust: running containers securely](https://www.youtube.com/watch?v=Cd4JU7qzYbE)
+### [Google Cloud Next - Build user trust: running containers securely](https://www.youtube.com/watch?v=Cd4JU7qzYbE)
 
 **Co-Speaker: Alex Mohr**
 
@@ -40,13 +40,13 @@ demonstrate the ways you can use Seccomp, AppArmor, SELinux and cgroups to make
 your application containers as secure as possible - so you can build organizational
 and customer trust.
 
-#### [CoreOS Fest - Container Linux on the Desktop!](https://www.youtube.com/watch?v=gES4-X6y278)
+### [CoreOS Fest - Container Linux on the Desktop!](https://www.youtube.com/watch?v=gES4-X6y278)
 
 This talk covers how to build a secure desktop OS with only containers and
 CoreOS Container Linux. It also describes the benefits gained from using
 Container Linux as a base OS and how to go about running it on the desktop.
 
-#### [Kubecon - Dance Madly on the Lip of a Volcano](https://www.youtube.com/watch?v=sNjylW8FV9A)
+### [Kubecon - Dance Madly on the Lip of a Volcano](https://www.youtube.com/watch?v=sNjylW8FV9A)
 
 **Co-Speaker: [Brandon Philips](https://twitter.com/BrandonPhilips)**
 
@@ -66,26 +66,26 @@ internally in your company.
 
 ## 2016
 
-#### [Container Summit - Building Containers in Pure Bash and C](https://containersummit.io/events/nyc-2016/videos/building-containers-in-pure-bash-and-c)
+### [Container Summit - Building Containers in Pure Bash and C](https://containersummit.io/events/nyc-2016/videos/building-containers-in-pure-bash-and-c)
 
 This talk demonstrates how to build containers from the Primitives in Linux
 without using a container runtime. Learn about the objects that make up
 containers themselves.
 
-#### [Arrested DevOps - Exciting Topics like Containers & Security](https://www.youtube.com/watch?v=qPs5U5hdciM)
+### [Arrested DevOps - Exciting Topics like Containers & Security](https://www.youtube.com/watch?v=qPs5U5hdciM)
 
 [Ben Hughes](https://twitter.com/benjammingh) and I chat with
 [Bridget Kromhout](https://twitter.com/bridgetkromhout) about everyone's
 favorite topic, security.
 
-#### [Github Universe - Blurry lines between individual contributor & corporate backers](https://www.youtube.com/watch?v=4Iem6JK6PtY)
+### [Github Universe - Blurry lines between individual contributor & corporate backers](https://www.youtube.com/watch?v=4Iem6JK6PtY)
 
 When working on open source projects, your contributions and opinions on the
 project and its motives are usually very personal. This talk
 covers intricacies of "choosing your battles" and how personal passion for
 a project might conflict with corporate motives.
 
-#### [Container Camp - Application Sandboxes vs. Containers](https://www.youtube.com/watch?v=mfnhSX6SJVA)
+### [Container Camp - Application Sandboxes vs. Containers](https://www.youtube.com/watch?v=mfnhSX6SJVA)
 
 This talk covers the differences between application sandboxes and containers.
 The most well known sandbox is Chrome, for providing "hard guarantees about what
@@ -99,7 +99,7 @@ containers that actually "contain"? What challenges will be faced?
 
 ## 2015
 
-#### [Dockercon EU - The Latest in Docker Engine](https://www.youtube.com/watch?v=I7i4SY-iRkA)
+### [Dockercon EU - The Latest in Docker Engine](https://www.youtube.com/watch?v=I7i4SY-iRkA)
 
 **Co-Speaker: [Arnaud Porterie](https://twitter.com/icecrime)**
 
@@ -110,7 +110,7 @@ troubleshooting tips, and cool lesser known features.
 This video has the first ever demo of Seccomp in Docker as well as a fun story
 about trying to save a docker image to a floppy disk.
 
-#### [DockerCon - Container Hacks and Fun Images](https://www.youtube.com/watch?v=cYsVvV1aVss)
+### [DockerCon - Container Hacks and Fun Images](https://www.youtube.com/watch?v=cYsVvV1aVss)
 
 This talk is a 100% live demo of running desktop applications in containers.
 Everything from Spotify to Skype. Explore some of the more interesting things
@@ -118,24 +118,24 @@ you can containerize on Linux. View first hand different workflows for how to
 run/build different apps in containers. This talk covers desktop apps as well
 as some other apps you would have never thought could run in a container.
 
-#### [Container Camp - Willy Wonka of Containers](https://www.youtube.com/watch?v=GsLZz8cZCzc)
+### [Container Camp - Willy Wonka of Containers](https://www.youtube.com/watch?v=GsLZz8cZCzc)
 
 This talk has live demos of desktop applications in containers including Steam.
 
-#### [HashiConf - Dockerizing all the Things](https://www.youtube.com/watch?v=PeE8hcQtFq4)
+### [HashiConf - Dockerizing all the Things](https://www.youtube.com/watch?v=PeE8hcQtFq4)
 
 This talk goes over the way the Docker project uses containers for their
 testing infrastructure as well as internal infrastructure. Find out about real
 pain points solved by running things in containers as well as some different
 hurdles uncovered along the way.
 
-#### [DotGo - The Docker Trail](https://www.youtube.com/watch?v=j55aWjgzfV8)
+### [DotGo - The Docker Trail](https://www.youtube.com/watch?v=j55aWjgzfV8)
 
 This talk recounts stories from the trenches of developing Docker, explaining 3
 odd things her team stumbled upon in their Go code and how they fixed them. One
 of which is very odd and gets into the depths of `dlopen`-ing yourself.
 
-#### [Google Cloud Platform Podcast - Containers](https://www.youtube.com/watch?v=zu8NSrNFZ4M)
+### [Google Cloud Platform Podcast - Containers](https://www.youtube.com/watch?v=zu8NSrNFZ4M)
 
 [Francesc Campoy](https://twitter.com/francesc) and I talk all about
 Dockercon EU and containers.

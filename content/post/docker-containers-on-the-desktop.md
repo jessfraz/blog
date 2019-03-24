@@ -35,11 +35,11 @@ I hate installing things on my host and the files getting everywhere. I wanted t
 
 The following covers a few of my favorite applications I run in containers. Each of the commands written below is actually pulled directly from my bash aliases. So you can have the same user experience as running one command today.
 
-### TUIs (Text User Interface, pronounced *too-eee*)
+## TUIs (Text User Interface, pronounced *too-eee*)
 
 Let's start with some easy text-based applications:
 
-#### 1. Irssi
+### 1. Irssi
 
 [Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/irssi/Dockerfile)
 
@@ -56,7 +56,7 @@ $ docker run -it \
 
 ![irssi](/img/irssi.png)
 
-#### 2. Mutt
+### 2. Mutt
 
 [Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/mutt/Dockerfile)
 
@@ -74,7 +74,7 @@ $ docker run -it \
 
 ![mutt](/img/mutt.png)
 
-#### 3. Rainbowstream
+### 3. Rainbowstream
 
 [Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/rainbowstream/Dockerfile)
 
@@ -91,7 +91,7 @@ $ docker run -it \
 
 ![rainbowstream](/img/rainbowstream.png)
 
-#### 4. Lynx
+### 4. Lynx
 
 [Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/lynx/Dockerfile)
 
@@ -110,7 +110,7 @@ $ docker run -it \
 
 Okay, those text based apps are fun and all but how about we spice things up a bit.
 
-### GUIs
+## GUIs
 
 None of the images below use `X11-Forwarding` with ssh. Because why should you ever have to install `ssh` into a container? EWWW UNNECESSARY BLOAT!
 
@@ -120,7 +120,7 @@ The commands listed below are run on a linux machine. But Mac users, I have a sp
 
 Note my patch was added for `--device /dev/snd` in Docker 1.8, before that you needed `-v /dev/snd:/dev/snd --privileged`.
 
-#### 5. Chrome
+### 5. Chrome
 
 [Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/chrome/stable/Dockerfile)
 
@@ -142,7 +142,7 @@ $ docker run -it \
 
 ![chrome](/img/chrome.png)
 
-#### 6. Spotify
+### 6. Spotify
 
 [Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/spotify/Dockerfile)
 
@@ -159,7 +159,7 @@ $ docker run -it \
 
 ![spotify](/img/spotify.png)
 
-#### 7. Gparted
+### 7. Gparted
 
 [Dockerfile](https://github.com/docker/docker/blob/master/contrib/desktop-integration/gparted/Dockerfile)
 
@@ -178,7 +178,7 @@ $ docker run -it \
 
 ![gparted](/img/gparted.png)
 
-#### 8. Skype
+### 8. Skype
 
 [Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/skype/Dockerfile)
 
@@ -214,7 +214,7 @@ $ docker run -it \
 
 ![skype2](/img/skype2.png)
 
-#### 9. Tor Browser
+### 9. Tor Browser
 
 [Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/tor-browser/Dockerfile)
 
@@ -231,7 +231,7 @@ $ docker run -it \
 
 ![tor-browser](/img/tor-browser.png)
 
-#### 10. Cathode
+### 10. Cathode
 
 [Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/cathode/Dockerfile)
 
