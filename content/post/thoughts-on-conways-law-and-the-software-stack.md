@@ -49,7 +49,7 @@ of the other layers of the stack and the entire system.
 Let’s move up the stack a bit to something I personally have experienced.
 I worked a lot on container runtimes. I also have worked on kubernetes.
 I was horrified to find people are running multi-tenant kubernetes clusters
-with multiple customers processes. The architecture of kubernetes is
+with multiple customers processes, aka for isolating untrusted processes. The architecture of kubernetes is
 just [not designed for this](https://blog.jessfraz.com/post/secret-design-docs-multi-tenant-orchestrator/#why-not-kubernetes).
 
 A common miscommunication is the "window dressing." For example, there is a
