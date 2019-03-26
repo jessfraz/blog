@@ -761,11 +761,11 @@ text-shadow: 0 1px 0 #fff;
      */
 @media screen and (max-width: 480px) {
     header nav {
-        font-size: 70%;
+        font-size: 75%;
     }
 
     header nav ul.main li {
-        font-size: 85%;
+        font-size: 90%;
     }
 }
 
