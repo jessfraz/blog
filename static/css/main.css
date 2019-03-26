@@ -233,7 +233,7 @@ text-shadow: 0 1px 0 #fff;
     h5,
     h6 {
         margin: 0.85 0;
-        font-family: monospace;
+        font-family: 'IBM Plex Mono', monospace;
         font-weight: 400;
         line-height: 130%;
         color: inherit;
@@ -383,7 +383,7 @@ text-shadow: 0 1px 0 #fff;
     body {
         -webkit-font-smoothing: antialiased;
         margin: 0;
-        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: 'IBM Plex Sans', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 20px;
         line-height: 1.7;
         color: #333333;
@@ -491,7 +491,7 @@ text-shadow: 0 1px 0 #fff;
         border-bottom: none;
     }
     header nav ul.main li {
-        font-family: monospace;
+        font-family: 'IBM Plex Mono', monospace;
         font-weight: 400;
         font-size: 16px;
     }
@@ -535,7 +535,7 @@ text-shadow: 0 1px 0 #fff;
         margin-bottom: 20px;
         display: block;
         font-weight: 600;
-        font-family: monospace;
+        font-family: 'IBM Plex Mono', monospace;
     }
     article {
         margin-bottom: 60px;
