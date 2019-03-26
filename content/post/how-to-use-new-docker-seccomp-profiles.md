@@ -46,7 +46,7 @@ At the end of the day I saved this output into a file by running
 
 Then I used the world's most janky bash script to generate a profile:
 
-```bash
+```sh
 #!/bin/bash
 set -e
 set -o pipefail
@@ -118,7 +118,7 @@ main $@
 
 You use this script like so:
 
-```bash
+```sh
 $ ./shitty-seccomp-profile-generator.sh chrome-strace.log
 ```
 

@@ -45,7 +45,7 @@ Let's start with some easy text-based applications:
 
 Best IRC client.
 
-```bash
+```sh
 $ docker run -it \
     -v /etc/localtime:/etc/localtime \
     -v $HOME/.irssi:/home/user/.irssi \ # mounts irssi config in container
@@ -62,7 +62,7 @@ $ docker run -it \
 
 The text based email client that rules!
 
-```bash
+```sh
 $ docker run -it \
     -v /etc/localtime:/etc/localtime \
     -e GMAIL -e GMAIL_NAME \ # pass env variables to config
@@ -80,7 +80,7 @@ $ docker run -it \
 
 Awesome text based twitter client.
 
-```bash
+```sh
 $ docker run -it \
     -v /etc/localtime:/etc/localtime \
     -v $HOME/.rainbow_oauth:/root/.rainbow_oauth \ # mount config files
@@ -97,7 +97,7 @@ $ docker run -it \
 
 The browser everyone loves (to hate). *but secretly I love*
 
-```bash
+```sh
 $ docker run -it \
     --name lynx \
     jess/lynx
@@ -126,7 +126,7 @@ Note my patch was added for `--device /dev/snd` in Docker 1.8, before that you n
 
 Pretty sure everyone knows what chrome is, but my image comes with flash and the google talk plugin so you can do hangouts.
 
-```bash
+```sh
 $ docker run -it \
     --net host \ # may as well YOLO
     --cpuset-cpus 0 \ # control the cpu
@@ -148,7 +148,7 @@ $ docker run -it \
 
 All the 90s hits you ever wanted and more.
 
-```bash
+```sh
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
@@ -167,7 +167,7 @@ Partition your device in a container.
 
 MIND BLOWN.
 
-```bash
+```sh
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
@@ -185,7 +185,7 @@ $ docker run -it \
 The other video conferencer. This relies on running pulseaudio also in
 a container.
 
-```bash
+```sh
 # start pulseaudio
 $ docker run -d \
     -v /etc/localtime:/etc/localtime \
@@ -196,7 +196,7 @@ $ docker run -d \
 ```
 
 
-```bash
+```sh
 # start skype
 $ docker run -it \
     -v /etc/localtime:/etc/localtime \
@@ -220,7 +220,7 @@ $ docker run -it \
 
 Because Tor, duh!
 
-```bash
+```sh
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
@@ -237,7 +237,7 @@ $ docker run -it \
 
 That super old school terminal.
 
-```bash
+```sh
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display

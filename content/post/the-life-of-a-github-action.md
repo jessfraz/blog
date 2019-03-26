@@ -134,7 +134,7 @@ CMD ["cleanup-pr-branch"]
 
 Below is the contents of the bash script I am executing.
 
-```bash
+```sh
 #!/bin/bash
 set -e
 set -o pipefail

@@ -39,7 +39,7 @@ other postfix image in existence.
 
 You can run it with:
 
-```bash
+```sh
 $ docker run --restart always -d \
     --name postfix \
     --net container:jenkins \
@@ -91,7 +91,7 @@ can find the gitserver docker image at `r.j3ss.co/gitserver` or the [Dockerfile]
 
 You can run it with:
 
-```bash
+```sh
 $ docker run --restart always -d \
     --name gitserver \
     -p 127.0.0.1:22:22 \
@@ -105,7 +105,7 @@ can find the Gitiles docker image at `r.j3ss.co/gitiles` or the [Dockerfile](htt
 
 You can run it with:
 
-```bash
+```sh
 $ docker run --restart always -d \
     --name gitiles \
     -p 127.0.0.1:8080:8080 \
@@ -135,7 +135,7 @@ You can find the ZNC docker image at `r.j3ss.co/znc` or the [Dockerfile](https:/
 
 You can run it with:
 
-```bash
+```sh
 $ docker run --restart always -d \
     --name znc \
     -p 6697:6697 \

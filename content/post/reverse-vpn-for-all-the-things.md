@@ -33,7 +33,7 @@ just make sure you have docker installed there.
 1) Generate the config, we are saving all the state into `/volumes/openvpn` but
 you can store it wherever.
 
-    ```bash
+    ```sh
     # substitude your own domain for rvpn.j3ss.co below
     $ docker run --rm -it \
         -v /volumes/openvpn:/etc/openvpn \
@@ -43,7 +43,7 @@ you can store it wherever.
 
 2) Generate certificates:
 
-    ```bash
+    ```sh
     # This will prompt you for a passphrase and the information for your
     # certificate request.
     $ docker run --rm -it \
@@ -58,7 +58,7 @@ you can store it wherever.
 
 3) Start the openvpn server:
 
-    ```bash
+    ```sh
     $ docker run --restart always -d \
         --name openvpn \
         -v /volumes/openvpn:/etc/openvpn \
@@ -70,7 +70,7 @@ you can store it wherever.
 4) Create a client certificate, my client is `acidburn` you can name yours
 whatever you would like.
 
-    ```bash
+    ```sh
     # This will prompt you to enter the certificate's password you set in step 2
     $ docker run --rm -it \
         -v /volumes/openvpn:/etc/openvpn \
@@ -80,7 +80,7 @@ whatever you would like.
 
 5) Get the client certificate (replace acidburn with your name from above):
 
-    ```bash
+    ```sh
     $ docker run --rm -it \
 		-v /volumes/openvpn:/etc/openvpn \
 		r.j3ss.co/openvpn-server \
@@ -95,7 +95,7 @@ openvpn on your host too (but I will judge you).
 
 While ssh-ed into the machine I will start my openvpn client daemon:
 
-```bash
+```sh
 $ docker run --restart always -d \
     --name openvpn \
     -v /path/to/config/acidburn.ovpn:/etc/openvpn/acidburn.ovpn:ro \
@@ -109,7 +109,7 @@ container:openvpn`!
 
 For example let's run an nginx container:
 
-```bash
+```sh
 $ docker run --restart always -d \
 	--name nginx \
 	--net=container:openvpn \

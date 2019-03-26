@@ -24,7 +24,7 @@ We are going to start with an R base and build our ideal (aka you can make
 yours different, chill...) R data science
 container, with the following Dockerfile:
 
-```bash
+```sh
 # our R base image
 FROM r-base
 
@@ -47,13 +47,13 @@ CMD ["R"]
 
 Build the image:
 
-```bash
+```sh
 $ docker build --rm --force-rm -t jess/r-custom .
 ```
 
 Run and use the image:
 
-```bash
+```sh
 # we need X11 for the graph to display, alternatively
 # you can save to a file that is in a bind-mounted dir
 # or you can docker cp the file to the host :)

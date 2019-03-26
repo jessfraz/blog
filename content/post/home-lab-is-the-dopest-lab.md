@@ -38,7 +38,7 @@ controller and it is now at [r.j3ss.co/unifi](https://github.com/jessfraz/docker
 
 You can run it with:
 
-```bash
+```sh
 docker run -d --restart always \
     -v /etc/localtime:/etc/localtime:ro \
     --name unifi \
@@ -56,7 +56,7 @@ docker run -d --restart always \
 The web UI is at https://{ip}:8443. To adopt an access point, and get it
 to show up in the software you will need to ssh into the AP and run:
 
-```bash
+```sh
 ssh ubnt@$AP-IP mca-cli set-inform http://$address:8080/inform
 ```
 
@@ -112,7 +112,7 @@ I have dockerfiles for all the Yubikey tools you need to set it up in my
 
 For example you can jump into a container with `ykman` with:
 
-```bash
+```sh
 docker run --rm -it \
     -v /etc/localtime:/etc/localtime:ro \
     --device /dev/usb \
@@ -127,7 +127,7 @@ stuck all the commands are in my dotfile aliases at
 
 I like to require "touch to authenticate". You can do this with:
 
-```bash
+```sh
 # for every ssh connection
 ykman openpgp touch aut on
 

@@ -88,7 +88,7 @@ to do is pipe that to [magneto](https://github.com/jessfraz/magneto) to get the 
 
 The following is for my chrome container:
 
-```bash
+```sh
 $ sudo runc events | magneto
 ```
 
@@ -102,7 +102,7 @@ If you are interested in all the configs for my containers, checkout
 I even included a [`systemd` service file](https://github.com/jessfraz/containers/blob/master/runc%40.service)
 that can easily run any container (without a tty) in this directory via:
 
-```bash
+```sh
 $ sudo systemctl start runc@foldername
 
 # for example:

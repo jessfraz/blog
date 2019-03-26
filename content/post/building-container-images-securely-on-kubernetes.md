@@ -50,7 +50,7 @@ It consisted of a `dist` command line tool for interacting with the registry
 and runc. Combined together with the awesome powers of bash like so (`nsinit`
 was `runc` before `runc` was A Thing):
 
-```bash
+```sh
 #!/bin/bash
 
 function FROM () {

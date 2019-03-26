@@ -20,7 +20,7 @@ homegrown, Jess bash scripts.
 
 But now MY LIFE JUST GOT SO MUCH EASIER. Let me show you how:
 
-```bash
+```sh
 # create a new bridge network with your subnet and gateway for your ip block
 $ docker network create --subnet 203.0.113.0/24 --gateway 203.0.113.254 iptastic
 

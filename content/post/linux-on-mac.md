@@ -40,7 +40,7 @@ If you are running Yosemite you are SOL
 (not really but read [this](http://www.rodsbooks.com/refind/yosemite.html)
 and I wish you luck on your journey):
 
-```bash
+```sh
 $ curl -O http://downloads.sourceforge.net/project/refind/0.8.3/refind-bin-0.8.3.zip
 $ unzip refind-bin-0.8.3.zip
 $ cd refind-bin-0.8.3/
@@ -54,7 +54,7 @@ $ sudo ./install.sh --alldrivers
 Okay now you need to edit `/EFI/refind/refind.conf`.
 The key differences you should make to the default config are as follows:
 
-```bash
+```sh
 # Enable the scan for file system drivers
 scan_driver_dirs EFI/tools/drivers,drivers
 
@@ -88,7 +88,7 @@ As of the writing of this article, Debian Jessie is on it's Beta 2 release.
 You can download the netist image from [here](https://www.debian.org/devel/debian-installer/).
 But detailed instructions follow:
 
-```bash
+```sh
 # download the iso
 $ curl -O http://cdimage.debian.org/cdimage/jessie_di_beta_2/amd64/iso-cd/debian-jessie-DI-b2-amd64-netinst.iso
 
@@ -175,7 +175,7 @@ View your `/etc/apt/sources.list` and it is probably messed up and pointing to a
 
 Change it to the following (or whatever your distro wants):
 
-```bash
+```sh
 deb http://ftp.us.debian.org/debian jessie main contrib non-free
 deb-src http://ftp.us.debian.org/debian/ jessie main contrib non-free
 
@@ -186,7 +186,7 @@ deb http://security.debian.org/ jessie/updates main contrib non-free
 
 Now we can:
 
-```bash
+```sh
 $ apt-get update
 $ apt-get upgrade
 
@@ -210,7 +210,7 @@ but honestly I build my own everytime so take that as you will.
 Usually, I do these builds in a container.
 But for the sake of this we can just do it on our host _cringe_.
 
-```bash
+```sh
 # install deps to build kernel
 $ apt-get install curl kernel-package fakeroot
 
@@ -261,7 +261,7 @@ then through the distro bootloader (ex. GRUB).
 
 Let's clean things up.
 
-```bash
+```sh
 # Make sure we have the right kernel
 $ uname -a
 # Linux debian 3.17.4 #1 SMP Wed Nov 12 01:11:57 PST 2014 x86_64 GNU/Linux
@@ -288,13 +288,13 @@ Okay now we are to the important part, let's get shit to work.
 
 **Wifi**
 
-```bash
+```sh
 $ apt-get install firmware-linux-nonfree broadcom-sta-dkms
 ```
 
 **Graphics**
 
-```bash
+```sh
 $ apt-get install nvidia-driver xorg xserver-xorg-video-intel
 
 # probably want to restart after
@@ -303,7 +303,7 @@ $ reboot
 
 **Reverse Scroll (like Mac) Touchpad**
 
-```bash
+```sh
 $ clickpad_settings="Section \"InputClass\"
     Identifier \"touchpad catchall\"
     Driver \"synaptics\"
@@ -318,7 +318,7 @@ $ printf %s "$clickpad_settings" > /etc/X11/xorg.conf.d/50-synaptics-clickpad.co
 
 **Font Anti-Aliasing**
 
-```bash
+```sh
 $ config=&quot;&lt;?xml version=&#39;1.0&#39;?&gt;
 &lt;!DOCTYPE fontconfig SYSTEM &#39;fonts.dtd&#39;&gt;
 &lt;fontconfig&gt;
@@ -364,7 +364,7 @@ $ dpkg-reconfigure fontconfig
 
 Now is the time to install whatever desktop environment you love. `i3` is my personal flavor:
 
-```bash
+```sh
 $ apt-get install dunst feh i3 i3lock i3status scrot suckless-tools
 ```
 
@@ -374,7 +374,7 @@ I have a bash script [https://misc.j3ss.co/binaries/screen-backlight](https://ra
 
 You will want to add to your sudoers file the following line, so password is not required for the script to run:
 
-```bash
+```sh
 # where your user is called user
 # and your host is called host
 user host = (root) NOPASSWD: /usr/bin/local/screen-backlight
@@ -382,7 +382,7 @@ user host = (root) NOPASSWD: /usr/bin/local/screen-backlight
 
 then for the example of `i3` you can add the following to your config:
 
-```bash
+```sh
 bindsym XF86MonBrightnessUp exec sudo screen-backlight up
 bindsym XF86MonBrightnessDown exec sudo screen-backlight down
 ```
@@ -393,7 +393,7 @@ The same goes for the keyboard backlight. I have a bash script [https://misc.j3s
 
 You will want to add to your sudoers file the following line, so password is not required for the script to run:
 
-```bash
+```sh
 # where your user is called user
 # and your host is called host
 user host = (root) NOPASSWD: /usr/bin/local/keyboard-backlight
@@ -401,7 +401,7 @@ user host = (root) NOPASSWD: /usr/bin/local/keyboard-backlight
 
 then for the example of `i3` you can add the following to your config:
 
-```bash
+```sh
 bindsym XF86KbdBrightnessUp exec sudo keyboard-backlight up
 bindsym XF86KbdBrightnessDown exec sudo keyboard-backlight down
 ```
