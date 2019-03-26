@@ -20,21 +20,21 @@ A project I am working on required me to checkin to places on foursquare that I 
 
 Let's start with the auth. If a user has not authed your application or is not currently logged into foursquare (assuming you created an app in the <a href="https://developer.foursquare.com/" target="_blank">foursquare for developers dashboard</a>) redirect them as follows.
 
-<pre class="prettyprint">
+```php
 $clientId = "YOUR-CLIENT-ID";
 $redirectUri = "YOUR-REDIRECT-URI";
 header("Location:https://foursquare.com/oauth2/authenticate?client_id=" . $clientId ."&response_type=code&redirect_uri=" . $redirectUri);
-</pre>
+```
 
 After authenticating, grab the authentication code foursquare redirected the user with.
 
-<pre class="prettyprint">
+```php
 $code = $_REQUEST['code'];
-</pre>
+```
 
 Now start a session and save your access token to it. This way we can easily see if the user is an authenticated app user by checking the session variable. You could also save it as a cookie if you want it to last longer.
 
-<pre class="prettyprint">
+```php
 session_start();
 
 if (!isset($_SESSION['access_token'])) {
@@ -50,7 +50,7 @@ if (!isset($_SESSION['access_token'])) {
    $token                    = $array_token['access_token'];
    $_SESSION['access_token'] = $token;
 }
-</pre>
+```
 
 
 ## Get Location Data
@@ -60,7 +60,7 @@ Ok now you have your token and we can get into the fun part, winning at foursqua
 
 So to make checking into various different venues easier I decided the only thing I want to pass to this function is the venueId, v, and oauth_token. This requires making a function to return the lat and long of the venue from the foursquare api.
 
-<pre class="prettyprint">
+```php
 function getLatLong($venue_id, $v, $oauth_token) {
    $venue_url = 'https://api.foursquare.com/v2/venues/' . $venue_id . '?oauth_token=' . $oauth_token . '&v=' . $v;
 
@@ -73,14 +73,14 @@ function getLatLong($venue_id, $v, $oauth_token) {
 
    return $lat . ', ' . $long;
 }
-</pre>
+```
 
 
 ## Checkin
 
 Now we can send this value into the checkin function.
 
-<pre class="prettyprint">
+```php
 function checkin($venue_id, $v, $oauth_token, $latlong) {
    $checkin_url = "https://api.foursquare.com/v2/checkins/add";
 
@@ -101,14 +101,14 @@ function checkin($venue_id, $v, $oauth_token, $latlong) {
 
    return $response;
 }
-</pre>
+```
 
 
 ## Response
 
 The response from this will be in the following format.
 
-<pre class="prettyprint">
+```json
 {
     meta: {
         code: 200
@@ -251,7 +251,7 @@ The response from this will be in the following format.
     },
 
 }
-</pre>
+```
 
 
 ## Summary
@@ -264,7 +264,7 @@ So what I found was this:
 
 With these in mind this is how I approached earning as many badges in as little time as possible. Once I was "in" a location area, I looped through a set array of about 15 venues. I made these arrays based off the places most blogs said you needed to win a badge. The expertise badges are easy; checkin to 3 different venues categorized as BBQ Joints, earn the badge. The city badges all have lists in foursquare that house the venues you need to go, hit five and you get the badge.
 
-<pre class="prettyprint">
+```php
 $windy_city_badge = array(
    '4b876c65f964a520e2be31e3',
    '4b4e0d9ff964a520c0df26e3',
@@ -272,7 +272,7 @@ $windy_city_badge = array(
    '4e70c1aa814dd2cb962265cb',
    '49dce128f964a520b65f1fe3'
 );
-</pre>
+```
 
 I would recommend conquering the city badges first because you will probably earn all the expertise badges in the process.
 

@@ -45,14 +45,14 @@ Let's start with some easy text-based applications:
 
 Best IRC client.
 
-<pre class="prettyprint lang-sh">
+```bash
 $ docker run -it \
     -v /etc/localtime:/etc/localtime \
     -v $HOME/.irssi:/home/user/.irssi \ # mounts irssi config in container
     --read-only \ # cool new feature in 1.5
     --name irssi \
     jess/irssi
-</pre>
+```
 
 ![irssi](/img/irssi.png)
 
@@ -62,7 +62,7 @@ $ docker run -it \
 
 The text based email client that rules!
 
-<pre class="prettyprint lang-sh">
+```bash
 $ docker run -it \
     -v /etc/localtime:/etc/localtime \
     -e GMAIL -e GMAIL_NAME \ # pass env variables to config
@@ -70,7 +70,7 @@ $ docker run -it \
     -v $HOME/.gnupg:/home/user/.gnupg \ # so you can encrypt ;)
     --name mutt \
     jess/mutt
-</pre>
+```
 
 ![mutt](/img/mutt.png)
 
@@ -80,14 +80,14 @@ $ docker run -it \
 
 Awesome text based twitter client.
 
-<pre class="prettyprint lang-sh">
+```bash
 $ docker run -it \
     -v /etc/localtime:/etc/localtime \
     -v $HOME/.rainbow_oauth:/root/.rainbow_oauth \ # mount config files
     -v $HOME/.rainbow_config.json:/root/.rainbow_config.json \
     --name rainbowstream \
     jess/rainbowstream
-</pre>
+```
 
 ![rainbowstream](/img/rainbowstream.png)
 
@@ -97,11 +97,11 @@ $ docker run -it \
 
 The browser everyone loves (to hate). *but secretly I love*
 
-<pre class="prettyprint lang-sh">
+```bash
 $ docker run -it \
     --name lynx \
     jess/lynx
-</pre>
+```
 
 ![lynx](/img/lynx2.png)
 
@@ -126,7 +126,7 @@ Note my patch was added for `--device /dev/snd` in Docker 1.8, before that you n
 
 Pretty sure everyone knows what chrome is, but my image comes with flash and the google talk plugin so you can do hangouts.
 
-<pre class="prettyprint lang-sh">
+```bash
 $ docker run -it \
     --net host \ # may as well YOLO
     --cpuset-cpus 0 \ # control the cpu
@@ -138,7 +138,7 @@ $ docker run -it \
     --device /dev/snd \ # so we have sound
     --name chrome \
     jess/chrome
-</pre>
+```
 
 ![chrome](/img/chrome.png)
 
@@ -148,14 +148,14 @@ $ docker run -it \
 
 All the 90s hits you ever wanted and more.
 
-<pre class="prettyprint lang-sh">
+```bash
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
     --device /dev/snd \ # sound
     --name spotify \
     jess/spotify
-</pre>
+```
 
 ![spotify](/img/spotify.png)
 
@@ -167,14 +167,14 @@ Partition your device in a container.
 
 MIND BLOWN.
 
-<pre class="prettyprint lang-sh">
+```bash
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
     --device /dev/sda:/dev/sda \ # mount the device to partition
     --name gparted \
     jess/gparted
-</pre>
+```
 
 ![gparted](/img/gparted.png)
 
@@ -185,7 +185,7 @@ $ docker run -it \
 The other video conferencer. This relies on running pulseaudio also in
 a container.
 
-<pre class="prettyprint lang-sh">
+```bash
 # start pulseaudio
 $ docker run -d \
     -v /etc/localtime:/etc/localtime \
@@ -193,10 +193,10 @@ $ docker run -d \
     --device /dev/snd \ # sound
     --name pulseaudio \
     jess/pulseaudio
-</pre>
+```
 
 
-<pre class="prettyprint lang-sh">
+```bash
 # start skype
 $ docker run -it \
     -v /etc/localtime:/etc/localtime \
@@ -208,7 +208,7 @@ $ docker run -it \
     --device /dev/video0 \ # video
     --name skype \
     jess/skype
-</pre>
+```
 
 ![skype](/img/skype1.png)
 
@@ -220,14 +220,14 @@ $ docker run -it \
 
 Because Tor, duh!
 
-<pre class="prettyprint lang-sh">
+```bash
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
     --device /dev/snd \ # sound
     --name tor-browser \
     jess/tor-browser
-</pre>
+```
 
 ![tor-browser](/img/tor-browser.png)
 
@@ -237,13 +237,13 @@ $ docker run -it \
 
 That super old school terminal.
 
-<pre class="prettyprint lang-sh">
+```bash
 $ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
     -e DISPLAY=unix$DISPLAY \ # pass the display
     --name cathode \
     jess/1995
-</pre>
+```
 
 ![cathode](/img/cathode.png)
 

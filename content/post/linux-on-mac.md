@@ -40,7 +40,7 @@ If you are running Yosemite you are SOL
 (not really but read [this](http://www.rodsbooks.com/refind/yosemite.html)
 and I wish you luck on your journey):
 
-<pre class="prettyprint">
+```bash
 $ curl -O http://downloads.sourceforge.net/project/refind/0.8.3/refind-bin-0.8.3.zip
 $ unzip refind-bin-0.8.3.zip
 $ cd refind-bin-0.8.3/
@@ -49,12 +49,12 @@ $ cd refind-bin-0.8.3/
 # because you honestly never know what you
 # will need, better be safe vs. sorry
 $ sudo ./install.sh --alldrivers
-</pre>
+```
 
 Okay now you need to edit `/EFI/refind/refind.conf`.
 The key differences you should make to the default config are as follows:
 
-<pre class="prettyprint">
+```bash
 # Enable the scan for file system drivers
 scan_driver_dirs EFI/tools/drivers,drivers
 
@@ -69,7 +69,7 @@ fs0: load ext4_x64.efi
 # and uncomment the next line
 # fs0: load btrfs_x64.efi
 fs0: map -r
-</pre>
+```
 
 Let's check it's working. Restart your computer and you should see a super 90's looking screen like:
 ![refind-boot-menu](/img/refind.png)
@@ -88,7 +88,7 @@ As of the writing of this article, Debian Jessie is on it's Beta 2 release.
 You can download the netist image from [here](https://www.debian.org/devel/debian-installer/).
 But detailed instructions follow:
 
-<pre class="prettyprint">
+```bash
 # download the iso
 $ curl -O http://cdimage.debian.org/cdimage/jessie_di_beta_2/amd64/iso-cd/debian-jessie-DI-b2-amd64-netinst.iso
 
@@ -119,7 +119,7 @@ $ sudo dd if=debian-jessie.img of=/dev/disk1
 # to eject the unsupported device, you can click the
 # eject button there, it's the same thing
 $ diskutil eject /dev/disk1
-</pre>
+```
 
 ## Partition Your HD
 
@@ -175,25 +175,25 @@ View your `/etc/apt/sources.list` and it is probably messed up and pointing to a
 
 Change it to the following (or whatever your distro wants):
 
-<pre class="prettyprint">
+```bash
 deb http://ftp.us.debian.org/debian jessie main contrib non-free
 deb-src http://ftp.us.debian.org/debian/ jessie main contrib non-free
 
 deb http://ftp.debian.org/debian/ jessie-updates main contrib non-free
 
 deb http://security.debian.org/ jessie/updates main contrib non-free
-</pre>
+```
 
 Now we can:
 
-<pre class="prettyprint">
+```bash
 $ apt-get update
 $ apt-get upgrade
 
 # install sudo and add our other user to it
 $ apt-get install sudo
 $ adduser your_username sudo
-</pre>
+```
 
 ## Let's build a kernel from source wooooo
 
@@ -210,7 +210,7 @@ but honestly I build my own everytime so take that as you will.
 Usually, I do these builds in a container.
 But for the sake of this we can just do it on our host _cringe_.
 
-<pre class="prettyprint">
+```bash
 # install deps to build kernel
 $ apt-get install curl kernel-package fakeroot
 
@@ -244,7 +244,7 @@ $ dpkg -i ../linux-image-3.17.4_3.17.4_amd64.deb
 
 # reboot the system
 $ reboot
-</pre>
+```
 
 After restarting, depending on your `refind.conf`
 file you may see a new option in your `rEFInd` menu for the new kernel.
@@ -261,7 +261,7 @@ then through the distro bootloader (ex. GRUB).
 
 Let's clean things up.
 
-<pre class="prettyprint">
+```bash
 # Make sure we have the right kernel
 $ uname -a
 # Linux debian 3.17.4 #1 SMP Wed Nov 12 01:11:57 PST 2014 x86_64 GNU/Linux
@@ -271,7 +271,7 @@ $ apt-get purge --auto-remove kernel-package fakeroot
 
 # you can even uninstall the kernel that came with
 $ apt-get purge --auto-remove linux-image-3.16.*
-</pre>
+```
 
 To avoid random controller freeze you need to set a particular kernel boot option.
 Edit `/etc/default/grub` and add the option `libata.force=noncq`
@@ -288,22 +288,22 @@ Okay now we are to the important part, let's get shit to work.
 
 **Wifi**
 
-<pre class="prettyprint">
+```bash
 $ apt-get install firmware-linux-nonfree broadcom-sta-dkms
-</pre>
+```
 
 **Graphics**
 
-<pre class="prettyprint">
+```bash
 $ apt-get install nvidia-driver xorg xserver-xorg-video-intel
 
 # probably want to restart after
 $ reboot
-</pre>
+```
 
 **Reverse Scroll (like Mac) Touchpad**
 
-<pre class="prettyprint">
+```bash
 $ clickpad_settings="Section \"InputClass\"
     Identifier \"touchpad catchall\"
     Driver \"synaptics\"
@@ -314,11 +314,11 @@ EndSection"
 
 $ mkdir -p /etc/X11/xorg.conf.d/
 $ printf %s "$clickpad_settings" > /etc/X11/xorg.conf.d/50-synaptics-clickpad.conf
-</pre>
+```
 
 **Font Anti-Aliasing**
 
-<pre class="prettyprint">
+```bash
 $ config=&quot;&lt;?xml version=&#39;1.0&#39;?&gt;
 &lt;!DOCTYPE fontconfig SYSTEM &#39;fonts.dtd&#39;&gt;
 &lt;fontconfig&gt;
@@ -358,15 +358,15 @@ $ dpkg-reconfigure fontconfig-config
 #    Automatic
 #    No
 $ dpkg-reconfigure fontconfig
-</pre>
+```
 
 **Desktop Environment**
 
 Now is the time to install whatever desktop environment you love. `i3` is my personal flavor:
 
-<pre class="prettyprint">
+```bash
 $ apt-get install dunst feh i3 i3lock i3status scrot suckless-tools
-</pre>
+```
 
 **Screen Backlight**
 
@@ -374,18 +374,18 @@ I have a bash script [https://misc.j3ss.co/binaries/screen-backlight](https://ra
 
 You will want to add to your sudoers file the following line, so password is not required for the script to run:
 
-<pre class="prettyprint">
+```bash
 # where your user is called user
 # and your host is called host
 user host = (root) NOPASSWD: /usr/bin/local/screen-backlight
-</pre>
+```
 
 then for the example of `i3` you can add the following to your config:
 
-<pre class="prettyprint">
+```bash
 bindsym XF86MonBrightnessUp exec sudo screen-backlight up
 bindsym XF86MonBrightnessDown exec sudo screen-backlight down
-</pre>
+```
 
 **Keyboard Backlight**
 
@@ -393,18 +393,18 @@ The same goes for the keyboard backlight. I have a bash script [https://misc.j3s
 
 You will want to add to your sudoers file the following line, so password is not required for the script to run:
 
-<pre class="prettyprint">
+```bash
 # where your user is called user
 # and your host is called host
 user host = (root) NOPASSWD: /usr/bin/local/keyboard-backlight
-</pre>
+```
 
 then for the example of `i3` you can add the following to your config:
 
-<pre class="prettyprint">
+```bash
 bindsym XF86KbdBrightnessUp exec sudo keyboard-backlight up
 bindsym XF86KbdBrightnessDown exec sudo keyboard-backlight down
-</pre>
+```
 
 **Things that won't work in Debian**
 
