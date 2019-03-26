@@ -200,7 +200,7 @@ text-shadow: 0 1px 0 #fff;
     box-sizing: border-box;
     }
     p {
-    margin: 0 0 15px 0;
+    margin: 20px 0 20px 0;
     }
     .lead {
     margin-bottom: 1.7;
@@ -385,7 +385,7 @@ text-shadow: 0 1px 0 #fff;
         margin: 0;
         font-family: 'IBM Plex Sans', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 20px;
-        line-height: 1.7;
+        line-height: 1.8;
         color: #333333;
         background-color: #ffffff;
         text-align: center;
