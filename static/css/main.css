@@ -157,21 +157,6 @@ color: #006600;
 }
 }
 
-pre {
-background-color: #f7f7f9;
-border: 1px solid #e1e1e8;
-}
-
-/* Specify class=linenums on a pre to get line numbering */
-ol.linenums {
-margin: 0 0 0 33px; /* IE indents via margin-left */
-}
-ol.linenums li {
-padding-left: 12px;
-color: #bebec5;
-line-height: 140%;
-text-shadow: 0 1px 0 #fff;
-}
 
 /* main */
 .clearfix {
@@ -554,12 +539,12 @@ text-shadow: 0 1px 0 #fff;
         font-family: Consolas, Inconsolas, "Courier New", monospace;
         font-size: 14px;
         color: #333333;
+        background-color: #f7f7f9;
+        border: 1px solid #e1e1e8;
     }
     code {
         padding: 2px 4px;
         color: #d14;
-        background-color: #f7f7f9;
-        border: 1px solid #e1e1e8;
     }
     pre {
         display: block;
@@ -581,10 +566,6 @@ text-shadow: 0 1px 0 #fff;
 
         word-wrap: break-word;
         /* Internet Explorer 5.5+ */
-
-        background-color: #f5f5f5;
-        border: 1px solid #ccc;
-        border: 1px solid rgba(0, 0, 0, 0.15);
     }
     pre code {
         padding: 0;
