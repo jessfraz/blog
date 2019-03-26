@@ -1,8 +1,8 @@
 baseUrl = "https://blog.jessfraz.com/"
 CanonifyUrls = true
 languageCode = "en-us"
-title = "Jessie Frazelle's Blog"
+title = "Ramblings from Jessie Frazelle"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-	description = "The blog of Jessie Frazelle, hacker of all things kernels, operating systems, etc..."
+	description = "The blog of Jessie Frazelle, hacker of all things: systems, kernels, operating systems, etc..."
