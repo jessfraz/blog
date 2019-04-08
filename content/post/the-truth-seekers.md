@@ -36,16 +36,16 @@ force pushes as well).
 Jeff pointed out that there is past history of journalism using "diffs". One
 example was from [an article](https://www.usatoday.com/in-depth/news/investigations/2019/04/03/abortion-gun-laws-stand-your-ground-model-bills-conservatives-liberal-corporate-influence-lobbyists/3162173002/)
 that uncovered bills and laws being copied and influenced by corporations. They
-compared the text of the bills to others and showed the changes and
-similarities and motivations
+compared the text of the bills to others and showed the changes,
+similarities, and motivations
 behind them.
 
 I then realized that Jeff was the author of the [amazing article](https://hackernoon.com/more-than-a-million-pro-repeal-net-neutrality-comments-were-likely-faked-e9f0e3ed36a6) from a couple
 years ago on how net neutrality comments were likely faked. He used natural
 language processing to find the similarities in the comments.
 
-Both these articles use similarities in text to uncover falsifications or
-motivations. This is super similar to diffs! I also started thinking about how
+Both these articles use comparisons of text to uncover falsifications or
+motivations. This is super similar to diffs, which is also a comparison of text! I also started thinking about how
 in [my previous article](https://blog.jessfraz.com/post/government-medicine-capitalism/)
 I mentioned it would be cool if laws were versioned with git. By doing
 that, we would get the diff and history of changes to the laws. Changes to laws
