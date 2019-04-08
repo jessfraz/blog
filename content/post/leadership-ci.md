@@ -20,7 +20,10 @@ failing and code should not be merged.
 As leaders, before acting or making decisions it would be nice to have a set of
 tests and checks, established ahead of time, to make sure we are in the
 right headspace to think, behave and make decisions that are in the best
-interest of everyone and our company.
+interest of everyone and our company. There are devastating consequences to
+taking actions based on fear and pride;
+we hope this set of questions enables taking action based on growth, humility, inclusion,
+and soulful reflection.
 
 The following are the sets of questions we brainstormed, but expect them to
 change over time as we experience and deal with new problems. These were
