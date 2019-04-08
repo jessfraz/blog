@@ -55,3 +55,10 @@ source control.
 Overall, the day was fascinating. Investigative journalism was really aligned
 with my joy of learning new things from a variety of different perspectives and
 using intuition and research to try to find truth.
+
+Another thought I have been thinking on is: how can we separate emotion from
+the truth? So much of the news today is trying to trigger an emotional response
+for clicks. Or in the worst case, it is trying to trigger an emotional response
+for influencing an election. How can we promote the news sources that focus on
+the truth versus triggering a reaction? The truth itself should be enough of
+a trigger.
