@@ -1,5 +1,5 @@
 +++
-date = "2019-04-06T8:09:26-07:00"
+date = "2019-04-09T8:09:26-07:00"
 title = "Leadership CI"
 author = "Jessica Frazelle"
 description = "Questions to ask yourself to make sure you are in the right mindset to think and behave as a leader."
