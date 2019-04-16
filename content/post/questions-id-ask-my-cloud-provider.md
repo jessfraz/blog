@@ -8,13 +8,13 @@ description = "A list of questions I'd ask my cloud provider."
 I came up with a list of questions I would ask my cloud provider if I was
 buying a product. They are as follows:
 
-1. What problem is this solving?
+### 1. What problem is this solving?
 
 I would ask this to make sure I even need this product. So many people tend to
 buy into the hype for "shiny", they miss if they even needed the thing in the
 first place.
 
-2. How did _you_ implement this? What is _your_ threat model?
+### 2. How did _you_ implement this? What is _your_ threat model?
 
 So much of the cloud is built on popsicle sticks and glue. Does that make you
 feel safe at night knowing your customer data is being stored in a proof of
@@ -37,7 +37,7 @@ warning sign.
 Bonus points if their implementation is open source; but I will let you in on
 a secret, most aren't. The exception is Joyent :)
 
-3. What customers did you speak to before building this feature?
+### 3. What customers did you speak to before building this feature?
 
 Ties back to number one, what problem is this solving? So often these features
 seem to be built _for fun_ or based off a _feeling_ a product manager had.
