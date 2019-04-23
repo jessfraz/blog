@@ -8,21 +8,21 @@ description = "On converting one of my bots to transposit."
 Last week, I had the pleasure of meeting with the [Transposit](https://www.transposit.com/)
 team in San Francisco. Tech is a super small world and it turns out the two
 founders and I are separated by one-degree through several different people
-I know. In meeting them I closed many loops without even realizing it, but
+we know. In meeting them I closed many loops without even realizing it, but
 I digress...
 
 Their product is really cool, it exposes a SQL interface for interacting with
 numerous APIs at once. For someone like myself who deploys a lot of bots, this
-is great. Usually when I have a super complex bot I end up writing a lot of
+is great. Usually when I have a complex bot I end up writing a lot of
 "glue code" to combine a few different APIs and get the information I want.
-Most have some sort of pagination logic and all have the `N+1` problem where
+Most of my bots have some sort of pagination logic and all have the `N+1` problem where
 I don't really optimize my queries or use anything fancy like graphQL. Many
 APIs don't even have graphQL interfaces but also I am old school and I don't
 really want to learn something new. This is why I was super intrigued by
 Transposit's SQL interface, because hey, I know SQL!
 
 Adam, the CEO, challenged me to try it out, give them feedback, and see if
-I could break it with something complex. Now I am not one to back down from
+I could break it with something complex. I am not one to back down from
 a challenge and I have some super weird ass bots, so I decided to start with
 the weirdest.
 
@@ -33,12 +33,14 @@ my open issues and PRs on GitHub to a table in [Airtable](https://airtable.com/)
 I fucking love Airtable. It's design just feels right and works the way my
 brain works. 
 
-So I set out to make this bot work in Transposit because I know it has some
+I set out to make this bot work in Transposit because I know it has some
 super weird loops and has the `N+1` problem where I loop over all my repos,
 then make another API call after.
 
 To reiterate, the goal of the bot is to iterate through all my repos on GitHub
 and sync the list of issue and PRs with a table in Airtable.
+
+### Query all the user's repos
 
 First, I need to get all my repos that are not forks. So I need
 a SQL query for this, in Transposit it looks like this:
@@ -57,6 +59,8 @@ I am the queen of being rate limited.
 
 I named that query: `list_repos_for_user` so when I want to use it elsewhere in
 another query, I can call it by `this.list_repos_for_user`.
+
+### Query all the issues in all the user's repos
 
 To get all the issues in all my repos I can use a join on that table I just
 created. It ends up looking like this:
@@ -89,6 +93,8 @@ one SQL query and Transposit does all the optimizations on their end.
 I called this table `list_issues_for_user` and `@owner` is a parameter, so
 anyone else can fork this app and change it to their own username.
 
+### Query all the records in an Airtable table
+
 Now I need to get all the existing airtable records in my table so I can know
 later on down the road if I need to create a row or update a row with the new
 information from the GitHub API.
@@ -112,6 +118,8 @@ Airtable.
 I named this query `get_airtable_records` so when I call it later I can do so
 with `this.get_airtable_records`.
 
+
+### Update and create rows in Airtable for each of the issues in user's repos
 
 Okay so now's the part where I am thinking... I'm going to break this thing.
 (Narrator: I didn't.)
@@ -181,6 +189,8 @@ You might be wondering what `this.create_record` and `this.update_record` look
 like. These are just helper operations so I can use all the fields for the
 records as parameters.
 
+### Create an Airtable record
+
 `create_record` calls the built-in `airtable.create_record` which looks like
 the following:
 
@@ -207,6 +217,9 @@ AND $body=(SELECT {
 
 Everything starting with an `@` is a parameter we can change on the fly in our
 Javascript function like you saw above.
+
+
+### Update an Airtable record
 
 `update_record` is very similar, it calls the Transposit built-in
 `airtable.update_record`:
