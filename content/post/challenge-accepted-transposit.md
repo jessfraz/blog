@@ -45,12 +45,12 @@ and sync the list of issue and PRs with a table in Airtable.
 First, I need to get all my repos that are not forks. So I need
 a SQL query for this, in Transposit it looks like this:
 
-``sql
+```sql
 SELECT name, full_name FROM github.list_repos_for_user
 WHERE username=@owner
 AND type='owner'
 AND fork=false
-``
+```
 
 The `github.list_repos_for_user` table is a built in to Transposit and they
 handle all your API keys and authorizations when you choose "Github" as a data
