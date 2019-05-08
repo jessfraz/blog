@@ -90,7 +90,7 @@ The goal of the root of trust should be to verify that the software installed in
 
 Every cloud and vendor seems to have their own way of doing a root of trust. Microsoft has [Cerberus](https://github.com/opencomputeproject/Project_Olympus/tree/master/Project_Cerberus), Google has [Titan](https://cloud.google.com/blog/products/gcp/titan-in-depth-security-in-plaintext), and Amazon has [Nitro](https://perspectives.mvdirona.com/2019/02/aws-nitro-system/). These seem to assume an explicit amount of trust in the proprietary code (the code we cannot see). This leaves me with not a great feeling. **Wouldn’t it be better to be able to use all open source code? Then we could verify without a doubt that the code you can read and build yourself is the same code running on hardware for all the various places we have firmware. We could then verify that a machine was in a correct state without a doubt of it being vulnerable or with a backdoor.**
 
-It also makes me wonder what the smaller cloud providers like DigitalOcean or Packet have for a root of trust. Often times we only hear of these projects from the big three or five. I asked this on twitter and didn't get any good answers...
+It makes me wonder what the smaller cloud providers like DigitalOcean or Packet have for a root of trust. Often times we only hear of these projects from the big three or five. I asked this on twitter and didn't get any good answers...
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m surprised how many people are responding that they love DigitalOcean but seem entirely unconcerned there’s no answer here. You should be concerned.</p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1126131424095100929?ref_src=twsrc%5Etfw">May 8, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -100,6 +100,10 @@ how to secure bare metal while also giving customers access to the bare
 metal. When they get back the hardware from customers they need to ensure with
 consistency and reliability that there is nothing from the customer hiding in
 any component of the hardware.
+
+All clouds need to ensure that the
+hardware they are running has not been compromised after a customer has run
+compute on it.
 
 
 ## Platform Firmware Resiliency
