@@ -21,9 +21,9 @@ In your typical “stack” today you have the various levels of privileges.
 
 From the above, it’s pretty clear that for Rings -1 to 3, we have the option to use open source software and have a large amount of visibility and control over the software we run. For the privilege levels under Ring -1, we have less control but it is getting better with the open source firmware community and projects. 
 
-It’s counter-intuitive that the code that we have the least visibility into has the most privileges. This is what open source firmware is aiming to fix.
+**It’s counter-intuitive that the code that we have the least visibility into has the most privileges. This is what open source firmware is aiming to fix.**
 
-**Ring -2****: SMM, UEFI kernel**
+### Ring -2: SMM, UEFI kernel
 
 This ring controls all CPU resources. 
 
@@ -31,40 +31,40 @@ This ring controls all CPU resources.
 
  The **UEFI Kernel** is extremely complex. It has millions of lines of code. UEFI applications are active after boot. It was built with security from obscurity. The [specification](https://uefi.org/specifications) is absolutely insane if you want to dig in.
 
-**Ring -3: Management Engine**
+### Ring -3: Management Engine
 
 This is the most privileged ring. In the case of Intel (x86) this is the Intel Management Engine. It can turn on nodes and re-image disks invisibly. It has a kernel as well that runs [Minix 3](https://itsfoss.com/fact-intel-minix-case/) as well as a web server and entire networking stack. It turns out Minix is the most widely used operating system because of this. There is a lot of functionality in the Management Engine, it would probably take me all day to list it off but there are [many](https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html) [resources](https://files.bitkeks.eu/docs/intelme-report.pdf) for digging into more detail, should you want to.
 
 Between Ring -2 and Ring -3 we have at least 2 and a half other kernels in our stack as well as a bunch of proprietary and unnecessary complexity. Each of these kernels have their own networking stacks and web servers. The code can also modify itself and persist across power cycles and re-installs. **We have very little visibility into what the code in these rings is actually doing, which is horrifying considering these rings have the most privileges.**
 
-**They also have exploits.**
+### They all have exploits
 
 It should be of no surprise to anyone that Rings -2 and -3 have their fair share of vulnerabilities. They are horrifying when they happen though. Just to use one as an example although I will let you find others on your own, [there was a bug in the web server of the Intel Management Engine that was there for seven years](https://www.wired.com/2017/05/hack-brief-intel-fixes-critical-bug-lingered-7-dang-years/) without them realizing.
 
 
 ## How can we make it better?
 
-**NERF: Non-Extensible Reduced Firmware**
+### NERF: Non-Extensible Reduced Firmware
 
 NERF is what the open source firmware community is working towards. The goals are to make firmware less capable of doing harm and make its actions more visible. They aim to remove all runtime components but currently with the Intel Management Engine, they cannot remove all but they can take away the web server and IP stack. They also remove UEFI IP stack and other drivers, as well as the Intel Management/UEFI self-reflash capability.
 
-**me_cleaner** 
+### me_cleaner
 
 This is the project used to clean the Intel Management Engine to the smallest necessary capabilities. You can check it out on GitHub: [github.com/corna/me_cleaner](https://github.com/corna/me_cleaner).
 
-**u-boot and coreboot**
+### u-boot and coreboot
 
 [u-boot](https://www.chromium.org/developers/u-boot) and [coreboot](https://www.coreboot.org/) are open source firmware. They handle silicon and DRAM initialization. Chromebooks use both, coreboot on x86, and u-boot for the rest. This is one part of how they [verify boot](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42038.pdf). 
 
 Coreboot’s design philosophy is to [“do the bare minimum necessary to ensure that hardware is usable and then pass control to a different program called the](https://doc.coreboot.org/) [*payload*](https://doc.coreboot.org/)[.”](https://doc.coreboot.org/) The payload in this case is linuxboot.
 
-**linuxboot**
+### linuxboot
 
 [Linuxboot](https://www.linuxboot.org/) handles device drivers, network stack, and gives the user a multi-user, multi-tasking environment. It is built with Linux so that a single kernel can work for several boards. Linux is already quite vetted and has a lot of eyes on it since it is used quite extensively. Better to use a open kernel with a lot of eyes on it, than the 2½ other kernels that were all different and closed off. This means that we are lessening the attack surface by using less variations of code and we are making an effort to rely on code that is open source. Linux improves boot reliability by replacing lightly-tested firmware drivers with hardened Linux drivers.
 
 By using a kernel we already have tooling around firmware devs can build in tools they already know. When they need to write logic for signature verification, disk decryption, etc it’s in a language that is modern, easily auditable, maintainable, and readable. 
 
-**u-root**
+### u-root
 
 [u-root](https://github.com/u-root/u-root) is a set of golang userspace tools and bootloader. It is then used as the initramfs for the Linux kernel from linuxboot.
 
