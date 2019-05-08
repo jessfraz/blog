@@ -114,6 +114,14 @@ I tried to ask the internet who was using this and heard very little back, so if
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">It seems that Intel has some effort called Platform Firmware Resiliency (anyone using this one?!) <a href="https://t.co/fQq2gdLNOm">https://t.co/fQq2gdLNOm</a></p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1126121264819712000?ref_src=twsrc%5Etfw">May 8, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+From the [OCP talk on Intel's firmware innovations](https://www.opencompute.org/files/Intel-System-Firmware-InnovationsMohanKumar-OCP18.pdf), it seems Intel's Platform Firmware Resilience (PFR) and Cerberus
+go hand in hand.  Intel is using PFR to deliver Cerberus' attestation priniciples.
+Thanks [@msw](https://twitter.com/_msw_) for the clarification. 
+
+It would be
+nice if there were not so many tools to do this job. I also wish the code was
+open source so we could verify for ourselves.
+
 
 ## How to help
 
