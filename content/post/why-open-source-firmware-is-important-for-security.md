@@ -94,6 +94,13 @@ It also makes me wonder what the smaller cloud providers like DigitalOcean or Pa
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m surprised how many people are responding that they love DigitalOcean but seem entirely unconcerned there’s no answer here. You should be concerned.</p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1126131424095100929?ref_src=twsrc%5Etfw">May 8, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+There is a great talk by [Paul McMillan](https://twitter.com/PaulM) and Matt
+King on [Securing Hardware at Scale](https://www.youtube.com/watch?v=PEVVRkd-wPM). It covers in great detail
+how to secure bare metal while also giving customers access to the bare
+metal. When they get back the hardware from customers they need to ensure with
+consistency and reliability that there is nothing from the customer hiding in
+any component of the hardware.
+
 
 ## Platform Firmware Resiliency
 
