@@ -5,7 +5,7 @@ author = "Jessica Frazelle"
 description = "Why open source firmware is important for security."
 +++
 
-source firmware is important](https://docs.google.com/presentation/d/1Qees556dT9LNoooEdf6En8V82L3V-_N8LbPuyGihZeI/edit?usp=sharing) and I thought it would be nice to also write a blog post with my findings. This post will focus on why open source firmware is important for security.
+I gave a talk recently at GoTo Chicago on [Why open source firmware is important](https://docs.google.com/presentation/d/1Qees556dT9LNoooEdf6En8V82L3V-_N8LbPuyGihZeI/edit?usp=sharing) and I thought it would be nice to also write a blog post with my findings. This post will focus on why open source firmware is important for security.
 
 ## Privilege Levels
 
