@@ -13,11 +13,12 @@ In your typical “stack” today you have the various levels of privileges.
 
 
 - **Ring 3 - Userspace:** has the least amount of privileges, short of there being a sandbox in userspace that is restricted further.
-- **Rings 1 & 2 - Device Drivers:** drivers for devices, the name pretty much describes itself. 
 - **Ring 0 - Kernel:** The operating system kernel, for open source operating systems you get visibility into the code behind this.
 - **Ring -1 - Hypervisor:** The virtual machine monitor (VMM) that creates and runs virtual machines. For open source hypervisors like Xen, KVM, bhyve, etc you have visibility into the code behind this.
 - **Ring -2 -** **System Management Mode (SMM), UEFI kernel:** Proprietary code, more on this [below](#ring-2-smm-uefi-kernel).
 - **Ring -3 - Management Engine:** Proprietary code, more on this [below](#ring-3-management-engine).
+
+The negative rings were made up because there was no other way to express something with more privileges.
 
 From the above, it’s pretty clear that for Rings -1 to 3, we have the option to use open source software and have a large amount of visibility and control over the software we run. For the privilege levels under Ring -1, we have less control but it is getting better with the open source firmware community and projects. 
 
