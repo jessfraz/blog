@@ -33,9 +33,11 @@ and treat them as peers from day one.
 
 A distinguished engineer can never tear others down but they can be capable of giving constructive criticism on technical work. This does not mean finding something wrong just to prove their brilliance; no, that would make them the brilliant jerk. Constructive criticism means teaching others to make their work better when there are problems, while also encouraging them to iterate and empowering them to succeed.
 
-### Have strong opinions loosely held
+### Have opinions loosely held
 
-A technical leader can be able to have strong opinions loosely held on designs and architecture. They do not need to have opinions on everything, that would be pedantic. Technical leaders can be able to use their experience to help others succeed, while also empowering others to own solutions. Technical leaders can not pass down solutions to problems but allow others to learn by letting others come up with solutions themselves. This is where good constructive criticism (from above) can come into play.
+A technical leader can be able to have opinions loosely held on designs and architecture. Making an active effort not to say "strong opinions, loosely held" because with a power dynamic that could over power the rest of the voices. Technical leaders can make sure all voices are heard and they can fully articulate the "why" of their opinion for others.
+
+They do not need to have opinions on everything, that would be pedantic. Technical leaders can be able to use their experience to help others succeed, while also empowering others to own solutions. Technical leaders can not pass down solutions to problems but allow others to learn by letting others come up with solutions themselves. This is where good constructive criticism (from above) can come into play.
 
 ### Great communicator and bridge
 
