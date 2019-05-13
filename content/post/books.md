@@ -17,6 +17,7 @@ have even started in this field.
 - [A People’s History of Computing in the United States](https://www.amazon.com/Peoples-History-Computing-United-States-ebook/dp/B07DGJ74FV): This book has a bunch of short stories that chronologically take you through some of the most important moments of computing history. I loved reading this after "Soul of a New Machine" because it really tied in nicely to the references of Data General and DEC.
 - [The Big Machine](https://www.amazon.com/big-machine-Robert-Jungk/dp/B0006BUS1Y): I found this book at the infamous Bell's books in Palo Alto. It was all worn like someone had previously loved it a lot and it makes me love it even more. It's about CERN and how it came to be and has the same sort of romanticized view of tech as "Soul of a New Machine" and "A People’s History of Computing in the United States".
 - [On the Edge](https://www.amazon.com/gp/product/0973864907/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1): The story of the Commodore computer company. Goes through the entire history. Super desnse, but over all interesting.
+- [Where Wizards Stay Up Late](https://www.amazon.com/Where-Wizards-Stay-Up-Late/dp/0684832674): This book details the story of how the Internet came to be!
 
 
 ### Non-Fiction
@@ -37,8 +38,10 @@ have even started in this field.
 - [The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897): Every single book list should include [Camille's](https://twitter.com/skamille) book. It is a great read for managers and non-managers and has given me the tools for knowing what is normal and what is not.
 - [Accelerate](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339): I cannot believe I forgot this book the first time around, great for high-performance teams who want to ship software, based on real data, and written by the badass [Nicole Forsgren](https://twitter.com/nicolefv).
 - [Dear Founder](https://www.amazon.com/Dear-Founder-Letters-Manages-Business/dp/1250195640/ref=sr_1_1?crid=1QHH9O6LT4K4H&keywords=dear+founder&qid=1555541116&s=books&sprefix=dear+founder%2Cstripbooks%2C195&sr=1-1): This book takes you through the evolution and stages of starting a business. Its in the form of letters and a good and fast read. Also seems like an effective reference to flip back to when you need specific advice in a pinch.
+- [Good Strategy, Bad Strategy](https://www.amazon.com/Good-Strategy-Bad-Difference-Matters/dp/0307886239): [Nicole](https://twitter.com/nicolefv) recommended this book to me and it is a very good approach to strategy, real. It really focuses on keeping things transparent and real.
 - [The Last Days of Night](https://www.amazon.com/Last-Days-Night-Novel/dp/0812988922/ref=sr_1_1?crid=UJ77WZEFM6G7&keywords=the+last+days+of+night+by+graham+moore&qid=1555541194&s=books&sprefix=the+last+day%2Cstripbooks%2C200&sr=1-1): A story about this guy that gets sued by Thomas Edison. Super fun to read, has a lot of history interwoven in. Tesla makes an appearance and there's lots of drama with false motives. Great book :)
 - [The Hard Thing about Hard Things](https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205): This book is great when it comes to management and also having empathy for those faced with hard decisions. It puts an emphasis on transparency and saying things "like they are" and I really appreciate that. Also there are rap quotes.
+- [Finite and Infinte Games](https://www.amazon.com/Finite-Infinite-Games-James-Carse/dp/1476731713): This book is kinda a mind trip in the best ways. I'll leave it at that.
 
 ### Bookshelves
 
