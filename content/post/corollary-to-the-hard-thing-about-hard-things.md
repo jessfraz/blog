@@ -20,6 +20,7 @@ through very limited communication, of who they really are.
 At work, I like to move fast and get things done. This may result in abrupt communications which is not typical
 of how I am on the internet. Even more so, if I was to give feedback or an opinion on something, someone might 
 feel it with the heat of a thousand suns and think it is aggressive, even if that is not how I intended it.
+Or if someone in a position of power asks someone to do something, they might think they have to do it a certain way and can't push back.
 The best we can do is apologize and grow when we fuck up.
 
 I really do not enjoy when people hero worship me and I do not think people should hero worship anyone.
