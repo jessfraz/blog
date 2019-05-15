@@ -5,9 +5,11 @@ author = "Jessica Frazelle"
 description = "A post about power dynamics."
 +++
 
+> "Can I get an encore, do you want more" - Jay-Z
+
 I recently read Ben Horowitz’s book, [The Hard Thing about Hard Things](https://www.amazon.com/Hard-Thing-About-Things-Building-ebook/dp/B00DQ845EA/ref=sr_1_1). It’s really eye opening and creates 
 a level of empathy in the reader for leaders that make hard decisions every day. It covers everything from how to know 
-your company is toxic to how to do layoffs.
+your company is toxic to how to do layoffs. Ben starts each chapter with a rap quote so as did I above ;) obviously I chose Jay-Z but I also love [Tupac, as is shown by my first blog post ever](https://blog.jessfraz.com/post/what-would-2pac-do/).
 
 I have a corollary to this: power dynamics. I, personally, have seen and experienced what it is like being a
 leader when no one really has a full view of who you are as a person. I try to always be authentic and personable, 
@@ -30,10 +32,17 @@ We can try to solve this by always making an effort to ask for other's opinions 
 I really do not enjoy when people hero worship me and I do not think people should hero worship anyone.
 We are all humans and we are all flawed in our own ways. Anyone who believes someone to be perfect will 
 soon find that they are not. This holds true for anyone: executives of companies, senior engineers,
-tennis champions, and hollywood stars. Leave room for people to make mistakes, because they will. What 
-truly matters is how a person grows after making a mistake.
+tennis champions, and hollywood stars. 
 
-If you are a leader and you empathize with this, I think this problem can only be solved with time.
-Time for people to understand how you work and time to grow trust. It’s hard to see a power dynamic at 
+Leave room for people to make mistakes, because they will. What 
+truly matters is how a person grows after making a mistake. It helps to make it very clear that you will make mistakes 
+and welcome feedback. When someone discovers a mistake you've made try to treat it as a gift. Allow for
+failure and growth from failure in others and they will do the same for you as well.
+
+If you are a leader and you empathize with this, I think this problem can also be solved with time.
+You need time for people to understand how you work and time to grow trust. As long as you continue 
+to be transparent about mistakes over time and grow from them, trust will follow.
+
+It’s hard to see a power dynamic at 
 play if you are in it and hold the power. Power dynamics are in the eye of the beholder. We can all 
 try to be conscious of this and patient as the vines of trust grow around us.
