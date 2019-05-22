@@ -9,6 +9,22 @@ I figured it would be nice to have one canonical place for talks I have given
 on containers, container security, Docker, Kubernetes, and Open Source. So here
 it is...
 
+## 2019
+
+### [CERN - Why Open Source Firmware is Important](https://indico.cern.ch/event/819789/)
+
+This talk will dive into some of the problems of running servers at scale, including data from surveys about physical infrastructure and firmware concerns. In this talk, we'll understand how open source firmware will solve some of these common problems. Why is open source firmware important for security and root of trust? We'll discuss that as well, and cover the state of open source firmware today.
+
+### [QCon London - Panel: Secure Isolation of Applications](https://www.infoq.com/presentations/secure-isolation-applications/)
+
+**Co-Speakers: Justin Cormack, Per Buer, Allison Randal, Kenton Varda**
+
+Applications have been isolated by lots of different means: processes, virtual machines, containers, and new methods are appearing such as SGX and in-process isolates. What is secure? Have Spectre and Meltdown changed the landscape? What should be used?
+
+### [QCon London - A Journey into Intel’s SGX](https://www.infoq.com/presentations/intel-sgx/)
+
+This talk takes a deep dive into Intel's SGX technology. It covers an overview of computer architecture as background and walks the audience through one version of the hardware and its flaws, as well as what changed in the next version.
+
 ## 2018
 
 ### [re:Invent - Container Power Hour](https://www.youtube.com/watch?v=HCCkVz25UU4)
