@@ -42,6 +42,12 @@ have even started in this field.
 - [The Last Days of Night](https://www.amazon.com/Last-Days-Night-Novel/dp/0812988922/ref=sr_1_1?crid=UJ77WZEFM6G7&keywords=the+last+days+of+night+by+graham+moore&qid=1555541194&s=books&sprefix=the+last+day%2Cstripbooks%2C200&sr=1-1): A story about this guy that gets sued by Thomas Edison. Super fun to read, has a lot of history interwoven in. Tesla makes an appearance and there's lots of drama with false motives. Great book :)
 - [The Hard Thing about Hard Things](https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205): This book is great when it comes to management and also having empathy for those faced with hard decisions. It puts an emphasis on transparency and saying things "like they are" and I really appreciate that. Also there are rap quotes.
 - [Finite and Infinte Games](https://www.amazon.com/Finite-Infinite-Games-James-Carse/dp/1476731713): This book is kinda a mind trip in the best ways. I'll leave it at that.
+- [Deep Down Things: The Breathtaking Beauty of Particle Physics](https://www.amazon.com/gp/product/080187971X/): A great introduction to particle physics.
+- [The Character of Physical Law](https://www.amazon.com/gp/product/0262533413/): Richard Feynman's breif overview of the laws of physics.
+- [The Feynman Lectures on Physics](https://www.amazon.com/Feynman-Lectures-Physics-boxed-set/dp/0465023827/): The complete set of Feynman lectures on physics.
+- [The Particle Odyssey: A Journey to the Heart of Matter](https://www.amazon.com/gp/product/0198504861/): Great introduction to particle physics with tons of illustrations.
+- [The Telomere Effect](https://www.amazon.com/gp/product/1455587982/): Science
+    behind aging and how you can change your lifestyle to help you live longer.
 
 ### Bookshelves
 
