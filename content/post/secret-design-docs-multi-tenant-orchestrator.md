@@ -108,7 +108,7 @@ Manage resources and set limits with cgroups.
 
 ### Preventing Miners
 
-- CPU Tracers with eBPF: monitor cpu usage so if its not fluctuating it might be a miner, most other processes fluctuate
+- CPU Tracers with eBPF: monitor cpu usage so if it's not fluctuating it might be a miner, most other processes fluctuate
 - Binary tracers: look for binaries/ processes with a certain name, miners can rename but block the lazy ones
 - Network tracers: look for processes reaching out to known miner endpoints
 
