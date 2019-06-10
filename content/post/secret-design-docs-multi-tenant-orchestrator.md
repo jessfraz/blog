@@ -19,7 +19,7 @@ I thought it would be fun to start a blog post series containing design docs fro
 
 ### Other Features
 
-- Disallow and kill any and all bitcoin miners from using the infrastructure, bpf tracers
+- Disallow and kill any and all bitcoin miners from using the infrastructure, BPF tracers
 - Firewall off any existing network endpoints
 - Firewall off the container running the process from everything around it on the local links and any reachable internal IP
 - If one layer of isolation is compromised, rely on another layer of isolation entirely. If two layers are compromised then we at least tried our best...
@@ -34,7 +34,7 @@ We require the following per container running:
 - CPU limit
 - Memory limit
 - Network/bandwidth limiting
-- Isolated network from everything else on the network (bpf or iptables)
+- Isolated network from everything else on the network (BPF or iptables)
 
 ### Host OS
 The host OS should be a reduced operating system, minimal distribution (though possibly shared with the OS used inside containers). This is for reasons of security in locking down the available weaknesses in the host environment and lessening the control plane attack surface. 
@@ -108,7 +108,7 @@ Manage resources and set limits with cgroups.
 
 ### Preventing Miners
 
-- CPU Tracers with eBPF: monitor cpu usage so if its not fluctuating it might be a miner, most other processes fluctuate
+- CPU Tracers with eBPF: monitor cpu usage so if it's not fluctuating it might be a miner, most other processes fluctuate
 - Binary tracers: look for binaries/ processes with a certain name, miners can rename but block the lazy ones
 - Network tracers: look for processes reaching out to known miner endpoints
 
@@ -137,7 +137,7 @@ Kubernetes inserts a bunch of extra env variables into the containers we would h
 
 ### What do we do if there is a kernel 0day that effects the isolation?
 
-For one, update the kernel, but if that is not possible we can trap the kernel function that is vulnerable using ebpf and kill any container trying to exploit the vulnerability. This has a trade off of jobs failing but we can try to get it as close as possible to have no false positives.
+For one, update the kernel, but if that is not possible we can trap the kernel function that is vulnerable using eBPF and kill any container trying to exploit the vulnerability. This has a trade off of jobs failing but we can try to get it as close as possible to have no false positives.
 
 This assumes we have systems in place to continually build kernels and apply patches.
 
