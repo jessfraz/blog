@@ -59,8 +59,8 @@ right at the source of events.
 I have spent half of my career working on tools for developers. The best tools allow autonomy in their interfaces
 for developers like you to use them for things even the authors never imagined. To quote Richard Feynman, 
 “I learned very early the difference between knowing the name of something and knowing something.” 
-Until now you might have only known the name BPF and that it might be useful to you.  
-What I love about this book is that it gives you the knowledge you need to be able to create all new tools using BPF. 
+Until now you might have only known the name BPF and that it might be useful to you. What I love about this book is 
+that it gives you the knowledge you need to be able to create all new tools using BPF. 
 
 The best books don’t confine readers into a box and that is why I love this one in particular. 
 After reading and following the exercises, you will be empowered to use BPF like a super power. 
