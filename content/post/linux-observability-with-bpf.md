@@ -3,7 +3,6 @@ date = "2019-07-10T11:25:24-04:00"
 title = "Linux Observability with BPF"
 author = "Jessica Frazelle"
 description = "Why BPF and XDP are something you should learn."
-draft = true
 +++
 
 Below is the foreward for the new book on 
