@@ -66,7 +66,7 @@ You can use this in your toolkit to use on demand when it’s most needed and mo
 You won’t just learn BPF you will understand it. This book is a path to open your mind 
 to the possibilities of what you can build with BPF.
 
-This developing ecosystem around BPF is very exciting! I hope it will grow even larger 
-as more people start wielding its power. I am excited to learn about what the readers of 
+This developing ecosystem is very exciting! I hope it will grow even larger 
+as more people start wielding BPFs power. I am excited to learn about what the readers of 
 this book end up building, whether it's a script to track down a crazy software bug or a 
 custom firewall. Be sure to let us all know what you built!
