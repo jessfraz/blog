@@ -62,7 +62,7 @@ What I love about this book is that it gives you the knowledge you need to be ab
 
 The best books don’t confine readers into a box and that is why I love this one in particular. 
 After reading and following the exercises, you will be empowered to use BPF like a super power. 
-You can use BPF in your toolkit to use on demand when it’s most needed and most useful. 
+You can use this in your toolkit to use on demand when it’s most needed and most useful. 
 You won’t just learn BPF you will understand it. This book is a path to open your mind 
 to the possibilities of what you can build with BPF.
 
