@@ -43,7 +43,7 @@ count the syscalls by the program calling them, trace the OOM killer, and more�
 XDP and BPF are also used in [Cloudflare](https://blog.cloudflare.com/l4drop-xdp-ebpf-based-ddos-mitigations/) and 
 [Facebook’s](https://cilium.io/blog/2018/11/20/fb-bpf-firewall/) load balancer to prevent DDoS attacks. I won’t spoil why 
 XDP is so great at dropping packets because you will learn about that in the XDP and networking chapters of this book
-(*cough* you don't even allocate a buffer *cough*)!
+(*cough* you don't even allocate a kernel struct *cough*)!
 
 Lorenzo, another of the authors, I have had the privilege of knowing each other through the 
 Kubernetes community. His tool, [kubectl-trace](https://github.com/iovisor/kubectl-trace), allows users to run their custom tracing programs 
