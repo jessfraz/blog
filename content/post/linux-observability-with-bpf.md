@@ -52,7 +52,10 @@ easily inside their kubernetes clusters.
 Personally, my favorite use case for BPF has been writing custom tracers to prove to other 
 folks that the performance of their software was not up to par or making really expensive 
 amounts of calls to syscalls. Never underestimate the power of proving someone wrong with hard data. 
-Don’t fret, this book will walk you through writing your first tracing program so you can do the same ;).
+Don’t fret, this book will walk you through writing your first tracing program so you can do the same ;). 
+The beauty of BPF lies in the fact that before now other tools used lossy queues to send sample sets to user
+space for aggregation whereas, BPF is great for production since it allows for constructing histograms and filtering
+right at the source of events.
 
 I have spent half of my career working on tools for developers. The best tools allow autonomy in their interfaces
 for developers like you to use them for things even the authors never imagined. To quote Richard Feynman, 
@@ -69,4 +72,4 @@ to the possibilities of what you can build with BPF.
 This developing ecosystem is very exciting! I hope it will grow even larger 
 as more people start wielding BPF's power. I am excited to learn about what the readers of 
 this book end up building, whether it's a script to track down a crazy software bug or a 
-custom firewall. Be sure to let us all know what you built!
+custom firewall or even [infrared decoding](https://lwn.net/Articles/759188/)! Be sure to let us all know what you built!
