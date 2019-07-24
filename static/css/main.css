@@ -743,12 +743,9 @@ color: #006600;
 }
 
 @media screen and (max-width: 340px) {
-    header nav {
-        font-size: 75%;
-    }
-
-    header nav ul.main li {
+    header nav ul.social li {
         font-size: 80%;
+        margin: 5px;
     }
 }
 
