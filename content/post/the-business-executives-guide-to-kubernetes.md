@@ -15,7 +15,7 @@ Like most things I write about, this started from an idea I had on Twitter:
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">has anyone ever done technical breakdowns of these products in Gartner reports that are actually just trash, is this something you&#39;d read..?</p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1153866738452221952?ref_src=twsrc%5Etfw">July 24, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 This post will cover some hard truths of Kubernetes and what it means for your organization and business. 
-You might have heard the term "Kubernetes" and you might have been lead to believe that this will solve all the
+You might have heard the term "Kubernetes" and you might have been led to believe that this will solve all the
 infrastructure pain for your organization. There is some truth to that, which will not be the focus of this post. To get 
 to the state of enlightenment with Kubernetes, you need to first go through some hard challenges.
 Let's dive in to some of these hard truths.
@@ -87,7 +87,7 @@ Now you are probably thinking, "my cloud provider said they'd take away all the 
 me their managed Kubernetes." That is indeed the dream. However, it is not reality. Having worked for some cloud providers,
 I have seen the pain customers still go through trying to learn the patterns Kubernetes implements and applying 
 those patterns to their existing applications. This means your teams will still have to handle the steep learning curve. Just
-because it's managed does not mean that your application's uptime and availibility are covered. That is still on _your_ team.
+because it's managed does not mean that your application's uptime and availability are covered. That is still on _your_ team.
 Customers being able to use your website on the internet is your team's responsibility and understanding
 Kubernetes is still required for that. For every line of YAML written and debugged to get your website running, it is time
 that is being taken away from building on what your business actually does. Unless of course you are a business
