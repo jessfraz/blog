@@ -8,7 +8,7 @@ description = "Some hard truths about Kubernetes and what it means for your busi
 Hello!
 
 I thought it would be fun to write a post aimed towards business leaders making technology decisions for their
-organizations. There is a lot of hype in our field and little truth in behind the hype.
+organizations. There is a lot of hype in our field and little truth behind the hype.
 
 Like most things I write about, this started from an idea I had on Twitter:
 
