@@ -88,7 +88,9 @@ I have seen the pain customers still go through trying to learn the patterns Kub
 those patterns to their existing applications. This means your teams will still have to handle the steep learning curve. Just
 because it's managed does not mean that your application's uptime and availibility are covered. That is still on _your_ team.
 Customers being able to use your website on the internet is your team's responsibility and understanding
-Kubernetes is still required for that.
+Kubernetes is still required for that. For every line of YAML written and debugged to get your website running, it is time
+that is being taken away from building on what your business actually does. Unless of course you are a business
+of selling Kubernetes, then if so, carry on.
 
 You will also want to be sure your cloud provider did not fall prey to the pitfalls I outlined above as well.
 You should make sure your cluster is fully isolated from other customer's clusters. The way the managed Kubernetes offerings
