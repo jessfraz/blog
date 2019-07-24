@@ -49,20 +49,20 @@ unless you pay what they demand. This is just a few things I thought of off the 
 
 There is a whole other aspect of this in that if this breach goes public, then you have a huge public relations 
 problem on your hand. Which for a public company might even have implications on your stock price 
-if shareholders end up losing trust from the news of your comapany's technical incompetence and they decide to sell their shares.
+if shareholders end up losing trust from the news of your company's technical incompetence and they decide to sell their shares.
 
 ## Upgrading your Kubernetes version seems to always break something
 
-I've heard from a bunch of people that whenever they need to upgrade their production enviornemnt of Kubernetes it always leads to something breaking.
+I've heard from a bunch of people that whenever they need to upgrade their production environment of Kubernetes it always leads to something breaking.
 It's recommended that you have [more than one cluster in production](https://twitter.com/kelseyhightower/status/1138586423978672129) for this very reason.
-So that if one cluster in production is broken from being upgraded, the other that has not been upgraded is still running the technical parts of 
+Then, if one cluster in production is broken from being upgraded, the other cluster that has not been upgraded is still running the technical parts of 
 your business. This is very good from a reliability point of view. 
 It means reaching your website has a "plan B" where if the "plan A" infrastructure has a problem, everything
 will be redirected to "plan B" and your customers will not even know the difference. As a downside, your operations teams 
 now have to figure out ways for managing and maintaining two clusters (more work for them) but your business is 
 in a better place for it.
 
-The other option is you just don't upgrade. But if you don't upgrade your infrastructure might be vulnerable to
+The other option is you just don't upgrade. However, if you don't upgrade, your infrastructure might be vulnerable to
 security threats and then we are back in the situation above where you might have data breached by hackers, a hostile takeover of your
 website, and then a huge public relations scandal leading to investors and shareholders selling their stock.
 
@@ -71,13 +71,12 @@ website, and then a huge public relations scandal leading to investors and share
 A lot of the criticism I hear about Kubernetes is how complex it is. For your organization, this means
 your staff are going to have to surmount this very steep learning curve. As with learning anything, things only
 get worse before they get better. So get ready for a lot of production outages and failovers as your team starts to 
-learn the ins and outs of this overly complex system. What does this mean for your website and cusomters? Availability will
+learn the ins and outs of this overly complex system. What does this mean for your website and customers? Availability will
 be spotty for awhile but we hope _eventually_ it will even out. Lastly, to quote someone very wise (let me know if you know who) who said this 
 long before I did, "Hope is not a strategy."
 
 This was just a brief overview and I am not trying to throw shade. I merely wanted to phrase some of these prevelant problems
-in a way that people running a business might be more aware of the impact adopting this technology might have. It should not be understated,
-that if your organiszation does tackle these difficulties (and others I didn't mention), then you will possibly see
-impact on developer productivity, faster feature releases and deployments (among all the other wins Kubernetes can provide).
+in a way that people running a business might be more aware of the impact adopting this technology might have. It should not be understated, if your organiszation does tackle these difficulties (and others I didn't mention), then you will possibly see
+great impact on developer productivity, faster feature releases and deployments (among all the other wins Kubernetes can provide).
 Just be aware that with the good, comes some bad.
 
