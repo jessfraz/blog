@@ -734,11 +734,11 @@ color: #006600;
      */
 @media screen and (max-width: 480px) {
     header nav {
-        font-size: 75%;
+        font-size: 65%;
     }
 
     header nav ul.main li {
-        font-size: 90%;
+        font-size: 80%;
     }
 }
 
