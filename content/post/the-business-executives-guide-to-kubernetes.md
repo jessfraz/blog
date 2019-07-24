@@ -16,7 +16,8 @@ Like most things I write about, this started from an idea I had on Twitter:
 
 This post will cover some hard truths of Kubernetes and what it means for your organization and business. 
 You might have heard the term "Kubernetes" and you might have been lead to believe that this will solve all the
-infrastructure pain for your organization. There is some truth to that, which will not be the focus of this post.
+infrastructure pain for your organization. There is some truth to that, which will not be the focus of this post. To get 
+to the state of enlightment with Kubernetes, you need to first go through some hard challenges.
 Let's dive in to some of these hard truths.
 
 ## Stateful Data is Hard
