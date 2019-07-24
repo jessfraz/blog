@@ -80,6 +80,24 @@ get worse before they get better. So get ready for a lot of production outages a
 learn the ins and outs of this overly complex system. What does this mean for your website and customers? Availability will
 be spotty for awhile but we hope _eventually_ it will even out. Lastly, to quote someone very wise (send a pull request if you know who!), "Hope is not a strategy."
 
+## Managed Kubernetes
+
+Now you are probably thinking, "my cloud provider said they'd take away all the pain you just described by selling 
+me their managed Kubernetes." That is indeed the dream. However, it is not reality. Having worked for some cloud providers,
+I have seen the pain customers still go through trying to learn the patterns Kubernetes implements and applying 
+those patterns to their existing applications. This means your teams will still have to handle the steep learning curve. Just
+because it's managed does not mean that your application's uptime and availibility are covered. That is still on _your_ team.
+Customers being able to use your website on the internet is your team's responsibility and understanding
+Kubernetes is still required for that.
+
+You will also want to be sure your cloud provider did not fall prey to the pitfalls I outlined above as well.
+You should make sure your cluster is fully isolated from other customer's clusters. The way the managed Kubernetes offerings
+work is by the cloud provider managing the "master" for your cluster. This means all the data for your cluster is managed by
+your cloud provider. If your data is not properly isolated from all the other customer's data, it means that
+if the cloud provider gets breached by means of a different customer's cluster then your data has been breached as well.
+Then, we are in the scenario where a hacker owns your website, can hold it for ransom, or cause a very public incident
+for your comapny that you will need to handle.
+
 This was just a brief overview and I am not trying to throw shade. I merely wanted to phrase some of these prevalent problems
 in a way that people running a business might be more aware of the impact adopting this technology might have. It should not be understated, if your organization does tackle these difficulties (and others I didn't mention), then you will possibly see
 great impact on developer productivity, faster feature releases and deployments (among all the other wins Kubernetes can provide).
