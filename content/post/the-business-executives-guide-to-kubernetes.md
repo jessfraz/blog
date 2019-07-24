@@ -96,7 +96,7 @@ work is by the cloud provider managing the "master" for your cluster. This means
 your cloud provider. If your data is not properly isolated from all the other customer's data, it means that
 if the cloud provider gets breached by means of a different customer's cluster then your data has been breached as well.
 Then, we are in the scenario where a hacker owns your website, can hold it for ransom, or cause a very public incident
-for your comapny that you will need to handle.
+for your company that you will need to handle.
 
 This was just a brief overview and I am not trying to throw shade. I merely wanted to phrase some of these prevalent problems
 in a way that people running a business might be more aware of the impact adopting this technology might have. It should not be understated, if your organization does tackle these difficulties (and others I didn't mention), then you will possibly see
