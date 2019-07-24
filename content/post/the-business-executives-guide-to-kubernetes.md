@@ -2,19 +2,19 @@
 date = "2019-07-23T08:09:26-07:00"
 title = "The Business Executive's Guide to Kubernetes"
 author = "Jessica Frazelle"
-description = "The hard truths about Kubernetes and what it means for your business."
+description = "Some hard truths about Kubernetes and what it means for your business."
 draft = true
 +++
 
 Hello!
 
 I thought it would be fun to write a post aimed towards business leaders making technology decisions for their
-organizations. There is a lot of hype in our field and very little truth in behind the hype.
+organizations. There is a lot of hype in our field and little truth in behind the hype. This post will cover some
+hard truths of Kubernetes and what it means for your organization and business.
 
 You might have heard the term "Kubernetes" and you might have been lead to believe that this will solve all the
-infrastructure pain for your organization. There is some truth to that, which I will not use this post to focus on.
-Instead, I will use this post to focus on the downsides of Kubernetes, technically, and what that means in terms of 
-your business.
+infrastructure pain for your organization. There is some truth to that, which will not be the focus of this post.
+Let's dive in to some of these hard truths.
 
 ## Stateful Data is Hard
 
@@ -31,20 +31,20 @@ it might have been data accounting for the movement of capital.
 
 Databases holding valuable information like the examples above should always have mechanisms for replication which is not 
 something Kubernetes is going to solve for you. While you might chose to use Kubernetes for stateful data, you should always remember
-to handle replicating that data in case their is a failure.
+to handle replicating that data in case there is a failure.
 
 ## Exposed Dashboards
 
 A lot of organizations are dipping their toes into Kubernetes but forgetting to disable or secure the dashboard for the control plane
 from the rest of the internet. The control plane dashboard is a website you can navigate to that controls your cluster.
 Leaving the dashboard exposed to the public can have huge implications on your business. If your dashboard is exposed, _anyone_
-could find your dashboard and then control it. Finding it is not that difficult if you know what you are looking for and have access
-to a site like [shodan](https://www.shodan.io/). 
+could find your dashboard and then control it. Finding an exposed dashboard is not that difficult if you know what you are looking for 
+and have access to a site like [shodan](https://www.shodan.io/). 
 
 What would the finder of the dashboard control? Everything running in Kubernetes. If your website is running in Kubernetes, it
 means someone else could make your website go offline, someone else could replicate your website but send all sales and monetary 
 transactions to their own bank account, someone else can breach your customers data, or someone else could hold your 
-infrastructure and your cluster (including your website) up for ranson and not give you back control of your website 
+infrastructure up for ranson and not give you back control of your website 
 unless you pay what they demand. This is just a few things I thought of off the top of my head but you could probably think of more. 
 
 There is a whole other aspect of this in that if this breach goes public, then you have a huge public relations 
