@@ -9,9 +9,13 @@ draft = true
 Hello!
 
 I thought it would be fun to write a post aimed towards business leaders making technology decisions for their
-organizations. There is a lot of hype in our field and little truth in behind the hype. This post will cover some
-hard truths of Kubernetes and what it means for your organization and business.
+organizations. There is a lot of hype in our field and little truth in behind the hype.
 
+Like most things I write about, this started from an idea I had on Twitter:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">has anyone ever done technical breakdowns of these products in Gartner reports that are actually just trash, is this something you&#39;d read..?</p>&mdash; jessie frazelle 👩🏼‍🚀 (@jessfraz) <a href="https://twitter.com/jessfraz/status/1153866738452221952?ref_src=twsrc%5Etfw">July 24, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+This post will cover some hard truths of Kubernetes and what it means for your organization and business. 
 You might have heard the term "Kubernetes" and you might have been lead to believe that this will solve all the
 infrastructure pain for your organization. There is some truth to that, which will not be the focus of this post.
 Let's dive in to some of these hard truths.
