@@ -3,7 +3,6 @@ date = "2019-07-23T08:09:26-07:00"
 title = "The Business Executive's Guide to Kubernetes"
 author = "Jessica Frazelle"
 description = "Some hard truths about Kubernetes and what it means for your business."
-draft = true
 +++
 
 Hello!
