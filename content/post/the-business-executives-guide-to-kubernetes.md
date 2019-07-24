@@ -75,7 +75,7 @@ A lot of the criticism I hear about Kubernetes is how complex it is. For your or
 your staff are going to have to surmount this very steep learning curve. As with learning anything, things only
 get worse before they get better. So get ready for a lot of production outages and failovers as your team starts to 
 learn the ins and outs of this overly complex system. What does this mean for your website and customers? Availability will
-be spotty for awhile but we hope _eventually_ it will even out. Lastly, to quote someone very wise (sned a pull request if you know who!), "Hope is not a strategy."
+be spotty for awhile but we hope _eventually_ it will even out. Lastly, to quote someone very wise (send a pull request if you know who!), "Hope is not a strategy."
 
 This was just a brief overview and I am not trying to throw shade. I merely wanted to phrase some of these prevelant problems
 in a way that people running a business might be more aware of the impact adopting this technology might have. It should not be understated, if your organization does tackle these difficulties (and others I didn't mention), then you will possibly see
