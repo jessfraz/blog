@@ -47,12 +47,15 @@ and have access to a site like [shodan](https://www.shodan.io/).
 What would the finder of the dashboard control? Everything running in Kubernetes. If your website is running in Kubernetes, it
 means someone else could make your website go offline, someone else could replicate your website but send all sales and monetary 
 transactions to their own bank account, someone else can breach your customers data, or someone else could hold your 
-infrastructure up for ranson and not give you back control of your website 
+infrastructure up for ransom and not give you back control of your website 
 unless you pay what they demand. This is just a few things I thought of off the top of my head but you could probably think of more. 
 
 There is a whole other aspect of this in that if this breach goes public, then you have a huge public relations 
 problem on your hand. Which for a public company might even have implications on your stock price 
 if shareholders end up losing trust from the news of your company's technical incompetence and they decide to sell their shares.
+
+If it's not the dashboard being exposed it might be your API server or another service. There's a few
+options for this particular failure mode.
 
 ## Upgrading your Kubernetes version seems to always break something
 
