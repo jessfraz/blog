@@ -79,7 +79,7 @@ be spotty for awhile but we hope _eventually_ it will even out. Lastly, to quote
 long before I did, "Hope is not a strategy."
 
 This was just a brief overview and I am not trying to throw shade. I merely wanted to phrase some of these prevelant problems
-in a way that people running a business might be more aware of the impact adopting this technology might have. It should not be understated, if your organiszation does tackle these difficulties (and others I didn't mention), then you will possibly see
+in a way that people running a business might be more aware of the impact adopting this technology might have. It should not be understated, if your organization does tackle these difficulties (and others I didn't mention), then you will possibly see
 great impact on developer productivity, faster feature releases and deployments (among all the other wins Kubernetes can provide).
 Just be aware that with the good, comes some bad.
 
