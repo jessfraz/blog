@@ -49,7 +49,7 @@ in our system at any given point in time.
 So we know the outcome of any operation in a trasaction is speculative.
 Hmmm speculative you say... I am reminded of spectre and meltdown.
 The solution in the kernel for defending against spectre and meltdown
-was Kernel Address Space Layout Randomization (KASLR). KASLR randomizes
+was Kernel Page Table Isolation (KPTI). Instead let's focus on what you can break with Spectre and meltdown which is Kernel Address Space Layout Randomization (KASLR). KASLR randomizes
 the address layout per each boot. This raises the bar for an exploit  forcing
 an attacker to guess where the code and data are located in the address space.
 The probability of an attack then becomes the probability of an information
