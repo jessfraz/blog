@@ -111,7 +111,7 @@ through social networks: Twitter, Reddit, blogging, YouTube, GitHub,
 Hacker News (slashdot before
 that), and others.
 
-Hype seems to travel through the unconcious need of people to connect to
+Hype seems to travel through the unconscious need of people to connect to
 others. Being a part of movements, like open source projects and a shared sense
 of need, allows people to be a part of something bigger than just themselves.
 
