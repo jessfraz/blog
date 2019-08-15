@@ -64,7 +64,7 @@ In the [DrK paper](https://gts3.org/assets/papers/2016/jang:drk-ccs.pdf), the
 authors describe an attack that uses the behavior of TSX as a _feature_ of the
 exploit. As described above, TSX has the behavior of aborting a commit without leaving any trace as
 to why it was aborted. So in DrK, the
-authors, use TSX to create a bunch of access violations of the privileged
+authors use TSX to create a bunch of access violations of the privileged
 address space inside transactions and turn that into knowledge of mapping and executable status
 of the address space
 _without_ even generating a page fault.
