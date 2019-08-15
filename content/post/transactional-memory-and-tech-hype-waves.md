@@ -6,7 +6,7 @@ description = "The culture of tech hype waves through the example of transaction
 +++
 
 At lunch today I learned about Transactional Synchronization Extensions (TSX) 
-which is an implementation of transactional memory. The converation started as a rant
+which is an implementation of transactional memory. The conversation started as a rant
 about why transactional memory is bad but then it evolved into how this concept
 even came to be and how it even got implemented if it's such a terrible idea.
 
@@ -89,6 +89,8 @@ and the follow-up ACM Queue article, [Real-world Concurrency](https://queue.acm.
 
 Clearly,  in 2008 there was a division between academia and
 practitioners.
+
+**EDIT:** It was pointed out that [Azul shipped transactional memory in 2006](https://hydraconf.com/2019/talks/2jix5mst7iduyp9linqhfj/). Thanks [@davidcrawshaw](https://twitter.com/davidcrawshaw/status/1161827880608735232)!
 
 ## Fastforward to 2012
 
