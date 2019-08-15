@@ -82,7 +82,7 @@ tomorrow's loads and stores](https://dl.acm.org/citation.cfm?id=1378724),
 in Communications of the ACM (CACM). It seems at the time, this craze was
 started out of academia. Some practitioners, Bryan Cantrill and Jeff
 Bonwick, wrote rebuttles in the name of "please dear god do not make
-tansactional memory A Thing".
+transactional memory A Thing".
 That can be seen in Bryan's blog post,
 [Concurrency’s Shysters](http://dtrace.org/blogs/bmc/2008/11/03/concurrencys-shysters/),
 and the follow-up ACM Queue article, [Real-world Concurrency](https://queue.acm.org/detail.cfm?id=1454462).
