@@ -90,14 +90,13 @@ and the follow-up ACM Queue article, [Real-world Concurrency](https://queue.acm.
 Clearly,  in 2008 there was a division between academia and
 practitioners.
 
-**EDIT:** It was pointed out that [Azul shipped transactional memory in 2006](https://hydraconf.com/2019/talks/2jix5mst7iduyp9linqhfj/). Thanks [@davidcrawshaw](https://twitter.com/davidcrawshaw/status/1161827880608735232)!
+
 
 ## Fastforward to 2012
 
-Intel shipped TSX in [February 2012](https://software.intel.com/en-us/blogs/2012/02/07/transactional-synchronization-in-haswell), 
-which was the first implementation of transactional memory. Despite the fact no
-one really thought it was a good idea.
+Intel shipped TSX in [February 2012](https://software.intel.com/en-us/blogs/2012/02/07/transactional-synchronization-in-haswell).
 
+**EDIT:** It was pointed out that [Azul shipped transactional memory in 2006](https://hydraconf.com/2019/talks/2jix5mst7iduyp9linqhfj/). Thanks [@davidcrawshaw](https://twitter.com/davidcrawshaw/status/1161827880608735232)!
 
 ## Why is this interesting?
 
