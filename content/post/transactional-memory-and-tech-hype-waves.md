@@ -53,7 +53,7 @@ was Kernel Page Table Isolation (KPTI). Instead let's focus on what you can brea
 the address layout per each boot. This raises the bar for an exploit  forcing
 an attacker to guess where the code and data are located in the address space.
 The probability of an attack then becomes the probability of an information
-leak multiplied by the probibility of a memory curruption vulneribility.
+leak multiplied by the probibility of a memory curruption vulnerability.
 
 However, this can be exploited without an information leak but instead using 
 a translation lookaside buffer (TLB)  and a timing attack. A TLB 
