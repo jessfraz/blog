@@ -79,7 +79,7 @@ A lot of the criticism I hear about Kubernetes is how complex it is. For your or
 your staff are going to have to surmount this very steep learning curve. As with learning anything, things only
 get worse before they get better. So get ready for a lot of production outages and failovers as your team starts to 
 learn the ins and outs of this overly complex system. What does this mean for your website and customers? Availability will
-be spotty for awhile but we hope _eventually_ it will even out. Lastly, to quote someone very wise (send a pull request if you know who!), "Hope is not a strategy."
+be spotty for awhile but we hope _eventually_ it will even out. Lastly, to quote Google's Ben Treynor, "Hope is not a strategy."
 
 ## Managed Kubernetes
 
