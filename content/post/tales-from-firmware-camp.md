@@ -102,7 +102,7 @@ and we got to use it on our board.
 
 Qspimux allows for the access to a real SPI flash chip to be multiplexed 
 between the target and a programmer that also controls the multiplexer. This
-way we could flash the SPI flash with the board's power off. 
+way we could flash the SPI flash with the board powered off. 
 
 To get his tool installed we had to de-solder the SPI flash and
 solder it back on after getting the qspimux parts attached. Props to [Edwin
