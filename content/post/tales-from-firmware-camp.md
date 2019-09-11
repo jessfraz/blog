@@ -146,7 +146,7 @@ crazy hackathon project: [Rick Altherr](https://github.com/kc8apf),
 Jacob Yundt (who I can't seem to find online), 
 [Joshua M. Clulow](https://github.com/jclulow), and everyone else I am 
 forgetting who gave us wires, clips, cords, and whatever else we 
-needed to get this thing going! 
+needed to get this thing going! It truly takes a village. 
 
 I cannot wait for the next OSFC, but until then I will work on playing with
 a logic analyzer to see if what the BMC is reading from the SPI flash is even
