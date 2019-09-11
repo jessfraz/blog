@@ -59,7 +59,7 @@ so we began to break it by trying to run [OpenBMC](https://github.com/openbmc/op
 Our board has a ASPEED 2400 BMC. We chose a OpenBMC configuration that would
 give us a kernel supporting that chip. Thanks [Joel Stanley](https://github.com/shenki) for all your work on the kernel patches for all the BMCs. We flashed the SPI flash with our new BMC firmware image and attempted to power on the board.
 
-I am going to interupt the story here for a second to explain the pain
+I am going to interrupt the story here for a second to explain the pain
 involved with this developement cycle of writing to firmware to SPI flash.
 The SPI flash is 16MB _but_ requires erasing the 
 previous contents (4KB per sector) before you can even write. 
