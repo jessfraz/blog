@@ -27,7 +27,7 @@ devoted to the hackathon.
 I had bought a [X10SLM-F Supermicro board](https://www.supermicro.com/en/products/motherboard/X10SLM-F)
 off of eBay a few months ago that I wanted to run CoreBoot on. If you are
 interested in finding a board that will work with CoreBoot, you should check
-it's [status on the status page](https://coreboot.org/status/board-status.html). 
+its [status on the status page](https://coreboot.org/status/board-status.html). 
 I had
 been talking to [Zaolin](https://twitter.com/_zaolin_) about wanting a board 
 to hack on and he recommended this one.
@@ -66,7 +66,7 @@ previous contents (4KB per sector) before you can even write.
 A delete cycle of a sector is
 120ms per sector at the worst. So that's definitely not ideal and anything you can do to
 make this faster is very much so ideal. Most flash programmers will not rewrite
-a sector if it's contents have not changed which helps, but still super
+a sector if its contents have not changed which helps, but still super
 painful coming from the workflow of a software developer.
 
 Back to our board... our OpenBMC image we flashed didn't work. Again, a lot of this would have been easier to debug with
