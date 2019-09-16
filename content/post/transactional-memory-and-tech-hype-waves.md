@@ -46,14 +46,14 @@ in our system at any given point in time.
 
 ## Side-Channel Attacks
 
-So we know the outcome of any operation in a trasaction is speculative.
+So we know the outcome of any operation in a transaction is speculative.
 Hmmm speculative you say... I am reminded of spectre and meltdown.
 The solution in the kernel for defending against spectre and meltdown
 was Kernel Page Table Isolation (KPTI). Instead let's focus on what you can break with Spectre and meltdown which is Kernel Address Space Layout Randomization (KASLR). KASLR randomizes
 the address layout per each boot. This raises the bar for an exploit  forcing
 an attacker to guess where the code and data are located in the address space.
 The probability of an attack then becomes the probability of an information
-leak multiplied by the probibility of a memory curruption vulnerability.
+leak multiplied by the probability of a memory corruption vulnerability.
 
 However, this can be exploited without an information leak but instead using 
 a translation lookaside buffer (TLB)  and a timing attack. A TLB 
@@ -118,12 +118,12 @@ of need, allows people to be a part of something bigger than just themselves.
 
 Twitter is fascinating due to the way it hosts so many subcultures. One of my
 favorite examples of this is Canadian twitter where everyone is polite and nice
-to each other. There are also vehemet subcultures around the latest technology
+to each other. There are also vehement subcultures around the latest technology
 trends. The way technology can spread has turned from a place where very few
 people have a voice (through getting papers accepted at conferences and in
 journals) to social networks where everyone has a voice. My hope is that the
 loudest of the voices are the ones used to build technology for the best
 causes.
 
-I'll leave you with that, hope you enjoyed and learned something fom
+I'll leave you with that, hope you enjoyed and learned something from
 my rather weird example of a technology hype wave.
