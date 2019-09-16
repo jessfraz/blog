@@ -124,7 +124,7 @@ where you can launch PowerPoint without a VM.... well this is it!!
 You can also run X Applications in WSL. You just need an X server. I used
 [`vcxsrv`](https://sourceforge.net/projects/vcxsrv/) to try it out. I run
 `i3` on all my Linux machines and tried it out in WSL like my awesome coworker [Brian Ketelsen](https://twitter.com/bketelsen)
-did in his [blog post](https://brianketelsen.com/blog/i3-windows/).
+did in his [blog post](https://www.brianketelsen.com/i3-windows/).
 
 ![wsl-i3](/img/wsl-i3.jpg)
 
