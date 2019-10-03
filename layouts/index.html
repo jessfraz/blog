@@ -15,7 +15,7 @@
     <h1>Blog</h1>
     {{ range .Data.Pages.ByDate.Reverse }}
     <article>
-        <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+        <h3><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h3>
         <div class="time">{{ .Date.Format "Monday, January 2, 2006" }}</div>
         <p>{{ .Summary }}</p>
     </article>
