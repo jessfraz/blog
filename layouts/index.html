@@ -5,7 +5,10 @@
     <h1>Publications</h2>
     {{ range sort $.Site.Data.publication "date" "desc" }}
     <article class="publication">
-        <h3><a href="{{ .link }}" target="_blank" title="{{ .title }}">{{ .title }}</a></h3>
+        <h3>
+            <a href="{{ .link }}" target="_blank" title="{{ .title }}">{{ .title }}</a>
+            <small>[<a href="/pdf/{{.pdf}}" target="_blank" title="{{.title}} pdf">PDF</a>]</small>
+        </h3>
         <div class="time">{{.publication}}: {{ dateFormat "Monday, January 2, 2006" .date }}</div>
         <p>{{ .subtitle }}</p>
     </article>
@@ -13,12 +16,28 @@
 
 
     <h1>Blog</h1>
+
+    <h2>Featured</h2>
     {{ range .Data.Pages.ByDate.Reverse }}
+    {{ if .Params.featured }}
     <article>
         <h3><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h3>
         <div class="time">{{ .Date.Format "Monday, January 2, 2006" }}</div>
         <p>{{ .Summary }}</p>
     </article>
+    {{ end }}
+    {{ end }}
+
+    <hr/>
+
+    {{ range .Data.Pages.ByDate.Reverse }}
+    {{ if not .Params.featured }}
+    <article>
+        <h3><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h3>
+        <div class="time">{{ .Date.Format "Monday, January 2, 2006" }}</div>
+        <p>{{ .Summary }}</p>
+    </article>
+    {{ end }}
     {{ end }}
 </div>
 

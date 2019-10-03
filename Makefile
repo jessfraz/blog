@@ -35,7 +35,7 @@ static/js/site.min.js: image-dev
 static/css/site.min.css: image-dev
 	docker run $(DOCKER_FLAGS) \
 		$(REGISTRY)/$(NAME):dev \
-		sh -c 'cat static/css/main.css | cleancss -o $@'
+		sh -c 'cat static/css/fontawesome.css static/css/normalize.css static/css/code.css static/css/main.css | cleancss -o $@'
 
 .PHONY: dev
 dev: static/js/site.min.js static/css/site.min.css ## Build the frontend components.
