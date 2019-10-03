@@ -2,7 +2,7 @@
 date = "2019-02-25T08:09:26-07:00"
 title = "Books I Recommend"
 author = "Jessica Frazelle"
-description = "A post with some of the books I've been reading and recommend."
+description = "Some of my favorite books."
 featured = true
 +++
 

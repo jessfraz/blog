@@ -2,7 +2,7 @@
 date = "2018-06-07T08:09:26-07:00"
 title = "Talks"
 author = "Jessica Frazelle"
-description = "Various Talks I have given on containers, container security, Docker, Kubernetes, and Open Source."
+description = "A list of technical talks I have given."
 featured = true
 +++
 
