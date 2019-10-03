@@ -1,42 +1,54 @@
-.PHONY: all build release run serve purge-cache clean
+NAME := blog
 
-AWS_S3_BUCKET := blog.jessfraz.com
-AWS_ACCESS_KEY := ${AMAZON_ACCESS_KEY_ID}
-AWS_SECRET_KEY := ${AMAZON_SECRET_ACCESS_KEY}
-export AWS_S3_BUCKET AWS_ACCESS_KEY AWS_SECRET_KEY
+# Set the graph driver as the current graphdriver if not set.
+DOCKER_GRAPHDRIVER := $(if $(DOCKER_GRAPHDRIVER),$(DOCKER_GRAPHDRIVER),$(shell docker info 2>&1 | grep "Storage Driver" | sed 's/.*: //'))
+export DOCKER_GRAPHDRIVER
+
+# If this session isn't interactive, then we don't want to allocate a
+# TTY, which would fail, but if it is interactive, we do want to attach
+# so that the user can send e.g. ^C through.
+INTERACTIVE := $(shell [ -t 0 ] && echo 1 || echo 0)
+ifeq ($(INTERACTIVE), 1)
+	DOCKER_FLAGS += -t
+endif
+
+DOCKER_FLAGS+=--rm -i \
+	--disable-content-trust=true
+DOCKER_FLAGS+=-v $(CURDIR):/src/$(NAME)
+DOCKER_FLAGS+=--workdir /src/$(NAME)
+
+all: dev
 
 REGISTRY := r.j3ss.co
-DOCKER_IMAGE := $(REGISTRY)/blog
+.PHONY: image-dev
+image-dev:
+	@docker build --rm --force-rm -f Dockerfile.dev -t $(REGISTRY)/$(NAME):dev .
 
-PORT := 1337
+.PHONY: static/js/site.min.js
+static/js/site.min.js: image-dev
+	docker run $(DOCKER_FLAGS) \
+		$(REGISTRY)/$(NAME):dev \
+		uglifyjs --output $@ --compress --mangle -- \
+			static/js/prettify/prettify.js
 
-all: release
+.PHONY: static/css/site.min.css
+static/css/site.min.css: image-dev
+	docker run $(DOCKER_FLAGS) \
+		$(REGISTRY)/$(NAME):dev \
+		sh -c 'cat static/css/main.css | cleancss -o $@'
 
-build:
-	docker build --rm --force-rm -t $(DOCKER_IMAGE) .
+.PHONY: dev
+dev: static/js/site.min.js static/css/site.min.css ## Build the frontend components.
 
-release: build
-	docker run --rm -it \
-		-e AWS_S3_BUCKET \
-		-e AWS_ACCESS_KEY \
-		-e AWS_SECRET_KEY \
-		$(DOCKER_IMAGE)
+.PHONY: help
+help:
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-run: clean build
-	docker run -d \
-		-v $(CURDIR):/usr/src/blog \
-		-p $(PORT):$(PORT)\
-		--name blog \
-		$(DOCKER_IMAGE) hugo server --port=$(PORT) --bind=0.0.0.0
+check_defined = \
+    $(strip $(foreach 1,$1, \
+	$(call __check_defined,$1,$(strip $(value 2)))))
 
-serve: run
-	$(eval BLOG_IP := $(shell docker inspect --format "{{.NetworkSettings.Networks.bridge.IPAddress}}" blog))
-	@echo "Go to http://$(BLOG_IP):$(PORT) in your browser."
-	@docker logs -f blog
-
-purge-cache:
-	docker run --rm -it  -e AWS_ACCESS_KEY -e AWS_SECRET_KEY -e AWS_CF_DISTRIBUTION_ID -e AWS_S3_BUCKET=blog.jessfraz.com $(REGISTRY)/cf-reset-cache
-
-clean:
-	sudo $(RM) -r public
-	-@docker rm -vf blog > /dev/null 2>&1
+__check_defined = \
+    $(if $(value $1),, \
+    $(error Undefined $1$(if $2, ($2))$(if $(value @), \
+    required by target `$@')))

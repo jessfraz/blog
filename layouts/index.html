@@ -1,14 +1,25 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 
-<div class="container home"> 
-	{{ range .Data.Pages.ByDate.Reverse }}
-	<article>
-		<h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
-		<div class="time">{{ .Date.Format "Monday, January 2, 2006" }}</div>
-		{{ .Summary }}
-	</article>
-	{{ end }}
+<div class="container home">
+    <h1>Publications</h2>
+    {{ range sort $.Site.Data.publication "date" "desc" }}
+    <article class="publication">
+        <h3><a href="{{ .link }}" target="_blank" title="{{ .title }}">{{ .title }}</a></h3>
+        <div class="time">{{.publication}}: {{ dateFormat "Monday, January 2, 2006" .date }}</div>
+        <p>{{ .subtitle }}</p>
+    </article>
+    {{end}}
+
+
+    <h1>Blog</h1>
+    {{ range .Data.Pages.ByDate.Reverse }}
+    <article>
+        <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+        <div class="time">{{ .Date.Format "Monday, January 2, 2006" }}</div>
+        <p>{{ .Summary }}</p>
+    </article>
+    {{ end }}
 </div>
 
 {{ partial "footer.html" . }}

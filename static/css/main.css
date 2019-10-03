@@ -769,3 +769,19 @@ color: #006600;
         font-size: .5em;
     }
 }
+
+.publication h3 {
+    margin: 5px 0px;
+}
+
+.publication .time {
+    margin-bottom:5px;
+}
+
+.publication p {
+    margin-top: 0px;
+}
+
+.home article.publication {
+    margin-bottom: 0px;
+}
