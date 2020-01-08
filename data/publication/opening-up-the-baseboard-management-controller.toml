@@ -1,4 +1,4 @@
-date = "2020-01-09"
+date = "2020-01-08"
 publication = "ACM Queue"
 title = "Opening up the Baseboard Management Controller"
 subtitle = "If the CPU is the brain of the board, the BMC is the brain stem."
