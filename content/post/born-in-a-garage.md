@@ -66,7 +66,7 @@ The past few months have been some of the most fun and rewarding of my entire
 career and we are only getting started. If you want to read more about some of 
 the deep technical problems we will be solving check out my ACM Queue articles: 
 [Open Source Firmware](https://queue.acm.org/detail.cfm?id=3349301) and 
-[Opening up the Baseboard Management Controller in the September/October issue](https://queue.acm.org/issuedetail.cfm?issue=3371595). 
+[Opening up the Baseboard Management Controller](https://queue.acm.org/detail.cfm?id=3378404). 
 
 We would love to have you join us in [our mission to “Kick butt, have fun, don't 
 cheat, love our customers, change computing forever”](https://oxide.computer/principles/)
