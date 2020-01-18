@@ -1,5 +1,5 @@
 +++
-date = "2020-01-18T11:25:24-04:00"
+date = "2020-01-17T11:25:24-04:00"
 title = "Network booted, home initialized"
 author = "Jessica Frazelle"
 description = "An overview of building out our office space."
@@ -29,10 +29,10 @@ Here's what we got:
 - [Amplifi Alien](https://store.amplifi.com/products/amplifi-alien)
 
 ## The Switch
+
 We have a hard line coming from the 48 port switch to each section of desks.
 I cabled all this myself. As we grow we will likely segment this off to each
-desk having it's own little 4- or 8-port network switch but for now this works.
-
+desk having its own little 4- or 8-port network switch but for now this works.
 
 ### The Cables
 
@@ -40,7 +40,7 @@ All the cables running to the desks are Cat7s from Monoprice. Every type of
 cable has a maximum distance. For ethernet cables, the maximum distance is the
 maximum upload/download speed. Cat7 gets praised for its 100 Gbps speed, 
 but that will only work for distances up to 15 meters (slightly over 49 feet).
-At up to 50 meters, a Cat7 cable downgrades to 40 Gbps.
+From 15 meters up to 50 meters, a Cat7 cable downgrades to 40 Gbps.
 Beyond that, it drops to the same 10 Gbps speed of Cat6 and Cat6a, however it 
 still retains its superior 600 Mhz bandwidth. We use 100ft cables to the desks
 and 50ft cables wherever we can reach to maximize speed.
@@ -50,13 +50,13 @@ and 50ft cables wherever we can reach to maximize speed.
 ## The Router 
 
 The Dream Machine is acting as our gateway and controller. Before we got the
-other 2 APs it was our only access point as well and did a great job of that.
+other 2 APs, it was our only access point and did a great job of that.
 
 ### The Access Points
 
 We have a large warehouse with a lot of square feet, while the Dream Machine
 does have coverage to every corner, it's nice to have a strong signal from
-anywhere in the office. Also as we grow we will have more and more devices on
+anywhere in the office. As we grow we will have more and more devices on
 our network, so having some other APs to handle that load is necessary.
 
 ## The Cameras
@@ -66,19 +66,19 @@ when we are not there. This is mainly for security.
 
 ## The Isolated Network Router
 
-Lastly, the Amplifi Alien we have set up currently. Since it is not a part of
-the rest of the Unifi fleet we have it exposes it's own Wi-Fi network. I foresee
+Lastly, is the AmpliFi Alien. Since AmpliFi is not a part of
+the rest of the UniFi fleet, it exposes its own network. I foresee
 this becoming the network for our lab equipment or anything we don't want on
 the main network. It's a very, very nice secondary network that is fully
-isolated with Wi-Fi 6 capabilities and a max speed of 4804 Mbps. It sure will
-be nice when all devices can support Wi-Fi 6!
+isolated with Wi-Fi 6 capabilities and a max speed of 4804 Mbps. If only all 
+devices supported Wi-Fi 6!
 
 It's been fun to build out the network infrastructure in our office and make
-sure it scales while we scale out our team. We have hired some of
+sure it scales while we scale out the team. We have hired some of
 the brightest folks that I am happy to call coworkers.  This is just one very 
-small detail of our startup journey but I am glad I got to share it. Our very
-empty office is now one with 20 desks, 2 kitchen tables and a very large and
-cozy couch area with whiteboards for brainstorming. Can't wait to see what the
-future brings!
+small detail of our startup journey, but I am glad I got to share it. Our
+previously empty office is now one with 20 desks, 2 kitchen tables and a 
+large, cozy couch area with whiteboards for brainstorming. Can't wait to see 
+what the future brings!
 
 ![picure of office now](/img/office-jan.jpg)
