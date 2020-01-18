@@ -16,6 +16,9 @@ real furniture, we made sure that we had a network connection.
 
 ![picture before we had furniture](/img/empty-office.jpg)
 
+> You may recognize that furniture from the
+> [garage](https://blog.jessfraz.com/post/born-in-a-garage/).
+
 For the office I really wanted our network infrastructure to be off-the-charts
 good. Everyone knows shitty internet is a productivity _killer_. Since I use
 UniFi for my network setup at home, we used the same for the office.
