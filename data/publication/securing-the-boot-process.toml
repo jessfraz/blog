@@ -1,0 +1,6 @@
+date = "2020-02-04"
+publication = "ACM Queue"
+title = "Securing the Boot Process"
+subtitle = "The hardware root of trust."
+link = "https://queue.acm.org/detail.cfm?id=3382016"
+pdf = "securing-the-boot-process.pdf"
