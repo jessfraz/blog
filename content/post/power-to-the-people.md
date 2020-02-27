@@ -91,7 +91,7 @@ With commodity servers, like Dell[^34] or Supermicr[^35]o, the cost of individua
 
 By designing rack level architectures, huge improvements can be made for power efficiency over conventional servers since PSUs will be less oversized, more consolidated, and redundant for the rack versus per server. While the hyperscalers have benefitted from these gains in power efficiency, most of the industry is still waiting. The Open Compute project was started as an effort to allow other companies running data centers to benefit from the power efficiencies as well. If more organizations run rack-scale architectures in their data centers, we can lessen the wasted carbon emissions caused by conventional servers.
 
-Huge thanks to Rick Altherr, Amir Michael, Kenneth Finnegan, Arjen Roodselaar, and Scott Andreas for their help with the nuances in this article.
+Huge thanks to [Rick Altherr](https://twitter.com/kc8apf), [Amir Michael](https://twitter.com/digiamir), [Kenneth Finnegan](https://twitter.com/KWF), [Arjen Roodselaar](https://twitter.com/arjenroodselaar), and [Scott Andreas](https://twitter.com/cscotta) for their help with the nuances in this article.
 
 [^1]: https://www.epa.gov/greenpower/renewable-energy-certificates-recs 
 [^2]: https://en.wikipedia.org/wiki/Facebook,_Apple,_Amazon,_Netflix_and_Google

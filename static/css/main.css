@@ -628,3 +628,7 @@ table > tfoot > tr.success > th {
 .home article.publication {
     margin-bottom: 0px;
 }
+
+.footnotes {
+    font-size: 90%;
+}
