@@ -6,11 +6,15 @@
     {{ range sort $.Site.Data.publication "date" "desc" }}
     <article class="publication">
         <h3>
-            <a href="{{ .link }}" target="_blank" title="{{ .title }}">{{ .title }}</a>
-            <small>[<a href="/pdf/{{.pdf}}" target="_blank" title="{{.title}} pdf">PDF</a>]</small>
+            {{ .title }}
         </h3>
-        <div class="time">{{.publication}}: {{ dateFormat "Monday, January 2, 2006" .date }}</div>
-        {{if .cacm}}<div class="time"><a href="{{ .cacm }}" target="_blank" title="{{ .title }}" >Communications of the ACM: {{ dateFormat "January 2006" .cacmdate }}</a></div>{{end}}
+        <div class="time">
+            <a href="{{ .link }}" target="_blank" title="{{ .title }}" >{{.publication}}: {{ dateFormat "Monday, January 2, 2006" .date }}</a>
+            <small>[<a href="/pdf/{{.pdf}}" target="_blank" title="{{.title}} pdf">PDF</a>]</small>
+        </div>
+        {{if .cacm}}<div class="time">
+            <a href="{{ .cacm }}" target="_blank" title="{{ .title }}" >Communications of the ACM: {{ dateFormat "January 2006" .cacmdate }}</a>
+        </div>{{end}}
         <p>{{ .subtitle }}</p>
     </article>
     {{end}}
