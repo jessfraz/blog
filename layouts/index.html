@@ -9,7 +9,7 @@
             {{ .title }}
         </h3>
         <div class="time">
-            <a href="{{ .link }}" target="_blank" title="{{ .title }}" >{{.publication}}: {{ dateFormat "Monday, January 2, 2006" .date }}</a>
+            <a href="{{ .link }}" target="_blank" title="{{ .title }}" >{{.publication}}: {{ dateFormat "January 2006" .date }}</a>
             <small>[<a href="/pdf/{{.pdf}}" target="_blank" title="{{.title}} pdf">PDF</a>]</small>
         </div>
         {{if .cacm}}<div class="time">
