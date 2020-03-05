@@ -1,0 +1,6 @@
+date = "2020-03-04"
+publication = "ACM Queue"
+title = "Chipping away at Moore’s law"
+subtitle = "Most modern CPUs are just chiplets connected together."
+link = ""
+pdf = "chipping-away-at-moores-law.pdf"
