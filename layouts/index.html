@@ -10,6 +10,7 @@
             <small>[<a href="/pdf/{{.pdf}}" target="_blank" title="{{.title}} pdf">PDF</a>]</small>
         </h3>
         <div class="time">{{.publication}}: {{ dateFormat "Monday, January 2, 2006" .date }}</div>
+        {{if .cacm}}<div class="time"><a href="{{ .cacm }}" target="_blank" title="{{ .title }" >Communications of the ACM: {{ dateFormat "January 2006" .cacmdate }}</a></div>{{end}}
         <p>{{ .subtitle }}</p>
     </article>
     {{end}}
