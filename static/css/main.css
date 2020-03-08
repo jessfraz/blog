@@ -632,3 +632,12 @@ table > tfoot > tr.success > th {
 .footnotes {
     font-size: 80%;
 }
+
+.container article li:before, h2:before, h3:before, h4:before, h5:before, h6:before, .footnote-ref:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: 50px;
+    margin-top: -50px;
+}
