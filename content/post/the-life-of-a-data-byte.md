@@ -111,7 +111,7 @@ drive, which then became an industry standard[^14].
 
 ## 1969
 
-![/img/apollo-rope-memory.jpg](apollo-rope-memory.jpg)
+![apollo-rope-memory.jpg](/img/apollo-rope-memory.jpg)
 
 > Source for image: https://spectrum.ieee.org/tech-history/space-age/software-as-hardware-apollos-rope-memory
 
@@ -297,8 +297,9 @@ Because of this, drives for floppy and optical disks have since faded out of exi
 
 ## 2005
 
-In 2005, hard disk drive (HDD) manufacturers started shipping products using perpendicular magnetic 
-recording, or PMR. Quite interestingly, this happened at the same time the iPod Nano announced using 
+In 2005, hard disk drive (HDD) manufacturers started shipping products using 
+[perpendicular magnetic recording](https://youtu.be/xb_PyKuI7II), 
+or PMR. Quite interestingly, this happened at the same time the iPod Nano announced using 
 flash as opposed to the 1 inch hard drives in the iPod Mini, causing a bit of an industry hoohaw[^36].
 
 A typical hard drive contains one or more rigid disks coated with a magnetically sensitive film consisting 
