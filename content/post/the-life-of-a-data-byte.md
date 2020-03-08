@@ -16,8 +16,8 @@ or lever. For magnetic storage devices, such as tapes and disks, a bit is repres
 of the magnetic film. In modern dynamic random-access memory (DRAM), a bit is often represented as two levels of 
 electrical charge stored in a capacitor, a device that stores electrical energy in an electric field. 
 
-In June 1956, Werner Buchholz coined the word byte to refer to a group of bits used to encode a single character of 
-text. Let’s go over a bit about character encoding. We will start with American Standard Code for Information 
+In June 1956, Werner Buchholz[^1] coined the word byte[^2] to refer to a group of bits used to encode a single character of 
+text[^3]. Let’s go over a bit about character encoding. We will start with American Standard Code for Information 
 Interchange, or ASCII. ASCII was based on the English alphabet, therefore every letter, digit, and symbol 
 (a-z, A-Z, 0–9, +, -, /, “, ! etc) were represented as a 7 bit integer between 32 and 127. This wasn’t very 
 friendly to other languages. In order to support other languages, Unicode extended ASCII. With Unicode, 
@@ -44,7 +44,7 @@ play in some of the storage technologies we cover.
 Our story starts in 1951 with the UNIVAC UNISERVO tape drive for the UNIVAC 1 computer. This was the first 
 tape drive made for a commercial computer. The tape was three pounds of ½ inch wide thin strip of 
 nickel-plated phosphor bronze, called Vicalloy, which was 1,200 feet long. Our data byte could be stored 
-at a rate of 7,200 characters per second on tape moving at 100 inches per second. At this point in history, 
+at a rate of 7,200 characters per second[^4] on tape moving at 100 inches per second. At this point in history, 
 you could measure the speed of a storage algorithm by the distance the tape traveled.
 
 ## 1952
@@ -52,7 +52,7 @@ you could measure the speed of a storage algorithm by the distance the tape trav
 Let’s fast forward a year to May 21st, 1952 when IBM announced their first magnetic tape unit, the IBM 726. 
 Our data byte could now be moved off UNISERVO metal tape onto IBM’s magnetic tape. This new home would be 
 super cozy for our very small data byte since the tape could store up to 2 million digits. This magnetic 
-7 track tape moved at 75 inches per second with a transfer rate of 12,500 digits or 7,500 characters 
+7 track tape moved at 75 inches per second with a transfer rate of 12,500 digits[^5] or 7,500 characters[^6] 
 (called copy groups at the time) per second. For reference, this article has 34,106 characters. 
 
 7 track tapes had six tracks for data and one to maintain parity by ensuring that the total number of 
@@ -61,7 +61,7 @@ super cozy for our very small data byte since the tape could store up to 2 milli
 drive to start and stop the tape in a split second. This was done by placing long vacuum columns between 
 the tape reels and the read/write heads to absorb sudden increases in tension in the tape, without which 
 the tape would have typically broken. A removable plastic ring in the back of the tape reel provided write 
-protection. About 1.1 megabytes could be stored on one reel of tape.
+protection. About 1.1 megabytes could be stored on one reel of tape[^7].
 
 If you think back to VHS tapes, what was required before returning a movie to Blockbuster? Rewinding the 
 tape! The same could be said for tape used for computers. Programs could not hop around a tape, or 
@@ -70,16 +70,16 @@ randomly access data, they had to read and write in sequential order.
 ## 1956
 
 If we move ahead a few years to 1956, the era of magnetic disk storage began with IBM’s completion of a 
-RAMAC 305 computer system to deliver to Zellerbach Paper in San Francisco. This computer was the first to 
+RAMAC 305 computer system to deliver to Zellerbach Paper in San Francisco[^8]. This computer was the first to 
 use a moving-head hard disk drive. The RAMAC disk drive consisted of fifty magnetically coated 24 inch diameter 
 metal platters capable of storing about five million characters of data, 7 bits per character, and spinning at 
 1,200 revolutions per minute. The storage capacity was about 3.75 megabytes.
 
 RAMAC allowed real-time random access memory to large amounts of data, unlike magnetic tape or punch cards. 
-IBM advertised the RAMAC as being able to store the equivalent of 64,000 punched cards. Previously to the 
+IBM advertised the RAMAC as being able to store the equivalent of 64,000 punched cards[^9]. Previously to the 
 RAMAC, transactions were held until a group of data was accumulated and batch processed. The RAMRAC introduced 
 the concept of continuously processing transactions as they occurred so data could be retrieved immediately 
-when it was fresh. Our data byte could now be accessed in the RAMAC at 100,000 bits per second. Prior to this, 
+when it was fresh. Our data byte could now be accessed in the RAMAC at 100,000 bits per second[^10]. Prior to this, 
 with tapes, we had to write and read sequential data and could not randomly jump to various parts of the tape. 
 Real-time random access of data was truly revolutionary at this time. 
 
@@ -93,32 +93,32 @@ four inch reel.
 DECtape could be carried by hand, as opposed to its weighty and large predecessors, making it great for personal 
 computers. In contrast to 7 track tape, DECtape had 6 data tracks, 2 mark tracks, and two clock tracks. Data was 
 recorded at 350 bits per inch. Our data byte, which is 8 bits but could be expanded to 12, could be transferred 
-to DECtape at 8,325 12-bit words per second with a tape speed of 93 +/-12 inches per second. This is 8% more digits 
+to DECtape at 8,325 12-bit words per second with a tape speed of 93 +/-12 inches per second[^11]. This is 8% more digits 
 per second than the UNISERVO metal tape in 1952.
 
 ## 1967
 
-Four years later in 1967, a small team at IBM started working on the IBM floppy disk drive, codenamed Minnow. 
+Four years later in 1967, a small team at IBM started working on the IBM floppy disk drive, codenamed Minnow[^12]. 
 At the time, the team was tasked with developing a reliable and inexpensive way to load microcode into the 
-IBM System/370 mainframes.  The project then got reassigned and repurposed to load microcode into the controller 
+IBM System/370 mainframes[^13].  The project then got reassigned and repurposed to load microcode into the controller 
 for the IBM 3330 Direct Access Storage Facility, codenamed Merlin.
 
 Our data byte could now be stored on read-only 8-inch flexible Mylar disks coated with magnetic material, which 
 are today known as floppy disks. At the time of release, the result of the project was named the IBM 23FD Floppy 
 Disk Drive System. The disks could hold 80 kilobytes of data. Unlike hard drives, a user could easily transfer a 
 floppy in its protective jacket from one drive to another. Later in 1973, IBM released a read/write floppy disk 
-drive, which then became an industry standard.
+drive, which then became an industry standard[^14].
 
 ## 1969
 
-![apollo-rope-memory.jpg](apollo-rope-memory.jpg)
+![/img/apollo-rope-memory.jpg](apollo-rope-memory.jpg)
 
 > Source for image: https://spectrum.ieee.org/tech-history/space-age/software-as-hardware-apollos-rope-memory
 
 In 1969, the Apollo Guidance Computer (AGC) read-only rope memory was launched into space aboard the Apollo 11 
 mission, which carried American astronauts to the Moon and back. This rope memory was made by hand and could 
 hold 72 kilobytes of data. Manufacturing rope memory was laborious, slow, and required skills analogous to 
-textile work; it could take months to weave a program into the rope memory. But it was the right tool for 
+textile work; it could take months to weave a program into the rope memory[^15]. But it was the right tool for 
 the job at the time to resist the harsh rigors of space. When a wire went through one of the circular cores 
 it represented a 1. Wires that went around a core represented a 0. Our data byte would take a human a few 
 minutes (estimated) to weave into the rope.
@@ -127,10 +127,10 @@ minutes (estimated) to weave into the rope.
 
 Let’s fast forward to 1977 when the Commodore PET, the first (successful) mass-market personal computer, was 
 released. Built-in to the PET was a Commodore 1530 Datasette, meaning data plus cassette. The PET converted 
-data into analog sound signals that were then stored on cassettes. This made for a cost-effective and reliable 
+data into analog sound signals that were then stored on cassettes[^16]. This made for a cost-effective and reliable 
 storage solution, albeit very slow. Our small databyte could be transferred at a rate of around 60-70 bytes per 
-second. The cassettes could hold about 100 kilobytes per 30-minute side, with 2 sides per tape. For example, 
-you could fit about 2 of these 55 KB images on one side of the cassette. The datasette also appeared in the 
+second[^17]. The cassettes could hold about 100 kilobytes per 30-minute side, with 2 sides per tape. For example, 
+you could fit about 2 of [these 55 KB images](/img/rick-roll.jpg)[^18] on one side of the cassette. The datasette also appeared in the 
 Commodore VIC-20 and Commodore 64.
 
 ## 1978
@@ -139,7 +139,7 @@ Let’s jump ahead a year to 1978 when the LaserDisc was introduced as “Discov
 Jaws was the first film sold on a LaserDisc in North America. The audio and video quality on a LaserDisc 
 was far better than the competitors, but too expensive for most consumers. As opposed to the VHS tape 
 which consumers could use to record TV programs, the LaserDisc could not be written to. LaserDiscs 
-used analog video with analog FM stereo sound and pulse-code modulation (PCM) digital audio. The 
+used analog video with analog FM stereo sound and pulse-code modulation[^19] (PCM) digital audio. The 
 disks were 12 inches in diameter and composed of two single sided aluminum disks layered in plastic. The 
 LaserDisc is remembered today as being the foundation CDs and DVDs were built upon. 
 
@@ -152,17 +152,17 @@ first hard disk drive for microcomputers. The disk held five megabytes of data, 
 was five times more than the standard floppy disk. The founders succeeded in their goal of scaling 
 down the drive to the size of a floppy disk drive at 5 ¼ inches. It was a rigid, metallic platter 
 coated on both sides with a thin layer of magnetic material to store data. Our data byte could be 
-transferred at a speed of 625 kilobytes per second onto the disk. That’s about a 625KB animated gif per second.
+transferred at a speed of 625 kilobytes per second[^20] onto the disk. That’s about [a 625KB animated gif](/img/rick-roll.gif)[^21] per second.
 
 ## 1981
 
 Let’s fast forward a couple years to 1981 when Sony introduced the first 3 ½ inch floppy drives. 
 Hewlett-Packard was the first adopter of the technology in 1982 with their HP-150. This put the 
-3 ½ inch floppy disk on the map and gave it wide distribution in the industry. The disks were 
+3 ½ inch floppy disk on the map and gave it wide distribution in the industry[^22]. The disks were 
 single sided with a formatted capacity of 161.2 kilobytes and an unformatted capacity of 
 218.8 kilobytes. In 1982, the double sided version was made available and the Microfloppy 
 Industry Committee (MIC), a consortium of 23 media companies, based a spec for a 3 ½ inch 
-floppy on Sony’s original designs cementing the format into history as we know it. Our data 
+floppy on Sony’s original designs cementing the format into history as we know it[^23]. Our data 
 byte could now be stored on the early version of one of the most widely distributed storage 
 mediums: the 3 ½ inch floppy disk. Later a couple of 3 ½ inch floppy disks holding the contents 
 of The Oregon Trail would be paramount to my childhood.
@@ -174,9 +174,9 @@ pre-recorded data, was announced from Sony and Philips. This format grew out of 
 digital audio, or CD-DAs, which were used for distributing music. The CD-DA was developed by 
 Sony and Philips in 1982, which has a capacity of 74 minutes. When Sony and Philips were 
 negotiating the standard for a CD-DA, legend has it that one of the four people insisted 
-it be able to hold all of the Ninth Symphony. The first product released on a CD-ROM was 
+it be able to hold all of the Ninth Symphony[^24]. The first product released on a CD-ROM was 
 Grolier’s Electronic Encyclopedia, which came out in 1985. The encyclopedia contained nine 
-million words which only took up 12% of the disk space available, which was 553 mebibytes. 
+million words which only took up 12% of the disk space available, which was 553 mebibytes[^25]. 
 We would have more than enough room for the encyclopedia and our data byte. Shortly thereafter 
 in 1985, computer and electronics companies worked together to create a standard for the disks 
 so any computer would be able to access the information.
@@ -199,7 +199,7 @@ the electrons remain present on the floating gate. When no electrons are on the 
 represents a 1, and when electrons are trapped on the floating gate it represents a 0. Reversing 
 this process and applying a suitable voltage across the oxide layer in the opposite direction 
 causes the electrons to tunnel off the floating gate and restore the transistor back to its 
-original state. Therefore, the cells are made programmable and non-volatile. Our data byte 
+original state. Therefore, the cells are made programmable and non-volatile[^26]. Our data byte 
 could be programmed into the transistors as `01001010`, with electrons trapped in the floating 
 gates to represent the zeros.
 
@@ -220,22 +220,22 @@ In NOR flash, individual memory cells are connected in parallel allowing the ran
 architecture enables the short read times required for the random access of microprocessor instructions. 
 NOR Flash is ideal for lower-density applications that are mostly read only. This is why most CPUs load 
 their firmware, typically, from NOR flash. Masuoka and colleagues presented the invention of NOR flash 
-in 1984 and NAND flash in 1987.
+in 1984 and NAND flash in 1987[^27].
 
 In contrast, NAND Flash designers gave up the ability for random access in a tradeoff to gain a smaller 
 memory cell size. This also has the benefits of a smaller chip size and lower cost-per-bit. NAND flash’s 
 architecture consists of an array of eight memory transistors connected in a series. This leads to 
 high storage density, smaller memory cell size, and faster write and erase since it can program blocks 
 of data at a time. This comes at the cost of having to overwrite data when it is not sequentially 
-written and data already exists in a block. 
+written and data already exists in a block[^28]. 
 
 ## 1991
 
 Let’s jump ahead to 1991 when a prototype solid state disk (SSD) module was made for evaluation by 
-IBM from SanDisk, at the time known as SunDisk. This design combined a flash storage array, 
+IBM from SanDisk, at the time known as SunDisk[^29]. This design combined a flash storage array, 
 non-volatile memory chips, with an intelligent controller to automatically detect and correct 
-defective cells. The disk was 20 megabytes in a 2 ½ inch form factor and sold for around $1,000. 
-This wound up being used by IBM in the ThinkPad pen computer.
+defective cells. The disk was 20 megabytes in a 2 ½ inch form factor and sold for around $1,000[^30]. 
+This wound up being used by IBM in the ThinkPad pen computer[^31].
 
 ## 1994
 
@@ -257,7 +257,7 @@ digital and video cameras. Like CD-ROMs, CompactFlash speed is based on “x”-
 of 150 kilobytes per second. This winds up looking like R = K ⨉ 150 kB/s, where R is the transfer 
 rate and K is the speed rating. So for 133x CompactFlash, our data byte would be written at 133 ⨉ 
 150 kB/s or around 19,950 kB/s or 19.95 MB/s. The CompactFlash Association was founded in 1995 to 
-create an industry standard for flash-based memory cards. 
+create an industry standard for flash-based memory cards[^32]. 
 
 ## 1997
 
@@ -271,7 +271,7 @@ properties of the medium change. In the case of CD-RWs, phase shifts in a specia
 composed of silver, tellurium, and indium, cause "reflecting lands" and "non-reflecting bumps", 
 each representing a 0 or 1. When the compound is in a crystalline state, it is translucent, 
 which indicates a 1. When the compound is melted into an amorphous state, it becomes opaque and 
-non-reflective, which indicates a 0. We could write our data byte `01001010` as "non-reflecting bumps" 
+non-reflective, which indicates a 0[^33]. We could write our data byte `01001010` as "non-reflecting bumps" 
 and "reflecting lands" this way.
 
 DVDs eventually overtook much of the market share from CD-RWs.
@@ -290,8 +290,8 @@ Like other hard drives, microdrives were mechanical and contained small, spinnin
 A year later in 2000, USB flash drives were introduced. These drives consisted of flash memory encased 
 in a small form factor with a USB interface. Depending on the version of the USB interface used the speed 
 varies. USB 1.1 is limited to 1.5 megabits per second, whereas USB 2.0 can handle 35 megabits per second, 
-and USB 3.0 can handle 625 megabits per second. The first USB 3.1 type-C drives were announced in March 2015 
-and had read/write speeds of 530 megabits per second.  Unlike floppy and optical disks, USB devices are harder 
+and USB 3.0 can handle 625 megabits per second[^34]. The first USB 3.1 type-C drives were announced in March 2015 
+and had read/write speeds of 530 megabits per second[^35].  Unlike floppy and optical disks, USB devices are harder 
 to scratch but still deliver the same use cases of data storage and transferring and backing up files. 
 Because of this, drives for floppy and optical disks have since faded out of existence in favor of USB ports. 
 
@@ -299,13 +299,13 @@ Because of this, drives for floppy and optical disks have since faded out of exi
 
 In 2005, hard disk drive (HDD) manufacturers started shipping products using perpendicular magnetic 
 recording, or PMR. Quite interestingly, this happened at the same time the iPod Nano announced using 
-flash as opposed to the 1 inch hard drives in the iPod Mini, causing a bit of an industry hoohaw.
+flash as opposed to the 1 inch hard drives in the iPod Mini, causing a bit of an industry hoohaw[^36].
 
 A typical hard drive contains one or more rigid disks coated with a magnetically sensitive film consisting 
 of tiny magnetic grains. Data is recorded when a magnetic write-head flies just above the spinning disk, 
 much like a record player and a record except a record needle is in physical contact with the record. 
 As the platters spin, the air in contact with them creates a slight breeze. Just like air on an airplane 
-wing generates lift, the air generates lift on the head’s airfoil. The write-head rapidly flips the 
+wing generates lift, the air generates lift on the head’s airfoil[^37]. The write-head rapidly flips the 
 magnetization of one magnetic region of grains so that its magnetic pole points up or down, to denote a 1 or a 0.
 
 The predecessor to PMR was longitudinal magnetic recording, or LMR. PMR can deliver more than three 
@@ -325,14 +325,14 @@ capacity that was approximately 3.75 megabytes. Oh how far we have come in 51 ye
 
 ## 2009
 
-In 2009, technical work was beginning on non-volatile memory express, or NVMe. Non-volatile memory 
+In 2009, technical work was beginning on non-volatile memory express, or NVMe[^38]. Non-volatile memory 
 (NVM) is a type of memory that has persistence, in contrast to volatile memory which needs constant 
 power to retain data. NVMe filled a need for a scalable host controller interface for peripheral 
-component interconnect express (PCIe) based solid state drives, hence the name NVMe. Over 90 companies 
+component interconnect express (PCIe) based solid state drives[^39], hence the name NVMe. Over 90 companies 
 were a part of the working group to develop the design. This was all based on prior work to define the 
 non-volatile memory host controller interface specification (NVMHCIS). Opening up a modern server would 
 likely result in finding some NVMe drives. The best NVMe drives today can do about 3,500 megabytes per 
-second read and 3,300 megabytes per second write. For the data byte we started with, the character `j`, 
+second read and 3,300 megabytes per second write[^40]. For the data byte we started with, the character `j`, 
 that is extremely fast compared to a couple of minutes to hand weave rope memory for the Apollo Guidance Computer. 
 
 ## Today and the future
@@ -341,9 +341,9 @@ that is extremely fast compared to a couple of minutes to hand weave rope memory
 
 Now that we have traveled through time a bit (ha!), let’s take a look at the state of the art for 
 storage class memory (SCM) today. SCM, like NVM, is persistent, but SCM goes further by also providing 
-performance better than or comparable to primary memory as well as byte addressability. SCM aims to 
+performance better than or comparable to primary memory as well as byte addressability[^41]. SCM aims to 
 address some of the problems faced by caches today such as the low density of static random access memory 
-(SRAM). With dynamic random access memory (DRAM), we can get better density, but this comes at a cost of 
+(SRAM). With dynamic random access memory (DRAM)[^42], we can get better density, but this comes at a cost of 
 slower access times. DRAM also suffers from requiring constant power to refresh memory. Let’s break this 
 down a bit. Power is required since the electric charge on the capacitors leaks off little by little, 
 meaning without intervention, the data on the chip would soon be lost. To prevent this leakage, DRAM 
@@ -365,8 +365,10 @@ technologies work.
 Earlier we went over how phase change works for CD-RWs. PCM is similar. It’s phase change material is 
 typically Ge-Sb-Te, also known as GST, which can exist in two different states: amorphous and crystalline. 
 The amorphous state has a higher resistance, denoting a 0, than the crystalline state denoting a 1. 
-By assigning data values to intermediate resistances, PCM can be used to store multiple states as a MLC. 
-Spin-transfer torque random access memory (STT-RAM)
+By assigning data values to intermediate resistances, PCM can be used to store multiple states as a MLC[^43]. 
+
+#### Spin-transfer torque random access memory (STT-RAM)
+
 STT-RAM consists of two ferromagnetic, permanent magnetic, layers separated by a dielectric, 
 meaning an insulator that can transmit electric force without conduction. It stores bits of data based on 
 differences in magnetic directions. One magnetic layer, called the reference layer, has a fixed magnetic 
@@ -383,9 +385,9 @@ concentration of oxygen vacancy in the metal oxide layer.
 
 While these technologies are promising, they still have downsides. PCM and STT-RAM have high write latencies. 
 PCMs latencies are ten times that of DRAM, while STT-RAM has ten times the latencies of SRAM. PCM and ReRAM have 
-a limit on write endurance before a hard error occurs, meaning a memory element gets stuck at a particular value. 
+a limit on write endurance before a hard error occurs, meaning a memory element gets stuck at a particular value[^44]. 
 
-In August 2015, Intel announced Optane, their product build on 3DXPoint, pronounced 3D cross-point. Optane claims 
+In August 2015, Intel announced Optane, their product build on 3DXPoint, pronounced 3D cross-point[^45]. Optane claims 
 performance 1,000 faster than NAND SSDs with 1,000 times the performance, while being four to five times the price 
 of flash memory. Optane is proof that storage class memory is not just experimental. It will be interesting to 
 watch how these technologies evolve.
@@ -410,7 +412,7 @@ What we also know about balloons is that after a few days, helium filled balloon
 is escaping the balloons. The same could be said for these drives. It took years before manufacturers had created 
 a container that prevented the helium from escaping the form factor for the life of the drive. Backblaze 
 experimented and found that while helium hard drives had a lower annualized error rate of 1.03%, while 
-standard hard drives resulted in 1.06%. Of course, that is so small a difference it is hard to conclude much from it.
+standard hard drives resulted in 1.06%. Of course, that is so small a difference it is hard to conclude much from it[^46].
 
 A helium filled form factor can have a hard disk drive encapsulated that uses PMR, which we went over 
 above, or could contain a microwave-assisted magnetic recording (MAMR) or heat-assisted magnetic 
@@ -435,7 +437,7 @@ Device-managed SMR devices hide this complexity by having the device firmware ma
 interface like any other hard disk you might encounter. On the other hand, host-managed SMR devices rely 
 on the operating system to know how to handle the complexity of the drive.
 
-Seagate started shipping SMR drives in 2013 claiming a 25% greater density than PMR.
+Seagate started shipping SMR drives in 2013 claiming a 25% greater density than PMR[^47].
 
 #### Microwave-assisted magnetic recording (MAMR)
 
@@ -447,7 +449,7 @@ written much more densely on the disk since it has a lower resistance to changes
 this new technology is the spin torque oscillator used to generate the microwave field without sacrificing 
 reliability.
 
-Western Digital, also known as WD, unveiled this technology in 2017. Toshiba followed shortly after in 2018. 
+Western Digital, also known as WD, unveiled this technology in 2017[^48]. Toshiba followed shortly after in 2018[^49]. 
 While WD and Toshiba are busy pursuing MAMR, Seagate is betting on HAMR.
 
 #### Heat-assisted magnetic recording (HAMR)
@@ -458,15 +460,15 @@ onto the surface of a hard disk platter. The heat causes the data bits to be muc
 platter, which allows greater data density and capacity. 
 
 This technology is quite difficult to achieve. A 200mW laser heats a teeny area of the region to 750 °F (400 °C) 
-quickly before writing the data, while also not interfering with or corrupting the rest of the data on the disk. 
+quickly before writing the data, while also not interfering with or corrupting the rest of the data on the disk[^50]. 
 The process of heating, writing the data, and cooling  must be completed in less than a nanosecond. These 
 challenges required the development of nano-scale surface plasmons, also known as a surface guided laser, 
 instead of direct laser-based heating, as well as new types of glass platters and heat-control coatings to 
 tolerate rapid spot-heating without damaging the recording head or any nearby data, and various other technical 
-challenges that needed to be overcome.
+challenges that needed to be overcome[^51].
 
-Seagate first demonstrated this technology, despite many skeptics, in 2013. They started shipping the 
-first drives in 2018.
+Seagate first demonstrated this technology, despite many skeptics, in 2013[^52]. They started shipping the 
+first drives in 2018[^53].
 
 ## End of tape, rewind
 
@@ -480,9 +482,9 @@ If we compare NVMe to my childhood favorite in 1994, Zip disks, NVMe can read 21
 
 One thing that remains true is the storing of 0s and 1s. The means by which we do that vary greatly. 
 I hope the next time you burn a CD-RW with a mix of songs for a friend, or store home videos in an 
-Optical Disc Archive, you think about how the non-reflective bumps translate to a 0 and the reflective 
+Optical Disc Archive[^54], you think about how the non-reflective bumps translate to a 0 and the reflective 
 lands of the disk translate to a 1. Or if you are creating a mixtape on a cassette, remember that those 
-are very closely related to the Datasette used in the Commodore PET. Lastly, remember to be kind and rewind.
+are very closely related to the Datasette used in the Commodore PET. Lastly, remember to be kind and rewind[^55].
 
 Thank you to [Robert Mustacchi](https://twitter.com/rmustacc) and [Rick Altherr](https://twitter.com/kc8apf) for 
 tidbits (I can't help myself) throughout this article!
