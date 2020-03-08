@@ -488,3 +488,59 @@ are very closely related to the Datasette used in the Commodore PET. Lastly, rem
 
 Thank you to [Robert Mustacchi](https://twitter.com/rmustacc) and [Rick Altherr](https://twitter.com/kc8apf) for 
 tidbits (I can't help myself) throughout this article!
+
+[^1]: http://archive.computerhistory.org/resources/text/IBM/Stretch/pdfs/06-07/102632284.pdf
+[^2]: https://archive.org/stream/byte-magazine-1977-02/1977_02_BYTE_02-02_Usable_Systems#page/n145/mode/2up
+[^3]: https://web.archive.org/web/20170403130829/http://www.bobbemer.com/BYTE.HTM
+[^4]: https://www.computerhistory.org/storageengine/tape-unit-developed-for-data-storage/
+[^5]: https://www.ibm.com/ibm/history/exhibits/701/701_1415bx26.html
+[^6]: https://www.ibm.com/ibm/history/exhibits/storage/storage_fifty.html
+[^7]:https://spectrum.ieee.org/computing/hardware/why-the-future-of-data-storage-is-still-magnetic-tape
+[^8]: https://www.ibm.com/ibm/history/exhibits/650/650_pr2.html
+[^9]: https://www.youtube.com/watch?v=zOD1umMX2s8
+[^10]: https://www.ibm.com/ibm/history/ibm100/us/en/icons/ramac/
+[^11]: https://www.pdp8.net/tu56/tu56.shtml
+[^12]: https://www.ibm.com/ibm/history/ibm100/us/en/icons/floppy/
+[^13]: https://archive.org/details/ibms360early370s0000pugh/page/513
+[^14]: https://web.archive.org/web/20100707221048/http://archive.computerhistory.org/resources/access/text/Oral_History/102657926.05.01.acc.pdf
+[^15]: https://authors.library.caltech.edu/5456/1/hrst.mit.edu/hrs/apollo/public/visual3.htm
+[^16]: http://wav-prg.sourceforge.net/tape.html
+[^17]: https://www.c64-wiki.com/wiki/Datassette
+[^18]: You will be rick rolled by a still photo.
+[^19]: https://tools.ietf.org/html/rfc4856#page-17
+[^20]: https://www.pcmag.com/encyclopedia/term/st506#:~:text=ST506,using%20the%20MFM%20encoding%20method.
+[^21]: You will be rick rolled.
+[^22]: https://www.jstor.org/stable/24530873?seq=1
+[^23]: https://www.americanradiohistory.com/hd2/IDX-Consumer/Archive-Byte-IDX/IDX/80s/82-83/Byte-1983-09-OCR-Page-0169.pdf
+[^24]: https://www.wired.com/2010/12/1216beethoven-birthday-cd-length/
+[^25]: https://books.google.co.uk/books?id=RTwQAQAAMAAJ
+[^26]: https://www.economist.com/technology-quarterly/2006/03/11/not-just-a-flash-in-the-pan
+[^27]: https://ieeexplore.ieee.org/document/1487443
+[^28]: http://aturing.umcs.maine.edu/~meadow/courses/cos335/Toshiba%20NAND_vs_NOR_Flash_Memory_Technology_Overviewt.pdf 
+[^29]: https://www.computerhistory.org/storageengine/solid-state-drive-module-demonstrated/
+[^30]: http://meseec.ce.rit.edu/551-projects/spring2017/2-6.pdf
+[^31]: https://www.westerndigital.com/company/innovations/history
+[^32]: https://www.compactflash.org/
+[^33]: https://computer.howstuffworks.com/cd-burner8.htm
+[^34]: https://www.diffen.com/difference/USB_1.0_vs_USB_2.0
+[^35]: https://web.archive.org/web/20161220102924/http://www.usb.org/developers/presentations/USB_DevDays_Hong_Kong_2016_-_USB_Type-C.pdf
+[^36]: https://www.eetimes.com/hard-drives-go-perpendicular/#
+[^37]: https://books.google.com/books?id=S90OaKQ-IzMC&pg=PA590&lpg=PA590&dq=heads+disk+airfoils&source=bl&ots=7VVuhw6mgm&sig=ACfU3U0PXCehcs7dKI5IhDGbRMZvqsgeHg&hl=en&sa=X&ved=2ahUKEwi82fm9_onoAhUIr54KHR6-BtUQ6AEwAHoECAgQAQ#v=onepage&q=heads%20disk%20airfoils&f=false
+[^38]: https://www.flashmemorysummit.com/English/Collaterals/Proceedings/2013/20130813_A12_Onufryk.pdf
+[^39]: https://nvmexpress.org/wp-content/uploads/2013/04/NVM_whitepaper.pdf
+[^40]: https://www.pcgamer.com/best-nvme-ssd/
+[^41]: https://ieeexplore.ieee.org/document/5388605
+[^42]: https://arxiv.org/pdf/1909.12221.pdf
+[^43]: https://ieeexplore.ieee.org/document/5388621
+[^44]: https://arxiv.org/pdf/1909.12221.pdf
+[^45]: https://www.anandtech.com/show/9541/intel-announces-optane-storage-brand-for-3d-xpoint-products
+[^46]: https://www.backblaze.com/blog/helium-filled-hard-drive-failure-rates/
+[^47]: https://www.anandtech.com/show/7290/seagate-to-ship-5tb-hdd-in-2014-using-shingled-magnetic-recording/
+[^48]: https://www.storagereview.com/news/wd-unveils-its-microwave-assisted-magnetic-recording-technology
+[^49]: https://www.theregister.co.uk/2018/12/07/toshiba_goes_to_mamr/
+[^50]: https://fstoppers.com/originals/hamr-and-mamr-technologies-will-unlock-hard-drive-capacity-year-326328 
+[^51]: https://www.seagate.com/www-content/ti-dm/tech-insights/en-us/docs/TP707-1-1712US_HAMR.pdf
+[^52]: https://www.computerworld.com/article/2485341/seagate--tdk-show-off-hamr-to-jam-more-data-into-hard-drives.html
+[^53]: https://blog.seagate.com/craftsman-ship/hamr-next-leap-forward-now/
+[^54]: Yup, you heard that right: https://pro.sony/en_GB/products/optical-disc.
+[^55]: This is a tribute to Blockbuster but there are still open formats for using tape today: https://en.wikipedia.org/wiki/Linear_Tape-Open.
