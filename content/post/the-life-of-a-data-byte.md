@@ -139,7 +139,7 @@ Let’s jump ahead a year to 1978 when the LaserDisc was introduced as “Discov
 Jaws was the first film sold on a LaserDisc in North America. The audio and video quality on a LaserDisc 
 was far better than the competitors, but too expensive for most consumers. As opposed to the VHS tape 
 which consumers could use to record TV programs, the LaserDisc could not be written to. LaserDiscs 
-used analog video with analog FM stereo sound and pulse-code modulation[^19] (PCM) digital audio. The 
+used analog video with analog FM stereo sound and pulse-code modulation[^19], or PCM, digital audio. The 
 disks were 12 inches in diameter and composed of two single sided aluminum disks layered in plastic. The 
 LaserDisc is remembered today as being the foundation CDs and DVDs were built upon. 
 
