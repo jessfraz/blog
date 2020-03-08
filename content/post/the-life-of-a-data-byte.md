@@ -53,7 +53,7 @@ Let’s fast forward a year to May 21st, 1952 when IBM announced their first mag
 Our data byte could now be moved off UNISERVO metal tape onto IBM’s magnetic tape. This new home would be 
 super cozy for our very small data byte since the tape could store up to 2 million digits. This magnetic 
 7 track tape moved at 75 inches per second with a transfer rate of 12,500 digits[^5] or 7,500 characters[^6] 
-(called copy groups at the time) per second. For reference, this article has 34,106 characters. 
+&nbsp;(called copy groups at the time) per second. For reference, this article has 34,106 characters. 
 
 7 track tapes had six tracks for data and one to maintain parity by ensuring that the total number of 
 1-bits in the string was even or odd. Data was recorded at 100 bits per linear inch. This system used a 
@@ -130,7 +130,7 @@ released. Built-in to the PET was a Commodore 1530 Datasette, meaning data plus 
 data into analog sound signals that were then stored on cassettes[^16]. This made for a cost-effective and reliable 
 storage solution, albeit very slow. Our small databyte could be transferred at a rate of around 60-70 bytes per 
 second[^17]. The cassettes could hold about 100 kilobytes per 30-minute side, with 2 sides per tape. For example, 
-you could fit about 2[^18] of [these 55 KB images](/img/rick-roll.jpg) on one side of the cassette. The datasette also appeared in the 
+you could fit about 2 of [these 55 KB images](/img/rick-roll.jpg)[^18] on one side of the cassette. The datasette also appeared in the 
 Commodore VIC-20 and Commodore 64.
 
 ## 1978
@@ -152,7 +152,7 @@ first hard disk drive for microcomputers. The disk held five megabytes of data, 
 was five times more than the standard floppy disk. The founders succeeded in their goal of scaling 
 down the drive to the size of a floppy disk drive at 5 ¼ inches. It was a rigid, metallic platter 
 coated on both sides with a thin layer of magnetic material to store data. Our data byte could be 
-transferred at a speed of 625 kilobytes per second[^20] onto the disk. That’s about [a 625KB animated gif](/img/rick-roll.gif) per second[^21].
+transferred at a speed of 625 kilobytes per second[^20] onto the disk. That’s about [a 625KB animated gif](/img/rick-roll.gif)[^21] per second.
 
 ## 1981
 
