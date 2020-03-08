@@ -30,7 +30,7 @@ language’s characters are often expressed as two or more bytes. UTF-16 is the 
 characters as 16 bits and UTF-32 is the standard for representing characters as 32 bits. In ASCII every 
 character is a byte, and in Unicode, that’s often not true, a character can be 1, 2, 3, or more bytes. 
 Throughout this article there will be different sized groupings of bits. The number of bits in a byte 
-varied based on the design of the storage medium in the past.
+varies based on the design of the storage medium in the past.
 
 This article is going to travel in time through various mediums of storage as an exercise of diving into 
 how we have stored data through history. By no means will this include every single storage medium ever 
