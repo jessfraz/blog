@@ -130,7 +130,7 @@ released. Built-in to the PET was a Commodore 1530 Datasette, meaning data plus 
 data into analog sound signals that were then stored on cassettes[^16]. This made for a cost-effective and reliable 
 storage solution, albeit very slow. Our small databyte could be transferred at a rate of around 60-70 bytes per 
 second[^17]. The cassettes could hold about 100 kilobytes per 30-minute side, with 2 sides per tape. For example, 
-you could fit about 2 of [these 55 KB images](/img/rick-roll.jpg) &nbsp;[^18] on one side of the cassette. The datasette also appeared in the 
+you could fit about 2[^18] of [these 55 KB images](/img/rick-roll.jpg) on one side of the cassette. The datasette also appeared in the 
 Commodore VIC-20 and Commodore 64.
 
 ## 1978
@@ -152,7 +152,7 @@ first hard disk drive for microcomputers. The disk held five megabytes of data, 
 was five times more than the standard floppy disk. The founders succeeded in their goal of scaling 
 down the drive to the size of a floppy disk drive at 5 ¼ inches. It was a rigid, metallic platter 
 coated on both sides with a thin layer of magnetic material to store data. Our data byte could be 
-transferred at a speed of 625 kilobytes per second[^20] onto the disk. That’s about [a 625KB animated gif](/img/rick-roll.gif) &nbsp;[^21] per second.
+transferred at a speed of 625 kilobytes per second[^20] onto the disk. That’s about [a 625KB animated gif](/img/rick-roll.gif) per second[^21].
 
 ## 1981
 
