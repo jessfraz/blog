@@ -1,9 +1,9 @@
 +++
-date = "2020-03-08T08:09:26"
+date = "2020-03-07T08:09:26"
 title = "The Life of a Data Byte"
 author = "Jessica Frazelle"
 description = "A trip through time of various storage technologies."
-draft = true
+draft = false
 +++
 
 A byte of data has been stored in a number of different ways as newer, better, and faster mediums of 
