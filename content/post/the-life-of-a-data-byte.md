@@ -36,7 +36,7 @@ This article is going to travel in time through various mediums of storage as an
 how we have stored data through history. By no means will this include every single storage medium ever 
 manufactured, sold, or distributed. This article is meant to be fun and informative while not being 
 encyclopedic. Let’s get started. Let’s assume we have a byte of data to be stored: the letter `j`, or 
-as an encoded byte `6a` or in binary `01001010`. As we go through time, our data byte will come into 
+as an encoded byte `6a` or in binary `01001010`. As we travel through time, our data byte will come into 
 play in some of the storage technologies we cover.
 
 ## 1951
