@@ -52,7 +52,7 @@ Let’s fast forward a year to May 21st, 1952 when IBM announced their first mag
 Our data byte could now be moved off UNISERVO metal tape onto IBM’s magnetic tape. This new home would be 
 super cozy for our very small data byte since the tape could store up to 2 million digits. This magnetic 
 7 track tape moved at 75 inches per second with a transfer rate of 12,500 digits[^5] or 7,500 characters[^6] 
-&nbsp;(called copy groups at the time) per second. For reference, this article has 34,106 characters. 
+&nbsp;(called copy groups at the time) per second. For reference, this article has {{.WordCount}} characters. 
 
 7 track tapes had six tracks for data and one to maintain parity by ensuring that the total number of 
 1-bits in the string was even or odd. Data was recorded at 100 bits per linear inch. This system used a 
