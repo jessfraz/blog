@@ -226,7 +226,7 @@ body.home {
     overflow: hidden;
     margin: 0 auto;
     text-align: left;
-    padding: 80px 20px 50px 20px;
+    padding: 0px 20px 50px 20px;
 }
 a {
     color: #4788f2;
@@ -245,25 +245,18 @@ a:focus {
     border-bottom: 1px solid #105edd;
 }
 header {
-    position: fixed;
     background: rgba(255, 255, 255, 0.9);
-    padding: 10px 15px 10px 15px;
+    padding: 10px 0px;
     width: 90%;
     width: calc(100% - 30px);
     width: -webkit-calc(100% - 30px);
     width: -moz-calc(100% - 30px);
     width: -ms-calc(100% - 30px);
     width: -o-calc(100% - 30px);
-    z-index: 10000;
     height: 30px;
     display: block;
     text-align: center;
-    *zoom: 1;
-    top: 0px;
-    left: 0px;
-    -webkit-box-shadow: 0 0px 10px rgba(128, 128, 128, 0.25);
-    -moz-box-shadow: 0 0px 10px rgba(128, 128, 128, 0.25);
-    box-shadow: 0 0px 10px rgba(128, 128, 128, 0.25);
+    margin-bottom: 20px;
 }
 header:before,
 header:after {
@@ -633,11 +626,3 @@ table > tfoot > tr.success > th {
     font-size: 80%;
 }
 
-.container article li:before {
-    content: '';
-    display: block;
-    position: relative;
-    width: 0;
-    height: 20px;
-    margin-top: -50px;
-}

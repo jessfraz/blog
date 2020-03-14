@@ -1,7 +1,9 @@
 {{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
 
 <div class="container home">
+
+    {{ partial "navbar.html" . }}
+
     <h1>Publications</h2>
     {{ range sort $.Site.Data.publication "date" "desc" }}
     <article class="publication">
