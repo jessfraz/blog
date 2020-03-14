@@ -8,6 +8,9 @@
 		<div class="time">{{ .Date.Format "Monday, January 2, 2006" }}</div>
 		{{ .Content }}
 	</article>
+	<section class="comments">
+		{{ template "_internal/disqus.html" . }}
+	</section>
 </div>
 
 {{ partial "footer.html" . }}
