@@ -36,11 +36,13 @@
 
     {{ range .Site.Pages.ByDate.Reverse }}
     {{ if not .Params.featured }}
+    {{ if ne .Title "Posts" }}
     <article>
         <h3><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h3>
         <div class="time">{{ .Date.Format "Monday, January 2, 2006" }}</div>
         <p>{{ .Summary }}</p>
     </article>
+    {{ end }}
     {{ end }}
     {{ end }}
 </div>
