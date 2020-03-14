@@ -40,6 +40,11 @@ static/css/site.min.css: image-dev
 .PHONY: dev
 dev: static/js/site.min.js static/css/site.min.css ## Build the frontend components.
 
+IP_ADDRESS := $(shell ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1' | tail -1)
+.PHONY: serve
+serve: ## Serve the website locally.
+	hugo serve --bind $(IP_ADDRESS) --baseURL http://$(IP_ADDRESS)
+
 .PHONY: help
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

@@ -23,7 +23,7 @@
     <h1>Blog</h1>
 
     <h2>Featured</h2>
-    {{ range .Data.Pages.ByDate.Reverse }}
+    {{ range .Site.Pages.ByDate.Reverse }}
     {{ if .Params.featured }}
     <article>
         <h3><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h3>
@@ -34,7 +34,7 @@
 
     <hr/>
 
-    {{ range .Data.Pages.ByDate.Reverse }}
+    {{ range .Site.Pages.ByDate.Reverse }}
     {{ if not .Params.featured }}
     <article>
         <h3><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h3>
