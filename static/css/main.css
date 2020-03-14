@@ -638,6 +638,6 @@ table > tfoot > tr.success > th {
     display: block;
     position: relative;
     width: 0;
-    height: 30px;
+    height: 20px;
     margin-top: -50px;
 }
