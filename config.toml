@@ -1,5 +1,5 @@
-baseUrl = "https://blog.jessfraz.com/"
-CanonifyUrls = true
+baseurl = "https://blog.jessfraz.com/"
+canonifyUrls = true
 languageCode = "en-us"
 title = "Ramblings from Jessie"
 disableKinds = ["taxonomy", "taxonomyTerm"]
