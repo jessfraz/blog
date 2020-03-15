@@ -626,3 +626,6 @@ table > tfoot > tr.success > th {
     font-size: 80%;
 }
 
+.footnotes p {
+    margin: 5px 0;
+}
