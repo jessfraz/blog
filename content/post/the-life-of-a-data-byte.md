@@ -159,7 +159,7 @@ Commodore VIC-20 and Commodore 64.
 
 ## 1978
 
-![laserdisc](/img/laserdisc.jpg)
+![laserdisc](/img/laserdisk.jpg)
 
 > Source for image: https://www.youtube.com/watch?v=PRFQm0eUvzs
 
@@ -279,7 +279,7 @@ This wound up being used by IBM in the ThinkPad pen computer[^31].
 
 ## 1994
 
-![zipdisk](zipdisk.jpg)
+![zipdisk](/img/zipdisk.jpg)
 
 > Source for image: https://www.amazon.com/Iomega-100MB-Zip-Plus-Drive/dp/B003UI8POM
 
