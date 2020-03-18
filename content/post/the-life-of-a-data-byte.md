@@ -36,9 +36,14 @@ how we have stored data through history. By no means will this include every sin
 manufactured, sold, or distributed. This article is meant to be fun and informative while not being 
 encyclopedic. Let’s get started. Let’s assume we have a byte of data to be stored: the letter `j`, or 
 as an encoded byte `6a` or in binary `01001010`. As we travel through time, our data byte will come into 
-play in some of the storage technologies we cover.
+play in some of the storage technologies we cover. Finally, the article will
+wrap up with a look at the current and future technologies for storage.
 
 ## 1951
+
+![UNIVAC](/img/UNIVAC.jpg)
+
+> Source for image: http://www.ricomputermuseum.org/Home/interesting_computer_items/univac-magnetic-tape
 
 Our story starts in 1951 with the UNIVAC UNISERVO tape drive for the UNIVAC 1 computer. This was the first 
 tape drive made for a commercial computer. The tape was three pounds of ½ inch wide thin strip of 
@@ -47,6 +52,10 @@ at a rate of 7,200 characters per second[^4] on tape moving at 100 inches per se
 you could measure the speed of a storage algorithm by the distance the tape traveled.
 
 ## 1952
+
+![IBM 726](/img/ibm-726.jpg)
+
+> Source for image: https://www.ibm.com/ibm/history/exhibits/storage/storage_PH5-24.html
 
 Let’s fast forward a year to May 21st, 1952 when IBM announced their first magnetic tape unit, the IBM 726. 
 Our data byte could now be moved off UNISERVO metal tape onto IBM’s magnetic tape. This new home would be 
@@ -68,6 +77,10 @@ randomly access data, they had to read and write in sequential order.
 
 ## 1956
 
+![RAMAC](/img/ramac.jpg)
+
+> Source for image: https://www.computerhistory.org/revolution/memory-storage/8/233
+
 If we move ahead a few years to 1956, the era of magnetic disk storage began with IBM’s completion of a 
 RAMAC 305 computer system to deliver to Zellerbach Paper in San Francisco[^8]. This computer was the first to 
 use a moving-head hard disk drive. The RAMAC disk drive consisted of fifty magnetically coated 24 inch diameter 
@@ -84,6 +97,10 @@ Real-time random access of data was truly revolutionary at this time.
 
 ## 1963
 
+![dectape](/img/dectape.jpg)
+
+> Source for image: https://www.computerhistory.org/timeline/1963/
+
 Let’s fast forward to 1963 when DECtape was introduced. Its namesake stemmed from the Digital Equipment 
 Corporation, known as DEC for short. DECtape was inexpensive and reliable so it was used in many generations 
 of the DEC computers. It was a ¾ inch tape that was laminated and sandwiched between two layers of mylar on a 
@@ -96,6 +113,10 @@ to DECtape at 8,325 12-bit words per second with a tape speed of 93 +/-12 inches
 per second than the UNISERVO metal tape in 1952.
 
 ## 1967
+
+![minnow](/img/minnow.jpg)
+
+> Source for image: https://www.computerhistory.org/revolution/memory-storage/8/261/1080
 
 Four years later in 1967, a small team at IBM started working on the IBM floppy disk drive, codenamed Minnow[^12]. 
 At the time, the team was tasked with developing a reliable and inexpensive way to load microcode into the 
@@ -124,6 +145,10 @@ minutes (estimated) to weave into the rope.
 
 ## 1977
 
+![datasette](/img/datasette.jpg)
+
+> Source for image: https://en.wikipedia.org/wiki/File:Commodore-Datasette-C2N-Mk2-Front.jpg
+
 Let’s fast forward to 1977 when the Commodore PET, the first (successful) mass-market personal computer, was 
 released. Built-in to the PET was a Commodore 1530 Datasette, meaning data plus cassette. The PET converted 
 data into analog sound signals that were then stored on cassettes[^16]. This made for a cost-effective and reliable 
@@ -133,6 +158,10 @@ you could fit about 2 of [these 55 KB images](/img/rick-roll.jpg)[^18] on one si
 Commodore VIC-20 and Commodore 64.
 
 ## 1978
+
+![laserdisc](/img/laserdisc.jpg)
+
+> Source for image: https://www.youtube.com/watch?v=PRFQm0eUvzs
 
 Let’s jump ahead a year to 1978 when the LaserDisc was introduced as “Discovision” by MCA and Philips. 
 Jaws was the first film sold on a LaserDisc in North America. The audio and video quality on a LaserDisc 
@@ -144,6 +173,10 @@ LaserDisc is remembered today as being the foundation CDs and DVDs were built up
 
 ## 1979
 
+![st506](/img/st506.jpg)
+
+> Source for image: https://www.computerhistory.org/storageengine/seagate-5-25-inch-hdd-becomes-pc-standard/
+
 A year later in 1979, Alan Shugart and Finis Conner founded the company Seagate Technology with the 
 idea of scaling down a hard disk drive to be the same size as a 5 ¼ inch floppy disk, which at the 
 time was the standard. Their first product, in 1980, was the Seagate ST506 hard disk drive, the 
@@ -154,6 +187,10 @@ coated on both sides with a thin layer of magnetic material to store data. Our d
 transferred at a speed of 625 kilobytes per second[^20] onto the disk. That’s about [a 625KB animated gif](/img/rick-roll.gif)[^21] per second.
 
 ## 1981
+
+![3.5 floppy](/img/3.5-floppy.jpg)
+
+> Source for image: https://en.wikipedia.org/wiki/History_of_the_floppy_disk#/media/File:Floppy_disk_300_dpi.jpg
 
 Let’s fast forward a couple years to 1981 when Sony introduced the first 3 ½ inch floppy drives. 
 Hewlett-Packard was the first adopter of the technology in 1982 with their HP-150. This put the 
@@ -167,6 +204,10 @@ mediums: the 3 ½ inch floppy disk. Later a couple of 3 ½ inch floppy disks hol
 of The Oregon Trail would be paramount to my childhood.
 
 ## 1984
+
+![cd-rom](/img/cd-rom.png)
+
+> Source for image: https://en.wikipedia.org/wiki/CD-ROM#/media/File:CD-ROM.png
 
 Shortly thereafter in 1984, the compact disk read-only memory (CD-ROM), holding 550 megabytes of 
 pre-recorded data, was announced from Sony and Philips. This format grew out of compact disks 
@@ -238,6 +279,10 @@ This wound up being used by IBM in the ThinkPad pen computer[^31].
 
 ## 1994
 
+![zipdisk](zipdisk.jpg)
+
+> Source for image: https://www.amazon.com/Iomega-100MB-Zip-Plus-Drive/dp/B003UI8POM
+
 One of my personal favorite storage mediums from my childhood was Zip Disks. In 1994, Iomega 
 released the Zip Disk, a 100 megabyte cartridge in a 3 ½ inch form factor, roughly a bit thicker 
 than a standard 3 ½ inch disk. Later versions of the disks could store up to 2 gigabytes. 
@@ -249,6 +294,10 @@ the surface, which is similar to a hard drive but unlike other floppies. Due to 
 problems and the affordability of CDs, Zip disks eventually became obsolete.
 
 ## 1994
+
+![compactflash](/img/compactflash.png)
+
+> Source for image: https://en.wikipedia.org/wiki/CompactFlash#/media/File:CompactFlash_Memory_Card.svg
 
 Also in 1994, SanDisk introduced CompactFlash, which was widely adopted into consumer devices like 
 digital and video cameras. Like CD-ROMs, CompactFlash speed is based on “x”-ratings, such as 8x, 
@@ -295,6 +344,10 @@ to scratch but still deliver the same use cases of data storage and transferring
 Because of this, drives for floppy and optical disks have since faded out of existence in favor of USB ports. 
 
 ## 2005
+
+![hard-disk](/img/hard-disk.jpg)
+
+> Source for image: https://en.wikipedia.org/wiki/Hard_disk_drive#/media/File:Laptop-hard-drive-exposed.jpg
 
 In 2005, hard disk drive (HDD) manufacturers started shipping products using 
 [perpendicular magnetic recording](https://youtu.be/xb_PyKuI7II), 
