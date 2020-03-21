@@ -627,5 +627,9 @@ table > tfoot > tr.success > th {
 }
 
 .footnotes p {
-    margin: 5px 0;
+    margin: 0;
+}
+
+.footnotes li {
+    margin-bottom: 5px;
 }
