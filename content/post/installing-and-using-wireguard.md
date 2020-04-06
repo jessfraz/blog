@@ -49,7 +49,8 @@ $ docker run --rm -it \
 ```
 
 This only works if you have your kernel headers installed in `/usr/src` and 
-your kernel allows kernel modules (`CONFIG_MODULES=y`).
+your kernel allows kernel modules (`CONFIG_MODULES=y`). This will change your kernel modules on your
+Host since you are mounting that directory.
 
 If you are like me and set `CONFIG_MODULES=n` then you can use my 
 [kernel-builder Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/kernel-builder/Dockerfile)
@@ -72,7 +73,7 @@ to build a specific kernel version.
 # build_kernel 4.17.1
 ```
 
-That saves the `vmlinuz` to `/boot` where you can then update your initramfs
+That saves the `vmlinuz` to `/boot` (on your host, since you mounted that directory) where you can then update your initramfs
 for the new image and add it to your bootloader if needed.
 
 ## Using the tools
