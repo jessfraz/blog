@@ -23,6 +23,14 @@ literally anything can be run in a container. This post is going
 to go over how to install the Wireguard module by using a container and how to
 run the tools from a container as well.
 
+**UPDATE (April 2020):** You might want to use [Tailscale](https://tailscale.com). It is simple to install 
+and cross platform since it uses the go implementation of wireguard. Then you don't have to 
+mess with the kernel!
+
+I will never forget this thread from 2017 ;) so glad to see the go implementation happen!
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Soooooo waiting for the userspace portable Go implementation.</p>&mdash; Filippo Valsorda 🇮🇹 (@FiloSottile) <a href="https://twitter.com/FiloSottile/status/877581856387944450?ref_src=twsrc%5Etfw">June 21, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Installing
 
 I wrote a [Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/wireguard/install/Dockerfile)
