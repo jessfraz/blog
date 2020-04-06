@@ -7,3 +7,6 @@ disqusShortname = "https-blog-jessfraz-com"
 
 [params]
 	description = "The blog of Jessie Frazelle, hacker of all things: systems, kernels, operating systems, etc..."
+
+[markup.goldmark.renderer]
+unsafe= true
