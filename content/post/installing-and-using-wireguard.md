@@ -50,7 +50,7 @@ $ docker run --rm -it \
 
 This only works if you have your kernel headers installed in `/usr/src` and 
 your kernel allows kernel modules (`CONFIG_MODULES=y`). This will change your kernel modules on your
-Host since you are mounting that directory.
+host since you are mounting that directory.
 
 If you are like me and set `CONFIG_MODULES=n` then you can use my 
 [kernel-builder Dockerfile](https://github.com/jessfraz/dockerfiles/blob/master/kernel-builder/Dockerfile)
