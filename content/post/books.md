@@ -6,6 +6,8 @@ description = "Some of my favorite books."
 featured = true
 +++
 
+You can find my goodreads account at
+[goodreads.com/jessfraz](https://goodreads.com/jessfraz).
 
 ### Romanticized Tech
 
