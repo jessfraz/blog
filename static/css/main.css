@@ -634,7 +634,3 @@ table > tfoot > tr.success > th {
     margin-bottom: 5px;
 }
 
-// MathJax
-p * {
-  font-size: inherit
-}
