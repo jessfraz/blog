@@ -35,7 +35,7 @@ For myself, when I automate things, I tend to start by making it work and then m
 
 ### On-boarding new hires
 
-For our startup, we have been hiring quite a bit quickly. I wanted to make sure our on-boarding process was streamlined and consistent. Adding new folks to GSuite, Zoom, and GitHub teams manually is a huge waste of time and doing it manually tends to lead to human error. I automated on-boarding new folks into all our tools with a Rust script. This was also a nice excuse for me to tinker with the Rust programming language. 
+For our startup, we have been hiring quite a bit quickly. I wanted to make sure our on-boarding process was streamlined and consistent. Adding new folks to GSuite, Zoom, and GitHub teams manually is a huge waste of time and tends to lead to human error. I automated on-boarding new folks into all our tools with a Rust script. This was also a nice excuse for me to tinker with the Rust programming language. 
 
 Now when folks join the company, they get added to a config file which then automatically sets up an email account in GSuite, creates them a Zoom account, adds them to all the right GitHub teams, and then sends an email to them outlining all the tools and their accounts. It’s been improved with every new hire’s feedback as well, which makes it even better.
 
@@ -45,7 +45,9 @@ Another thing I recently automated was clearing out all the newsletters I get to
 
 ### Gmail filters
 
-Speaking of email inboxes… I am an absolute stickler about Gmail filters. At the time of writing this article, I have 72 different filters. I constantly improve my labeling and automatic archiving of emails through a configuration file. This management system is a little Go tool I made for Gmail filters called gmailfilters[^5]. For mailing lists, I tend to archive the messages unless they are sent directly to me, whether in `cc` or `to`. This keeps my inbox clean, while also making sure each mailing list gets sorted into its own Gmail label so I can easily view all the messages if I need to. By maintaining Gmail filters in a configuration file, versus the user interface, I save a bunch of time trying to find the filter I want to edit, editing it, and saving it. Also, if I make a mistake and want to revert it, I now have a git history of past filters, so this is as simple as `git revert`.
+Speaking of email inboxes… I am an absolute stickler about Gmail filters. At the time of writing this article, I have 72 different filters. I constantly improve my labeling and automatic archiving of emails through a configuration file. This management system is a little Go tool I made for Gmail filters called gmailfilters[^5]. 
+
+For mailing lists, I tend to archive the messages unless they are sent directly to me, whether in `cc` or `to`. This keeps my inbox clean, while also making sure each mailing list gets sorted into its own Gmail label so I can easily view all the messages if I need to. By maintaining Gmail filters in a configuration file, versus the user interface, I save a bunch of time trying to find the filter I want to edit, editing it, and saving it. Also, if I make a mistake and want to revert it, I now have a git history of past filters, so this is as simple as `git revert`.
 
 These are just a few of the things I automate for my day to day life. If you are interested in more of these, please refer to my original posts on my personal infrastructure[^6]. As developers, automation is not a new concept, we tend to deal with the patterns of automation day to day through continuous integration (CI) and continuous delivery (CD). For the rest of the world, it is interesting to see the patterns of automation are starting to play a role in consumer products.
 
@@ -53,11 +55,13 @@ These are just a few of the things I automate for my day to day life. If you are
 
 ### Apple Shortcuts
 
-Recently, I switched back to an iPhone and got an iPad. I was delighted to play with the new “Shortcuts” feature. A Shortcut allows users to do multiple tasks and streamline them together into one action. For example, you could create a shortcut that on your commute home from the office: gets the latest traffic report, plays your favorite new podcast on the drive home, then turns on your lights when you get home (assuming you have smart lights). You can build anything you like depending on the apps you have installed and your preferences. It’s really quite extensible, while also being approachable by the mass market of iPhone adopters.
+Recently, I switched back to an iPhone and got an iPad. I was delighted to play with the new “Shortcuts” feature. A Shortcut allows users to do multiple tasks and streamline them together into one action. For example, you could create a shortcut that on your commute home from the office: gets the latest traffic report, plays your favorite new podcast on the drive home, then turns on your lights when you get home (assuming you have smart lights). You can build anything you like depending on the apps you have installed and your preferences. It’s really quite extensible, while also being approachable by the mass market of iPhone adopters. In the age of COVID-19 and working from home, I'm sure you can think of a different example ;)
 
 ### Home automation
 
-Speaking of lights that can automatically turn on, home automation is another way that wider audiences can create automation patterns for themselves. Between Google Home, Apple’s Homekit, and Amazon Alexa adoption, more and more folks are seeing the power that technology can unleash and time saved by automating everyday tasks. Most of these devices have a concept of creating and using “routines” to chain multiple tasks together. For example, when I leave the house, turn off all the lights, set the temperature so the AC is no longer running, and turn on the security system. This user experience and ease of use enables consumers to boost their productivity and save time in the same way a developer would through programming and scripting. 
+Speaking of lights that can automatically turn on, home automation is another way that wider audiences can create automation patterns for themselves. Between Google Home, Apple’s Homekit, and Amazon Alexa adoption, more and more folks are seeing the power that technology can unleash and time saved by automating everyday tasks. Most of these devices have a concept of creating and using “routines” to chain multiple tasks together.
+
+For example, when I leave the house, turn off all the lights, set the temperature so the AC is no longer running, and turn on the security system.  Or, when I say it's time for bed, turn off all the lights and set the security system to "on and home." This user experience and ease of use enables consumers to boost their productivity and save time in the same way a developer would through programming and scripting. 
 
 There is, of course, a darker side to IoT devices if consumers are uneducated. Whether it’s your lightbulbs, thermostat, home security system, or refrigerator, it is important to research the security of the IoT devices you buy.
 
@@ -67,8 +71,7 @@ If-this-then-that ([IFTTT](https://ifttt.com/)) has been around for quite some t
 
 ## Productivity progress
 
-I am glad that the patterns of automation have started to make their way mainstream so that mass market consumers can see the same productivity gains without programming that developers achieve through scripting. The user interface might be different but the goal is the same: saving time and eliminating the need to do manual tasks repeatedly. I hope in the future we continue to see easier and more creative ways to automate while granting the same automation superpowers to everyone, not just programmers. The feeling developers get after writing a script to make their life easier should not be exclusive.
-
+I am glad that the patterns of automation have started to make their way mainstream so that mass market consumers can see the same productivity gains without programming that developers achieve through scripting. The user interface might be different but the goal is the same: saving time and eliminating the need to do manual tasks repeatedly. The feeling developers get after writing a script to make their life easier should not be exclusive. I hope in the future we continue to see easier and more creative ways to automate while granting the same automation superpowers to everyone, not just programmers. 
 
 [^1]: https://writings.stephenwolfram.com/2019/02/seeking-the-productive-life-some-details-of-my-personal-infrastructure/
 [^2]: https://blog.jessfraz.com/post/home-lab-is-the-dopest-lab/
