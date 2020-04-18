@@ -21,7 +21,7 @@ I like to think of automation as the following equation.
 
 $$
 \begin{equation}
-time gained =  (time doing the task manually) - (time to automate the task)
+time \: gained \: =  \: (time \: doing \: the \: task \: manually) \: - \: (time \: to \: automate \: the \: task)
 \end{equation}
 $$
 
