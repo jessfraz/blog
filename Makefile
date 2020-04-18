@@ -29,7 +29,7 @@ static/js/site.min.js: image-dev
 	docker run $(DOCKER_FLAGS) \
 		$(REGISTRY)/$(NAME):dev \
 		uglifyjs --output $@ --compress --mangle -- \
-			static/js/prettify/prettify.js
+			static/js/lib/mathjax.js static/js/prettify/prettify.js
 
 .PHONY: static/css/site.min.css
 static/css/site.min.css: image-dev
