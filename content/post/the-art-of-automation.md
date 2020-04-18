@@ -49,7 +49,9 @@ Speaking of email inboxes… I am an absolute stickler about Gmail filters. At t
 
 For mailing lists, I tend to archive the messages unless they are sent directly to me, whether in `cc` or `to`. This keeps my inbox clean, while also making sure each mailing list gets sorted into its own Gmail label so I can easily view all the messages if I need to. By maintaining Gmail filters in a configuration file, versus the user interface, I save a bunch of time trying to find the filter I want to edit, editing it, and saving it. Also, if I make a mistake and want to revert it, I now have a git history of past filters, so this is as simple as `git revert`.
 
-These are just a few of the things I automate for my day to day life. If you are interested in more of these, please refer to my original posts on my personal infrastructure[^6]. As developers, automation is not a new concept, we tend to deal with the patterns of automation day to day through continuous integration (CI) and continuous delivery (CD). For the rest of the world, it is interesting to see the patterns of automation are starting to play a role in consumer products.
+These are just a few of the things I automate for my day to day life. If you are interested in more of these, please refer to my original posts on my personal infrastructure[^6]. 
+
+As developers, automation is not a new concept, we tend to deal with the patterns of automation day to day through continuous integration (CI) and continuous delivery (CD). For the rest of the world, it is interesting to see the patterns of automation are starting to play a role in consumer products.
 
 ## Automation for the masses
 
