@@ -2,20 +2,6 @@
 		<a class="pull-right" href="https://twitter.com/jessfraz" target="_blank">@jessfraz</a>
 	</footer>
 
-    <!-- Polyfill for mathjax 3 -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script src="/js/site.min.js"></script>
-
-    <script>
-        function doPrettyPrint(){
-            pres=document.getElementsByTagName('pre');
-            for (i=0; i < pres.length; i++) {
-                pres[i].className+=" prettyprint";
-            }
-            prettyPrint();
-        }
-    </script>
-
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
@@ -43,6 +29,20 @@
           }
         }
     });
+    </script>
+
+    <!-- Polyfill for mathjax 3 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script src="/js/site.min.js"></script>
+
+    <script>
+        function doPrettyPrint(){
+            pres=document.getElementsByTagName('pre');
+            for (i=0; i < pres.length; i++) {
+                pres[i].className+=" prettyprint";
+            }
+            prettyPrint();
+        }
     </script>
 
 	<!-- GA Script -->
