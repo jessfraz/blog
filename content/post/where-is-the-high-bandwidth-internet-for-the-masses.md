@@ -69,7 +69,7 @@ density growth, there is another point I want to make. If the next wave of
 consumer televisions is 8K what does that mean for streaming? Surely, this must
 have an effect on bandwidth. 
 
-For streaming HD, most providers recommend about 10mbps. For streaming 4K,
+For streaming HD, most providers recommend about 18mbps. For streaming 4K,
 providers recommend 25mbps. For streaming 8K, providers recommend 100mbps. This
 comes from the fact that 8K televisions have a frame rate of 120fps (frames per
 second). This is in contrast to 4K televisions that have a frame rate of either
