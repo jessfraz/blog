@@ -89,7 +89,7 @@ to be the highest overall, but is still not cutting it for 8K streaming.
 If we know that the pixel density of televisions is only going to increase over
 time, causing streaming services to need more bandwidth, why are we not seeing
 a bunch of fiber being laid down or other innovations to get faster internet to
-the mass market? 
+the mass market?[^12] 
 
 The problem with the Google Fiber project was what is known as the “last mile”
 problem. The “last mile” is the last bit of cable to get the connection to your
@@ -102,11 +102,11 @@ current innovations with satellites.
 
 ## What about satellites?
 
-Startups like Astranis[^12] claim to be able to provide broadband internet to the
+Startups like Astranis[^13] claim to be able to provide broadband internet to the
 masses through satellites. Astranis’ first satellite will offer 7.5 gigabits per
-second of capacity for Pacific Dataport to use[^13]. Elon’s Starlink[^14] has the same
+second of capacity for Pacific Dataport to use[^14]. Elon’s Starlink[^15] has the same
 ambitious mission. Starlink claims they will offer plans to consumers with
-speeds up to a gigabit per second[^15]. 
+speeds up to a gigabit per second[^16]. 
 
 While most of the world is spending time at home, video chatting and streaming
 services have become a household essential. As the world continues to move from
@@ -127,7 +127,8 @@ world.
 [^9]: https://www.speedtest.net/reports/united-states/2018/#fixed
 [^10]: https://www.speedtest.net/reports/united-kingdom/#fixed
 [^11]: https://www.speedtest.net/reports/spain/#fixed
-[^12]: https://www.astranis.com
-[^13]: https://spacenews.com/astranis-will-share-a-falcon-9-for-2020-small-geo-launch/
-[^14]: https://www.space.com/spacex-starlink-satellites.html
-[^15]: https://www.fastcompany.com/90458407/spacex-satellite-broadband
+[^12]: Another great question is _if_ consumers had 100mbps, would their (typically shitty) wifi setups even let them reap the benefits. Thanks to Scott Andreas for that great question!
+[^13]: https://www.astranis.com
+[^14]: https://spacenews.com/astranis-will-share-a-falcon-9-for-2020-small-geo-launch/
+[^15]: https://www.space.com/spacex-starlink-satellites.html
+[^16]: https://www.fastcompany.com/90458407/spacex-satellite-broadband
