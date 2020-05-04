@@ -98,6 +98,11 @@ home or business, these are known as drop cables. Most folks have existing cable
 lines running to their home, which leaves fiber providers deciding between using
 those existing lines causing a decrease in speed or laying new fiber lines which
 is very expensive. Google Fiber chose the latter and it paid for that decision.
+
+Fiber is more like public infrastructure like a freeway, you need to put in the 
+investment upfront but it will pay off dividends over time. Most people do not get
+that and want an economic return upfront.
+
 The solution to the “last mile” problem might be wireless, which leads us to the
 current innovations with satellites.
 
@@ -107,7 +112,7 @@ Startups like Astranis[^13] claim to be able to provide broadband internet to th
 masses through satellites. Astranis’ first satellite will offer 7.5 gigabits per
 second of capacity for Pacific Dataport to use[^14]. Elon’s Starlink[^15] has the same
 ambitious mission. Starlink claims they will offer plans to consumers with
-speeds up to a gigabit per second[^16]. 
+speeds up to a gigabit per second[^16].  
 
 While most of the world is spending time at home, video chatting and streaming
 services have become a household essential. As the world continues to move from
