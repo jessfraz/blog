@@ -99,8 +99,8 @@ lines running to their home, which leaves fiber providers deciding between using
 those existing lines causing a decrease in speed or laying new fiber lines which
 is very expensive. Google Fiber chose the latter and it paid for that decision.
 
-Fiber is more like public infrastructure like a freeway, you need to put in the 
-investment upfront but it will pay off dividends over time. Most people do not get
+Fiber is similar to public infrastructure like a freeway, you need to put in the 
+investment upfront but it will pay off dividends over time. Most companies do not get
 that and want an economic return upfront.
 
 The solution to the “last mile” problem might be wireless, which leads us to the
