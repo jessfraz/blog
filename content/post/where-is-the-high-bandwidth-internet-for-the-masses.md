@@ -127,7 +127,7 @@ world.
 [^9]: https://www.speedtest.net/reports/united-states/2018/#fixed
 [^10]: https://www.speedtest.net/reports/united-kingdom/#fixed
 [^11]: https://www.speedtest.net/reports/spain/#fixed
-[^12]: Another great question is _if_ consumers had 100mbps, would their (typically shitty) wifi setups even let them reap the benefits. Thanks to Scott Andreas for that great question!
+[^12]: Another great question is _if_ consumers had 100mbps, would their (typically shitty) wifi setups even let them reap the benefits? Thanks to Scott Andreas for that great question!
 [^13]: https://www.astranis.com
 [^14]: https://spacenews.com/astranis-will-share-a-falcon-9-for-2020-small-geo-launch/
 [^15]: https://www.space.com/spacex-starlink-satellites.html
