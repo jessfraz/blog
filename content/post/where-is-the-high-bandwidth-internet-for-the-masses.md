@@ -82,7 +82,7 @@ connected at the same time.
 
 Let’s take a look at the average network speed. According to a report[^7] by
 speedtest.net in 2018[^8], the average network download speed in the United States
-is 96.25[^9]. In the United Kingdom, the average network download speed was 50.16[^10].
+was 96.25[^9]. In the United Kingdom, the average network download speed was 50.16[^10].
 In Spain, the average network download speed was 60.12[^11]. The United States seems
 to be the highest overall, but is still not cutting it for 8K streaming.
 
