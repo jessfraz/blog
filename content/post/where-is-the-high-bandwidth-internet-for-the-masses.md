@@ -91,6 +91,7 @@ time, causing streaming services to need more bandwidth, why are we not seeing
 a bunch of fiber being laid down or other innovations to get faster internet to
 the mass market?[^12] 
 
+You might remember that Google Fiber was trying to do this exact thing.
 The problem with the Google Fiber project was what is known as the “last mile”
 problem. The “last mile” is the last bit of cable to get the connection to your
 home or business, these are known as drop cables. Most folks have existing cable
