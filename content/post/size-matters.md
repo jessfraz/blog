@@ -68,7 +68,7 @@ would allow them to have a great experience even on a lemon. As I see it, this
 should be the future of consumer computing. People should be able to create
 anything they imagine on a computer that gives them unlimited power to do so. To
 quote one of my favorite lines from Halt and Catch Fire: "Computers aren't the
-thing. They are the thing that gets us to the thing."
+thing. They're the thing that gets us to the thing."
 
 ![computers-arent-the-thing](/img/computers-arent-the-thing.gif)
 
