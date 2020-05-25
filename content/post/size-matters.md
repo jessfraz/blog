@@ -72,5 +72,5 @@ thing. They're the thing that gets us to the thing."
 
 ![computers-arent-the-thing](/img/computers-arent-the-thing.gif)
 
-[1]: https://www.ssrg.ece.vt.edu/theses/MS_Katz.pdf
-[2]: https://thume.ca/2020/04/18/telefork-forking-a-process-onto-a-different-computer/
+[^1]: https://www.ssrg.ece.vt.edu/theses/MS_Katz.pdf
+[^2]: https://thume.ca/2020/04/18/telefork-forking-a-process-onto-a-different-computer/
