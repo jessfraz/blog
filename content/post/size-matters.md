@@ -54,7 +54,7 @@ process is a job streaming output into a terminal it is a bit easier. Both
 should be possible.
 
 Future computers should not have limited computing power, just limited _local_
-computing power. This wouldn't need to just be limited to laptops or desktops,
+computing power. This wouldn't need to just be for your laptops or desktops,
 your VR headset or gaming console could fork processes to other available
 computers when they needed more computing power. The remote compute would not
 always need to be in a data center. An overburdened laptop could fork a process
