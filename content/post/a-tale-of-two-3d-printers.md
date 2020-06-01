@@ -113,3 +113,6 @@ resin, the liquid resin fills what is called a "tank" and from here the build
 - SLS versus SLA https://www.plunkettassociates.co.uk/faqs/plastic-parts/what-are-the-differences-between-sla-and-sls.php
 - SLS versus FDM https://blog.trimech.com/sls-vs-fdm-technology-review
 - SLS versus FDM https://formlabs.com/blog/fdm-vs-sla-vs-sls-how-to-choose-the-right-3d-printing-technology/
+- Papers on automatic support removal: https://arxiv.org/abs/1904.12117
+  https://www.arxiv-vanity.com/papers/1904.12117/
+- Paper on reliable printing https://arxiv.org/pdf/2003.08749.pdf
