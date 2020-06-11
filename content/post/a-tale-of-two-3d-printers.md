@@ -79,8 +79,8 @@ smoothed, and might show inaccuracies around complex features.
 
 Photopolymerization occurs when a photopolymer resin is
 exposed to the light of a specific wavelength and undergoes a chemical reaction
-to become solid. Several additive technologies utilize this phenomenon to build
-up a solid part one layer at a time.
+to become solid. This is a common approach additive technologies use to build
+an object one layer at a time.
 
 Vat polymerization processes are excellent at producing objects with fine
 details and give a smooth surface finish. This makes them ideal for jewelry,
@@ -113,20 +113,21 @@ thermoplastics have been produced.
 
 Direct light
 processing is near-identical to SLA, except DLP uses a digital light projector
-screen to flash a single image of each layer all at once. Because the projector
-is a digital screen, each layer is composed of square pixels, resulting in
-a layer formed from small rectangular bricks called voxels. In a way, it is
+screen to flash a single image of each layer all at once. Each layer is composed
+of square pixels, called voxels, due to the projector being a digital screen. 
+In a way, it is
 almost like an 8-bit ancestor of SLA in the same way that 8-bit drawings have
-more defined individual square pixels. DLP can achieve faster print times
-compared to SLA for some objects, since each entire layer is exposed all at
-once, rather than tracing the cross-sectional area with a laser.  
+more defined individual square pixels. Since each layer is exposed all at
+once, DLP can have faster print times compared to SLA, which solidifies a layer
+in cross sections. 
 
 #### Continuous direct light processing (CDLP) 
 
 Continuous direct light processing, also known as
 continuous liquid interface production (CLIP), produces objects in the same way
-as DLP. However, it relies on the continuous motion of the build plate on the
-Z axis. This allows for faster build times as the printer is not required to
+as DLP. CDLP is called "continuous" since it relies on the continuous motion of 
+the build plate on the
+Z axis. This results in faster build times because the printer is not required to
 stop and separate the part from the build plate after each layer is produced.
 
 ### Powder bed fusion (PBF) 
@@ -134,19 +135,19 @@ stop and separate the part from the build plate after each layer is produced.
 Powder bed fusion technologies produce a solid part
 using a thermal source that induces fusion, sintering or melting, between the
 particles of a plastic or metal powder one layer at a time. Most PBF
-technologies employ mechanisms for spreading and smoothing thin layers of powder
+technologies have mechanisms for spreading and smoothing thin layers of powder
 as a part is constructed, resulting in the final component being encapsulated in
 powder after the build is complete. The most common applications are functional
 objects, complex ducting (hollow designs), and low run part production.
 
 The main variations in PBF technologies come from different energy sources, such
 as lasers or electron beams, and the powders used in the process, such as
-plastics or metals. Polymer-based PBF technologies offer a lot of design
-freedom, as there is often no need for support structures, allowing the
-fabrication of complex geometries.
+plastics or metals. Polymer-based PBF technologies allow for innovation in that
+there is no need for support structures. This makes creating objects with
+complex geometries easier.
 
-Both metal and plastic PBF objects typically have a very high strength and
-stiffness and mechanical properties that are comparable, or sometimes even
+Both metal and plastic PBF objects typically are strong and stiff with 
+mechanical properties that are comparable, or sometimes even
 better, than the bulk material. There is a large range of post-processing
 methods available which can give objects a very smooth finish. For this reason,
 PBF is often used to manufacture functional metal parts for applications in the
@@ -161,8 +162,8 @@ disposal[^6].
 Selective laser sintering is the most
 common additive manufacturing technology for industrial applications. The
 technology originated in the late 1980s at the University of Texas at Austin[^7].
-SLS 3D printers use a high-powered CO<super>2</super> laser to fuse small particles of polymer
-powder. 
+SLS 3D printers use a high-powered CO<super>2</super> laser to fuse small 
+particles of polymer powder. 
 
 **Let’s break down the SLS process in steps:**
 
@@ -174,15 +175,15 @@ powder.
 
 Differing from SLA and FDM, the nice thing about SLS is it does not require an
 object to have support structures. This is due to the unfused powder supporting
-the part during printing. This makes SLS ideal for complex geometries, including
-interior features, undercuts, and negative features. Parts produced with SLS
-printing have excellent mechanical characteristics, with strength resembling
-that of injection-molded objects. However, objects with thin walls may not be
+the part during printing. This makes SLS ideal for objects with complex geometries, 
+including interior features, undercuts, and negative features. Parts produced with SLS
+printing typically have excellent mechanical characteristics, meaning they
+are very strong. However, objects with thin walls may not be
 printed due to the minimum 1mm limitation and thin walls in large models may
 warp after cooling down.
 
 The most common material for selective laser sintering is polyamide (nylon),
-a popular engineering thermoplastic with excellent mechanical properties. Nylon
+a popular engineering thermoplastic with great mechanical properties. Nylon
 is lightweight, strong, and flexible, as well as stable against impact,
 chemicals, heat, UV light, water, and dirt. Alumide, a blend of gray aluminum
 powder and polyamide, and rubber-like materials can also be used.
@@ -195,29 +196,31 @@ manufacturing.
 #### Selective laser melting (SLM) and direct metal laser sintering (DMLS) 
 
 Both selective laser melting and direct metal laser sintering produce
-objects via a method similar to SLS. The main difference is that SLM and DMLS
-are used in the production of metal parts. SLM achieves a full melt of the
-powder, while DMLS heats the powder to near melting temperatures until they
-chemically fuse. DMLS only works with alloys while SLM can use single component
+objects via a method similar to SLS. Differing from SLS, SLM and DMLS
+are used in the production of metal parts. SLM fully melts the
+powder, while DMLS heats the powder to near melting temperatures until it
+chemically fuses. DMLS only works with alloys while SLM can use single component
 metals, such as aluminum.
 
 Unlike SLS, SLM and DMLS require support structures to compensate for the high
-residual stresses generated during the build process. This helps to limit the
-likelihood of warping and distortion. DMLS is the most well-established metal
+residual stresses generated during the build process. Support structures help 
+to limit the possibility of warping and distortion. DMLS is the most well-established metal
 additive manufacturing process with the largest installed base.  
 
 #### Electron beam melting (EBM) 
 
 Electron beam melting uses a high energy beam rather than a laser
 to induce fusion between the particles of metal powder. A focused electron beam
-scans across a thin layer of powder causing localized melting and solidification
-over a specific cross-sectional area. Electron beam systems produce less
-residual stresses in objects, resulting in less distortion and less need for
-anchors and support structures. Moreover, EBM uses less energy and can produce
-layers at a faster rate than SLM and DMLS, but the minimum feature size, powder
-particle size, layer thickness, and surface finish are typical of lower quality.
-EBM also requires the objects to be produced in a vacuum and the process can
-only be used with conductive materials.  
+scans across a thin layer of powder which causes localized melting and solidification
+over a specific cross-sectional area. The nice thing about electron beam systems 
+is that they produce less
+residual stresses in objects, meaning there is less need for support structures. 
+EBM also uses less energy and can produce
+layers quicker than SLM and DMLS. However, the minimum feature size, powder
+particle size, layer thickness, and surface finish are typically lower quality
+than SLM and DMLS.
+EBM requires the objects to be produced in a vacuum and the process can
+only be used with conductive materials[^8].  
 
 #### Multi jet fusion (MJF) 
 
@@ -225,11 +228,11 @@ Multi jet fusion
 is essentially a combination of the SLS and material jetting technologies.
 A carriage with inkjet nozzles, similar to the nozzles used in inkjet printers,
 passes over the print area, depositing a fusing agent on a thin layer of plastic
-powder. At the same time, a detailing agent that inhibits sintering is printed
+powder. Simultaneously, a detailing agent that inhibits sintering is printed
 near the edge of the part. A high-power infrared radiation (IR) energy source
 then passes over the build bed and sinters the areas where the fusing agent was
 dispensed, while leaving the rest of the powder untouched. The process repeats
-until the object is complete.  
+until the object is complete[^9].  
 
 ### Material jetting 
 
@@ -249,28 +252,30 @@ great for low run injection molds and medical models. Since material jetting
 allows multiple materials in a single print, support structures can be printed
 from a dissolvable material that is easily removed after building. The main
 drawbacks of material jetting technologies are the high cost and the brittle
-mechanical properties of the UV activated photopolymers[^8].  
+mechanical properties of the UV activated photopolymers[^10].  
 
 #### Nanoparticle jetting (NPJ) 
 
-Nanoparticle jetting uses a liquid, which contains metal nanoparticles or
-support nanoparticles, loaded into the printer as a cartridge and jetted onto
-the build tray in extremely thin layers of droplets. High temperatures inside
-the building envelope cause the liquid to evaporate leaving behind metal
-objects.  
+Nanoparticle jetting is a process by which a liquid, which contains metal nanoparticles or
+support nanoparticles, is loaded into the printer via a cartridge. The liquid is then
+jetted, similar to an inkjet printer, onto
+a build tray through thousands of nozzles in extremely thin layers of droplets. 
+High temperatures inside
+the building chamber cause the liquid to evaporate leaving behind metal
+objects[^11].  
 
 #### Drop-on-demand (DOD) 
 
 Drop-on-demand material jetting printers have two
 print jets: one to deposit the build materials, typically a wax-like liquid, and
-another for dissolvable support material. Similar to material extrusion, DOD
+another for a dissolvable support material. Similar to material extrusion, DOD
 printers follow a predetermined path and deposit material in a pointwise fashion
-to build the cross-sectional area of a component. These machines also employ
+to build layers of an object. These machines also employ
 a fly-cutter, a single-point cutting tool, that skims the build area after each
 layer to ensure a perfectly flat surface before printing the next layer. DOD
 technology is typically used to produce wax-like patterns for lost-wax casting,
 used to duplicate a metal sculpture that is cast from an original sculpture, and
-mold making applications.  
+mold making applications[^12].  
 
 ### Binder jetting 
 
@@ -293,7 +298,7 @@ created are quite brittle.
 
 Metal binder jetting, which uses a metal powder as the material, is well suited
 for functional components and more cost-effective than SLM or DMLS metal parts.
-However, the downside is the metal parts have poorer mechanical properties[^9].
+However, the downside is the metal parts have poorer mechanical properties[^13].
 
 ### Direct Energy Deposition (DED) 
 
@@ -303,7 +308,7 @@ predominantly used with metal powders or wire and is often referred to as metal
 deposition since it is exclusive to metals. DED relies on dense support
 structures which are not ideal for creating a part from scratch, which makes it
 best suited for repairing or adding material to existing objects, such as
-turbine blades[^10].  
+turbine blades[^14].  
 
 #### Laser engineered net shape (LENS) 
 
@@ -319,13 +324,13 @@ melted and then solidified.
 Electron beam additive manufacturing uses an electron beam to create metal
 objects by welding together metal powder or wire. Differentiating from LENS,
 which uses a laser, electron beams are more efficient and operate under a vacuum
-that was originally designed for use in space[^11].  
+that was originally designed for use in space[^15].  
 
 ### Sheet lamination 
 
 Sheet
 lamination processes include laminated object manufacturing (LOM) and ultrasonic
-additive manufacturing (UAM)[^12]. You might be familiar with laminators, I had one
+additive manufacturing (UAM)[^16]. You might be familiar with laminators, I had one
 growing up. To laminate a piece of paper, you would place the paper in what is
 known as a laminator pouch. The pouch is made up of two types of plastic:
 polyethylene terephthalate (PET) on the outer layer and ethylene-vinyl acetate
@@ -360,7 +365,7 @@ printer mainly because it is a classic. MakerBot has a great community with
 their site for sharing and modifying 3D models. Interestingly, the
 first Makerbot product was open source and they seem to have snubbed the open
 source community when they went from an open source model to closed with their
-later products[^13].  
+later products[^17].  
 
 Makerbot has been around since 2009, I figured through 11 years of experience
 with 3D printing products they should have, hopefully, nailed it. They also have
@@ -445,7 +450,7 @@ Windows I had to pull an old Windows desktop out of my pantry for this. The
 software is easy to use and soon I was printing my first job. The only trouble
 I got into was the pre-print steps when my first job was uploaded to be printed.
 The mixer, part of the tank, was getting a bit off track. After searching the
-forums, I found this is a common issue[^14] for a first print and after you add some
+forums, I found this is a common issue[^18] for a first print and after you add some
 resin in the tank the mixer will perform better. This turned out to be true so
 it was only a minor glitch!
 
@@ -454,7 +459,7 @@ spaceship cookie cutter just like I had done with the Replicator+.
 
 ### Result comparison 
 
-#### AAA & AA battery holder[^15] 
+#### AAA & AA battery holder[^19] 
 
 This took 9 hours and 37 minutes on the
 Replicator+. It took 3 hours and 9 minutes on the Form 3. The model on the left
@@ -466,7 +471,7 @@ own work of poorly removing the scaffolding.
 
 ![aaa-battery](/img/aaa-battery.jpg)
 
-#### 9V battery holder[^16] 
+#### 9V battery holder[^20] 
 
 This took 2 hours and 15 minutes on the Replicator+. It took
 1 hour and 47 minutes on the Form 3. The model on the left below is from the
@@ -477,7 +482,7 @@ from the fact I am terrible at removing the scaffoldings.
 
 ![9v-battery](/img/9v-battery.jpg)
 
-#### Spaceship cookie cutter[^17] 
+#### Spaceship cookie cutter[^21] 
 
 This took 1 hour and 48 minutes on the Replicator+. It
 took 51 minutes on the Form 3. The model on the left below is from the Form
@@ -506,8 +511,8 @@ only anticipate they continue to improve!
 I hope you enjoyed and learned something from this article even if you aren’t in
 the market for a 3D printer. In the future, I would love if products did
 automatic support removal because in the pictures above from the Form 3 any
-imperfections actually came from my removal of the support structures[^18]. I would
-also love to see some sort of reliable quality monitoring[^19]. While a lot of
+imperfections actually came from my removal of the support structures[^22]. I would
+also love to see some sort of reliable quality monitoring[^23]. While a lot of
 progress has been made in the 3D printing space, I cannot wait to see what will
 come in the future. The ability to go from a digital file to a physical object
 rapidly with many different materials can enable so many folks to create
@@ -521,15 +526,19 @@ something they could only imagine in their wildest dreams until now.
 [^5]: http://www.historyofinformation.com/detail.php?id=3864
 [^6]: https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/powderbedfusion/
 [^7]: https://www.me.utexas.edu/news/news/selective-laser-sintering-birth-of-an-industry
-[^8]: https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/materialjetting/
-[^9]: https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/binderjetting/
-[^10]: https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/directedenergydeposition/
-[^11]: https://www.researchgate.net/publication/328169730_A_new_3D_printing_method_based_on_non-vacuum_electron_beam_technology
-[^12]: https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/sheetlamination/
-[^13]: https://3dprintingindustry.com/news/failure-makerbot-expert-weighs-78926/
-[^14]: https://forum.formlabs.com/t/form-3-mixer-arm-problem/25331
-[^15]: https://www.thingiverse.com/thing:3358129
-[^16]: https://www.thingiverse.com/thing:832281
-[^17]: https://www.thingiverse.com/thing:513900
-[^18]: https://www.arxiv-vanity.com/papers/1904.12117/
-[^19]: https://arxiv.org/pdf/2003.08749.pdf
+[^8]: https://www.sciencedirect.com/topics/chemistry/electron-beam-melting
+[^9]: https://www.protolabs.com/services/3d-printing/multi-jet-fusion/
+[^10]: https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/materialjetting/
+[^11]: https://www.additivemanufacturing.media/blog/post/am-101-nanoparticle-jetting-npj
+[^12]: https://www.sciencedirect.com/science/article/abs/pii/S0924424719312701
+[^13]: https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/binderjetting/
+[^14]: https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/directedenergydeposition/
+[^15]: https://www.researchgate.net/publication/328169730_A_new_3D_printing_method_based_on_non-vacuum_electron_beam_technology
+[^16]: https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/sheetlamination/
+[^17]: https://3dprintingindustry.com/news/failure-makerbot-expert-weighs-78926/
+[^18]: https://forum.formlabs.com/t/form-3-mixer-arm-problem/25331
+[^19]: https://www.thingiverse.com/thing:3358129
+[^20]: https://www.thingiverse.com/thing:832281
+[^21]: https://www.thingiverse.com/thing:513900
+[^22]: https://www.arxiv-vanity.com/papers/1904.12117/
+[^23]: https://arxiv.org/pdf/2003.08749.pdf
