@@ -35,7 +35,7 @@ which has effects on the use cases and applications as well as the economics.
 
 Material extrusion defines a process where an object is built
 by melting and extruding a thermoplastic polymer filament in a predetermined
-path layer-by-layer. Imagine if you were building an object and the only
+path layer by layer. Imagine if you were building an object and the only
 material you could use is a tube of toothpaste. You’d slowly build the walls of
 the object by putting layers of toothpaste on top of each other. Material
 extrusion is similar.
