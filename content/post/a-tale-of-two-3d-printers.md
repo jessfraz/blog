@@ -1,5 +1,5 @@
 +++
-date = "2020-06-15T08:09:26-07:00" 
+date = "2020-06-10T08:09:26-07:00" 
 title = "A Tale of Two 3D Printers (and all additive manufacturing processes)"
 author = "Jessica Frazelle" 
 description = "A dive into additive manufacturing as well as product reviews: comparing the MakerBot Replicator+ to a Form Labs Form 3." 
