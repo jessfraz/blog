@@ -3,7 +3,7 @@ date = "2020-06-10T08:09:26-07:00"
 title = "A Tale of Two 3D Printers (and all additive manufacturing processes)"
 author = "Jessica Frazelle" 
 description = "A dive into additive manufacturing as well as product reviews: comparing the MakerBot Replicator+ to a Form Labs Form 3." 
-draft = true 
+draft = true
 +++
 
 I have wanted a 3D printer for a very long time. I hope you can tell from my [ACM
@@ -477,7 +477,7 @@ from the fact I am terrible at removing the scaffoldings.
 
 ![9v-battery](/img/9v-battery.jpg)
 
-##### Spaceship cookie cutter[^17] 
+#### Spaceship cookie cutter[^17] 
 
 This took 1 hour and 48 minutes on the Replicator+. It
 took 51 minutes on the Form 3. The model on the left below is from the Form
