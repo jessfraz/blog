@@ -462,7 +462,7 @@ spaceship cookie cutter just like I had done with the Replicator+.
 
 This took 9 hours and 37 minutes on the
 Replicator+. It took 3 hours and 9 minutes on the Form 3. The model on the left
-below is from the Replicator+ and the model on the right in the Form 3. As you
+below is from the Replicator+ and the model on the right is from the Form 3. As you
 can tell the quality from the Form 3 is far smoother. There are fewer build
 lines, it feels like one continuous piece, and there no strays of filament on
 the Form 3 model. The only small imperfections in the Form 3 model come from my
