@@ -35,9 +35,12 @@ For myself, when I automate things, I tend to start by making it work and then m
 
 ### On-boarding new hires
 
-For our startup, we have been hiring quite a bit quickly. I wanted to make sure our on-boarding process was streamlined and consistent. Adding new folks to GSuite, Zoom, and GitHub teams manually is a huge waste of time and tends to lead to human error. I automated on-boarding new folks into all our tools with a Rust script. This was also a nice excuse for me to tinker with the Rust programming language. 
+For our startup, we have been hiring quite a bit quickly. I wanted to make sure our on-boarding process was streamlined and consistent. Adding new folks to GSuite, Zoom, and GitHub teams manually is a huge waste of time and tends to lead to human error. I automated on-boarding new folks into all our tools with a Rust script. This was also a nice excuse for me to tinker with the Rust programming language. I basically automated the role of CIO in Rust.
 
 Now when folks join the company, they get added to a config file which then automatically sets up an email account in GSuite, creates them a Zoom account, adds them to all the right GitHub teams, and then sends an email to them outlining all the tools and their accounts. It’s been improved with every new hire’s feedback as well, which makes it even better.
+
+We open sourced a lot of the libs I used in Rust for doing this at
+[oxidecomputer/cio](https://github.com/oxidecomputer/cio).
 
 ### Newsletter RSS feeds
 
