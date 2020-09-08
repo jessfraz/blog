@@ -88,6 +88,7 @@ The API server acts as the middle-man between the database and any scripts, bots
 users, and apps. The API is read-only since we get all the data from external
 services and APIs.
 
+
 The API server syncs the database data with Airtable so we can use Airtable as
 a front-end for viewing all the data in a specific table at once. This turns out
 to be a great use for Airtable because you can also do joins with other tables
@@ -100,6 +101,11 @@ content will update in Airtable as well.
 All in all, this was pretty fun to build, refactor, build, and refactor again.
 It's been something I can pick up and work on when I get a free second and
 easily add functionality to when we want to use our data in a specific way.
+
+For the API server, I got to use our
+[dropshot](https://github.com/oxidecomputers/dropshot] REST API library for this!
+Thanks to [Dave](https://twitter.com/dapsays) and
+[Adam](https://twitter.com/ahl) for writing that :)
 
 At this point, I can't imagine working at a company without an internal API for
 querying everything from Google groups, to applicants, to mailing list
