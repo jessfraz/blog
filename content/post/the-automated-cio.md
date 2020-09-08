@@ -9,7 +9,7 @@ I previously wrote a bit about our internal infrastructure in my post on [The
 Art of Automation](https://blog.jessfraz.com/post/the-art-of-automation/). This
 post is going to go into details about our automated Chief infrastructure
 Officer (CIO). I joke so much that I automated our CIO that I even named the
-repo holding the code for [cio](https://github.com/oxidecomputer/cio).
+repo holding the code... [cio](https://github.com/oxidecomputer/cio).
 
 I took the time this weekend to finally clean up some of this code. Previously,
 our infrastructure was held together with bash, popsicle sticks, glue, and some
