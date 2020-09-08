@@ -25,7 +25,7 @@ Let me give you a diagram of what this looks like now:
 
 ## Sending data to the database
 
-At the very bottom you can see where we are using webhooks and cron jobs to pull
+At the very bottom of the diagram, you can see where we are using webhooks and cron jobs to pull
 data out of various services APIs and send it to the database.
 
 Let's dive into a few of these because it is not as simple as a pipe from an API
