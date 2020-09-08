@@ -103,7 +103,7 @@ It's been something I can pick up and work on when I get a free second and
 easily add functionality to when we want to use our data in a specific way.
 
 For the API server, I got to use our
-[dropshot](https://github.com/oxidecomputers/dropshot] REST API library for this!
+[dropshot](https://github.com/oxidecomputers/dropshot) REST API library for this!
 Thanks to [Dave](https://twitter.com/dapsays) and
 [Adam](https://twitter.com/ahl) for writing that :)
 
