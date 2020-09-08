@@ -72,7 +72,7 @@ search across the content in all the RFDs.
 Those are just two examples of APIs we build on top of and enrich as we move
 data into our database.
 
-## GitHub
+### GitHub
 
 It's nice to have a cache of certain GitHub API calls for when GitHub is down or
 we get rate limited. We store a few GitHub endpoints data in our database as
