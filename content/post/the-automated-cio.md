@@ -43,7 +43,7 @@ an email to the applicant that we received it. It will also send an email to the
 team that we got a new application. 
 
 The cron job also parses the materials they
-submitted and their resume into plain text. Matierals can be in the form of
+submitted and their resume into plain text. Materials can be in the form of
 HTML, PDF, doc, docx, zip, and even PDF with zip headers ;). The resume and 
 each question in
 the materials is saved in individual database columns, which makes
@@ -60,7 +60,7 @@ We wrote about our RFD process on the Oxide blog in [RFD 1 Requests for
 Discussion](https://oxide.computer/blog/rfd-1-requests-for-discussion/).
 
 Each RFD is written in either markdown or asciidoc. We collect the content for
-each RFD and update it in the database along with it's equivalent HTML. 
+each RFD and update it in the database along with its equivalent HTML. 
 
 The HTML is used for generating pages in a small website we use for sharing RFDs
 with folks external to Oxide. These might be friends of Oxide, engineers who we
