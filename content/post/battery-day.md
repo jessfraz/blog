@@ -514,7 +514,7 @@ gas-powered vehicles on the road.
 
 All in all, it is fantastic to see
 a technology we all rely on day to day get its time in the spotlight. Although
-not mentioned at battery day, if Tesla were to achieve 400 watts-hours per
+not mentioned at battery day, if Tesla were to achieve 400 watt-hours per
 kilogram, a zero-emissions jet might just be on the horizon. Now that batteries
 are vertically integrated into Tesla’s product, you can only imagine that the
 software will track more data on battery efficiency, leading to more and more
