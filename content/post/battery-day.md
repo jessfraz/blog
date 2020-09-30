@@ -242,7 +242,7 @@ battery based on nickel-63[^13]. A downside of using nickel-63 is that it is not
 readily available, making their research hard to commercialize. CityLabs sells
 a betavoltaic battery, with a 14.4-year half-life, you can buy today starting at
 $1,000[^14], but you would need 1.2 million of these just to have one watt of power.
-[NBD](https://ndb.technology/) is a startup working on a nano diamond battery that could last for thousands
+[NDB](https://ndb.technology/) is a startup working on a nano diamond battery that could last for thousands
 of years[^15]. [UPower](http://www.upowertech.com/) is another startup working on a megawatt-scale atomic
 generator.  
 
