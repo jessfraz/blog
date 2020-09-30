@@ -468,7 +468,7 @@ a fresh look in a long time and was wildly inefficient.
 A typical cathode process starts with the metal from the mine being turned into
 an intermediate material called metal sulfate, which, in turn, is processed
 again. The Tesla team removed the intermediate step of turning the metal into
-metal sulfate along which a bunch of other unnecessary steps. They also
+metal sulfate along with a bunch of other unnecessary steps. They also
 localized the cathode materials to the US, which decreased the number of miles
 required for the materials to travel. This leads to a 66% reduction in CapEx
 investment, a 76% reduction in process cost, and zero wastewater. The cathode
