@@ -11,10 +11,12 @@
         <h1>{{ .Title }}</h1>
         <div class="time">{{ .Date.Format "Monday, January 2, 2006" }} · {{ $minutes }} min read</div>
 
+        {{if ge (len .TableOfContents) 35}}
         <aside class="toc">
             <h4>Table of Contents</h4>
             {{ .TableOfContents }}
         </aside>
+        {{end}}
 
         {{ .Content }}
     </article>
