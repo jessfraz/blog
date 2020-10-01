@@ -7,14 +7,20 @@
     {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
     {{ $minutes := math.Floor (div $readTime 60) }}
 
-	<article>
+    <article>
         <h1>{{ .Title }}</h1>
-		<div class="time">{{ .Date.Format "Monday, January 2, 2006" }} · {{ $minutes }} min read</div>
-		{{ .Content }}
-	</article>
-	<section class="comments">
-		{{ template "_internal/disqus.html" . }}
-	</section>
+        <div class="time">{{ .Date.Format "Monday, January 2, 2006" }} · {{ $minutes }} min read</div>
+
+        <aside class="toc">
+            <h4>Table of Contents</h4>
+            {{ .TableOfContents }}
+        </aside>
+
+        {{ .Content }}
+    </article>
+    <section class="comments">
+        {{ template "_internal/disqus.html" . }}
+    </section>
 </div>
 
 {{ partial "footer.html" . }}

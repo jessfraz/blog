@@ -576,12 +576,28 @@ table > tfoot > tr.success > th {
     header nav ul.main li {
         font-size: 90%;
     }
+
+    .time {
+        font-size: 13px;
+    }
+
+    .toc h4 {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 340px) {
     header nav ul.social li {
         font-size: 80%;
         margin: 5px;
+    }
+
+    .time {
+        font-size: 13px;
+    }
+
+    .toc h4 {
+        margin-top: 20px;
     }
 }
 
@@ -611,7 +627,7 @@ table > tfoot > tr.success > th {
 }
 
 .home .time {
-    margin-bottom:5px;
+    margin: 10px 0 10px 0;
 }
 
 .home p {
@@ -634,7 +650,29 @@ table > tfoot > tr.success > th {
     margin-bottom: 5px;
 }
 
-// Mathjax
+/* Mathjax */
 p * {
     font-size: inherit;
+}
+
+.toc h4 {
+    margin-top: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size:14px;
+}
+
+.toc ul {
+    margin: 10px 0 5px 10px;
+    font-size: 14px;
+}
+
+.toc ul li a {
+    color: #333;
+    border-bottom: none;
+}
+
+.toc ul li a:hover {
+    color: #111;
+    border-bottom: none;
 }
