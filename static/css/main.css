@@ -247,15 +247,12 @@ a:focus {
 header {
     background: rgba(255, 255, 255, 0.9);
     padding: 10px 0px;
-    width: 90%;
-    width: calc(100% - 30px);
-    width: -webkit-calc(100% - 30px);
-    width: -moz-calc(100% - 30px);
-    width: -ms-calc(100% - 30px);
-    width: -o-calc(100% - 30px);
+    width: 100%;
     height: 30px;
     display: block;
     text-align: center;
+}
+.home header {
     margin-bottom: 20px;
 }
 header:before,
@@ -326,7 +323,8 @@ header nav ul.social {
 header nav ul.social li {
     float: right;
     font-size: 100%;
-    margin: 0px 10px;
+    margin: 0px;
+    margin-left: 20px;
 }
 h2 a {
     border-bottom: none;
