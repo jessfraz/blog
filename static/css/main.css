@@ -307,6 +307,8 @@ header nav ul.main li {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 400;
     font-size: 16px;
+    padding: 0px;
+    margin: 0px;
 }
 header nav ul.main li a {
     border-bottom: none;
@@ -582,6 +584,10 @@ table > tfoot > tr.success > th {
     .toc h4 {
         margin-top: 20px;
     }
+
+    .container {
+        padding: 0px 10px 50px 10px;
+    }
 }
 
 @media screen and (max-width: 340px) {
@@ -596,6 +602,10 @@ table > tfoot > tr.success > th {
 
     .toc h4 {
         margin-top: 20px;
+    }
+
+    .container {
+        padding: 0px 10px 50px 10px;
     }
 }
 
