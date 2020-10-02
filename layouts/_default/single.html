@@ -4,12 +4,9 @@
 <div class="container single">
     {{ partial "navbar.html" . }}
 
-    {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
-    {{ $minutes := math.Floor (div $readTime 60) }}
-
     <article>
         <h1>{{ .Title }}</h1>
-        <div class="time">{{ .Date.Format "Monday, January 2, 2006" }} · {{ $minutes }} min read</div>
+        <div class="time">{{ .Date.Format "Monday, January 2, 2006" }} · {{ .ReadingTime }} min read</div>
 
         {{if ge (len .TableOfContents) 35}}
         <aside class="toc">

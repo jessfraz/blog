@@ -27,11 +27,9 @@
     <h2>Featured</h2>
     {{ range .Site.Pages.ByDate.Reverse }}
     {{ if .Params.featured }}
-        {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
-        {{ $minutes := math.Floor (div $readTime 60) }}
     <article>
         <h3><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h3>
-        <div class="time">{{ $minutes }} min read</div>
+        <div class="time">{{ .ReadingTime }} min read</div>
         <p>{{ .Description }}</p>
     </article>
     {{ end }}
@@ -43,11 +41,9 @@
     {{ if not .Params.featured }}
     {{ if ne .Title "Posts" }}
     {{ if ne .Title "Ramblings from Jessie" }}
-        {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
-        {{ $minutes := math.Floor (div $readTime 60) }}
     <article>
         <h3><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h3>
-        <div class="time">{{ .Date.Format "Monday, January 2, 2006" }} · {{ $minutes }} min read</div>
+        <div class="time">{{ .Date.Format "Monday, January 2, 2006" }} · {{ .ReadingTime }} min read</div>
         <p>{{ .Summary }}</p>
     </article>
     {{ end }}
