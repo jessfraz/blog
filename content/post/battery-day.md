@@ -356,7 +356,7 @@ process. The roll is then assembled into the can, sealed, and filled with
 electrolyte and then sent to Formation where the cell is charged for the first
 time. If you recall from above, a lithium-ion battery starts its life in
 a discharged state. For a battery cell with tabs, manufacturing is much more
-complicated because winding and coating are dramatically simplified. When the
+complicated. When the
 cell with tabs is going through the assembly line, it has to keep stopping where
 all the tabs are so you can’t do continuous motion production. It is also a lot
 more error-prone.
