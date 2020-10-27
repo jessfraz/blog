@@ -296,7 +296,7 @@ well rounded approach. They took into account not only the materials for the
 cathode and anode but also the cell design, factory, and integration with the
 vehicle[^21].
 
-![vert-integration](/img/vert-integration.jpg)
+![vert-integration](/img/vert-integration.png)
 
 > Source: Tesla’s Battery Day Presentation https://www.youtube.com/watch?v=l6T9xIeZTds
 
