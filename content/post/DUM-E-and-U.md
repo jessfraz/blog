@@ -2,7 +2,7 @@
 date = "2021-01-22T12:17:58-07:00"
 title = "DUM-E and U"
 author = "Jessica Frazelle"
-description = "How would the hydrolic robot arms in Iron Man actually work?"
+description = "How would the hydraulic robot arms in Iron Man actually work?"
 +++
 
 DUM-E (“dummy”) and U (“you”) are the names of the robot arms in the Iron Man movies. After watching this movie for the n-teenth time, I have a strong urge to also have robotic arms in a workshop like Tony Stark. You can see the value of the robots clearly throughout the movie. The robots allow Tony to produce suits more quickly, help test the suits, and provide periodic comedic relief. At one point, DUM-E even saves Tony’s life. As a bit of a thought experiment, I considered what it would take to get the same functionality in reality. What this ends up leading to is a configuration management system for manufacturing, much like a build system. This post is going to outline that a bit!
