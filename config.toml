@@ -3,7 +3,6 @@ canonifyUrls = true
 languageCode = "en-us"
 title = "Ramblings from Jessie"
 disableKinds = ["taxonomy", "taxonomyTerm"]
-disqusShortname = "https-blog-jessfraz-com"
 
 [params]
 	description = "The blog of Jessie Frazelle, hacker of all things: systems, kernels, operating systems, etc..."
