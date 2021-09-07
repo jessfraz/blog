@@ -51,7 +51,7 @@ Contain yourselves, I am about to throw down some sick iptables rules.
 # to run iptables commands you need to be root
 if [ "$EUID" -ne 0 ]; then
     echo "Please run as root."
-    return 1
+    exit 1
 fi
 
 ### set variables
