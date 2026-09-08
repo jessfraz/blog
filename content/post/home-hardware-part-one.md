@@ -7,6 +7,9 @@ Fuck it, we're doing consumer hardware for ourselves now and getting fucked \
 by economies of scale, I guess."""
 +++
 
+Fuck it, we're doing consumer hardware for ourselves now and getting fucked by
+economies of scale, I guess.
+
 This all started with me buying some Olimex Bluetooth proxies for Home
 Assistant. Then I started looking at the components and wondering if I could
 get better range. Now I'm designing boards, displays, and enclosures, and
