@@ -153,7 +153,7 @@ involved, so I'm about to find out how well that carries over.
 
 ## Getting the boards made
 
-I recently tweeted:
+I recently [tweeted](https://x.com/jessfraz/status/2096975340799512632):
 
 > Unless you are actually fab-ing your PCB / CNC-ing and manufacturing your
 > parts, your benchmarks are bullshit, your slop posts are bullshit, it’s all
