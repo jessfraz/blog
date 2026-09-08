@@ -5,15 +5,15 @@ author = "Jessica Frazelle"
 description = "Building my own home hardware, with AI help and a lot of review."
 +++
 
-I recently bought some Olimex Bluetooth proxies for Home Assistant and started
-wondering whether different components could give me better range. This turned
-into designing boards, displays, enclosures, and emailing manufacturers about
-their enormous bezels.
+This all started with me buying some Olimex Bluetooth proxies for Home
+Assistant. Then I started looking at the components and wondering if I could
+get better range. Now I'm designing boards, displays, and enclosures, and
+emailing manufacturers because their bezels are enormous.
 
-I've been working on this in Codex and have ordered the first two boards: a
-Bluetooth sensor hub and a little maintenance display. I want to go through how
-I used AI to get here, what it was good at, where it got stuck or got things
-wrong, and where I had to step in.
+I've ordered the first two boards: a Bluetooth sensor hub and a little
+maintenance display. I've been working on this in Codex, and this post is going
+to go through what it was good at, where it got stuck or got things wrong, and
+where I had to step in.
 
 ## Why build this?
 
@@ -26,17 +26,16 @@ paying a recurring fee to connect things I already bought? I don't want to call
 a Control4 or Savant dealer, either, just because I want to change how something
 works.
 
-I want to use Home Assistant, HomeKit, or my own code, and pick hardware from
-different vendors. Give me source or a usable API and I'll connect it myself.
-I might want to add a sensor or automate some maintenance thing nobody else
-cares about. I don't want to be stuck with whatever somebody else's software
-happens to support. Fuck that.[^not-a-business]
+Give me API access or give me death. Source works too. I'll pick the hardware
+and connect it to Home Assistant, HomeKit, or my own code. If I want another
+sensor or some weird maintenance reminder, I can write that.
+It's my fucking house.[^not-a-business]
 
 ## Back to the Bluetooth proxies
 
-A Bluetooth proxy lets Home Assistant talk to nearby Bluetooth Low Energy
-devices over the network.[^proxy] Put proxies near the sensors, and the machine
-running Home Assistant doesn't need to be within Bluetooth range of all of them.
+With a Bluetooth proxy, I can put the BLE radio near the sensors and get back
+to Home Assistant over the network.[^proxy] The machine running Home Assistant
+doesn't have to be within range of every sensor.
 
 When I mentioned my plans to [Paul (paultag)](https://notes.pault.ag/) over
 Slack, he pointed out that Olimex might be constrained by what the FCC allows,
@@ -194,17 +193,18 @@ still reworking things, then the second post will be about that instead.
     documentation](https://esphome.io/components/bluetooth_proxy/). These
     proxies support BLE, not Bluetooth Classic.
 
-[^fcc]: “It's for my house” isn't an exemption from the technical requirements.
-    The FCC's [home-built-device
-    provision](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-A/section-15.23)
-    still calls for good engineering to meet them.
+[^fcc]: I can't just transmit whatever I want because it's my house. The FCC
+    does have a [rule for home-built
+    devices](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-A/section-15.23),
+    but it still says to use good engineering to meet the technical
+    requirements.
 
-[^range]: [Bluetooth SIG: Understanding Bluetooth
-    Range](https://www.bluetooth.com/learn-about-bluetooth/key-attributes/range/)
-    goes through what affects range. [47 CFR
-    15.247](https://www.govinfo.gov/content/pkg/CFR-2025-title47-vol1/pdf/CFR-2025-title47-vol1-sec15-247.pdf)
-    covers power, antennas, and emissions. It doesn't give me a number of feet
-    I'm allowed to reach.
+[^range]: The [Bluetooth SIG goes through what affects
+    range](https://www.bluetooth.com/learn-about-bluetooth/key-attributes/range/).
+    The [FCC
+    rules](https://www.govinfo.gov/content/pkg/CFR-2025-title47-vol1/pdf/CFR-2025-title47-vol1-sec15-247.pdf)
+    cover power, antennas, and emissions. They don't say how many feet my
+    Bluetooth can reach.
 
 [^nfc]: To recap, I started with NFC stickers and considered removing NFC after
     designing an entire board to replace the stickers.
