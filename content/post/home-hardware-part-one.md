@@ -2,7 +2,9 @@
 date = "2026-09-07T17:34:58-07:00"
 title = "Home Hardware, Part 1: My Control4 Revenge Arc"
 author = "Jessica Frazelle"
-description = "Building my own home hardware, with AI help and a lot of review."
+description = """\
+Fuck it, we're doing consumer hardware for ourselves now and getting fucked \
+by economies of scale, I guess."""
 +++
 
 This all started with me buying some Olimex Bluetooth proxies for Home
