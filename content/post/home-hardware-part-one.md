@@ -7,8 +7,8 @@ Fuck it, we're doing consumer hardware for ourselves now and getting fucked \
 by economies of scale, I guess."""
 +++
 
-Fuck it, we're doing consumer hardware for ourselves now and getting fucked by
-economies of scale, I guess.
+Fuck[^swearing] it, we're doing consumer hardware for ourselves now and
+getting fucked by economies of scale, I guess.
 
 This all started with me buying some Olimex Bluetooth proxies for Home
 Assistant. Then I started looking at the components and wondering if I could
@@ -34,7 +34,7 @@ works.
 Give me API access or give me death. Source works too. I'll pick the hardware
 and connect it to Home Assistant, HomeKit, or my own code. If I want another
 sensor or some weird maintenance reminder, I can write that.
-It's my fucking house.[^not-a-business]
+It's my fucking house.[^not-a-business][^swearing]
 
 ## Back to the Bluetooth proxies
 
@@ -193,6 +193,9 @@ still reworking things, then the second post will be about that instead.
     If you're my friend and I know you won't make me do tech support, maybe
     I'll give you one of the extra assembled boards. That's a very short list.
     Those people know who they are.
+
+[^swearing]: I wanted to make sure you all knew I wrote this, not an LLM,
+    so there's a lot of cursing.
 
 [^proxy]: [ESPHome's Bluetooth proxy
     documentation](https://esphome.io/components/bluetooth_proxy/). These
